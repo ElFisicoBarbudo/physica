@@ -45,7 +45,8 @@ const canciones = defineCollection({
     // Avisos para el profesorado (lenguaje malsonante, ironía...).
     avisos: z.array(z.string()).default([]),
     creditos: z.array(z.object({ rol: z.string(), nombre: z.string() })).default([]),
-    letra: z.array(seccion),
+    // Una canción sin letra todavía es válida: así un borrador a medias no rompe la publicación.
+    letra: z.array(seccion).default([]),
     actividades: z.array(z.string()).default([]),
     referencias: z.array(referencia).default([]),
   }),
