@@ -133,7 +133,7 @@ let n = 0;
                 {s.versos.map((v) => {
                   const num = v.explicacion ? ++n : null;
                   return (
-                    <div class:list={['verso', { explicado: v.explicacion }]}>
+                    <div class:list={['verso', { explicado: v.explicacion }]} style={num ? `--i:${Math.min(num, 8)}` : undefined}>
                       <div class="original">
                         {num && <span class="marca-num" aria-hidden="true">{num}</span>}
                         <p class="texto">{v.texto.trim()}</p>
@@ -455,18 +455,16 @@ let n = 0;
     display: none;
   }
 
-  /* Cada verso tiene dos columnas: la letra y su explicación. Sin explicaciones,
-     la segunda mide 0 y se ensancha con una transición al activarlas. */
+  /* Cada verso tiene dos columnas fijas en pantallas anchas (letra | explicación): nada se recoloca al activar las
+     explicaciones, solo se despliega la altura y aparece el texto. Cada verso entra con un pequeño retraso (--i). */
   .verso {
-    --t: 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+    --t: 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+    --d: calc(var(--i, 0) * 45ms);
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    column-gap: 0;
     padding: 0.15rem 0;
     border-block: 1px dashed transparent;
     transition:
-      grid-template-columns var(--t),
-      column-gap var(--t),
       padding var(--t),
       margin var(--t),
       border-color var(--t);
@@ -474,10 +472,6 @@ let n = 0;
 
   @media (min-width: 900px) {
     .verso {
-      grid-template-columns: minmax(0, 1fr) minmax(0, 0fr);
-    }
-
-    .con-explicaciones .verso {
       grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
       column-gap: 2.5rem;
     }
@@ -487,6 +481,7 @@ let n = 0;
     padding: 0.9rem 0;
     margin: 0.5rem 0;
     border-color: var(--linea);
+    transition-delay: var(--d);
   }
 
   .con-explicaciones .verso.explicado + .verso.explicado {
@@ -515,13 +510,14 @@ let n = 0;
     opacity: 0.35;
     transform: scale(0.8);
     transition:
-      opacity 0.3s ease,
-      transform 0.3s ease;
+      opacity 0.5s ease,
+      transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .con-explicaciones .marca-num {
     opacity: 1;
     transform: none;
+    transition-delay: var(--d);
   }
 
   .texto {
@@ -539,9 +535,11 @@ let n = 0;
     display: grid;
     grid-template-rows: 0fr;
     opacity: 0;
+    visibility: hidden;
     transition:
       grid-template-rows var(--t),
-      opacity var(--t);
+      opacity 0.35s ease,
+      visibility 0s linear 0.65s;
   }
 
   .plegable > div {
@@ -553,6 +551,11 @@ let n = 0;
   .con-explicaciones .plegable-explicacion {
     grid-template-rows: 1fr;
     opacity: 1;
+    visibility: visible;
+    transition:
+      grid-template-rows var(--t) var(--d),
+      opacity 0.5s ease calc(var(--d) + 0.15s),
+      visibility 0s;
   }
 
   .traduccion {
@@ -584,8 +587,15 @@ let n = 0;
     transition: transform var(--t);
   }
 
+  @media (min-width: 900px) {
+    .explicacion {
+      transform: translateX(-1rem);
+    }
+  }
+
   .con-explicaciones .explicacion {
     transform: none;
+    transition-delay: calc(var(--d) + 0.1s);
   }
 
   .explicacion :global(p:last-child) {

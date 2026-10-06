@@ -1,101 +1,83 @@
 ---
-// Cuerda vibrante de la portada: una onda estacionaria y = A·sen(nπx/L)·cos(ωt).
-// Al mover el puntero (o tocar) por la portada cambia el armónico n.
+// Interferencia de ondas para la portada: dos ondas viajeras de distinta frecuencia se superponen
+// y la resultante (en amarillo) se apaga suavemente hacia los extremos. Es decorativa: sin interacción.
 ---
 
-<figure class="cuerda" data-cuerda>
-  <button type="button" class="cuerda-boton" aria-label="Cambiar de armónico de la cuerda" aria-describedby="cuerda-lectura">
+<figure class="ondas" data-ondas>
   <svg viewBox="0 0 1000 160" preserveAspectRatio="none" aria-hidden="true">
-    <path class="envolvente" d="" />
-    <path class="hilo" d="M0 80 L1000 80" />
+    <path class="onda onda-a" d="" />
+    <path class="onda onda-b" d="" />
+    <path class="onda onda-suma" d="" />
   </svg>
-  <span class="nodos" aria-hidden="true"></span>
-</button>
-  <figcaption id="cuerda-lectura" aria-live="polite"><span data-lectura>Armónico 3: tres vientres y cuatro nodos.</span> Mueve el ratón por la portada o pulsa la cuerda para cambiarlo.</figcaption>
+  <button type="button" class="pausa" aria-pressed="false">
+    <span data-texto>Pausar animación</span>
+  </button>
 </figure>
 
 <script>
-  const NOMBRES = ['', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete'];
   const W = 1000;
   const MEDIO = 80;
-  const PUNTOS = 160;
+  const PUNTOS = 200;
 
-  for (const fig of document.querySelectorAll<HTMLElement>('[data-cuerda]')) {
-    const hilo = fig.querySelector<SVGPathElement>('.hilo')!;
-    const env = fig.querySelector<SVGPathElement>('.envolvente')!;
-    const nodos = fig.querySelector<HTMLElement>('.nodos')!;
-    const boton = fig.querySelector<HTMLButtonElement>('.cuerda-boton')!;
-    const lectura = fig.querySelector<HTMLElement>('[data-lectura]')!;
-    const zona = fig.closest<HTMLElement>('[data-zona-cuerda]') ?? fig;
+  type Onda = [amplitud: number, ondas: number, velocidad: number, fase: number];
+  const A: Onda = [34, 2.5, 0.7, 0];
+  const B: Onda = [26, 4, -0.5, 1.4];
+
+  const onda = ([amp, k, w, f]: Onda, x: number, t: number) => amp * Math.sin(2 * Math.PI * k * (x / W) - w * t + f);
+  // Ventana: 0 en los bordes y 1 en el centro, para que la onda nazca y muera sin cortes.
+  const ventana = (x: number) => Math.pow(Math.sin(Math.PI * (x / W)), 0.8);
+
+  for (const fig of document.querySelectorAll<HTMLElement>('[data-ondas]')) {
+    const a = fig.querySelector<SVGPathElement>('.onda-a')!;
+    const b = fig.querySelector<SVGPathElement>('.onda-b')!;
+    const suma = fig.querySelector<SVGPathElement>('.onda-suma')!;
+    const pausa = fig.querySelector<HTMLButtonElement>('.pausa')!;
+    const texto = fig.querySelector<HTMLElement>('[data-texto]')!;
     const quieta = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    let n = 3;
-    let amp = 52; // amplitud actual: baja a 0 y vuelve a subir al cambiar de armónico
-    let objetivo = n;
     let visible = true;
+    let pausada = quieta;
+    let t = 1.2;
+    let anterior = performance.now();
 
-    const forma = (n: number, a: number) => {
+    const trazo = (f: (x: number) => number) => {
       let d = '';
       for (let i = 0; i <= PUNTOS; i++) {
         const x = (i / PUNTOS) * W;
-        d += `${i ? 'L' : 'M'}${x.toFixed(1)} ${(MEDIO - a * Math.sin((n * Math.PI * x) / W)).toFixed(1)}`;
+        d += `${i ? 'L' : 'M'}${x.toFixed(1)} ${(MEDIO - f(x) * ventana(x)).toFixed(1)}`;
       }
       return d;
     };
 
-    const dibujarModo = () => {
-      env.setAttribute('d', `${forma(n, 52)} ${forma(n, -52).replace('M', 'M')}`);
-      nodos.innerHTML = Array.from({ length: n + 1 }, (_, k) => `<i style="left:${(k / n) * 100}%"></i>`).join('');
-      lectura.textContent = `Armónico ${n}: ${n === 1 ? 'un vientre' : `${NOMBRES[n]} vientres`} y ${NOMBRES[n + 1]} nodos.`;
+    const dibujar = () => {
+      a.setAttribute('d', trazo((x) => onda(A, x, t)));
+      b.setAttribute('d', trazo((x) => onda(B, x, t)));
+      suma.setAttribute('d', trazo((x) => (onda(A, x, t) + onda(B, x, t)) * 0.9));
     };
 
-    const elegir = (nuevo: number) => {
-      if (nuevo === objetivo) return;
-      objetivo = nuevo;
-      if (quieta) {
-        n = nuevo;
-        dibujarModo();
-        hilo.setAttribute('d', forma(n, 52));
-      }
+    const etiquetar = () => {
+      pausa.setAttribute('aria-pressed', String(pausada));
+      texto.textContent = pausada ? 'Reanudar animación' : 'Pausar animación';
     };
 
-    zona.addEventListener('pointermove', (e) => {
-      if (e.pointerType !== 'mouse') return;
-      const r = zona.getBoundingClientRect();
-      elegir(1 + Math.min(5, Math.floor(((e.clientX - r.left) / r.width) * 6)));
-    });
-    boton.addEventListener('click', () => elegir((objetivo % 6) + 1));
-    boton.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight' || e.key === 'ArrowUp') elegir(Math.min(6, objetivo + 1));
-      else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') elegir(Math.max(1, objetivo - 1));
-      else return;
-      e.preventDefault();
+    pausa.addEventListener('click', () => {
+      pausada = !pausada;
+      anterior = performance.now();
+      etiquetar();
     });
 
-    dibujarModo();
-
-    if (quieta) {
-      hilo.setAttribute('d', forma(n, 52));
-      continue;
-    }
+    dibujar();
+    etiquetar();
+    if (quieta) continue;
 
     new IntersectionObserver(([e]) => (visible = e.isIntersecting)).observe(fig);
 
-    const inicio = performance.now();
-    const paso = (t: number) => {
-      if (visible && !document.hidden) {
-        // Cambio de armónico: la amplitud se apaga, cambia el modo y vuelve a crecer.
-        if (objetivo !== n) {
-          amp = Math.max(0, amp - 6);
-          if (amp === 0) {
-            n = objetivo;
-            dibujarModo();
-          }
-        } else if (amp < 52) {
-          amp = Math.min(52, amp + 3);
-        }
-        const fase = Math.cos(((t - inicio) / 1000) * (2.2 + n * 0.55));
-        hilo.setAttribute('d', forma(n, amp * fase));
+    const paso = (ahora: number) => {
+      const dt = Math.min(0.05, (ahora - anterior) / 1000);
+      anterior = ahora;
+      if (visible && !pausada && !document.hidden) {
+        t += dt;
+        dibujar();
       }
       requestAnimationFrame(paso);
     };
@@ -104,89 +86,56 @@
 </script>
 
 <style>
-  .cuerda {
+  .ondas {
     margin: 0;
-    cursor: pointer;
-  }
-
-  .cuerda-boton {
-    position: relative;
-    display: block;
-    width: 100%;
-    padding: 0;
-    border: 0;
-    background: none;
-    color: inherit;
-    font: inherit;
-    cursor: pointer;
-    border-radius: 12px;
   }
 
   svg {
     display: block;
     width: 100%;
-    height: clamp(90px, 14vw, 160px);
+    height: clamp(80px, 11vw, 130px);
     overflow: visible;
   }
 
-  .hilo {
+  .onda {
     fill: none;
-    stroke: var(--senal);
-    stroke-width: 4;
     stroke-linecap: round;
+    stroke-linejoin: round;
     vector-effect: non-scaling-stroke;
   }
 
-  .envolvente {
-    fill: none;
-    stroke: rgb(255 255 255 / 0.28);
+  .onda-a {
+    stroke: rgb(255 255 255 / 0.3);
     stroke-width: 1.5;
-    stroke-dasharray: 4 6;
-    vector-effect: non-scaling-stroke;
   }
 
-  /* Los nodos son HTML y no SVG: así no se deforman con preserveAspectRatio="none". */
-  .nodos {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
+  .onda-b {
+    stroke: rgb(255 255 255 / 0.18);
+    stroke-width: 1.5;
   }
 
-  .nodos :global(i) {
-    position: absolute;
-    top: 50%;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: var(--banda);
-    border: 2px solid #fff;
-    transform: translate(-50%, -50%);
+  .onda-suma {
+    stroke: var(--senal);
+    stroke-width: 3;
   }
 
-  figcaption {
-    margin-top: 0.9rem;
-    font-size: 0.9rem;
+  .pausa {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    margin-top: 0.25rem;
+    padding: 0 0.25rem;
+    border: 0;
+    border-radius: 8px;
+    background: none;
     color: var(--banda-suave);
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
   }
 
-  figcaption span {
+  .pausa:hover {
     color: #fff;
-    font-weight: 700;
-  }
-
-  @media (hover: none) {
-    figcaption {
-      font-size: 0;
-    }
-
-    figcaption span {
-      font-size: 0.9rem;
-    }
-
-    figcaption span::after {
-      content: ' Toca la cuerda para cambiarlo.';
-      font-weight: 400;
-      color: var(--banda-suave);
-    }
+    text-decoration: underline;
   }
 </style>

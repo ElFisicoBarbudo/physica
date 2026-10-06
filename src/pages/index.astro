@@ -7,13 +7,11 @@ import { NOMBRE, cancionesOrdenadas, url } from '../lib/util';
 
 const canciones = await cancionesOrdenadas();
 const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) => a.localeCompare(b, 'es'));
-const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).size;
-const idiomas = new Set(canciones.map((c) => c.data.idioma)).size;
 ---
 
 <Base>
   <main id="contenido" tabindex="-1">
-    <section class="banda con-brillo portada" data-zona-cuerda>
+    <section class="banda con-brillo portada">
       <div class="envoltura">
         <p class="sobre-portada">Divulgación de física para el aula</p>
         <h1>La física también se canta</h1>
@@ -26,24 +24,6 @@ const idiomas = new Set(canciones.map((c) => c.data.idioma)).size;
           <BotonAzar class="boton secundario" />
           <a class="boton secundario" href="#como-usar">Cómo usarlas en clase</a>
         </div>
-        <dl class="datos">
-          <div>
-            <dt>Canciones</dt>
-            <dd>{canciones.length}</dd>
-          </div>
-          <div>
-            <dt>Estilos musicales</dt>
-            <dd>{estilos}</dd>
-          </div>
-          <div>
-            <dt>Idiomas</dt>
-            <dd>{idiomas}</dd>
-          </div>
-          <div>
-            <dt>Ficha en PDF</dt>
-            <dd>Cada una</dd>
-          </div>
-        </dl>
       </div>
       <div class="envoltura cuerda-envoltura">
         <Cuerda />
@@ -55,8 +35,8 @@ const idiomas = new Set(canciones.map((c) => c.data.idioma)).size;
         <div>
           <p class="sobre">Catálogo</p>
           <h2>Canciones</h2>
-          <p class="cuenta" aria-live="polite" data-total={`${canciones.length} canciones en ${estilos} estilos musicales distintos.`}>
-            {canciones.length} canciones en {estilos} estilos musicales distintos.
+          <p class="cuenta" aria-live="polite" data-total={`${canciones.length} canciones.`}>
+            {canciones.length} canciones.
           </p>
         </div>
         {
@@ -179,34 +159,6 @@ const idiomas = new Set(canciones.map((c) => c.data.idioma)).size;
     letter-spacing: -0.035em;
     max-width: 14ch;
     margin-bottom: 1.5rem;
-  }
-
-  .datos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.25rem 2.75rem;
-    margin: 2.5rem 0 0;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgb(255 255 255 / 0.18);
-  }
-
-  .datos div {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .datos dt {
-    font-size: 0.85rem;
-    color: var(--banda-suave);
-  }
-
-  .datos dd {
-    margin: 0;
-    font-family: var(--f-titulo);
-    font-size: 1.75rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
   }
 
   .entradilla {

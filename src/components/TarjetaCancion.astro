@@ -56,10 +56,13 @@ const d = cancion.data;
       border-color 0.25s ease;
   }
 
+  /* Reborde amarillo de señal: 1 px de borde + 2 px de anillo. El foco de teclado conserva su propio contorno cobalto. */
   .tarjeta a:hover {
     transform: translateY(-3px);
-    border-color: var(--acento);
-    box-shadow: var(--sombra-2);
+    border-color: var(--senal);
+    box-shadow:
+      0 0 0 2px var(--senal),
+      var(--sombra-2);
   }
 
   .miniatura {
