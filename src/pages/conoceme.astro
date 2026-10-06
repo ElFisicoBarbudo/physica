@@ -1,0 +1,198 @@
+---
+import { getEntry, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { cancionesOrdenadas, url } from '../lib/util';
+
+const pagina = await getEntry('paginas', 'conoceme');
+if (!pagina) throw new Error('Falta src/content/paginas/conoceme.md');
+const p = pagina.data;
+const { Content } = await render(pagina);
+const foto = p.foto && (/^https?:/.test(p.foto) ? p.foto : url(p.foto));
+
+// Las voces que han cantado en las canciones salen de los créditos de cada una.
+const canciones = await cancionesOrdenadas();
+const voces = new Map<string, string[]>();
+for (const c of canciones) {
+  for (const cr of c.data.creditos.filter((cr) => cr.rol === 'Voz' && cr.nombre !== 'Adrián García')) {
+    voces.set(cr.nombre, [...(voces.get(cr.nombre) ?? []), c.data.titulo]);
+  }
+}
+---
+
+<Base titulo={p.titulo} descripcion={p.lema} actual="conoceme">
+  <div class="banda cabeza">
+    <div class="envoltura cabeza-dentro">
+      <div>
+        <h1>{p.nombre}</h1>
+        {p.lema && <p class="lema">{p.lema}</p>}
+        {
+          p.enlaces.length > 0 && (
+            <ul class="enlaces">
+              {p.enlaces.map((e) => (
+                <li>
+                  <a href={e.url} target="_blank" rel="noopener">
+                    {e.nombre}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+      </div>
+      {foto && <img class="foto" src={foto} alt={`Retrato de ${p.nombre}`} width="768" height="1365" />}
+    </div>
+  </div>
+
+  <main class="envoltura cuerpo">
+    <div class="prosa bio"><Content /></div>
+
+    <aside class="lateral">
+      <a class="boton" href={url('#canciones')}>Ver las {canciones.length} canciones</a>
+      {
+        voces.size > 0 && (
+          <section>
+            <h2>Voces invitadas</h2>
+            <ul class="voces">
+              {[...voces].map(([nombre, temas]) => (
+                <li>
+                  <strong>{nombre}</strong>
+                  <span>{temas.join(', ')}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+    </aside>
+  </main>
+</Base>
+
+<style>
+  .cabeza {
+    padding: 2rem 0 0;
+    overflow: hidden;
+  }
+
+  .cabeza-dentro {
+    display: grid;
+    gap: 2rem;
+    align-items: end;
+  }
+
+  @media (min-width: 800px) {
+    .cabeza-dentro {
+      grid-template-columns: 1fr 22rem;
+      gap: 4rem;
+    }
+  }
+
+  .cabeza-dentro > div {
+    padding-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 9vw, 6.5rem);
+    line-height: 0.92;
+    letter-spacing: -0.045em;
+    max-width: 9ch;
+    margin-bottom: 1.5rem;
+  }
+
+  .lema {
+    font-size: clamp(1.15rem, 2.2vw, 1.4rem);
+    color: var(--banda-suave);
+    max-width: 34rem;
+    margin: 0 0 2rem;
+  }
+
+  .enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .enlaces a {
+    display: inline-block;
+    padding: 0.45rem 0.95rem;
+    border-radius: 999px;
+    border: 1px solid rgb(255 255 255 / 0.5);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  .enlaces a:hover {
+    background: var(--senal);
+    border-color: var(--senal);
+    color: #151a3a;
+  }
+
+  /* La foto se apoya en el borde inferior de la banda, como si saliera de ella. */
+  .foto {
+    display: block;
+    width: 100%;
+    max-width: 22rem;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 200px 200px 0 0;
+    background: rgb(255 255 255 / 0.1);
+    justify-self: center;
+  }
+
+  .cuerpo {
+    display: grid;
+    gap: 3rem;
+    padding-top: 3.5rem;
+  }
+
+  @media (min-width: 900px) {
+    .cuerpo {
+      grid-template-columns: minmax(0, 40rem) 1fr;
+      gap: 5rem;
+    }
+  }
+
+  .bio {
+    font-size: 1.15rem;
+  }
+
+  .bio :global(p:first-child) {
+    font-size: 1.3rem;
+  }
+
+  .lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .lateral h2 {
+    font-size: 1.5rem;
+  }
+
+  .voces {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .voces li {
+    padding: 0.7rem 0;
+    border-top: 1px solid var(--linea);
+  }
+
+  .voces strong {
+    display: block;
+  }
+
+  .voces span {
+    color: var(--tinta-suave);
+    font-size: 0.95rem;
+  }
+</style>

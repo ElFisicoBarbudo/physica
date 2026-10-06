@@ -58,7 +58,7 @@ for (const slug of slugs) {
     preferCSSPageSize: true,
     displayHeaderFooter: true,
     headerTemplate: '<span></span>',
-    footerTemplate: `<div style="width:100%;font-size:7pt;color:#888;text-align:center;font-family:sans-serif">Physica · ${titulo.replace(/[<>&]/g, '')} · <span class="pageNumber"></span>/<span class="totalPages"></span></div>`,
+    footerTemplate: `<div style="width:100%;font-size:7pt;color:#888;text-align:center;font-family:sans-serif">Física a todo volumen: ${titulo.replace(/[<>&]/g, '')}, página <span class="pageNumber"></span> de <span class="totalPages"></span></div>`,
   });
   console.log(`✓ fichas/${slug}.pdf`);
 }

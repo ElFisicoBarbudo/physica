@@ -17,6 +17,9 @@ export const url = (path = '') => {
   return `${base}/${path.replace(/^\//, '')}`;
 };
 
+/** Nombre del proyecto. Cambiarlo aquí lo cambia en toda la web. */
+export const NOMBRE = 'Física a todo volumen';
+
 export const youtubeUrl = (id?: string | null) => (id ? `https://www.youtube.com/watch?v=${id}` : undefined);
 
 export async function cancionesOrdenadas() {
@@ -25,3 +28,6 @@ export async function cancionesOrdenadas() {
 }
 
 export const idiomas = { es: 'Castellano', en: 'Inglés', ru: 'Ruso', 'en-ru': 'Inglés y ruso' } as const;
+
+/** Para frases como "Deathcore, en inglés". */
+export const idiomaEn = { es: 'en castellano', en: 'en inglés', ru: 'en ruso', 'en-ru': 'en inglés y ruso' } as const;

@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { url, idiomas } from '../lib/util';
+import { url, idiomaEn } from '../lib/util';
 
 interface Props {
   cancion: CollectionEntry<'canciones'>;
@@ -31,13 +31,14 @@ const d = cancion.data;
           </svg>
         )
       }
-      <span class="idioma">{idiomas[d.idioma]}</span>
+      <span class="reproducir" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" /></svg>
+      </span>
     </div>
-    <div class="cuerpo">
-      <h3>{d.titulo}</h3>
-      <p>{d.resumen}</p>
-      <ul class="etiquetas">{d.temas.map((t) => <li class="etiqueta">{t}</li>)}</ul>
-    </div>
+    <p class="estilo">{[d.estilo, idiomaEn[d.idioma]].filter(Boolean).join(', ')}</p>
+    <h3>{d.titulo}</h3>
+    <p class="resumen">{d.resumen}</p>
+    <ul class="etiquetas">{d.temas.map((t) => <li class="etiqueta">{t}</li>)}</ul>
   </a>
 </li>
 
@@ -52,24 +53,15 @@ const d = cancion.data;
     height: 100%;
     color: inherit;
     text-decoration: none;
-    background: var(--tarjeta);
-    border: 1px solid var(--linea);
-    border-radius: var(--radio);
-    overflow: hidden;
-    transition:
-      transform 0.15s ease,
-      box-shadow 0.15s ease;
-  }
-
-  .tarjeta a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 0 -4px var(--acento);
   }
 
   .miniatura {
     position: relative;
     aspect-ratio: 16 / 9;
-    background: var(--tinta);
+    border-radius: var(--radio);
+    overflow: hidden;
+    background: #151a3a;
+    margin-bottom: 1rem;
   }
 
   .miniatura img {
@@ -77,49 +69,82 @@ const d = cancion.data;
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
   }
 
-  .miniatura svg {
+  .miniatura > svg {
     width: 100%;
     height: 100%;
   }
 
   .miniatura path {
     fill: none;
-    stroke: var(--acento);
+    stroke: var(--senal);
     stroke-width: 3;
   }
 
-  .idioma {
+  /* Botón de reproducir: aparece al pasar por encima, para que se note que lleva al vídeo. */
+  .reproducir {
     position: absolute;
-    top: 0.6rem;
-    right: 0.6rem;
-    font-family: var(--f-mono);
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    background: var(--papel);
-    color: var(--tinta);
-    padding: 0.15rem 0.5rem;
-    border-radius: 999px;
+    left: 1rem;
+    bottom: 1rem;
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: var(--senal);
+    opacity: 0;
+    transform: scale(0.8);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
   }
 
-  .cuerpo {
-    padding: 1.1rem 1.2rem 1.3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    flex: 1;
+  .reproducir svg {
+    width: 1.4rem;
+    fill: #151a3a;
+  }
+
+  .tarjeta a:hover .reproducir,
+  .tarjeta a:focus-visible .reproducir {
+    opacity: 1;
+    transform: none;
+  }
+
+  .tarjeta a:hover img {
+    transform: scale(1.04);
+  }
+
+  .estilo {
+    margin: 0 0 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--acento);
   }
 
   h3 {
-    font-size: 1.4rem;
-    margin: 0;
+    font-size: 1.55rem;
+    margin: 0 0 0.5rem;
   }
 
-  p {
-    margin: 0;
+  .tarjeta a:hover h3 {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.15em;
+  }
+
+  .resumen {
+    margin: 0 0 0.9rem;
     color: var(--tinta-suave);
-    font-size: 0.97rem;
+    font-size: 0.98rem;
     flex: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .miniatura img,
+    .reproducir {
+      transition: none;
+    }
   }
 </style>

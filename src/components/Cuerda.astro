@@ -1,0 +1,159 @@
+---
+// Cuerda vibrante de la portada: una onda estacionaria y = A·sen(nπx/L)·cos(ωt).
+// Al mover el puntero (o tocar) por la portada cambia el armónico n.
+---
+
+<figure class="cuerda" data-cuerda>
+  <svg viewBox="0 0 1000 160" preserveAspectRatio="none" aria-hidden="true">
+    <path class="envolvente" d="" />
+    <path class="hilo" d="M0 80 L1000 80" />
+    <g class="nodos"></g>
+  </svg>
+  <figcaption aria-live="polite"><span data-lectura>Armónico 3: tres vientres y cuatro nodos.</span> Mueve el ratón por aquí para cambiarlo.</figcaption>
+</figure>
+
+<script>
+  const NOMBRES = ['', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete'];
+  const W = 1000;
+  const MEDIO = 80;
+  const PUNTOS = 160;
+
+  for (const fig of document.querySelectorAll<HTMLElement>('[data-cuerda]')) {
+    const hilo = fig.querySelector<SVGPathElement>('.hilo')!;
+    const env = fig.querySelector<SVGPathElement>('.envolvente')!;
+    const nodos = fig.querySelector<SVGGElement>('.nodos')!;
+    const lectura = fig.querySelector<HTMLElement>('[data-lectura]')!;
+    const zona = fig.closest<HTMLElement>('[data-zona-cuerda]') ?? fig;
+    const quieta = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    let n = 3;
+    let amp = 52; // amplitud actual: baja a 0 y vuelve a subir al cambiar de armónico
+    let objetivo = n;
+    let visible = true;
+
+    const forma = (n: number, a: number) => {
+      let d = '';
+      for (let i = 0; i <= PUNTOS; i++) {
+        const x = (i / PUNTOS) * W;
+        d += `${i ? 'L' : 'M'}${x.toFixed(1)} ${(MEDIO - a * Math.sin((n * Math.PI * x) / W)).toFixed(1)}`;
+      }
+      return d;
+    };
+
+    const dibujarModo = () => {
+      env.setAttribute('d', `${forma(n, 52)} ${forma(n, -52).replace('M', 'M')}`);
+      nodos.innerHTML = Array.from({ length: n + 1 }, (_, k) => `<circle cx="${(k / n) * W}" cy="${MEDIO}" r="5" />`).join('');
+      lectura.textContent = `Armónico ${n}: ${n === 1 ? 'un vientre' : `${NOMBRES[n]} vientres`} y ${NOMBRES[n + 1]} nodos.`;
+    };
+
+    const elegir = (nuevo: number) => {
+      if (nuevo === objetivo) return;
+      objetivo = nuevo;
+      if (quieta) {
+        n = nuevo;
+        dibujarModo();
+        hilo.setAttribute('d', forma(n, 52));
+      }
+    };
+
+    zona.addEventListener('pointermove', (e) => {
+      if (e.pointerType !== 'mouse') return;
+      const r = zona.getBoundingClientRect();
+      elegir(1 + Math.min(5, Math.floor(((e.clientX - r.left) / r.width) * 6)));
+    });
+    fig.addEventListener('click', () => elegir((objetivo % 6) + 1));
+
+    dibujarModo();
+
+    if (quieta) {
+      hilo.setAttribute('d', forma(n, 52));
+      continue;
+    }
+
+    new IntersectionObserver(([e]) => (visible = e.isIntersecting)).observe(fig);
+
+    const inicio = performance.now();
+    const paso = (t: number) => {
+      if (visible && !document.hidden) {
+        // Cambio de armónico: la amplitud se apaga, cambia el modo y vuelve a crecer.
+        if (objetivo !== n) {
+          amp = Math.max(0, amp - 6);
+          if (amp === 0) {
+            n = objetivo;
+            dibujarModo();
+          }
+        } else if (amp < 52) {
+          amp = Math.min(52, amp + 3);
+        }
+        const fase = Math.cos(((t - inicio) / 1000) * (2.2 + n * 0.55));
+        hilo.setAttribute('d', forma(n, amp * fase));
+      }
+      requestAnimationFrame(paso);
+    };
+    requestAnimationFrame(paso);
+  }
+</script>
+
+<style>
+  .cuerda {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+    height: clamp(90px, 14vw, 160px);
+    overflow: visible;
+  }
+
+  .hilo {
+    fill: none;
+    stroke: var(--senal);
+    stroke-width: 4;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .envolvente {
+    fill: none;
+    stroke: rgb(255 255 255 / 0.28);
+    stroke-width: 1.5;
+    stroke-dasharray: 4 6;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .nodos :global(circle) {
+    fill: var(--banda);
+    stroke: #fff;
+    stroke-width: 2;
+    vector-effect: non-scaling-stroke;
+  }
+
+  figcaption {
+    margin-top: 0.9rem;
+    font-size: 0.9rem;
+    color: var(--banda-suave);
+  }
+
+  figcaption span {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  @media (hover: none) {
+    figcaption {
+      font-size: 0;
+    }
+
+    figcaption span {
+      font-size: 0.9rem;
+    }
+
+    figcaption span::after {
+      content: ' Toca la cuerda para cambiarlo.';
+      font-weight: 400;
+      color: var(--banda-suave);
+    }
+  }
+</style>
