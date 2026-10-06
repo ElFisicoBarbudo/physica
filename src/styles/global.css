@@ -158,6 +158,12 @@ iframe {
   line-height: 0.95;
 }
 
+.marca-texto span:first-child {
+  font-family: 'Syne', var(--f-titulo);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
 .marca-texto span + span {
   font-size: 0.62em;
   font-weight: 700;
@@ -181,9 +187,30 @@ iframe {
   background: rgb(255 255 255 / 0.14);
 }
 
+/* El botón de canción al azar destaca en amarillo dentro del menú. */
+.cabecera nav .nav-azar {
+  margin-left: 0.35rem;
+  background: var(--senal);
+  color: #151a3a;
+  font-weight: 700;
+}
+
+.cabecera nav .nav-azar:hover {
+  background: #fff;
+}
+
 @media (max-width: 520px) {
-  .cabecera nav a:first-child {
+  /* En el móvil el logo ya lleva a las canciones: el menú se queda en lo esencial. */
+  .cabecera nav a:nth-child(-n + 2) {
     display: none;
+  }
+
+  .cabecera nav .nav-azar span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
   }
 }
 

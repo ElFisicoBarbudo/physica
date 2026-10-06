@@ -1,6 +1,7 @@
 ---
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import BotonAzar from '../../components/BotonAzar.astro';
 import { cancionesOrdenadas, idiomaEn, md, url, youtubeUrl } from '../../lib/util';
 
 export async function getStaticPaths() {
@@ -211,7 +212,8 @@ let n = 0;
 
     <nav class="paginacion">
       {anterior ? <a href={url(`canciones/${anterior.id}/`)}>← {anterior.data.titulo}</a> : <span />}
-      {siguiente && <a href={url(`canciones/${siguiente.id}/`)}>{siguiente.data.titulo} →</a>}
+      <BotonAzar class="boton secundario" texto="Otra al azar" />
+      {siguiente ? <a href={url(`canciones/${siguiente.id}/`)}>{siguiente.data.titulo} →</a> : <span />}
     </nav>
   </main>
 </Base>
@@ -640,11 +642,28 @@ let n = 0;
   }
 
   .paginacion {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
     gap: 1rem;
     margin-top: 4rem;
     padding-top: 1.5rem;
     border-top: 1px solid var(--linea);
+  }
+
+  .paginacion > :last-child {
+    justify-self: end;
+    text-align: right;
+  }
+
+  @media (max-width: 640px) {
+    .paginacion {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .paginacion :global(.azar) {
+      grid-column: 1 / -1;
+      order: -1;
+    }
   }
 </style>
