@@ -1,0 +1,359 @@
+---
+import QRCode from 'qrcode';
+import { render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import { cancionesOrdenadas, idiomas, md, url, youtubeUrl } from '../../../lib/util';
+
+export async function getStaticPaths() {
+  const canciones = await cancionesOrdenadas();
+  return canciones.map((cancion) => ({ params: { slug: cancion.id }, props: { cancion } }));
+}
+
+const { cancion } = Astro.props;
+const d = cancion.data;
+const { Content } = await render(cancion);
+
+// El QR lleva al videoclip; si aún no hay vídeo, a la página de la canción.
+const paginaCancion = new URL(url(`canciones/${cancion.id}/`), Astro.site).href;
+const destinoQr = youtubeUrl(d.youtube) ?? paginaCancion;
+const qr = await QRCode.toString(destinoQr, { type: 'svg', margin: 0, errorCorrectionLevel: 'M' });
+const hayPdf = import.meta.env.PUBLIC_FICHAS_PDF === 'true';
+let n = 0;
+---
+
+<Base titulo={`Ficha · ${d.titulo}`} descripcion={d.resumen} claseBody="cuerpo-ficha">
+  <div class="barra no-print">
+    <a href={url(`canciones/${cancion.id}/`)}>← Volver a la canción</a>
+    <div class="barra-acciones">
+      {hayPdf && <a class="boton secundario" href={url(`fichas/${cancion.id}.pdf`)} download>Descargar PDF</a>}
+      <button class="boton" type="button" onclick="window.print()">Imprimir o guardar como PDF</button>
+    </div>
+  </div>
+
+  <article class="ficha">
+    <header class="ficha-cabeza">
+      <div>
+        <p class="ficha-marca">Physica · Ficha didáctica</p>
+        <h1>{d.titulo}</h1>
+        <p class="ficha-meta">
+          {d.artista}{d.anio && ` · ${d.anio}`} · {idiomas[d.idioma]}{d.nivel && ` · ${d.nivel}`}
+        </p>
+        <p class="ficha-temas">{d.temas.join(' · ')}</p>
+      </div>
+      <figure class="qr">
+        <Fragment set:html={qr} />
+        <figcaption>{d.youtube ? 'Escanea para ver el videoclip' : 'Escanea para ver la canción'}</figcaption>
+      </figure>
+    </header>
+
+    <div class="alumno">
+      <span>Nombre:</span><span>Curso:</span><span>Fecha:</span>
+    </div>
+
+    <section>
+      <h2>Presentación del tema</h2>
+      <div class="prosa"><Content /></div>
+    </section>
+
+    <section>
+      <h2>Letra explicada</h2>
+      {
+        d.letra.map((s) => (
+          <div class="f-seccion">
+            {s.seccion && <h3>{s.seccion}</h3>}
+            {s.versos.map((v) => {
+              const num = v.explicacion ? ++n : null;
+              return (
+                <div class="f-verso">
+                  <div class="f-original">
+                    <p class="f-texto">
+                      {num && <span class="f-num">{num}</span>}
+                      {v.texto.trim()}
+                    </p>
+                    {v.traduccion && <p class="f-traduccion">{v.traduccion.trim()}</p>}
+                  </div>
+                  {v.explicacion && <div class="f-explicacion prosa" set:html={md(v.explicacion)} />}
+                </div>
+              );
+            })}
+          </div>
+        ))
+      }
+    </section>
+
+    {
+      d.actividades.length > 0 && (
+        <section class="f-actividades">
+          <h2>Actividades</h2>
+          <ol>
+            {d.actividades.map((a) => (
+              <li>
+                <div set:html={md(a)} />
+                <div class="lineas" aria-hidden="true" />
+              </li>
+            ))}
+          </ol>
+        </section>
+      )
+    }
+
+    {
+      d.referencias.length > 0 && (
+        <section class="f-referencias">
+          <h2>Para saber más</h2>
+          <ul>
+            {d.referencias.map((r) => (
+              <li>
+                <strong>{r.titulo}</strong>
+                {r.autor && ` · ${r.autor}`}
+                {r.url && (
+                  <>
+                    <br />
+                    <span class="f-url">{decodeURI(r.url)}</span>
+                  </>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <footer class="ficha-pie">Physica · El Físico Barbudo · {paginaCancion}</footer>
+  </article>
+</Base>
+
+<style>
+  .barra {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 52rem;
+    margin: 1rem auto 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .barra-acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* La ficha se ve en pantalla como una hoja A4 y se imprime tal cual. */
+  .ficha {
+    --tinta: #1d1b26;
+    --tinta-suave: #4f4a5a;
+    --linea: #d6ccb8;
+    color: var(--tinta);
+    background: #fff;
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 2.5rem 2.75rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.12), 0 12px 30px rgb(0 0 0 / 0.08);
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 640px) {
+    .ficha {
+      padding: 1.5rem 1rem;
+    }
+  }
+
+  .ficha-cabeza {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    border-bottom: 3px solid var(--acento);
+    padding-bottom: 1rem;
+  }
+
+  .ficha-marca {
+    font-family: var(--f-mono);
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--acento);
+    margin: 0 0 0.3rem;
+  }
+
+  .ficha h1 {
+    font-size: 26pt;
+    font-weight: 900;
+    margin: 0 0 0.3rem;
+  }
+
+  .ficha-meta,
+  .ficha-temas {
+    margin: 0;
+    color: var(--tinta-suave);
+  }
+
+  .ficha-temas {
+    font-weight: 700;
+  }
+
+  .qr {
+    margin: 0;
+    width: 6.5rem;
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  .qr :global(svg) {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .qr figcaption {
+    font-size: 7pt;
+    color: var(--tinta-suave);
+    margin-top: 0.3rem;
+  }
+
+  .alumno {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0 0.5rem;
+    font-size: 9pt;
+    color: var(--tinta-suave);
+  }
+
+  .alumno span {
+    border-bottom: 1px solid var(--linea);
+    padding-bottom: 0.4rem;
+  }
+
+  .ficha h2 {
+    font-size: 14pt;
+    margin: 1.4rem 0 0.5rem;
+    break-after: avoid;
+  }
+
+  .ficha :global(.prosa p) {
+    margin: 0 0 0.5em;
+  }
+
+  .f-seccion h3 {
+    font-family: var(--f-mono);
+    font-size: 7.5pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--tinta-suave);
+    margin: 0.9rem 0 0.3rem;
+    break-after: avoid;
+  }
+
+  .f-verso {
+    display: grid;
+    grid-template-columns: 38% 1fr;
+    gap: 1rem;
+    padding: 0.45rem 0;
+    border-top: 1px dashed var(--linea);
+    break-inside: avoid;
+  }
+
+  @media (max-width: 640px) {
+    .f-verso {
+      grid-template-columns: 1fr;
+      gap: 0.3rem;
+    }
+  }
+
+  .f-texto {
+    font-family: var(--f-titulo);
+    font-weight: 500;
+    font-size: 11pt;
+    white-space: pre-line;
+    margin: 0;
+  }
+
+  .f-num {
+    display: inline-grid;
+    place-items: center;
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-right: 0.35rem;
+    border-radius: 50%;
+    background: var(--acento);
+    color: #fff;
+    font-family: var(--f-mono);
+    font-size: 7pt;
+    vertical-align: 0.1em;
+  }
+
+  .f-traduccion {
+    white-space: pre-line;
+    font-style: italic;
+    color: var(--tinta-suave);
+    margin: 0.2rem 0 0;
+    font-size: 9.5pt;
+  }
+
+  .f-explicacion {
+    font-size: 9.5pt;
+  }
+
+  .f-explicacion :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .f-actividades ol {
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+
+  .f-actividades li {
+    margin-bottom: 0.8rem;
+    break-inside: avoid;
+  }
+
+  .f-actividades :global(p) {
+    margin: 0;
+  }
+
+  .lineas {
+    height: 4.2em;
+    margin-top: 0.3rem;
+    background: repeating-linear-gradient(to bottom, transparent 0 1.35em, var(--linea) 1.35em calc(1.35em + 1px));
+  }
+
+  .f-referencias ul {
+    padding-left: 1.1rem;
+    margin: 0;
+    font-size: 9pt;
+  }
+
+  .f-referencias li {
+    margin-bottom: 0.35rem;
+    break-inside: avoid;
+  }
+
+  .f-url {
+    color: var(--azul);
+    word-break: break-all;
+  }
+
+  .ficha-pie {
+    margin-top: 1.5rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--linea);
+    font-size: 7.5pt;
+    color: var(--tinta-suave);
+    text-align: center;
+  }
+
+  @media print {
+    .ficha {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+    }
+  }
+</style>

@@ -1,0 +1,415 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { cancionesOrdenadas, idiomas, md, url, youtubeUrl } from '../../lib/util';
+
+export async function getStaticPaths() {
+  const canciones = await cancionesOrdenadas();
+  return canciones.map((cancion, i) => ({
+    params: { slug: cancion.id },
+    props: { cancion, anterior: canciones[i - 1], siguiente: canciones[i + 1] },
+  }));
+}
+
+const { cancion, anterior, siguiente } = Astro.props;
+const d = cancion.data;
+const { Content } = await render(cancion);
+const conTraduccion = d.idioma !== 'es' && d.letra.some((s) => s.versos.some((v) => v.traduccion));
+// En GitHub Actions se generan los PDF tras la compilación (ver scripts/generar-pdfs.mjs).
+const hayPdf = import.meta.env.PUBLIC_FICHAS_PDF === 'true';
+let n = 0;
+---
+
+<Base titulo={d.titulo} descripcion={d.resumen}>
+  <main class="envoltura cancion">
+    <nav class="migas"><a href={url('#canciones')}>← Todas las canciones</a></nav>
+
+    {d.ejemplo && <p class="aviso-ejemplo">Esta es una <strong>canción de ejemplo</strong> para enseñar cómo queda una página. Sustitúyela por una real.</p>}
+
+    <header class="cabeza">
+      <p class="sobretitulo">
+        {d.artista}{d.anio && ` · ${d.anio}`} · {idiomas[d.idioma]}{d.nivel && ` · ${d.nivel}`}
+      </p>
+      <h1>{d.titulo}</h1>
+      <p class="resumen">{d.resumen}</p>
+      <ul class="etiquetas">{d.temas.map((t) => <li class="etiqueta">{t}</li>)}</ul>
+    </header>
+
+    <div class="portada">
+      {
+        d.youtube ? (
+          <div class="video">
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${d.youtube}`}
+              title={`Videoclip de ${d.titulo}`}
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowfullscreen
+            />
+          </div>
+        ) : (
+          <div class="video vacio">
+            <p>El videoclip aparecerá aquí</p>
+          </div>
+        )
+      }
+      <aside class="recursos">
+        <h2>Para clase</h2>
+        {
+          hayPdf ? (
+            <a class="boton" href={url(`fichas/${cancion.id}.pdf`)} download>
+              Descargar ficha (PDF)
+            </a>
+          ) : (
+            <a class="boton" href={url(`canciones/${cancion.id}/ficha/`)}>
+              Ficha para imprimir
+            </a>
+          )
+        }
+        {
+          hayPdf && (
+            <a class="boton secundario" href={url(`canciones/${cancion.id}/ficha/`)}>
+              Ver ficha en el navegador
+            </a>
+          )
+        }
+        {
+          d.youtube && (
+            <a class="boton secundario" href={youtubeUrl(d.youtube)} target="_blank" rel="noopener">
+              Abrir en YouTube
+            </a>
+          )
+        }
+        <ul class="indice">
+          <li><a href="#presentacion">Presentación del tema</a></li>
+          <li><a href="#letra">Letra explicada</a></li>
+          {d.actividades.length > 0 && <li><a href="#actividades">Actividades</a></li>}
+          {d.referencias.length > 0 && <li><a href="#referencias">Para saber más</a></li>}
+        </ul>
+      </aside>
+    </div>
+
+    <section id="presentacion" class="bloque">
+      <h2>Presentación del tema</h2>
+      <div class="prosa presentacion"><Content /></div>
+    </section>
+
+    <section id="letra" class="bloque">
+      <div class="letra-cabecera">
+        <h2>Letra explicada</h2>
+        <div class="interruptores" role="group" aria-label="Opciones de la letra">
+          {
+            conTraduccion && (
+              <label>
+                <input type="checkbox" data-alterna="sin-traduccion" checked /> Traducción
+              </label>
+            )
+          }
+          <label><input type="checkbox" data-alterna="sin-explicaciones" checked /> Explicaciones</label>
+        </div>
+      </div>
+
+      <div class="letra" id="letra-contenido">
+        {
+          d.letra.map((s) => (
+            <div class="seccion">
+              {s.seccion && <h3>{s.seccion}</h3>}
+              {s.versos.map((v) => {
+                const num = v.explicacion ? ++n : null;
+                return (
+                  <div class:list={['verso', { explicado: v.explicacion }]}>
+                    <div class="original">
+                      {num && <span class="marca-num" aria-hidden="true">{num}</span>}
+                      <p class="texto">{v.texto.trim()}</p>
+                      {v.traduccion && <p class="traduccion">{v.traduccion.trim()}</p>}
+                    </div>
+                    {v.explicacion && <div class="explicacion prosa" set:html={md(v.explicacion)} />}
+                  </div>
+                );
+              })}
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    {
+      d.actividades.length > 0 && (
+        <section id="actividades" class="bloque">
+          <h2>Actividades</h2>
+          <ol class="actividades">
+            {d.actividades.map((a) => (
+              <li set:html={md(a)} />
+            ))}
+          </ol>
+        </section>
+      )
+    }
+
+    {
+      d.referencias.length > 0 && (
+        <section id="referencias" class="bloque">
+          <h2>Para saber más</h2>
+          <ul class="referencias">
+            {d.referencias.map((r) => (
+              <li>
+                {r.url ? (
+                  <a href={r.url} target="_blank" rel="noopener">
+                    {r.titulo}
+                  </a>
+                ) : (
+                  <strong>{r.titulo}</strong>
+                )}
+                {r.autor && <span class="autor"> · {r.autor}</span>}
+                {r.nota && <p>{r.nota}</p>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <nav class="paginacion">
+      {anterior ? <a href={url(`canciones/${anterior.id}/`)}>← {anterior.data.titulo}</a> : <span />}
+      {siguiente && <a href={url(`canciones/${siguiente.id}/`)}>{siguiente.data.titulo} →</a>}
+    </nav>
+  </main>
+</Base>
+
+<script>
+  const letra = document.getElementById('letra-contenido');
+  document.querySelectorAll<HTMLInputElement>('[data-alterna]').forEach((c) =>
+    c.addEventListener('change', () => letra?.classList.toggle(c.dataset.alterna!, !c.checked)),
+  );
+</script>
+
+<style>
+  .migas {
+    margin: 1rem 0 2rem;
+    font-size: 0.95rem;
+  }
+
+  .cabeza h1 {
+    font-size: clamp(2.4rem, 7vw, 4.5rem);
+    font-weight: 900;
+    margin-bottom: 0.75rem;
+  }
+
+  .resumen {
+    font-size: 1.2rem;
+    color: var(--tinta-suave);
+    max-width: 44rem;
+    margin: 0 0 1rem;
+  }
+
+  .portada {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2.5rem 0 1rem;
+  }
+
+  @media (min-width: 900px) {
+    .portada {
+      grid-template-columns: 1fr 17rem;
+      align-items: start;
+    }
+  }
+
+  .recursos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    background: var(--papel-2);
+    border-radius: var(--radio);
+    padding: 1.25rem;
+  }
+
+  .recursos h2 {
+    font-size: 1.25rem;
+  }
+
+  .recursos .boton {
+    justify-content: center;
+  }
+
+  .indice {
+    margin: 0.75rem 0 0;
+    padding: 0.75rem 0 0;
+    border-top: 1px solid var(--linea);
+    list-style: none;
+    font-size: 0.95rem;
+  }
+
+  .indice li {
+    padding: 0.2rem 0;
+  }
+
+  .bloque {
+    margin-top: 4rem;
+  }
+
+  .bloque > h2,
+  .letra-cabecera h2 {
+    font-size: 2rem;
+  }
+
+  .presentacion {
+    font-size: 1.15rem;
+    max-width: 46rem;
+  }
+
+  .letra-cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .interruptores {
+    display: flex;
+    gap: 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .interruptores label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+  }
+
+  .interruptores input {
+    accent-color: var(--acento);
+    width: 1.05rem;
+    height: 1.05rem;
+  }
+
+  .seccion h3 {
+    font-family: var(--f-mono);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--tinta-suave);
+    margin: 2.5rem 0 0.75rem;
+  }
+
+  .verso {
+    display: grid;
+    gap: 0.6rem 2.5rem;
+    padding: 0.9rem 0;
+    border-top: 1px dashed var(--linea);
+  }
+
+  @media (min-width: 900px) {
+    .verso {
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    }
+  }
+
+  .original {
+    position: relative;
+    padding-left: 2.25rem;
+  }
+
+  .marca-num {
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    display: grid;
+    place-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--acento);
+    color: #fff;
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+  }
+
+  .texto {
+    font-family: var(--f-titulo);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.35;
+    white-space: pre-line;
+    margin: 0;
+  }
+
+  .traduccion {
+    white-space: pre-line;
+    font-style: italic;
+    color: var(--tinta-suave);
+    margin: 0.35rem 0 0;
+  }
+
+  .explicacion {
+    background: var(--tarjeta);
+    border: 1px solid var(--linea);
+    border-left: 4px solid var(--azul);
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    font-size: 0.98rem;
+  }
+
+  .explicacion :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .sin-traduccion .traduccion,
+  .sin-explicaciones .explicacion {
+    display: none;
+  }
+
+  .sin-explicaciones .verso {
+    grid-template-columns: 1fr;
+    border-top-color: transparent;
+    padding: 0.4rem 0;
+  }
+
+  .actividades {
+    max-width: 46rem;
+    padding-left: 1.4rem;
+  }
+
+  .actividades li {
+    margin-bottom: 0.6rem;
+  }
+
+  .actividades :global(p) {
+    margin: 0;
+  }
+
+  .referencias {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 46rem;
+  }
+
+  .referencias li {
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--linea);
+  }
+
+  .referencias .autor {
+    color: var(--tinta-suave);
+  }
+
+  .referencias p {
+    margin: 0.2rem 0 0;
+    font-size: 0.95rem;
+    color: var(--tinta-suave);
+  }
+
+  .paginacion {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--linea);
+  }
+</style>
