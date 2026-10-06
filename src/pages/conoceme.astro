@@ -20,6 +20,7 @@ for (const c of canciones) {
 ---
 
 <Base titulo={p.titulo} descripcion={p.lema} actual="conoceme">
+  <main>
   <div class="banda cabeza">
     <div class="envoltura cabeza-dentro">
       <div>
@@ -43,7 +44,7 @@ for (const c of canciones) {
     </div>
   </div>
 
-  <main class="envoltura cuerpo">
+  <div class="envoltura cuerpo">
     <div class="prosa bio"><Content /></div>
 
     <aside class="lateral">
@@ -64,6 +65,7 @@ for (const c of canciones) {
         )
       }
     </aside>
+  </div>
   </main>
 </Base>
 

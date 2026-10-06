@@ -22,9 +22,10 @@ let n = 0;
 ---
 
 <Base titulo={d.titulo} descripcion={d.resumen} actual="canciones">
+  <main>
   <div class="banda cabeza">
     <div class="envoltura">
-      <nav class="migas"><a href={url('#canciones')}>Todas las canciones</a></nav>
+      <p class="migas"><a class="toque" href={url('#canciones')}>Todas las canciones</a></p>
       <p class="estilo">{[d.estilo, idiomaEn[d.idioma], d.anio, d.nivel].filter(Boolean).join(', ')}</p>
       <h1>{d.titulo}</h1>
       <p class="resumen">{d.resumen}</p>
@@ -32,7 +33,7 @@ let n = 0;
     </div>
   </div>
 
-  <main class="envoltura cancion">
+  <div class="envoltura cancion">
     <div class="portada">
       <div class="portada-video">
         {
@@ -79,14 +80,14 @@ let n = 0;
         <div class="escuchar">
           {
             d.youtube && (
-              <a href={youtubeUrl(d.youtube)} target="_blank" rel="noopener">
+              <a class="toque" href={youtubeUrl(d.youtube)} target="_blank" rel="noopener">
                 YouTube
               </a>
             )
           }
           {
             d.spotify && (
-              <a href={d.spotify} target="_blank" rel="noopener">
+              <a class="toque" href={d.spotify} target="_blank" rel="noopener">
                 Spotify
               </a>
             )
@@ -210,11 +211,12 @@ let n = 0;
       )
     }
 
-    <nav class="paginacion">
-      {anterior ? <a href={url(`canciones/${anterior.id}/`)}>← {anterior.data.titulo}</a> : <span />}
+    <nav class="paginacion" aria-label="Otras canciones">
+      {anterior ? <a class="toque" href={url(`canciones/${anterior.id}/`)}>← {anterior.data.titulo}</a> : <span />}
       <BotonAzar class="boton secundario" texto="Otra al azar" />
-      {siguiente ? <a href={url(`canciones/${siguiente.id}/`)}>{siguiente.data.titulo} →</a> : <span />}
+      {siguiente ? <a class="toque" href={url(`canciones/${siguiente.id}/`)}>{siguiente.data.titulo} →</a> : <span />}
     </nav>
+  </div>
   </main>
 </Base>
 
@@ -378,6 +380,7 @@ let n = 0;
   .interruptores label {
     display: inline-flex;
     align-items: center;
+    min-height: 44px;
     gap: 0.4rem;
     cursor: pointer;
   }
@@ -496,8 +499,8 @@ let n = 0;
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    background: var(--acento);
-    color: var(--sobre-acento);
+    background: var(--senal);
+    color: #151a3a;
     font-size: 0.75rem;
     font-weight: 700;
     opacity: 0.35;

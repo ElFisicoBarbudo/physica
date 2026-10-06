@@ -22,8 +22,9 @@ let n = 0;
 ---
 
 <Base titulo={`Ficha · ${d.titulo}`} descripcion={d.resumen} claseBody="cuerpo-ficha">
+  <main>
   <div class="barra no-print">
-    <a href={url(`canciones/${cancion.id}/`)}>← Volver a la canción</a>
+    <a class="toque" href={url(`canciones/${cancion.id}/`)}>← Volver a la canción</a>
     <div class="barra-acciones">
       {hayPdf && <a class="boton secundario" href={url(`fichas/${cancion.id}.pdf`)} download>Descargar PDF</a>}
       <button class="boton" type="button" onclick="window.print()">Imprimir o guardar como PDF</button>
@@ -126,6 +127,7 @@ let n = 0;
       <p>{NOMBRE}, de El Físico Barbudo. {paginaCancion}</p>
     </footer>
   </article>
+  </main>
 </Base>
 
 <style>
@@ -151,6 +153,8 @@ let n = 0;
     --tinta: #151a3a;
     --tinta-suave: #4b5170;
     --linea: #d2d6e6;
+    --acento: #2f3df4;
+    --azul: #2f3df4;
     color: var(--tinta);
     background: #fff;
     max-width: 52rem;
