@@ -28,7 +28,7 @@ let n = 0;
 
     <header class="cabeza">
       <p class="sobretitulo">
-        {d.artista}{d.anio && ` · ${d.anio}`} · {idiomas[d.idioma]}{d.nivel && ` · ${d.nivel}`}
+        {d.artista}{d.anio && ` · ${d.anio}`}{d.estilo && ` · ${d.estilo}`} · {idiomas[d.idioma]}{d.nivel && ` · ${d.nivel}`}
       </p>
       <h1>{d.titulo}</h1>
       <p class="resumen">{d.resumen}</p>
@@ -169,6 +169,22 @@ let n = 0;
       )
     }
 
+    {
+      d.creditos.length > 0 && (
+        <section class="bloque creditos">
+          <h2>Créditos</h2>
+          <dl>
+            {d.creditos.map((c) => (
+              <div>
+                <dt>{c.rol}</dt>
+                <dd>{c.nombre}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )
+    }
+
     <nav class="paginacion">
       {anterior ? <a href={url(`canciones/${anterior.id}/`)}>← {anterior.data.titulo}</a> : <span />}
       {siguiente && <a href={url(`canciones/${siguiente.id}/`)}>{siguiente.data.titulo} →</a>}
@@ -296,11 +312,26 @@ let n = 0;
     margin: 2.5rem 0 0.75rem;
   }
 
+  .seccion + .seccion {
+    margin-top: 2rem;
+  }
+
   .verso {
     display: grid;
     gap: 0.6rem 2.5rem;
+    padding: 0.15rem 0;
+  }
+
+  .verso.explicado {
     padding: 0.9rem 0;
+    margin: 0.5rem 0;
     border-top: 1px dashed var(--linea);
+    border-bottom: 1px dashed var(--linea);
+  }
+
+  .verso.explicado + .verso.explicado {
+    margin-top: -0.5rem;
+    border-top: 0;
   }
 
   @media (min-width: 900px) {
@@ -365,8 +396,9 @@ let n = 0;
 
   .sin-explicaciones .verso {
     grid-template-columns: 1fr;
-    border-top-color: transparent;
-    padding: 0.4rem 0;
+    border-color: transparent;
+    padding: 0.15rem 0;
+    margin: 0;
   }
 
   .actividades {
@@ -402,6 +434,26 @@ let n = 0;
     margin: 0.2rem 0 0;
     font-size: 0.95rem;
     color: var(--tinta-suave);
+  }
+
+  .creditos dl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2.5rem;
+    margin: 0;
+  }
+
+  .creditos dt {
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--tinta-suave);
+  }
+
+  .creditos dd {
+    margin: 0;
+    font-weight: 700;
   }
 
   .paginacion {

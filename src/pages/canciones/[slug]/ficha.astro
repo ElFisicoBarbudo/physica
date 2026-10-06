@@ -36,7 +36,7 @@ let n = 0;
         <p class="ficha-marca">Physica · Ficha didáctica</p>
         <h1>{d.titulo}</h1>
         <p class="ficha-meta">
-          {d.artista}{d.anio && ` · ${d.anio}`} · {idiomas[d.idioma]}{d.nivel && ` · ${d.nivel}`}
+          {d.artista}{d.anio && ` · ${d.anio}`}{d.estilo && ` · ${d.estilo}`} · {idiomas[d.idioma]}{d.nivel && ` · ${d.nivel}`}
         </p>
         <p class="ficha-temas">{d.temas.join(' · ')}</p>
       </div>
@@ -64,7 +64,7 @@ let n = 0;
             {s.versos.map((v) => {
               const num = v.explicacion ? ++n : null;
               return (
-                <div class="f-verso">
+                <div class:list={['f-verso', { 'f-explicado': v.explicacion }]}>
                   <div class="f-original">
                     <p class="f-texto">
                       {num && <span class="f-num">{num}</span>}
@@ -119,7 +119,10 @@ let n = 0;
       )
     }
 
-    <footer class="ficha-pie">Physica · El Físico Barbudo · {paginaCancion}</footer>
+    <footer class="ficha-pie">
+      {d.creditos.length > 0 && <p>{d.creditos.map((c) => `${c.rol}: ${c.nombre}`).join(' · ')}</p>}
+      <p>Physica · El Físico Barbudo · {paginaCancion}</p>
+    </footer>
   </article>
 </Base>
 
@@ -249,13 +252,28 @@ let n = 0;
     break-after: avoid;
   }
 
+  .f-seccion + .f-seccion {
+    margin-top: 0.7rem;
+  }
+
   .f-verso {
     display: grid;
     grid-template-columns: 38% 1fr;
     gap: 1rem;
-    padding: 0.45rem 0;
-    border-top: 1px dashed var(--linea);
+    padding: 0.05rem 0;
     break-inside: avoid;
+  }
+
+  .f-verso.f-explicado {
+    padding: 0.45rem 0;
+    margin: 0.25rem 0;
+    border-top: 1px dashed var(--linea);
+    border-bottom: 1px dashed var(--linea);
+  }
+
+  .f-verso.f-explicado + .f-verso.f-explicado {
+    margin-top: -0.25rem;
+    border-top: 0;
   }
 
   @media (max-width: 640px) {
@@ -337,6 +355,10 @@ let n = 0;
   .f-url {
     color: var(--azul);
     word-break: break-all;
+  }
+
+  .ficha-pie p {
+    margin: 0.15rem 0;
   }
 
   .ficha-pie {

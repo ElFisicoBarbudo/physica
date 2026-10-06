@@ -32,11 +32,13 @@ const canciones = defineCollection({
     idioma: z.enum(['es', 'en']).default('es'),
     // Solo el identificador del vídeo: en https://www.youtube.com/watch?v=dQw4w9WgXcQ es "dQw4w9WgXcQ".
     youtube: z.string().nullish(),
+    estilo: z.string().nullish(), // estilo musical: "Deathcore", "Eurobeat"...
     resumen: z.string(),
     temas: z.array(z.string()).default([]),
     nivel: z.string().nullish(),
     orden: z.number().default(100),
     ejemplo: z.boolean().default(false),
+    creditos: z.array(z.object({ rol: z.string(), nombre: z.string() })).default([]),
     letra: z.array(seccion),
     actividades: z.array(z.string()).default([]),
     referencias: z.array(referencia).default([]),

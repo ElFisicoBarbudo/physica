@@ -6,7 +6,7 @@ Cada canción tiene su propia página con el videoclip, la letra (con traducció
 
 ## Añadir una canción
 
-1. Copia uno de los archivos de `src/content/canciones/` (por ejemplo `ejemplo-falling-down.md`) y dale un nombre nuevo. El nombre del archivo será la dirección de la página: `mi-cancion.md` → `/canciones/mi-cancion/`.
+1. Copia uno de los archivos de `src/content/canciones/` (por ejemplo `black-hole-spaghettification.md`) y dale un nombre nuevo. El nombre del archivo será la dirección de la página: `mi-cancion.md` → `/canciones/mi-cancion/`.
 2. Rellena la cabecera (entre las líneas `---`):
 
    | Campo | Qué poner |
@@ -15,20 +15,21 @@ Cada canción tiene su propia página con el videoclip, la letra (con traducció
    | `anio` | Año (opcional) |
    | `idioma` | `es` o `en`. Con `en` se muestra la traducción bajo cada verso |
    | `youtube` | Solo el identificador del vídeo: en `youtube.com/watch?v=dQw4w9WgXcQ` es `dQw4w9WgXcQ` |
+   | `estilo` | Estilo musical (opcional) |
    | `resumen` | Una o dos frases para la tarjeta de la portada |
    | `temas` | Lista de temas, sirven para filtrar en la portada |
    | `nivel` | Curso recomendado (opcional) |
    | `orden` | Número para ordenar las canciones en la portada |
+   | `creditos` | Lista de `rol` y `nombre` (voz, letra, música, masterización…) |
    | `letra` | Secciones (`seccion`) con sus `versos`. Cada verso lleva `texto`, y opcionalmente `traduccion` y `explicacion` |
    | `actividades` | Preguntas para el alumnado (salen en la ficha con líneas para responder) |
    | `referencias` | `titulo`, `url`, `autor` y `nota` (todos opcionales menos el título) |
 
 3. Debajo de la cabecera, escribe la **presentación del tema** en texto normal (Markdown).
-4. Borra `ejemplo: true` (o los archivos de ejemplo cuando ya no hagan falta).
 
 Las explicaciones admiten **negrita**, *cursiva*, enlaces y fórmulas en LaTeX entre dólares: `$F = G\,\dfrac{m_1 m_2}{r^2}$`.
 
-Un verso puede ocupar varias líneas (para explicar un pareado entero), usando `|`:
+Cada verso suele ser una línea. Si quieres explicar varias líneas juntas, un verso puede ocupar varias con `|`:
 
 ```yaml
 - texto: |
