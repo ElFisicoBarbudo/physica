@@ -34,7 +34,9 @@ const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).siz
       <div class="canciones-cabecera">
         <div>
           <h2>Canciones</h2>
-          <p class="cuenta">{canciones.length} canciones en {estilos} estilos musicales distintos.</p>
+          <p class="cuenta" aria-live="polite" data-total={`${canciones.length} canciones en ${estilos} estilos musicales distintos.`}>
+            {canciones.length} canciones en {estilos} estilos musicales distintos.
+          </p>
         </div>
         {
           temas.length > 1 && (
@@ -108,13 +110,17 @@ const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).siz
 <script>
   const botones = document.querySelectorAll<HTMLButtonElement>('.filtro');
   const tarjetas = document.querySelectorAll<HTMLElement>('.tarjeta');
+  const cuenta = document.querySelector<HTMLElement>('.cuenta');
   botones.forEach((b) =>
     b.addEventListener('click', () => {
       const tema = b.dataset.tema ?? '';
       botones.forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
+      let visibles = 0;
       tarjetas.forEach((t) => {
         t.hidden = !!tema && !(t.dataset.temas ?? '').split('|').includes(tema);
+        if (!t.hidden) visibles++;
       });
+      if (cuenta) cuenta.textContent = tema ? `${visibles} ${visibles === 1 ? 'canción' : 'canciones'} de ${tema.toLowerCase()}.` : (cuenta.dataset.total ?? '');
     }),
   );
 </script>
