@@ -6,7 +6,7 @@ youtube: "qp3c3zxAbNQ"
 spotify: "https://open.spotify.com/track/29fiemIFJWweYcdL0OFXBa"
 estilo: "Metalcore"
 resumen: "Dónde se acaba la física de Newton y por qué en el mundo cuántico solo podemos hablar de probabilidades."
-temas: [Física cuántica, Física de partículas, Principio de incertidumbre]
+temas: [Física cuántica, Física de partículas]
 orden: 8
 borrador: true
 avisos:

@@ -6,7 +6,7 @@ youtube: "jTCBr85cLeM"
 spotify: "https://open.spotify.com/track/06SZ4AUPq3c1rHCwTEWnlX"
 estilo: "Ska"
 resumen: "Un ska para repasar las tres leyes de Newton y la ley que mueve los planetas."
-temas: [Mecánica clásica, Leyes de Newton, Gravitación]
+temas: [Física clásica, Gravitación, Mecánica, Historia de la ciencia]
 orden: 6
 borrador: true
 creditos:

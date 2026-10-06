@@ -5,7 +5,7 @@ idioma: "es"
 youtube: "UaIj_i9aNhQ"
 estilo: "Trap"
 resumen: "Un rapero pseudocientífico defiende que la Tierra es hueca. Una parodia para practicar el pensamiento crítico."
-temas: [Pseudociencia, Estructura de la Tierra, Pensamiento crítico]
+temas: [Pseudociencia]
 orden: 4
 borrador: true
 avisos:
