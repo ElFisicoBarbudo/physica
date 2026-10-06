@@ -46,6 +46,8 @@ let n = 0;
       </figure>
     </header>
 
+    {d.avisos.length > 0 && <p class="ficha-aviso">{d.avisos.join(' ')}</p>}
+
     <div class="alumno">
       <span>Nombre:</span><span>Curso:</span><span>Fecha:</span>
     </div>
@@ -215,6 +217,13 @@ let n = 0;
     font-size: 7pt;
     color: var(--tinta-suave);
     margin-top: 0.3rem;
+  }
+
+  .ficha-aviso {
+    margin: 0.8rem 0 0;
+    font-size: 8.5pt;
+    color: var(--tinta-suave);
+    font-style: italic;
   }
 
   .alumno {

@@ -29,15 +29,21 @@ const canciones = defineCollection({
     titulo: z.string(),
     artista: z.string().default('El Físico Barbudo'),
     anio: z.number().int().nullish(),
-    idioma: z.enum(['es', 'en']).default('es'),
+    idioma: z.enum(['es', 'en', 'ru']).default('es'),
     // Solo el identificador del vídeo: en https://www.youtube.com/watch?v=dQw4w9WgXcQ es "dQw4w9WgXcQ".
     youtube: z.string().nullish(),
+    // Enlace completo a la canción en Spotify.
+    spotify: z.string().url().nullish(),
     estilo: z.string().nullish(), // estilo musical: "Deathcore", "Eurobeat"...
     resumen: z.string(),
     temas: z.array(z.string()).default([]),
     nivel: z.string().nullish(),
     orden: z.number().default(100),
     ejemplo: z.boolean().default(false),
+    // Textos pendientes de revisión: muestra un aviso en la página.
+    borrador: z.boolean().default(false),
+    // Avisos para el profesorado (lenguaje malsonante, ironía...).
+    avisos: z.array(z.string()).default([]),
     creditos: z.array(z.object({ rol: z.string(), nombre: z.string() })).default([]),
     letra: z.array(seccion),
     actividades: z.array(z.string()).default([]),

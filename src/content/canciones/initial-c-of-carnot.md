@@ -2,6 +2,8 @@
 titulo: "Initial C (of Carnot)"
 artista: "El Físico Barbudo"
 idioma: "en"
+youtube: "Z3zpaBX3ihQ"
+spotify: "https://open.spotify.com/track/0WR5lrXgfbBg1275L4sU1R"
 estilo: "Eurobeat"
 resumen: "Sadi Carnot y su ciclo ideal: el límite de lo eficiente que puede ser cualquier máquina que convierte calor en trabajo."
 temas: [Termodinámica, Máquinas térmicas, Historia de la ciencia]
