@@ -2,7 +2,6 @@
 titulo: Black Hole Spaghettification
 artista: El Físico Barbudo
 orden: 1
-borrador: true
 youtube: wBtFe005OjQ
 spotify: https://open.spotify.com/track/2Rtvlj00gWTJgaNi4ho61W
 estilo: Deathcore

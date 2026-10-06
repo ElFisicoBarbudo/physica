@@ -30,7 +30,7 @@ content:
         label: Pendiente de revisión
         type: boolean
         description: Si está activado, la página avisa de que el contenido lo ha redactado Claude y aún no lo has revisado.
-        default: true
+        default: false
       - name: youtube
         label: ID del vídeo de YouTube
         type: string
