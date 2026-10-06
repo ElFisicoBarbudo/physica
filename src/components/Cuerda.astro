@@ -4,12 +4,14 @@
 ---
 
 <figure class="cuerda" data-cuerda>
+  <button type="button" class="cuerda-boton" aria-label="Cambiar de armónico de la cuerda" aria-describedby="cuerda-lectura">
   <svg viewBox="0 0 1000 160" preserveAspectRatio="none" aria-hidden="true">
     <path class="envolvente" d="" />
     <path class="hilo" d="M0 80 L1000 80" />
-    <g class="nodos"></g>
   </svg>
-  <figcaption aria-live="polite"><span data-lectura>Armónico 3: tres vientres y cuatro nodos.</span> Mueve el ratón por aquí para cambiarlo.</figcaption>
+  <span class="nodos" aria-hidden="true"></span>
+</button>
+  <figcaption id="cuerda-lectura" aria-live="polite"><span data-lectura>Armónico 3: tres vientres y cuatro nodos.</span> Mueve el ratón por la portada o pulsa la cuerda para cambiarlo.</figcaption>
 </figure>
 
 <script>
@@ -21,7 +23,8 @@
   for (const fig of document.querySelectorAll<HTMLElement>('[data-cuerda]')) {
     const hilo = fig.querySelector<SVGPathElement>('.hilo')!;
     const env = fig.querySelector<SVGPathElement>('.envolvente')!;
-    const nodos = fig.querySelector<SVGGElement>('.nodos')!;
+    const nodos = fig.querySelector<HTMLElement>('.nodos')!;
+    const boton = fig.querySelector<HTMLButtonElement>('.cuerda-boton')!;
     const lectura = fig.querySelector<HTMLElement>('[data-lectura]')!;
     const zona = fig.closest<HTMLElement>('[data-zona-cuerda]') ?? fig;
     const quieta = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -42,7 +45,7 @@
 
     const dibujarModo = () => {
       env.setAttribute('d', `${forma(n, 52)} ${forma(n, -52).replace('M', 'M')}`);
-      nodos.innerHTML = Array.from({ length: n + 1 }, (_, k) => `<circle cx="${(k / n) * W}" cy="${MEDIO}" r="5" />`).join('');
+      nodos.innerHTML = Array.from({ length: n + 1 }, (_, k) => `<i style="left:${(k / n) * 100}%"></i>`).join('');
       lectura.textContent = `Armónico ${n}: ${n === 1 ? 'un vientre' : `${NOMBRES[n]} vientres`} y ${NOMBRES[n + 1]} nodos.`;
     };
 
@@ -61,7 +64,13 @@
       const r = zona.getBoundingClientRect();
       elegir(1 + Math.min(5, Math.floor(((e.clientX - r.left) / r.width) * 6)));
     });
-    fig.addEventListener('click', () => elegir((objetivo % 6) + 1));
+    boton.addEventListener('click', () => elegir((objetivo % 6) + 1));
+    boton.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowUp') elegir(Math.min(6, objetivo + 1));
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') elegir(Math.max(1, objetivo - 1));
+      else return;
+      e.preventDefault();
+    });
 
     dibujarModo();
 
@@ -100,6 +109,19 @@
     cursor: pointer;
   }
 
+  .cuerda-boton {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+
   svg {
     display: block;
     width: 100%;
@@ -123,11 +145,22 @@
     vector-effect: non-scaling-stroke;
   }
 
-  .nodos :global(circle) {
-    fill: var(--banda);
-    stroke: #fff;
-    stroke-width: 2;
-    vector-effect: non-scaling-stroke;
+  /* Los nodos son HTML y no SVG: así no se deforman con preserveAspectRatio="none". */
+  .nodos {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .nodos :global(i) {
+    position: absolute;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--banda);
+    border: 2px solid #fff;
+    transform: translate(-50%, -50%);
   }
 
   figcaption {

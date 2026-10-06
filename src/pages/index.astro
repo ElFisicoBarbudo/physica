@@ -8,12 +8,14 @@ import { NOMBRE, cancionesOrdenadas, url } from '../lib/util';
 const canciones = await cancionesOrdenadas();
 const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) => a.localeCompare(b, 'es'));
 const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).size;
+const idiomas = new Set(canciones.map((c) => c.data.idioma)).size;
 ---
 
 <Base>
-  <main>
-    <section class="banda portada" data-zona-cuerda>
+  <main id="contenido" tabindex="-1">
+    <section class="banda con-brillo portada" data-zona-cuerda>
       <div class="envoltura">
+        <p class="sobre-portada">Divulgación de física para el aula</p>
         <h1>La física también se canta</h1>
         <p class="entradilla">
           Canciones con videoclip sobre fenómenos físicos reales. Cada una trae la letra explicada verso a verso, actividades y una ficha lista para imprimir y
@@ -24,6 +26,24 @@ const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).siz
           <BotonAzar class="boton secundario" />
           <a class="boton secundario" href="#como-usar">Cómo usarlas en clase</a>
         </div>
+        <dl class="datos">
+          <div>
+            <dt>Canciones</dt>
+            <dd>{canciones.length}</dd>
+          </div>
+          <div>
+            <dt>Estilos musicales</dt>
+            <dd>{estilos}</dd>
+          </div>
+          <div>
+            <dt>Idiomas</dt>
+            <dd>{idiomas}</dd>
+          </div>
+          <div>
+            <dt>Ficha en PDF</dt>
+            <dd>Cada una</dd>
+          </div>
+        </dl>
       </div>
       <div class="envoltura cuerda-envoltura">
         <Cuerda />
@@ -33,6 +53,7 @@ const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).siz
     <section id="canciones" class="canciones envoltura">
       <div class="canciones-cabecera">
         <div>
+          <p class="sobre">Catálogo</p>
           <h2>Canciones</h2>
           <p class="cuenta" aria-live="polite" data-total={`${canciones.length} canciones en ${estilos} estilos musicales distintos.`}>
             {canciones.length} canciones en {estilos} estilos musicales distintos.
@@ -57,6 +78,7 @@ const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).siz
     </section>
 
     <section id="como-usar" class="como-usar envoltura">
+      <p class="sobre">En el aula</p>
       <h2>Cómo usarlas en clase</h2>
       <ol class="pasos">
         <li>
@@ -80,6 +102,7 @@ const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).siz
 
     <section class="proyecto envoltura">
       <div class="proyecto-texto">
+        <p class="sobre">El proyecto</p>
         <h2>Por qué canciones</h2>
         <p>
           Una canción se queda en la cabeza mucho más que un párrafo del libro de texto. {NOMBRE} aprovecha eso: cada letra se apoya en física real, de la gravedad
@@ -137,12 +160,53 @@ const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).siz
     }
   }
 
+  .sobre-portada {
+    display: inline-block;
+    margin: 0 0 1.25rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid rgb(255 255 255 / 0.28);
+    background: rgb(255 255 255 / 0.08);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
   .portada h1 {
-    font-size: clamp(3rem, 10vw, 7.5rem);
-    line-height: 0.92;
-    letter-spacing: -0.045em;
-    max-width: 11ch;
-    margin-bottom: 1.75rem;
+    font-size: clamp(2.6rem, 7.2vw, 5.4rem);
+    line-height: 1;
+    letter-spacing: -0.035em;
+    max-width: 14ch;
+    margin-bottom: 1.5rem;
+  }
+
+  .datos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem 2.75rem;
+    margin: 2.5rem 0 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgb(255 255 255 / 0.18);
+  }
+
+  .datos div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .datos dt {
+    font-size: 0.85rem;
+    color: var(--banda-suave);
+  }
+
+  .datos dd {
+    margin: 0;
+    font-family: var(--f-titulo);
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
   }
 
   .entradilla {
@@ -175,7 +239,7 @@ const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).siz
   .canciones h2,
   .como-usar h2,
   .proyecto h2 {
-    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-size: clamp(1.9rem, 4vw, 2.75rem);
   }
 
   .canciones h2 {
@@ -195,17 +259,22 @@ const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).siz
 
   .filtro {
     font: inherit;
-    font-size: 0.88rem;
-    padding: 0.4rem 0.85rem;
+    font-size: 0.9rem;
+    min-height: 44px;
+    padding: 0.4rem 1rem;
     border-radius: 999px;
-    border: 1px solid var(--linea);
+    border: 1px solid var(--borde-ui);
     background: var(--tarjeta);
     color: var(--tinta);
     cursor: pointer;
+    transition:
+      background 0.15s ease,
+      border-color 0.15s ease;
   }
 
   .filtro:hover {
     border-color: var(--acento);
+    background: var(--acento-suave);
   }
 
   .filtro[aria-pressed='true'] {
@@ -239,20 +308,27 @@ const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).siz
 
   .pasos li {
     counter-increment: paso;
-    border-top: 3px solid var(--acento);
-    padding-top: 1rem;
+    background: var(--tarjeta);
+    border: 1px solid var(--linea);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-1);
+    padding: 1.5rem;
   }
 
   .pasos li::before {
     content: counter(paso);
-    display: block;
+    display: grid;
+    place-items: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    background: var(--acento-suave);
     font-family: var(--f-titulo);
     font-weight: 800;
-    font-size: 3.2rem;
+    font-size: 1.3rem;
     line-height: 1;
-    letter-spacing: -0.04em;
     color: var(--acento);
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
   }
 
   .pasos h3 {
@@ -293,8 +369,11 @@ const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).siz
   }
 
   .objetivos li {
-    background: var(--acento-suave);
+    background: var(--tarjeta);
+    border: 1px solid var(--linea);
+    border-left: 4px solid var(--senal);
     border-radius: 12px;
+    box-shadow: var(--sombra-1);
     padding: 1rem 1.2rem;
   }
 

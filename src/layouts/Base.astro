@@ -15,6 +15,7 @@ interface Props {
 const { titulo, descripcion = 'Canciones de física con videoclip, letra explicada verso a verso y fichas para usar en clase.', claseBody, actual } = Astro.props;
 const [nombre1, ...resto] = NOMBRE.split(' ');
 const nombre2 = resto.join(' ');
+const canonica = new URL(Astro.url.pathname, Astro.site).href;
 const tituloCompleto = titulo ? `${titulo} | ${NOMBRE}` : `${NOMBRE}: la física también se canta`;
 ---
 
@@ -25,9 +26,16 @@ const tituloCompleto = titulo ? `${titulo} | ${NOMBRE}` : `${NOMBRE}: la física
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{tituloCompleto}</title>
     <meta name="description" content={descripcion} />
+    <link rel="canonical" href={canonica} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content={NOMBRE} />
+    <meta property="og:url" content={canonica} />
     <meta property="og:title" content={tituloCompleto} />
     <meta property="og:description" content={descripcion} />
-    <meta name="theme-color" content="#2f3df4" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#0d1450" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141b6e" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,6 +47,7 @@ const tituloCompleto = titulo ? `${titulo} | ${NOMBRE}` : `${NOMBRE}: la física
     <link href={`https://fonts.googleapis.com/css2?family=Climate+Crisis&text=${encodeURIComponent(nombre1)}&display=swap`} rel="stylesheet" />
   </head>
   <body class={claseBody}>
+    <a class="saltar no-print" href="#contenido">Saltar al contenido</a>
     <div class="banda no-print">
       <header class="cabecera">
         <a class="marca" href={url('')}>

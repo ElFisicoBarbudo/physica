@@ -20,8 +20,8 @@ for (const c of canciones) {
 ---
 
 <Base titulo={p.titulo} descripcion={p.lema} actual="conoceme">
-  <main>
-  <div class="banda cabeza">
+  <main id="contenido" tabindex="-1">
+  <div class="banda con-brillo cabeza">
     <div class="envoltura cabeza-dentro">
       <div>
         <h1>{p.nombre}</h1>
@@ -93,9 +93,9 @@ for (const c of canciones) {
   }
 
   h1 {
-    font-size: clamp(3rem, 9vw, 6.5rem);
-    line-height: 0.92;
-    letter-spacing: -0.045em;
+    font-size: clamp(2.6rem, 7vw, 5rem);
+    line-height: 1;
+    letter-spacing: -0.035em;
     max-width: 9ch;
     margin-bottom: 1.5rem;
   }

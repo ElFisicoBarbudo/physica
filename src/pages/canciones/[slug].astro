@@ -22,8 +22,8 @@ let n = 0;
 ---
 
 <Base titulo={d.titulo} descripcion={d.resumen} actual="canciones">
-  <main>
-  <div class="banda cabeza">
+  <main id="contenido" tabindex="-1">
+  <div class="banda con-brillo cabeza">
     <div class="envoltura">
       <p class="migas"><a class="toque" href={url('#canciones')}>Todas las canciones</a></p>
       <p class="estilo">{[d.estilo, idiomaEn[d.idioma], d.anio, d.nivel].filter(Boolean).join(', ')}</p>
@@ -268,9 +268,9 @@ let n = 0;
   }
 
   .cabeza h1 {
-    font-size: clamp(2.6rem, 8vw, 5.5rem);
-    line-height: 0.95;
-    letter-spacing: -0.04em;
+    font-size: clamp(2.3rem, 6vw, 4.4rem);
+    line-height: 1;
+    letter-spacing: -0.035em;
     max-width: 16ch;
     margin-bottom: 1.25rem;
   }
@@ -326,6 +326,11 @@ let n = 0;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
+    padding: 1.25rem;
+    background: var(--tarjeta);
+    border: 1px solid var(--linea);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
   }
 
   .recursos h2 {
@@ -358,7 +363,7 @@ let n = 0;
 
   .bloque > h2,
   .letra-cabecera h2 {
-    font-size: clamp(2rem, 4vw, 2.6rem);
+    font-size: clamp(1.8rem, 3.6vw, 2.4rem);
   }
 
   .presentacion {
@@ -396,7 +401,7 @@ let n = 0;
     height: 1.35rem;
     margin: 0;
     border-radius: 999px;
-    background: var(--linea);
+    background: var(--borde-ui);
     cursor: pointer;
     transition: background 0.25s ease;
   }
@@ -447,7 +452,7 @@ let n = 0;
   }
 
   .letra-cabecera:has(:checked) + .pista {
-    opacity: 0;
+    display: none;
   }
 
   /* Cada verso tiene dos columnas: la letra y su explicación. Sin explicaciones,

@@ -15,16 +15,9 @@ const d = cancion.data;
     <div class="miniatura">
       {
         d.youtube ? (
-          // hqdefault es 4:3 y trae barras negras arriba y abajo; maxresdefault es 16:9 limpia.
-          // Si el vídeo no tiene maxres, YouTube devuelve un gris de 120 px: pasamos a mqdefault (16:9).
-          <img
-            src={`https://i.ytimg.com/vi/${d.youtube}/maxresdefault.jpg`}
-            onload={`if(this.naturalWidth<=120)this.src='https://i.ytimg.com/vi/${d.youtube}/mqdefault.jpg'`}
-            width="1280"
-            height="720"
-            alt=""
-            loading="lazy"
-          />
+          // hqdefault (480×360) trae barras negras arriba y abajo; con object-fit: cover en un marco 16:9 se recortan justo.
+          // Pesa una fracción de maxresdefault y sobra para una tarjeta de ~340 px.
+          <img src={`https://i.ytimg.com/vi/${d.youtube}/hqdefault.jpg`} width="480" height="360" alt="" loading="lazy" decoding="async" />
         ) : (
           <svg viewBox="0 0 160 90" aria-hidden="true" preserveAspectRatio="none">
             <path d="M0 45 C 20 10, 30 10, 40 45 S 60 80, 80 45 S 100 10, 120 45 S 140 80, 160 45" />
@@ -32,10 +25,12 @@ const d = cancion.data;
         )
       }
     </div>
-    <p class="estilo">{[d.estilo, idiomaEn[d.idioma]].filter(Boolean).join(', ')}</p>
-    <h3>{d.titulo}</h3>
-    <p class="resumen">{d.resumen}</p>
-    <ul class="etiquetas">{d.temas.map((t) => <li class="etiqueta">{t}</li>)}</ul>
+    <div class="cuerpo">
+      <p class="estilo">{[d.estilo, idiomaEn[d.idioma]].filter(Boolean).join(', ')}</p>
+      <h3>{d.titulo}</h3>
+      <p class="resumen">{d.resumen}</p>
+      <ul class="etiquetas">{d.temas.map((t) => <li class="etiqueta">{t}</li>)}</ul>
+    </div>
   </a>
 </li>
 
@@ -48,17 +43,30 @@ const d = cancion.data;
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: hidden;
     color: inherit;
     text-decoration: none;
+    background: var(--tarjeta);
+    border: 1px solid var(--linea);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-1);
+    transition:
+      transform 0.25s cubic-bezier(0.2, 0.7, 0.2, 1),
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
+  }
+
+  .tarjeta a:hover {
+    transform: translateY(-3px);
+    border-color: var(--acento);
+    box-shadow: var(--sombra-2);
   }
 
   .miniatura {
     position: relative;
     aspect-ratio: 16 / 9;
-    border-radius: var(--radio);
     overflow: hidden;
-    background: #151a3a;
-    margin-bottom: 1rem;
+    background: #0d1450;
   }
 
   .miniatura img {
@@ -80,55 +88,47 @@ const d = cancion.data;
     stroke-width: 3;
   }
 
-  /* Al pasar por encima, la miniatura se enmarca con el color de acento. */
-  .miniatura {
-    outline: 3px solid transparent;
-    outline-offset: 3px;
-    transition: outline-color 0.2s ease;
-  }
-
-  .tarjeta a:hover .miniatura,
-  .tarjeta a:focus-visible .miniatura {
-    outline-color: var(--senal);
-  }
-
-  .tarjeta a:focus-visible {
-    outline: none;
-  }
-
   .tarjeta a:hover img {
     transform: scale(1.04);
   }
 
+  .cuerpo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.1rem 1.25rem 1.3rem;
+  }
+
   .estilo {
-    margin: 0 0 0.3rem;
-    font-size: 0.9rem;
+    margin: 0 0 0.35rem;
+    font-size: 0.78rem;
     font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--acento);
   }
 
   h3 {
-    font-size: 1.55rem;
+    font-size: 1.4rem;
     margin: 0 0 0.5rem;
   }
 
-  .tarjeta a:hover h3 {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.15em;
-  }
-
   .resumen {
-    margin: 0 0 0.9rem;
+    margin: 0 0 1rem;
     color: var(--tinta-suave);
-    font-size: 0.98rem;
+    font-size: 0.97rem;
     flex: 1;
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .miniatura,
+    .tarjeta a,
     .miniatura img {
       transition: none;
+    }
+
+    .tarjeta a:hover,
+    .tarjeta a:hover img {
+      transform: none;
     }
   }
 </style>
