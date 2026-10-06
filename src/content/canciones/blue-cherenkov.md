@@ -6,7 +6,7 @@ youtube: "rh3MFPgCDv4"
 spotify: "https://open.spotify.com/track/4SMK6g0HggVR1phiZBgzuJ"
 estilo: "Hardbass"
 resumen: "Hardbass soviético sobre la luz azul que aparece cuando algo viaja más rápido que la luz… en el agua."
-temas: [Física nuclear, Relatividad especial, Óptica, Historia de la ciencia]
+temas: [Física nuclear]
 orden: 5
 borrador: true
 avisos:

@@ -6,7 +6,7 @@ youtube: "wgL145YioTY"
 spotify: "https://open.spotify.com/track/7EIcU2mLP33X1vVj4tgEdP"
 estilo: "Rockabilly"
 resumen: "El experimento mental más famoso de la física cuántica, a ritmo de rockabilly: un gato vivo y muerto a la vez."
-temas: [Física cuántica, Superposición, Probabilidad]
+temas: [Física cuántica]
 orden: 7
 borrador: true
 creditos:

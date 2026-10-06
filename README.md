@@ -4,6 +4,16 @@ Web de recursos educativos de **Physica**, el proyecto de divulgación de físic
 
 Cada canción tiene su propia página con el videoclip, la letra (con traducción al castellano si está en inglés), una explicación de la física de cada verso relevante, una presentación del tema, actividades, referencias y una **ficha en PDF** para usar en clase.
 
+## Editar sin tocar el código
+
+El repositorio incluye `.pages.yml`, la configuración de [Pages CMS](https://pagescms.org): un editor web gratuito que trabaja directamente sobre este repositorio.
+
+1. Entra en <https://app.pagescms.org> e inicia sesión con la cuenta de GitHub dueña del repositorio.
+2. Autoriza el acceso a `ElFisicoBarbudo/physica`.
+3. En *Canciones* aparece la lista de canciones, y cada una se edita con formularios: título, enlaces, avisos, créditos y, verso a verso, su traducción y su explicación.
+
+Al guardar, Pages CMS hace el commit y GitHub Actions vuelve a publicar la web en un par de minutos. El resto de este documento explica cómo hacer lo mismo editando los archivos a mano.
+
 ## Añadir una canción
 
 1. Copia uno de los archivos de `src/content/canciones/` (por ejemplo `black-hole-spaghettification.md`) y dale un nombre nuevo. El nombre del archivo será la dirección de la página: `mi-cancion.md` → `/canciones/mi-cancion/`.

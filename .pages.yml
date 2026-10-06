@@ -1,0 +1,140 @@
+# Configuración de Pages CMS (https://pagescms.org).
+# Permite editar las canciones desde un formulario web, sin tocar el código.
+# Entra en https://app.pagescms.org, inicia sesión con GitHub y elige este repositorio.
+
+content:
+  - name: canciones
+    label: Canciones
+    type: collection
+    path: src/content/canciones
+    filename: '{fields.titulo}.md'
+    view:
+      fields: [titulo, estilo, orden, borrador]
+      sort: [orden, titulo]
+      primary: titulo
+    fields:
+      - name: titulo
+        label: Título
+        type: string
+        required: true
+      - name: artista
+        label: Artista
+        type: string
+        default: El Físico Barbudo
+      - name: orden
+        label: Orden en la web
+        type: number
+        description: Número que decide la posición en la portada (1 va primero).
+        default: 100
+      - name: borrador
+        label: Pendiente de revisión
+        type: boolean
+        description: Si está activado, la página avisa de que el contenido lo ha redactado Claude y aún no lo has revisado.
+        default: true
+      - name: youtube
+        label: ID del vídeo de YouTube
+        type: string
+        description: Solo el código de 11 caracteres. En https://youtu.be/wBtFe005OjQ sería wBtFe005OjQ.
+      - name: spotify
+        label: Enlace de Spotify
+        type: string
+      - name: estilo
+        label: Estilo musical
+        type: string
+      - name: anio
+        label: Año
+        type: number
+      - name: idioma
+        label: Idioma de la letra
+        type: select
+        default: es
+        options:
+          values:
+            - name: es
+              label: Castellano
+            - name: en
+              label: Inglés
+            - name: ru
+              label: Ruso
+            - name: en-ru
+              label: Inglés y ruso
+      - name: nivel
+        label: Nivel educativo
+        type: string
+        description: 'Opcional, por ejemplo: 4º ESO, Bachillerato.'
+      - name: resumen
+        label: Resumen
+        type: text
+        description: Una o dos frases. Aparece en la tarjeta de la portada.
+        required: true
+      - name: temas
+        label: Temas de física
+        type: string
+        list: true
+      - name: avisos
+        label: Avisos para el profesorado
+        type: string
+        list: true
+        description: 'Por ejemplo: Contiene lenguaje malsonante.'
+      - name: creditos
+        label: Créditos
+        type: object
+        list: true
+        fields:
+          - name: rol
+            label: Rol
+            type: string
+          - name: nombre
+            label: Nombre
+            type: string
+      - name: letra
+        label: Letra explicada
+        type: object
+        list: true
+        description: Cada bloque es una sección de la canción (estrofa, estribillo, puente...).
+        fields:
+          - name: seccion
+            label: Nombre de la sección
+            type: string
+            description: 'Opcional: Estrofa 1, Estribillo, Puente...'
+          - name: versos
+            label: Versos
+            type: object
+            list: true
+            fields:
+              - name: texto
+                label: Verso original
+                type: text
+                required: true
+              - name: traduccion
+                label: Traducción al castellano
+                type: text
+              - name: explicacion
+                label: Explicación divulgativa
+                type: text
+                description: Admite negrita con **texto** y fórmulas entre dólares, por ejemplo $E = mc^2$.
+      - name: actividades
+        label: Actividades para clase
+        type: text
+        list: true
+      - name: referencias
+        label: Para saber más
+        type: object
+        list: true
+        fields:
+          - name: titulo
+            label: Título
+            type: string
+          - name: autor
+            label: Autor o fuente
+            type: string
+          - name: url
+            label: Enlace
+            type: string
+          - name: nota
+            label: Nota
+            type: string
+      - name: body
+        label: Presentación del tema
+        type: rich-text
+        description: El texto largo que abre la página de la canción y la ficha de clase.
