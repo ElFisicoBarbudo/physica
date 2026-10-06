@@ -1,7 +1,7 @@
 ---
 titulo: "ЧЕРЕНКОВСКАЯ СИНЬ (Blue Cherenkov)"
 artista: "El Físico Barbudo"
-idioma: "ru"
+idioma: "en-ru"
 youtube: "rh3MFPgCDv4"
 spotify: "https://open.spotify.com/track/4SMK6g0HggVR1phiZBgzuJ"
 estilo: "Hardbass"

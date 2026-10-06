@@ -2,6 +2,8 @@
 titulo: "Black Hole Spaghettification"
 artista: "El Físico Barbudo"
 idioma: "en"
+youtube: "wBtFe005OjQ"
+spotify: "https://open.spotify.com/track/2Rtvlj00gWTJgaNi4ho61W"
 estilo: "Deathcore"
 resumen: "Qué es un agujero negro, cómo lo detectamos sin verlo y qué le pasaría a un humano que cayera en uno."
 temas: [Agujeros negros, Gravitación, Relatividad general, Astrofísica]

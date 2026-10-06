@@ -29,7 +29,7 @@ const canciones = defineCollection({
     titulo: z.string(),
     artista: z.string().default('El Físico Barbudo'),
     anio: z.number().int().nullish(),
-    idioma: z.enum(['es', 'en', 'ru']).default('es'),
+    idioma: z.enum(['es', 'en', 'ru', 'en-ru']).default('es'),
     // Solo el identificador del vídeo: en https://www.youtube.com/watch?v=dQw4w9WgXcQ es "dQw4w9WgXcQ".
     youtube: z.string().nullish(),
     // Enlace completo a la canción en Spotify.

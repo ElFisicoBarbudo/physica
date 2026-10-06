@@ -10,10 +10,10 @@ temas: [Física de partículas, Bosón de Higgs, Historia de la ciencia]
 orden: 3
 borrador: true
 creditos:
-  - rol: "Voz"
-    nombre: "Peter Higgs"
+  - rol: "Voces"
+    nombre: "Seminario del CERN del 4 de julio de 2012 (Peter Higgs, Rolf-Dieter Heuer y los portavoces de ATLAS y CMS)"
   - rol: "Letra"
-    nombre: "Peter Higgs"
+    nombre: "Declaraciones originales del anuncio del bosón de Higgs"
   - rol: "Música"
     nombre: "Adrián García"
   - rol: "Masterización"
