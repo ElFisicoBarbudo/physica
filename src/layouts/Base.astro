@@ -1,6 +1,7 @@
 ---
 import 'katex/dist/katex.min.css';
 import '../styles/global.css';
+import BotonAzar from '../components/BotonAzar.astro';
 import { NOMBRE, url } from '../lib/util';
 
 interface Props {
@@ -34,6 +35,8 @@ const tituloCompleto = titulo ? `${titulo} | ${NOMBRE}` : `${NOMBRE}: la física
       href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap"
       rel="stylesheet"
     />
+    <!-- Syne solo se usa en la primera palabra del logo: se descargan únicamente esas letras. -->
+    <link href={`https://fonts.googleapis.com/css2?family=Syne:wght@800&text=${encodeURIComponent(nombre1)}&display=swap`} rel="stylesheet" />
   </head>
   <body class={claseBody}>
     <div class="banda no-print">
@@ -46,6 +49,7 @@ const tituloCompleto = titulo ? `${titulo} | ${NOMBRE}` : `${NOMBRE}: la física
           <a href={url('#como-usar')}>En clase</a>
           <a href={url('#canciones')} aria-current={actual === 'canciones' ? 'page' : undefined}>Canciones</a>
           <a href={url('conoceme/')} aria-current={actual === 'conoceme' ? 'page' : undefined}>Conóceme</a>
+          <BotonAzar class="nav-azar" texto="Al azar" />
         </nav>
       </header>
     </div>

@@ -1,0 +1,66 @@
+---
+// Enlace a una canción al azar. Sin JavaScript lleva a la lista de canciones.
+import { cancionesOrdenadas, url } from '../lib/util';
+
+interface Props {
+  class?: string;
+  /** Texto visible. En la cabecera se oculta en pantallas estrechas y queda solo el dado. */
+  texto?: string;
+}
+
+const { class: clase, texto = 'Canción al azar' } = Astro.props;
+const destinos = (await cancionesOrdenadas()).map((c) => url(`canciones/${c.id}/`));
+---
+
+<a class:list={['azar', clase]} href={url('#canciones')} data-azar={JSON.stringify(destinos)} title="Ir a una canción al azar">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <rect x="3" y="3" width="18" height="18" rx="4.5" fill="none" stroke="currentColor" stroke-width="2" />
+    <circle cx="8.5" cy="8.5" r="1.6" />
+    <circle cx="15.5" cy="15.5" r="1.6" />
+    <circle cx="12" cy="12" r="1.6" />
+  </svg>
+  <span>{texto}</span>
+</a>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('[data-azar]').forEach((a) =>
+    a.addEventListener('click', (e) => {
+      // Nunca repite la canción que ya estás viendo.
+      const opciones = (JSON.parse(a.dataset.azar ?? '[]') as string[]).filter((u) => u !== location.pathname);
+      if (!opciones.length) return;
+      e.preventDefault();
+      location.href = opciones[Math.floor(Math.random() * opciones.length)];
+    }),
+  );
+</script>
+
+<style>
+  .azar {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  svg {
+    width: 1.15em;
+    height: 1.15em;
+    flex-shrink: 0;
+    fill: currentColor;
+  }
+
+  .azar:hover svg {
+    animation: rodar 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  @keyframes rodar {
+    to {
+      transform: rotate(180deg);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .azar:hover svg {
+      animation: none;
+    }
+  }
+</style>

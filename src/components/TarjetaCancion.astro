@@ -31,9 +31,6 @@ const d = cancion.data;
           </svg>
         )
       }
-      <span class="reproducir" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" /></svg>
-      </span>
     </div>
     <p class="estilo">{[d.estilo, idiomaEn[d.idioma]].filter(Boolean).join(', ')}</p>
     <h3>{d.titulo}</h3>
@@ -83,33 +80,20 @@ const d = cancion.data;
     stroke-width: 3;
   }
 
-  /* Botón de reproducir: aparece al pasar por encima, para que se note que lleva al vídeo. */
-  .reproducir {
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
-    display: grid;
-    place-items: center;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background: var(--senal);
-    opacity: 0;
-    transform: scale(0.8);
-    transition:
-      opacity 0.2s ease,
-      transform 0.2s ease;
+  /* Al pasar por encima, la miniatura se enmarca con el color de acento. */
+  .miniatura {
+    outline: 3px solid transparent;
+    outline-offset: 3px;
+    transition: outline-color 0.2s ease;
   }
 
-  .reproducir svg {
-    width: 1.4rem;
-    fill: #151a3a;
+  .tarjeta a:hover .miniatura,
+  .tarjeta a:focus-visible .miniatura {
+    outline-color: var(--acento);
   }
 
-  .tarjeta a:hover .reproducir,
-  .tarjeta a:focus-visible .reproducir {
-    opacity: 1;
-    transform: none;
+  .tarjeta a:focus-visible {
+    outline: none;
   }
 
   .tarjeta a:hover img {
@@ -142,8 +126,8 @@ const d = cancion.data;
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .miniatura img,
-    .reproducir {
+    .miniatura,
+    .miniatura img {
       transition: none;
     }
   }

@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import BotonAzar from '../components/BotonAzar.astro';
 import Cuerda from '../components/Cuerda.astro';
 import TarjetaCancion from '../components/TarjetaCancion.astro';
 import { NOMBRE, cancionesOrdenadas, url } from '../lib/util';
@@ -20,6 +21,7 @@ const estilos = new Set(canciones.map((c) => c.data.estilo).filter(Boolean)).siz
         </p>
         <div class="acciones">
           <a class="boton" href="#canciones">Ver las canciones</a>
+          <BotonAzar class="boton secundario" />
           <a class="boton secundario" href="#como-usar">Cómo usarlas en clase</a>
         </div>
       </div>
