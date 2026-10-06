@@ -1,0 +1,116 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { url, idiomas } from '../lib/util';
+
+interface Props {
+  cancion: CollectionEntry<'canciones'>;
+}
+
+const { cancion } = Astro.props;
+const d = cancion.data;
+---
+
+<li class="tarjeta" data-temas={d.temas.join('|')}>
+  <a href={url(`canciones/${cancion.id}/`)}>
+    <div class="miniatura">
+      {
+        d.youtube ? (
+          <img src={`https://i.ytimg.com/vi/${d.youtube}/hqdefault.jpg`} alt="" loading="lazy" />
+        ) : (
+          <svg viewBox="0 0 160 90" aria-hidden="true" preserveAspectRatio="none">
+            <path d="M0 45 C 20 10, 30 10, 40 45 S 60 80, 80 45 S 100 10, 120 45 S 140 80, 160 45" />
+          </svg>
+        )
+      }
+      <span class="idioma">{idiomas[d.idioma]}</span>
+    </div>
+    <div class="cuerpo">
+      <h3>{d.titulo}</h3>
+      <p>{d.resumen}</p>
+      <ul class="etiquetas">{d.temas.map((t) => <li class="etiqueta">{t}</li>)}</ul>
+    </div>
+  </a>
+</li>
+
+<style>
+  .tarjeta {
+    list-style: none;
+  }
+
+  .tarjeta a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    background: var(--tarjeta);
+    border: 1px solid var(--linea);
+    border-radius: var(--radio);
+    overflow: hidden;
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease;
+  }
+
+  .tarjeta a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 0 -4px var(--acento);
+  }
+
+  .miniatura {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: var(--tinta);
+  }
+
+  .miniatura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .miniatura svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .miniatura path {
+    fill: none;
+    stroke: var(--acento);
+    stroke-width: 3;
+  }
+
+  .idioma {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    font-family: var(--f-mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    background: var(--papel);
+    color: var(--tinta);
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+  }
+
+  .cuerpo {
+    padding: 1.1rem 1.2rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex: 1;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    color: var(--tinta-suave);
+    font-size: 0.97rem;
+    flex: 1;
+  }
+</style>

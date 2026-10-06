@@ -1,0 +1,278 @@
+---
+import Base from '../layouts/Base.astro';
+import TarjetaCancion from '../components/TarjetaCancion.astro';
+import { cancionesOrdenadas } from '../lib/util';
+
+const canciones = await cancionesOrdenadas();
+const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) => a.localeCompare(b, 'es'));
+---
+
+<Base>
+  <main>
+    <section class="portada envoltura">
+      <p class="sobretitulo">Física con música · Recurso para el aula</p>
+      <h1>La física también <em>se canta</em>.</h1>
+      <p class="entradilla">
+        Physica reúne canciones con videoclip cuya letra habla de fenómenos físicos. Cada canción viene con su letra explicada verso a verso, referencias para
+        profundizar y una ficha lista para imprimir y usar en clase.
+      </p>
+      <div class="acciones">
+        <a class="boton" href="#canciones">Ver las canciones</a>
+        <a class="boton secundario" href="#como-usar">Cómo usarla en clase</a>
+      </div>
+      <svg class="onda" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 60 C 75 0, 125 0, 200 60 S 325 120, 400 60 S 525 0, 600 60 S 725 120, 800 60 S 925 0, 1000 60 S 1125 120, 1200 60" />
+      </svg>
+    </section>
+
+    <section class="proyecto envoltura">
+      <div>
+        <h2>El proyecto</h2>
+        <p>
+          Desde hace años escribo y grabo canciones de temática científica: la letra de cada una se apoya en fenómenos físicos reales, de la gravedad a la luz.
+          Physica las convierte en un recurso educativo para que cualquier docente pueda llevarlas al aula.
+        </p>
+      </div>
+      <div>
+        <h2>Objetivos</h2>
+        <ul class="objetivos">
+          <li><strong>Despertar la curiosidad</strong> con un formato cercano: una canción y un videoclip.</li>
+          <li><strong>Explicar la física que hay detrás</strong> de cada verso de forma rigurosa y accesible.</li>
+          <li><strong>Dar material listo para usar</strong>: presentación, actividades, referencias y ficha imprimible.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="como-usar" class="como-usar envoltura">
+      <h2>Cómo usarla en clase</h2>
+      <ol class="pasos">
+        <li>
+          <span class="num">1</span>
+          <h3>Elige una canción</h3>
+          <p>Busca por tema (gravitación, luz, energía…) la que encaje con lo que estás dando.</p>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <h3>Ponla en clase</h3>
+          <p>Proyecta el videoclip. Si está en inglés, la traducción aparece bajo cada verso.</p>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <h3>Desgrana la letra</h3>
+          <p>Cada verso relevante tiene una explicación breve de la física que esconde. Úsalas para guiar el debate.</p>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <h3>Reparte la ficha</h3>
+          <p>Descarga la ficha en PDF con la letra explicada, actividades y un código QR al vídeo.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="canciones" class="canciones envoltura">
+      <div class="canciones-cabecera">
+        <h2>Canciones</h2>
+        {
+          temas.length > 1 && (
+            <div class="filtros" role="group" aria-label="Filtrar por tema">
+              <button type="button" class="filtro activo" data-tema="">
+                Todas
+              </button>
+              {temas.map((t) => (
+                <button type="button" class="filtro" data-tema={t}>
+                  {t}
+                </button>
+              ))}
+            </div>
+          )
+        }
+      </div>
+      <ul class="rejilla">{canciones.map((c) => <TarjetaCancion cancion={c} />)}</ul>
+    </section>
+  </main>
+</Base>
+
+<script>
+  const botones = document.querySelectorAll<HTMLButtonElement>('.filtro');
+  const tarjetas = document.querySelectorAll<HTMLElement>('.tarjeta');
+  botones.forEach((b) =>
+    b.addEventListener('click', () => {
+      const tema = b.dataset.tema ?? '';
+      botones.forEach((o) => o.classList.toggle('activo', o === b));
+      tarjetas.forEach((t) => {
+        t.hidden = !!tema && !(t.dataset.temas ?? '').split('|').includes(tema);
+      });
+    }),
+  );
+</script>
+
+<style>
+  .portada {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  @media (min-width: 900px) {
+    .portada {
+      padding-top: 5rem;
+    }
+  }
+
+  .portada h1 {
+    font-size: clamp(2.6rem, 8vw, 5.5rem);
+    font-weight: 900;
+    max-width: 14ch;
+    margin-bottom: 1.5rem;
+  }
+
+  .portada h1 em {
+    color: var(--acento);
+  }
+
+  .entradilla {
+    font-size: 1.2rem;
+    max-width: 42rem;
+    color: var(--tinta-suave);
+    margin: 0 0 2rem;
+  }
+
+  .acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .onda {
+    display: block;
+    width: 100%;
+    height: 70px;
+    margin-top: 3rem;
+  }
+
+  .onda path {
+    fill: none;
+    stroke: var(--acento);
+    stroke-width: 3;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .proyecto {
+    display: grid;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (min-width: 800px) {
+    .proyecto {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+  }
+
+  .proyecto h2,
+  .como-usar h2,
+  .canciones h2 {
+    font-size: 2rem;
+  }
+
+  .objetivos {
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+
+  .objetivos li {
+    margin-bottom: 0.5rem;
+  }
+
+  .como-usar {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .pasos {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+
+  .pasos li {
+    background: var(--papel-2);
+    border-radius: var(--radio);
+    padding: 1.25rem;
+  }
+
+  .pasos h3 {
+    font-size: 1.2rem;
+    margin: 0.75rem 0 0.4rem;
+  }
+
+  .pasos p {
+    margin: 0;
+    color: var(--tinta-suave);
+    font-size: 0.97rem;
+  }
+
+  .num {
+    display: grid;
+    place-items: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: var(--acento);
+    color: #fff;
+    font-family: var(--f-mono);
+    font-weight: 500;
+  }
+
+  .canciones {
+    padding-top: 2rem;
+  }
+
+  .canciones-cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .canciones-cabecera h2 {
+    margin: 0;
+  }
+
+  .filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .filtro {
+    font: inherit;
+    font-size: 0.85rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid var(--linea);
+    background: transparent;
+    color: var(--tinta);
+    cursor: pointer;
+  }
+
+  .filtro.activo {
+    background: var(--tinta);
+    color: var(--papel);
+    border-color: var(--tinta);
+  }
+
+  .rejilla {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    padding: 0;
+    margin: 0;
+  }
+</style>

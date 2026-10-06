@@ -1,0 +1,49 @@
+---
+import 'katex/dist/katex.min.css';
+import '../styles/global.css';
+import { url } from '../lib/util';
+
+interface Props {
+  titulo?: string;
+  descripcion?: string;
+  claseBody?: string;
+}
+
+const { titulo, descripcion = 'Canciones de física con videoclip, letra explicada verso a verso y fichas para usar en clase.', claseBody } = Astro.props;
+const tituloCompleto = titulo ? `${titulo} · Physica` : 'Physica · Física con música';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{tituloCompleto}</title>
+    <meta name="description" content={descripcion} />
+    <meta property="og:title" content={tituloCompleto} />
+    <meta property="og:description" content={descripcion} />
+    <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class={claseBody}>
+    <header class="cabecera no-print">
+      <a class="marca" href={url('')}>
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 16c3-9 6-9 9 0s6 9 9 0 6-9 10 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" /></svg>
+        Physica
+      </a>
+      <nav>
+        <a href={url('#canciones')}>Canciones</a>
+        <a href={url('#como-usar')}>Cómo usarla</a>
+      </nav>
+    </header>
+    <slot />
+    <footer class="pie no-print">
+      <p>Physica es un proyecto de divulgación de <strong>El Físico Barbudo</strong>. Los materiales son de uso libre en el aula.</p>
+    </footer>
+  </body>
+</html>
