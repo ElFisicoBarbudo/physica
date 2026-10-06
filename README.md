@@ -13,8 +13,11 @@ Cada canción tiene su propia página con el videoclip, la letra (con traducció
    | --- | --- |
    | `titulo` | Título de la canción |
    | `anio` | Año (opcional) |
-   | `idioma` | `es` o `en`. Con `en` se muestra la traducción bajo cada verso |
+   | `idioma` | `es`, `en` o `ru`. Si no es `es`, la página ofrece mostrar la traducción bajo cada verso |
    | `youtube` | Solo el identificador del vídeo: en `youtube.com/watch?v=dQw4w9WgXcQ` es `dQw4w9WgXcQ` |
+   | `spotify` | Enlace completo a la canción en Spotify (opcional) |
+   | `avisos` | Lista de avisos para el profesorado: lenguaje malsonante, ironía… (opcional) |
+   | `borrador` | `true` muestra un aviso de "pendiente de revisión"; bórralo cuando revises los textos |
    | `estilo` | Estilo musical (opcional) |
    | `resumen` | Una o dos frases para la tarjeta de la portada |
    | `temas` | Lista de temas, sirven para filtrar en la portada |

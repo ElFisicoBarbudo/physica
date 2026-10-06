@@ -25,6 +25,8 @@ let n = 0;
     <nav class="migas"><a href={url('#canciones')}>← Todas las canciones</a></nav>
 
     {d.ejemplo && <p class="aviso-ejemplo">Esta es una <strong>canción de ejemplo</strong> para enseñar cómo queda una página. Sustitúyela por una real.</p>}
+    {d.borrador && <p class="aviso-ejemplo">Borrador: la presentación y las explicaciones de esta canción están pendientes de revisión.</p>}
+    {d.avisos.map((a) => <p class="aviso">{a}</p>)}
 
     <header class="cabeza">
       <p class="sobretitulo">
@@ -80,6 +82,13 @@ let n = 0;
             </a>
           )
         }
+        {
+          d.spotify && (
+            <a class="boton secundario" href={d.spotify} target="_blank" rel="noopener">
+              Escuchar en Spotify
+            </a>
+          )
+        }
         <ul class="indice">
           <li><a href="#presentacion">Presentación del tema</a></li>
           <li><a href="#letra">Letra explicada</a></li>
@@ -101,13 +110,14 @@ let n = 0;
           {
             conTraduccion && (
               <label>
-                <input type="checkbox" data-alterna="sin-traduccion" checked /> Traducción
+                <input type="checkbox" role="switch" data-alterna="con-traduccion" /> Traducción
               </label>
             )
           }
-          <label><input type="checkbox" data-alterna="sin-explicaciones" checked /> Explicaciones</label>
+          <label><input type="checkbox" role="switch" data-alterna="con-explicaciones" /> Explicaciones</label>
         </div>
       </div>
+      <p class="pista">Activa las explicaciones para ver la física que esconde cada verso marcado{conTraduccion && ', y la traducción para leer la letra en castellano'}.</p>
 
       <div class="letra" id="letra-contenido">
         {
@@ -121,9 +131,21 @@ let n = 0;
                     <div class="original">
                       {num && <span class="marca-num" aria-hidden="true">{num}</span>}
                       <p class="texto">{v.texto.trim()}</p>
-                      {v.traduccion && <p class="traduccion">{v.traduccion.trim()}</p>}
+                      {v.traduccion && (
+                        <div class="plegable plegable-traduccion">
+                          <div>
+                            <p class="traduccion">{v.traduccion.trim()}</p>
+                          </div>
+                        </div>
+                      )}
                     </div>
-                    {v.explicacion && <div class="explicacion prosa" set:html={md(v.explicacion)} />}
+                    {v.explicacion && (
+                      <div class="plegable plegable-explicacion">
+                        <div>
+                          <div class="explicacion prosa" set:html={md(v.explicacion)} />
+                        </div>
+                      </div>
+                    )}
                   </div>
                 );
               })}
@@ -195,7 +217,7 @@ let n = 0;
 <script>
   const letra = document.getElementById('letra-contenido');
   document.querySelectorAll<HTMLInputElement>('[data-alterna]').forEach((c) =>
-    c.addEventListener('change', () => letra?.classList.toggle(c.dataset.alterna!, !c.checked)),
+    c.addEventListener('change', () => letra?.classList.toggle(c.dataset.alterna!, c.checked)),
   );
 </script>
 
@@ -297,9 +319,41 @@ let n = 0;
   }
 
   .interruptores input {
-    accent-color: var(--acento);
-    width: 1.05rem;
-    height: 1.05rem;
+    appearance: none;
+    position: relative;
+    width: 2.4rem;
+    height: 1.35rem;
+    margin: 0;
+    border-radius: 999px;
+    background: var(--linea);
+    cursor: pointer;
+    transition: background 0.25s ease;
+  }
+
+  .interruptores input::before {
+    content: '';
+    position: absolute;
+    top: 0.175rem;
+    left: 0.175rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.25);
+    transition: transform 0.25s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .interruptores input:checked {
+    background: var(--acento);
+  }
+
+  .interruptores input:checked::before {
+    transform: translateX(1.05rem);
+  }
+
+  .interruptores input:focus-visible {
+    outline: 2px solid var(--azul);
+    outline-offset: 2px;
   }
 
   .seccion h3 {
@@ -316,28 +370,54 @@ let n = 0;
     margin-top: 2rem;
   }
 
+  .pista {
+    margin: -0.25rem 0 0.5rem;
+    font-size: 0.92rem;
+    color: var(--tinta-suave);
+    transition: opacity 0.3s ease;
+  }
+
+  .letra-cabecera:has(:checked) + .pista {
+    opacity: 0;
+  }
+
+  /* Cada verso tiene dos columnas: la letra y su explicación. Sin explicaciones,
+     la segunda mide 0 y se ensancha con una transición al activarlas. */
   .verso {
+    --t: 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
     display: grid;
-    gap: 0.6rem 2.5rem;
+    grid-template-columns: minmax(0, 1fr);
+    column-gap: 0;
     padding: 0.15rem 0;
-  }
-
-  .verso.explicado {
-    padding: 0.9rem 0;
-    margin: 0.5rem 0;
-    border-top: 1px dashed var(--linea);
-    border-bottom: 1px dashed var(--linea);
-  }
-
-  .verso.explicado + .verso.explicado {
-    margin-top: -0.5rem;
-    border-top: 0;
+    border-block: 1px dashed transparent;
+    transition:
+      grid-template-columns var(--t),
+      column-gap var(--t),
+      padding var(--t),
+      margin var(--t),
+      border-color var(--t);
   }
 
   @media (min-width: 900px) {
     .verso {
-      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      grid-template-columns: minmax(0, 1fr) minmax(0, 0fr);
     }
+
+    .con-explicaciones .verso {
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      column-gap: 2.5rem;
+    }
+  }
+
+  .con-explicaciones .verso.explicado {
+    padding: 0.9rem 0;
+    margin: 0.5rem 0;
+    border-color: var(--linea);
+  }
+
+  .con-explicaciones .verso.explicado + .verso.explicado {
+    margin-top: -0.5rem;
+    border-top-color: transparent;
   }
 
   .original {
@@ -358,6 +438,16 @@ let n = 0;
     color: #fff;
     font-family: var(--f-mono);
     font-size: 0.75rem;
+    opacity: 0.35;
+    transform: scale(0.8);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .con-explicaciones .marca-num {
+    opacity: 1;
+    transform: none;
   }
 
   .texto {
@@ -369,11 +459,43 @@ let n = 0;
     margin: 0;
   }
 
+  /* Bloques que se despliegan: la fila pasa de 0fr a 1fr para animar la altura. */
+  .plegable {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition:
+      grid-template-rows var(--t),
+      opacity var(--t);
+  }
+
+  .plegable > div {
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  .con-traduccion .plegable-traduccion,
+  .con-explicaciones .plegable-explicacion {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+
   .traduccion {
     white-space: pre-line;
     font-style: italic;
     color: var(--tinta-suave);
-    margin: 0.35rem 0 0;
+    margin: 0;
+    padding-top: 0.35rem;
+  }
+
+  .plegable-explicacion > div {
+    padding-top: 0.6rem;
+  }
+
+  @media (min-width: 900px) {
+    .plegable-explicacion > div {
+      padding-top: 0;
+    }
   }
 
   .explicacion {
@@ -383,22 +505,25 @@ let n = 0;
     border-radius: 8px;
     padding: 0.85rem 1rem;
     font-size: 0.98rem;
+    transform: translateY(-0.5rem);
+    transition: transform var(--t);
+  }
+
+  .con-explicaciones .explicacion {
+    transform: none;
   }
 
   .explicacion :global(p:last-child) {
     margin-bottom: 0;
   }
 
-  .sin-traduccion .traduccion,
-  .sin-explicaciones .explicacion {
-    display: none;
-  }
-
-  .sin-explicaciones .verso {
-    grid-template-columns: 1fr;
-    border-color: transparent;
-    padding: 0.15rem 0;
-    margin: 0;
+  @media (prefers-reduced-motion: reduce) {
+    .verso,
+    .plegable,
+    .explicacion,
+    .marca-num {
+      transition: none;
+    }
   }
 
   .actividades {

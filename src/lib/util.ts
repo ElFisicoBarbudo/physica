@@ -24,4 +24,4 @@ export async function cancionesOrdenadas() {
   return todas.sort((a, b) => a.data.orden - b.data.orden || a.data.titulo.localeCompare(b.data.titulo, 'es'));
 }
 
-export const idiomas = { es: 'Castellano', en: 'Inglés' } as const;
+export const idiomas = { es: 'Castellano', en: 'Inglés', ru: 'Ruso', 'en-ru': 'Inglés y ruso' } as const;
