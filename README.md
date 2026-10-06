@@ -1,6 +1,6 @@
-# Physica
+# Física a todo volumen
 
-Web de recursos educativos de **Physica**, el proyecto de divulgación de física con música de El Físico Barbudo.
+Web de recursos educativos de **Física a todo volumen** (antes Physica), el proyecto de divulgación de física con música de El Físico Barbudo.
 
 Cada canción tiene su propia página con el videoclip, la letra (con traducción al castellano si está en inglés), una explicación de la física de cada verso relevante, una presentación del tema, actividades, referencias y una **ficha en PDF** para usar en clase.
 

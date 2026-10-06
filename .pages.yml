@@ -2,7 +2,46 @@
 # Permite editar las canciones desde un formulario web, sin tocar el código.
 # Entra en https://app.pagescms.org, inicia sesión con GitHub y elige este repositorio.
 
+media:
+  input: public/media
+  output: media
+
 content:
+  - name: conoceme
+    label: Conóceme
+    type: file
+    path: src/content/paginas/conoceme.md
+    fields:
+      - name: titulo
+        label: Título de la página
+        type: string
+        default: Conóceme
+      - name: nombre
+        label: Nombre
+        type: string
+        required: true
+      - name: lema
+        label: Frase de presentación
+        type: text
+        description: Aparece bajo tu nombre, en la parte azul.
+      - name: foto
+        label: Foto
+        type: image
+        description: Puedes subir una imagen o pegar el enlace de una que ya esté en internet.
+      - name: enlaces
+        label: Enlaces
+        type: object
+        list: true
+        fields:
+          - name: nombre
+            label: Nombre
+            type: string
+          - name: url
+            label: Enlace
+            type: string
+      - name: body
+        label: Biografía
+        type: rich-text
   - name: canciones
     label: Canciones
     type: collection

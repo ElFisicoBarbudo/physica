@@ -1,16 +1,20 @@
 ---
 import 'katex/dist/katex.min.css';
 import '../styles/global.css';
-import { url } from '../lib/util';
+import { NOMBRE, url } from '../lib/util';
 
 interface Props {
   titulo?: string;
   descripcion?: string;
   claseBody?: string;
+  /** Sección del menú que se marca como actual. */
+  actual?: 'canciones' | 'conoceme';
 }
 
-const { titulo, descripcion = 'Canciones de física con videoclip, letra explicada verso a verso y fichas para usar en clase.', claseBody } = Astro.props;
-const tituloCompleto = titulo ? `${titulo} · Physica` : 'Physica · Física con música';
+const { titulo, descripcion = 'Canciones de física con videoclip, letra explicada verso a verso y fichas para usar en clase.', claseBody, actual } = Astro.props;
+const [nombre1, ...resto] = NOMBRE.split(' ');
+const nombre2 = resto.join(' ');
+const tituloCompleto = titulo ? `${titulo} | ${NOMBRE}` : `${NOMBRE}: la física también se canta`;
 ---
 
 <!doctype html>
@@ -22,28 +26,42 @@ const tituloCompleto = titulo ? `${titulo} · Physica` : 'Physica · Física con
     <meta name="description" content={descripcion} />
     <meta property="og:title" content={tituloCompleto} />
     <meta property="og:description" content={descripcion} />
+    <meta name="theme-color" content="#2f3df4" />
     <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=JetBrains+Mono:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body class={claseBody}>
-    <header class="cabecera no-print">
-      <a class="marca" href={url('')}>
-        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 16c3-9 6-9 9 0s6 9 9 0 6-9 10 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" /></svg>
-        Physica
-      </a>
-      <nav>
-        <a href={url('#canciones')}>Canciones</a>
-        <a href={url('#como-usar')}>Cómo usarla</a>
-      </nav>
-    </header>
+    <div class="banda no-print">
+      <header class="cabecera">
+        <a class="marca" href={url('')}>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 16c3-9 6-9 9 0s6 9 9 0 6-9 10 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" /></svg>
+          <span class="marca-texto"><span>{nombre1}</span>{nombre2 && <span>{nombre2}</span>}</span>
+        </a>
+        <nav aria-label="Principal">
+          <a href={url('#como-usar')}>En clase</a>
+          <a href={url('#canciones')} aria-current={actual === 'canciones' ? 'page' : undefined}>Canciones</a>
+          <a href={url('conoceme/')} aria-current={actual === 'conoceme' ? 'page' : undefined}>Conóceme</a>
+        </nav>
+      </header>
+    </div>
     <slot />
     <footer class="pie no-print">
-      <p>Physica es un proyecto de divulgación de <strong>El Físico Barbudo</strong>. Los materiales son de uso libre en el aula.</p>
+      <div class="pie-dentro envoltura">
+        <div>
+          <a class="marca" href={url('')}><span class="marca-texto"><span>{nombre1}</span>{nombre2 && <span>{nombre2}</span>}</span></a>
+          <p>Un proyecto de divulgación de El Físico Barbudo. Las canciones, las explicaciones y las fichas son de uso libre en el aula.</p>
+        </div>
+        <nav aria-label="Pie">
+          <a href={url('#canciones')}>Canciones</a>
+          <a href={url('#como-usar')}>En clase</a>
+          <a href={url('conoceme/')}>Conóceme</a>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>

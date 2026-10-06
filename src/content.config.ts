@@ -51,4 +51,17 @@ const canciones = defineCollection({
   }),
 });
 
-export const collections = { canciones };
+// Páginas sueltas editables desde Pages CMS (por ahora, solo "Conóceme").
+const paginas = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/paginas' }),
+  schema: z.object({
+    titulo: z.string(),
+    nombre: z.string(),
+    lema: z.string().optional(),
+    // Enlace completo a una imagen, o ruta dentro de public/ (por ejemplo "media/adrian.jpg").
+    foto: z.string().nullish(),
+    enlaces: z.array(z.object({ nombre: z.string(), url: z.string().url() })).default([]),
+  }),
+});
+
+export const collections = { canciones, paginas };
