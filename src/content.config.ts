@@ -46,7 +46,11 @@ const canciones = defineCollection({
     avisos: z.array(z.string()).default([]),
     creditos: z.array(z.object({ rol: z.string(), nombre: z.string() })).default([]),
     // Canales o personas con las que se hizo la canción (ver la colección `colaboradores`).
-    colaboradores: z.array(z.string()).default([]),
+    // Pages CMS guarda la ruta del archivo (y una sola como texto suelto): se normaliza a la lista de identificadores.
+    colaboradores: z
+      .union([z.string(), z.array(z.string())])
+      .default([])
+      .transform((v) => (Array.isArray(v) ? v : [v]).map((r) => r.split('/').pop()!.replace(/\.md$/, ''))),
     // Una canción sin letra todavía es válida: así un borrador a medias no rompe la publicación.
     letra: z.array(seccion).default([]),
     actividades: z.array(z.string()).default([]),
