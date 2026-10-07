@@ -28,7 +28,7 @@ letra:
       - texto: "Sir Isaac Newton caballero de la ciencia"
       - texto: "Mecánica, termo, óptica, fluidos, es la referencia"
         explicacion: |
-          Newton tocó casi todas las ramas de la física: además de la mecánica, descompuso la luz blanca con un prisma, construyó el primer **telescopio reflector**, formuló una **ley del enfriamiento** y estudió la viscosidad de los fluidos (por eso hablamos de "fluidos newtonianos").
+          Newton tocó casi todas las ramas de la física: además de la mecánica, descompuso la luz blanca con un prisma, construyó el primer **telescopio reflector** que funcionó, formuló una **ley del enfriamiento** y estudió la viscosidad de los fluidos (por eso hablamos de "fluidos newtonianos").
   - versos:
       - texto: "1ª Ley de Newton"
         explicacion: |
@@ -42,6 +42,8 @@ letra:
       - texto: "Pero hay una ley que debes conocer"
   - versos:
       - texto: "Newton descubrió la gravedad"
+        explicacion: |
+          Matiz importante: la gravedad ya actuaba mucho antes de Newton (lo que él hizo fue formular la **ley matemática** que la describe y demostrar que la misma fuerza rige la caída de los cuerpos en la Tierra y el movimiento de la Luna y los planetas). Esa ley es muy precisa, pero no es la última palabra: en campos gravitatorios muy intensos la sustituye la relatividad general de Einstein.
   - versos:
       - texto: "Una ley general de aplicación universal"
         explicacion: |

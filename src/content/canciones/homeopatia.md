@@ -36,7 +36,7 @@ letra:
   - texto: El agua es muy lista, todo lo recuerda
   - texto: El agua y su memoria, eso es buena mierda
     explicacion: |
-      La **memoria del agua** sostiene que el agua conservaría la huella de sustancias disueltas. En 1988 el inmunólogo Jacques Benveniste publicó un resultado en esa línea en la revista *Nature*, pero otros laboratorios no consiguieron reproducirlo. Además, los enlaces de hidrógeno del agua líquida se reorganizan en tiempos del orden de picosegundos, sin que se conozca ningún mecanismo para una "memoria" estable.
+      La **memoria del agua** sostiene que el agua conservaría la huella de sustancias disueltas. En 1988 el inmunólogo Jacques Benveniste publicó un resultado en esa línea en la revista *Nature*, pero otros laboratorios no consiguieron reproducirlo, ni tampoco un equipo de revisión enviado por la propia revista. Además, los enlaces de hidrógeno del agua líquida se reorganizan en tiempos del orden de picosegundos, sin que se conozca ningún mecanismo para una "memoria" estable.
   - texto: ¿Que el principio activo no está presente?
     explicacion: |
       Es una consecuencia de las **diluciones seriadas**: en una dilución 30C se diluye 1 parte en 100 treinta veces seguidas ($10^{-60}$). Como un mol contiene unas $6{,}022 \times 10^{23}$ moléculas, a partir de aproximadamente 12C ($10^{-24}$) lo normal es que no quede ni una molécula de la sustancia original.
@@ -51,7 +51,7 @@ letra:
 - versos:
   - texto: Arsénico que cura tu dolor de cabeza
     explicacion: |
-      El **arsénico** es un tóxico bien conocido. Los preparados homeopáticos que parten de arsénico están tan diluidos que no contienen cantidades relevantes, por lo que ni curan ni intoxican. El mensaje del verso es falso: lo que sí es cierto es el principio de la toxicología de que **"la dosis hace el veneno"**.
+      El **arsénico** es un tóxico bien conocido. Los preparados homeopáticos de arsénico suelen estar tan diluidos que no contienen cantidades relevantes, por lo que ni curan ni intoxican. El mensaje del verso es falso: lo que sí es cierto es el principio de la toxicología de que **"la dosis hace el veneno"**.
   - texto: No seas bocachancla, esto te interesa
   - texto: El agua lo cura todo, es que es de cajón
   - texto: Esto es homeopatía, para ti cabrón
@@ -92,10 +92,10 @@ letra:
   - texto: ¿Dudas de nuestra probada eficacia?
   - texto: Si nos puedes encontrar hasta en la farmacia
     explicacion: |
-      Que un producto se venda en farmacias no prueba que funcione. En España los medicamentos homeopáticos se pueden comercializar mediante un procedimiento simplificado que no exige demostrar eficacia, y en 2018 el Gobierno puso en marcha un plan de protección de la salud frente a las pseudoterapias.
+      Que un producto se venda en farmacias no prueba que funcione. En España los medicamentos homeopáticos se pueden comercializar mediante un registro simplificado, sin indicaciones terapéuticas aprobadas, que no exige demostrar eficacia. En noviembre de 2018 el Gobierno (Sanidad y Ciencia) presentó un plan de protección de la salud frente a las pseudoterapias.
   - texto: Te aseguramos que no es placebo
     explicacion: |
-      Un **placebo** es una sustancia sin principio activo, y los preparados homeopáticos muy diluidos lo son a todos los efectos. Algunos estudios sugieren además que un precio alto puede aumentar la mejoría percibida, de modo que "cuestan un huevo" no refuta nada.
+      Un **placebo** es una sustancia sin principio activo, y los preparados homeopáticos muy diluidos lo son a todos los efectos. Algunos estudios (como el de Waber y colaboradores en *JAMA*, 2008, con un placebo analgésico) sugieren además que un precio alto puede aumentar la mejoría percibida, de modo que "cuestan un huevo" no refuta nada.
   - texto: ¿Cómo lo van a ser si cuestan un huevo?
 - versos:
   - texto: Soy un homeópata, curo

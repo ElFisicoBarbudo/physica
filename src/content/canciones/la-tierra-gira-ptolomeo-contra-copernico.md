@@ -91,7 +91,7 @@ letra:
   - texto: En vida mi obra publicada no veré,
   - texto: Será Rethicus quien deje la tarea acabada
     explicacion: |
-      Georg Joachim **Rheticus**, joven astrónomo discípulo de Copérnico, publicó en 1540 la *Narratio prima*, un resumen de su teoría, y animó a Copérnico a publicar la obra completa. Se suele contar que Copérnico recibió un ejemplar impreso poco antes de morir en 1543.
+      Georg Joachim **Rheticus**, joven astrónomo discípulo de Copérnico, publicó en 1540 la *Narratio prima*, un resumen de su teoría, y animó a Copérnico a publicar la obra completa. La impresión final se hizo en Núremberg, con un prólogo sin firma añadido por Andreas Osiander. Se suele contar que Copérnico recibió un ejemplar impreso poco antes de morir en 1543, aunque la anécdota no está bien documentada.
   - texto: Asi en la historia de la ciencia se grabará
   - texto: Y el nombre de Copérnico por siempre sonará
 - versos:

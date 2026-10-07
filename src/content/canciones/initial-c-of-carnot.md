@@ -72,7 +72,7 @@ letra:
       - texto: "Between high and low temperature"
         traduccion: "Entre temperatura alta y baja"
         explicacion: |
-          El ciclo de Carnot funciona gracias a una **diferencia de temperaturas**: una fuente caliente que aporta calor, y una fuente fría donde se expulsa lo que no se puede aprovechar. La eficiencia del ciclo depende solo de estas dos temperaturas. Cuanto mayor sea esa diferencia, más trabajo útil se puede obtener.
+          El ciclo de Carnot funciona gracias a una **diferencia de temperaturas**: una fuente caliente que aporta calor, y una fuente fría donde se expulsa lo que no se puede aprovechar. La eficiencia del ciclo depende solo de estas dos temperaturas. Cuanto mayor sea esa diferencia, mayor es el rendimiento.
 
           En fórmula, con las temperaturas en kelvin: $\eta = 1 - \dfrac{T_\text{fría}}{T_\text{caliente}}$.
       - texto: "you’re about to win the race"
@@ -82,12 +82,12 @@ letra:
       - texto: "in the most efficient shape"
         traduccion: "en la forma más eficiente"
         explicacion: |
-          Una de las metas en física e ingeniería es lograr máxima potencia con el menor desperdicio de energía. El ciclo de Carnot, aunque ideal, representa esa búsqueda de perfección. Su estructura (dos transformaciones isotérmicas y dos isentrópicas) es la forma más eficiente de convertir calor en trabajo. Aunque en la práctica hay pérdidas por fricción, fugas de calor, etc., este modelo nos da una referencia clara de cómo debería ser el ciclo "perfecto".
+          Una de las metas en física e ingeniería es lograr máxima potencia con el menor desperdicio de energía. El ciclo de Carnot, aunque ideal, representa esa búsqueda de perfección. Su estructura (dos transformaciones isotérmicas y dos isentrópicas) es la forma más eficiente de convertir calor en trabajo. Aunque en la práctica hay pérdidas por fricción, fugas de calor, etc., este modelo nos da una referencia clara de cómo debería ser el ciclo "perfecto". Eso sí, el ciclo de Carnot maximiza el rendimiento, no la potencia: al ser reversible tendría que funcionar infinitamente despacio, así que su potencia sería nula.
   - versos:
       - texto: "Cholera's grip, a battle he couldn't fight"
         traduccion: "El cólera lo cazó, una batalla que no pudo luchar"
         explicacion: |
-          Sadi Carnot murió de **cólera** en 1832, en París, sin que su trabajo fuera reconocido en vida. Fue años más tarde cuando sus ideas fueron recuperadas por otros científicos como Clausius y Kelvin, quienes ampliaron su teoría y sentaron las bases de la termodinámica moderna.
+          Sadi Carnot murió de **cólera** en 1832, en París, sin que su trabajo fuera reconocido en vida. Fue años más tarde cuando sus ideas fueron recuperadas por otros científicos como Clapeyron, Clausius y Kelvin, quienes ampliaron su teoría y sentaron las bases de la termodinámica moderna.
       - texto: "Carnot's brilliance vanished"
         traduccion: "El brillo de Carnot se desvaneció"
       - texto: "Like day into the night"
@@ -122,6 +122,6 @@ referencias:
     url: "https://es.wikipedia.org/wiki/Ciclo_de_Carnot"
 ---
 
-Antes de que existieran las centrales eléctricas modernas o los motores de coches de alta gama, un joven ingeniero y físico francés llamado **Nicolas Léonard Sadi Carnot** se preguntó cuál era la forma más eficiente posible de transformar calor en trabajo. Esta pregunta lo llevó a definir, a principios del siglo XIX, el famoso **ciclo de Carnot**, una secuencia ideal de procesos que describe el funcionamiento teórico perfecto de una **máquina térmica**. Es decir, que ninguna máquina térmica puede funcionar de forma más eficiente que la que imaginó Carnot.
+Antes de que existieran las centrales eléctricas modernas o los motores de coches de alta gama, un joven ingeniero y físico francés llamado **Nicolas Léonard Sadi Carnot** se preguntó cuál era la forma más eficiente posible de transformar calor en trabajo. Esta pregunta lo llevó a definir, a principios del siglo XIX, el famoso **ciclo de Carnot**, una secuencia ideal de procesos que describe el funcionamiento teórico perfecto de una **máquina térmica**. Es decir, que ninguna máquina térmica que trabaje entre las mismas dos temperaturas puede ser más eficiente que la que imaginó Carnot.
 
 La **eficiencia** de este ciclo depende solo de las temperaturas entre las que opera la máquina, y su modelo aún hoy es una referencia para ingenieros y científicos. ¿Y qué mejor ritmo para hablar de eficiencia que el **eurobeat**, el género musical perfecto para las carreras de coches, para explicar cómo una máquina puede aprovechar cada gota de energía?

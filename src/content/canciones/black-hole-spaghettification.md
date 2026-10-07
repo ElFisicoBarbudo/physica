@@ -125,8 +125,8 @@ letra:
           Según la **teoría de la relatividad general** de Einstein, el espacio
           y el tiempo están conectados y pueden deformarse debido a la masa de
           los objetos. Un agujero negro distorsiona tanto el espacio-tiempo que
-          crea una región donde las reglas normales del universo dejan de
-          aplicarse.
+          en su centro aparece una singularidad, donde la propia teoría deja
+          de ser válida.
       - texto: Spaghetti will be your eternal shape
         traduccion: Tendrás forma de espagueti para siempre
       - texto: In the black hole
@@ -153,6 +153,6 @@ referencias:
     autor: BBC News Mundo
     url: https://www.youtube.com/watch?v=dMEho2ZcVtE
 ---
-Imagina un lugar en el espacio donde la gravedad es tan fuerte que nada, ni siquiera la luz, puede escapar. Eso es, básicamente, un agujero negro. Los agujeros negros se forman cuando una estrella muy masiva muere y su núcleo colapsa. Este colapso hace que toda la masa de la estrella se comprima en un punto increíblemente pequeño y denso que recibe el nombre de **singularidad**. Muy denso, como el **deathcore**, uno de los géneros más pesados dentro de la música metal.
+Imagina un lugar en el espacio donde la gravedad es tan fuerte que nada, ni siquiera la luz, puede escapar. Eso es, básicamente, un agujero negro. Los agujeros negros se forman cuando una estrella muy masiva muere y su núcleo colapsa. Según la relatividad general, este colapso comprime la masa de la estrella en un punto increíblemente pequeño y denso que recibe el nombre de **singularidad** (aunque los físicos sospechan que una teoría cuántica de la gravedad lo describiría de otra forma). Muy denso, como el **deathcore**, uno de los géneros más pesados dentro de la música metal.
 
 Alrededor de la singularidad de los agujeros negros, existe una región llamada el **horizonte de sucesos**. Si algo cruza este horizonte, no puede salir. Una frontera de no retorno. Aunque los agujeros negros son "negros" (porque ni siquiera la luz puede escapar), podemos detectar su presencia por los efectos que tienen en las estrellas y las nubes de gas cercanas. Pero ¿qué pasaría si un humano se acercase a un agujero negro?

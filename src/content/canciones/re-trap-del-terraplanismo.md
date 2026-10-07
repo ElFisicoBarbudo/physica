@@ -49,7 +49,8 @@ letra:
           Que la Tierra es esférica se sabe desde la Antigua Grecia. Hacia el
           año 240 a. C., **Eratóstenes** midió su circunferencia comparando la
           sombra de un palo en dos ciudades distintas el mismo día, con un error
-          sorprendentemente pequeño. Otras pruebas sencillas: la sombra curva de
+          pequeño (difícil de precisar, porque la unidad que usó, el estadio, no
+          tiene una equivalencia segura). Otras pruebas sencillas: la sombra curva de
           la Tierra en los eclipses de Luna o los barcos que desaparecen "de
           abajo arriba" por el horizonte.
   - versos:
@@ -68,7 +69,7 @@ letra:
       - texto: Pero la Tierra también lo está
   - versos:
       - texto: Sois súbditos de Ibáñez, como Mortadelo
-        explicacion: Ibañez es un creador de contenido conocido por defender la "teoría"
+        explicacion: Ibáñez es un creador de contenido conocido por defender la "teoría"
           de la Tierra plana. Aquí se hace un chiste confundiéndolo con
           Francisco Ibáñez, mítico dibujante de los cómics **Mortadelo y
           Filemón**.
@@ -82,7 +83,7 @@ letra:
       - texto: Agujeros en los polos protegidos por la NASA
         explicacion: >
           Los polos se fotografían continuamente desde satélites de muchos
-          países, y además se han visitado y sobrevolado miles de veces. Las
+          países, y además se han visitado y sobrevolado muchas veces. Las
           imágenes con un "agujero" que circulan por internet son mosaicos de
           fotos de satélite en los que falta la zona que el satélite no cubrió o
           que estaba a oscuras.
@@ -107,10 +108,10 @@ letra:
       - texto: la Tierra es hueca como aguacate sin el hueso
   - versos:
       - texto: Dallas Thomson es la Alicia que cayó en el agujero
-        explicacion: "**Dallas Thompson** fue un personaje popular en ámbitos
-          pseudocientíficos tras su desaparición, ocurrida mientras planeaba una
-          expedición al Polo Norte para localizar una supuesta entrada a la
-          Tierra Hueca."
+        explicacion: "**Dallas Thompson** es un nombre asociado en ámbitos
+          pseudocientíficos a una supuesta expedición al Polo Norte en busca de
+          una entrada a la Tierra Hueca y a su desaparición. Es una leyenda de
+          la conspiranoia sin fuentes fiables que la respalden."
       - texto: Atlantes, reptilianos y antiguos guerreros
       - texto: En la corteza exterior todo es aburrido
       - texto: En la cavidad polar hay fiesta, pah eso hemos venido

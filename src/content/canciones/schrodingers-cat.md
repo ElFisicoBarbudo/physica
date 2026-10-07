@@ -48,7 +48,7 @@ letra:
       - texto: "with enough gas and enough cats,"
         traduccion: "con suficiente gas y suficientes gatos,"
         explicacion: |
-          La mecánica cuántica no predice qué pasará en un caso concreto, sino **probabilidades**. Si repitiéramos el experimento muchas veces, en la mitad de los casos el gato sobreviviría y en la otra mitad no.
+          La mecánica cuántica no predice qué pasará en un caso concreto, sino **probabilidades**. Si repitiéramos el experimento muchas veces, en torno a la mitad de los casos el gato sobreviviría y en la otra mitad no (el reparto exacto variaría un poco de una serie a otra).
   - versos:
       - texto: "half times, kitty survives"
         traduccion: "la mitad de las veces, el gatito sobrevive;"
@@ -64,7 +64,7 @@ letra:
       - texto: "Just open the box"
         traduccion: "Solo hay que abrir la caja."
         explicacion: |
-          Al abrir la caja hacemos una **medida**, y según la interpretación de Copenhague la superposición "colapsa" en uno solo de los resultados: el gato está vivo o está muerto. Hoy se explica con la **decoherencia** por qué los objetos grandes, que interactúan constantemente con su entorno, no se ven nunca en superposición.
+          Al abrir la caja hacemos una **medida**, y según la interpretación de Copenhague la superposición "colapsa" en uno solo de los resultados: el gato está vivo o está muerto. Hoy la **decoherencia** ayuda a explicar por qué los objetos grandes, que interactúan constantemente con su entorno, no se ven nunca en superposición.
   - versos:
       - texto: "We must understand,"
         traduccion: "Debemos entenderlo:"

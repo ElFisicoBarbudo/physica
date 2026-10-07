@@ -31,7 +31,7 @@ letra:
         explicacion: |
           En física de partículas la masa se expresa en unidades de energía gracias a $E = mc^2$. Un **GeV** (gigaelectronvoltio) equivale aproximadamente a la masa de un protón, así que el bosón de Higgs, con unos **125 GeV**, es unas 130 veces más pesado que un protón.
 
-          **Cinco desviaciones estándar** ("5 sigma") es el umbral que se exige para anunciar un descubrimiento: significa que la probabilidad de que la señal sea una simple fluctuación aleatoria es de menos de 1 entre 3 millones.
+          **Cinco desviaciones estándar** ("5 sigma") es el umbral que se exige para anunciar un descubrimiento: significa que, si el bosón no existiera, la probabilidad de que el ruido de fondo produjera por azar una señal tan fuerte es de menos de 1 entre 3 millones.
   - versos:
       - texto: "This verification of the existence of, well, what appears to be a Higgs boson"
         traduccion: "Esta verificación de la existencia de, bueno, lo que parece ser un bosón de Higgs."
