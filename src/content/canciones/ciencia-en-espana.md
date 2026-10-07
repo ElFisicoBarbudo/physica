@@ -14,6 +14,7 @@ resumen: "Un doctorando cuenta con humor negro y punk las penurias de la carrera
 temas:
   - Crítica social
   - Vida de científico
+colaboradores: src/content/colaboradores/2026-10-07-bernardo-g-pola.md
 creditos:
   - rol: Voz
     nombre: Bernardo García
@@ -202,4 +203,4 @@ Esta canción es la excepción del repertorio: no habla de leyes físicas, sino 
 
 Conviene leerla como lo que es, una caricatura. Muchos versos son hipérboles deliberadas (ir nadando a Sídney, usar botellas de cola como probetas), y el estribillo "Ya lo he aceptado y no está mal" funciona como ironía amarga, no como una defensa de la situación. Tras el humor hay temas reales y discutidos: la financiación pública de la investigación, la evaluación mediante publicaciones, el acceso a la literatura científica y la salud mental de quienes inician su carrera.
 
-Para el profesorado puede ser un buen punto de partida para hablar con el alumnado de bachillerato sobre qué significa dedicarse a la ciencia, cómo funciona el sistema de publicación y revisión por pares y por qué la política científica nos concierne a todos. Las explicaciones de los versos ofrecen contexto general; los datos concretos de convocatorias y salarios cambian con los años y conviene consultarlos en fuentes oficiales.
+Para el profesorado puede ser un buen punto de partida para hablar con el alumnado de bachillerato sobre qué significa dedicarse a la ciencia, cómo funciona el sistema de publicación y revisión por pares y por qué la política científica nos concierne a todos.
