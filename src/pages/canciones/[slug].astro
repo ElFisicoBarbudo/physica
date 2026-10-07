@@ -1,5 +1,5 @@
 ---
-import { render } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import BotonAzar from '../../components/BotonAzar.astro';
 import { cancionesOrdenadas, idiomaEn, md, url, youtubeUrl } from '../../lib/util';
@@ -15,6 +15,8 @@ export async function getStaticPaths() {
 const { cancion, anterior, siguiente } = Astro.props;
 const d = cancion.data;
 const { Content } = await render(cancion);
+const todos = await getCollection('colaboradores');
+const colaboradores = d.colaboradores.map((id) => todos.find((c) => c.id === id)).filter((c) => c !== undefined);
 const conTraduccion = d.idioma !== 'es' && d.letra.some((s) => s.versos.some((v) => v.traduccion));
 // En GitHub Actions se generan los PDF tras la compilación (ver scripts/generar-pdfs.mjs).
 const hayPdf = import.meta.env.PUBLIC_FICHAS_PDF === 'true';
@@ -211,6 +213,38 @@ let n = 0;
               </div>
             ))}
           </dl>
+        </section>
+      )
+    }
+
+    {
+      colaboradores.length > 0 && (
+        <section class="bloque colaboracion">
+          <h2>En colaboración con</h2>
+          <ul>
+            {colaboradores.map((c) => (
+              <li>
+                <p class="colab-nombre">
+                  {c.data.nombre}
+                  {c.data.persona && <span>{c.data.persona}</span>}
+                </p>
+                {(c.data.youtube || c.data.instagram) && (
+                  <p class="colab-enlaces">
+                    {c.data.youtube && (
+                      <a class="boton secundario toque" href={c.data.youtube} target="_blank" rel="noopener">
+                        YouTube<span class="solo-lectores"> de {c.data.nombre}</span>
+                      </a>
+                    )}
+                    {c.data.instagram && (
+                      <a class="boton secundario toque" href={c.data.instagram} target="_blank" rel="noopener">
+                        Instagram<span class="solo-lectores"> de {c.data.nombre}</span>
+                      </a>
+                    )}
+                  </p>
+                )}
+              </li>
+            ))}
+          </ul>
         </section>
       )
     }
@@ -644,6 +678,46 @@ let n = 0;
     margin: 0.2rem 0 0;
     font-size: 0.95rem;
     color: var(--tinta-suave);
+  }
+
+  .colaboracion ul {
+    display: grid;
+    gap: 1.5rem 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .colab-nombre {
+    margin: 0 0 0.6rem;
+    font-family: var(--f-titulo);
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.15;
+  }
+
+  .colab-nombre span {
+    display: block;
+    font-family: var(--f-texto);
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--tinta-suave);
+  }
+
+  .colab-enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0;
+  }
+
+  .solo-lectores {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
   }
 
   .creditos dl {

@@ -45,10 +45,23 @@ const canciones = defineCollection({
     // Avisos para el profesorado (lenguaje malsonante, ironía...).
     avisos: z.array(z.string()).default([]),
     creditos: z.array(z.object({ rol: z.string(), nombre: z.string() })).default([]),
+    // Canales o personas con las que se hizo la canción (ver la colección `colaboradores`).
+    colaboradores: z.array(z.string()).default([]),
     // Una canción sin letra todavía es válida: así un borrador a medias no rompe la publicación.
     letra: z.array(seccion).default([]),
     actividades: z.array(z.string()).default([]),
     referencias: z.array(referencia).default([]),
+  }),
+});
+
+// Canales y personas que colaboran en alguna canción. Cada una sale en la página de sus canciones.
+const colaboradores = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/colaboradores' }),
+  schema: z.object({
+    nombre: z.string(), // nombre del canal o de la persona
+    persona: z.string().optional(), // quién está detrás, si el nombre es de un canal
+    youtube: z.string().url().optional(),
+    instagram: z.string().url().optional(),
   }),
 });
 
@@ -65,4 +78,4 @@ const paginas = defineCollection({
   }),
 });
 
-export const collections = { canciones, paginas };
+export const collections = { canciones, colaboradores, paginas };
