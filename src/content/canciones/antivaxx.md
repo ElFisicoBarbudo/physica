@@ -90,7 +90,7 @@ letra:
       Falso. En 1796 **Edward Jenner** observó que quienes habían pasado la viruela de las vacas parecían protegidos contra la viruela humana, e inoculó material de la viruela bovina a un niño, James Phipps. De *vacca* viene la palabra **vacuna**. Fue el comienzo de la vacunación moderna.
   - texto: ¿Que "ha salvado más vidas que el trabajo de cualquier otro hombre"?
     explicacion: |
-      La frase se atribuye con frecuencia a Jenner, y se estima que la viruela mató a cientos de millones de personas en el siglo XX antes de su erradicación. La comparación con la cerveza es una broma del narrador, no un argumento.
+      La frase se atribuye a menudo a Jenner o se dice de él, pero no es un dato exacto, sino una estimación: se calcula que la viruela mató a cientos de millones de personas en el siglo XX antes de su erradicación. La comparación con la cerveza es una broma del narrador, no un argumento.
   - texto: Pues como el que inventó la cerveza y nadie recuerda su nombre
 - versos:
   - texto: Os creéis en lo cierto porque os apoyan todos los doctores

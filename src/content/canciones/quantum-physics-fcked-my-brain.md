@@ -26,7 +26,7 @@ letra:
       - texto: "Quantum physics fucked my brain"
         traduccion: "La física cuántica me ha j*dido la cabeza"
         explicacion: |
-          No es solo una frase de metalcore: es la reacción habitual de quien estudia física cuántica por primera vez. El propio **Niels Bohr** decía que "quien no se queda perplejo con la teoría cuántica es que no la ha entendido". Nuestra intuición se formó manejando piedras, pelotas y coches, y ahí las reglas son otras.
+          No es solo una frase de metalcore: es la reacción habitual de quien estudia física cuántica por primera vez. Se atribuye a **Niels Bohr** la frase de que "quien no se queda perplejo con la teoría cuántica es que no la ha entendido". Nuestra intuición se formó manejando piedras, pelotas y coches, y ahí las reglas son otras.
 
   - seccion: "Estrofa 1"
     versos:
@@ -69,13 +69,13 @@ letra:
       - texto: "Don't try to understand this shit"
         traduccion: "No intentes entender esta mierda"
         explicacion: |
-          Es, en broma, un consejo real de la historia de la física: la llamada actitud de *"shut up and calculate"* ("cállate y calcula"). La cuántica predice los resultados con una precisión asombrosa, pero qué significa *de verdad* la función de onda sigue siendo objeto de debate. **Richard Feynman** lo decía sin rodeos: "creo que puedo afirmar con seguridad que nadie entiende la mecánica cuántica".
+          Es, en broma, un consejo real de la historia de la física: la llamada actitud de *"shut up and calculate"* ("cállate y calcula", expresión popularizada por el físico N. David Mermin). La cuántica predice los resultados con una precisión asombrosa, pero qué significa *de verdad* la función de onda sigue siendo objeto de debate. **Richard Feynman** lo decía sin rodeos: "creo que puedo afirmar con seguridad que nadie entiende la mecánica cuántica".
       - texto: "Deal with it, there's no escape for you"
         traduccion: "Acéptalo, no hay escapatoria para ti"
       - texto: "This is the end of the physics that you love"
         traduccion: "Este es el fin de la física que tanto te gusta"
         explicacion: |
-          Aunque suene a despedida, la cuántica no ha destruido nada: ha dado lugar a casi toda la tecnología que usas. El **transistor**, los **láseres**, los LED, la resonancia magnética, los paneles solares y los ordenadores cuánticos existen porque entendimos estas reglas raras.
+          Aunque suene a despedida, la cuántica no ha destruido nada: ha dado lugar a buena parte de la tecnología que usas. El **transistor**, los **láseres**, los LED, la resonancia magnética y los paneles solares existen porque entendimos estas reglas raras.
       - texto: "Fuck this"
         traduccion: "Que le den"
 
@@ -84,7 +84,7 @@ letra:
       - texto: "Heisenberg"
         traduccion: "Heisenberg"
         explicacion: |
-          **Werner Heisenberg** (1901-1976) formuló en 1925 la primera versión completa de la mecánica cuántica, usando matrices, y en 1927 el principio de incertidumbre. Premio Nobel de Física en 1932, con 31 años.
+          **Werner Heisenberg** (1901-1976) formuló en 1925 la primera versión de la mecánica cuántica, usando matrices, y en 1927 el principio de incertidumbre. Premio Nobel de Física de 1932 (concedido en 1933), con 31 años.
       - texto: "Schrödinger"
         traduccion: "Schrödinger"
         explicacion: |

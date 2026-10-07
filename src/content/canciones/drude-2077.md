@@ -47,7 +47,7 @@ letra:
   - texto: Somos la marea
   - texto: Que fluye sin parar
     explicacion: |
-      El movimiento ordenado resultante es la **velocidad de deriva**, $v_d = -e E \tau / m$. Es muy pequeña, del orden de milímetros por segundo en un cable corriente, mucho menor que la velocidad térmica de los electrones. La corriente se establece casi al instante porque todo el gas se pone en marcha a la vez.
+      El movimiento ordenado resultante es la **velocidad de deriva**, $v_d = -e E \tau / m$. Es muy pequeña, de una fracción de milímetro por segundo en un cable de cobre con corrientes domésticas, mucho menor que la velocidad térmica de los electrones. La corriente se establece casi al instante porque todo el gas se pone en marcha a la vez.
 - versos:
   - texto: Ya son del núcleo
   - texto: Deja atrás a los caídos
@@ -74,9 +74,9 @@ letra:
     explicacion: |
       Edwin Hall observó en 1879 que, al aplicar un campo magnético perpendicular a una corriente, aparece una tensión transversal. Drude predice un coeficiente de Hall $R_H = -1/(ne)$, que permite estimar la **densidad de portadores**. En algunos metales el signo medido es positivo, algo que el modelo no puede explicar y que la teoría de bandas resuelve con la noción de huecos.
 - versos:
-  - texto: Sommerfield dónde estás
+  - texto: Sommerfeld dónde estás
     explicacion: |
-      El nombre correcto es **Sommerfeld**. Hacia 1927 Arnold Sommerfeld sustituyó la estadística clásica de Maxwell-Boltzmann por la de **Fermi-Dirac**, que incorpora el principio de exclusión de Pauli. Con ello se corrigió el calor específico electrónico, aunque se mantuvo el resto del esquema de Drude.
+      Hacia 1927 **Arnold Sommerfeld** sustituyó la estadística clásica de Maxwell-Boltzmann por la de **Fermi-Dirac**, que incorpora el principio de exclusión de Pauli. Con ello se corrigió el calor específico electrónico, aunque se mantuvo el resto del esquema de Drude.
   - texto: Choques aleatorios
     explicacion: |
       En un cristal perfecto y a temperatura cero, las ondas electrónicas de la mecánica cuántica se propagan sin dispersión. La resistencia aparece por **impurezas, defectos y vibraciones de la red** (fonones), no porque los electrones choquen con cada ion como en la imagen de Drude.

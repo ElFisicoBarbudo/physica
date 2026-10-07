@@ -46,14 +46,18 @@ letra:
 - versos:
   - texto: Soy único en mi especie como el Concavenator
     explicacion: |
-      *Concavenator corcovatus* fue descrito en 2010 a partir de un fósil del yacimiento de Las Hoyas (Cuenca), de hace unos 130 millones de años. Es un terópodo carnívoro con una joroba o cresta en la espalda y unas marcas en el antebrazo que se han interpretado, con debate, como posibles inserciones de plumas.
+      *Concavenator corcovatus* fue descrito en 2010 a partir de un fósil del yacimiento de Las Hoyas (Cuenca), de hace entre 130 y 125 millones de años aproximadamente. Es un terópodo carnívoro con una joroba o cresta en la espalda y unas marcas en el antebrazo que se han interpretado, con debate, como posibles inserciones de plumas.
   - texto: Tú eres lagartija, nosotros aligator
   - texto: De los primeros descubiertos fue el iguanodón
+    explicacion: |
+      El *Iguanodon* fue uno de los **primeros dinosaurios descritos científicamente**: el geólogo y médico británico Gideon Mantell lo dio a conocer en 1825 a partir de unos dientes y huesos fósiles.
   - texto: con esos pulgares dando like a esta canción
+    explicacion: |
+      El "like" viene de los **pulgares**: el iguanodón tenía en cada mano un pulgar muy grande en forma de espina cónica, que probablemente usaba para defenderse o para manipular comida. Al principio se interpretó como un cuerno en la nariz, hasta que aparecieron esqueletos más completos.
 - versos:
   - texto: No te rias de mis brazos o te pego un buen bocao
     explicacion: |
-      Los brazos del *T. rex* eran muy cortos en proporción, pero fuertes y musculosos. Su función exacta sigue siendo objeto de debate. Se han hallado plumas en algunos tiranosaurios más pequeños, como *Yutyrannus*, pero no hay evidencia directa de un plumaje extenso en el *T. rex* adulto.
+      Los brazos del *T. rex* eran muy cortos en proporción, pero fuertes y musculosos. Su función exacta sigue siendo objeto de debate. Se han hallado plumas en tiranosauroides más antiguos y de menor tamaño, como *Yutyrannus* (de hace unos 125 millones de años), pero las impresiones de piel conocidas del *T. rex* muestran escamas y no hay evidencia directa de un plumaje extenso en el adulto.
   - texto: No te rias de mis plumas que ya voy burlao
 - versos:
   - texto: Haciendo RAWR como un dinosaurio
@@ -74,9 +78,9 @@ letra:
     explicacion: |
       Los saurópodos tenían vértebras con cavidades llenas de **sacos aéreos**, similares a los de las aves, que aligeraban el esqueleto. Eso ayudó a que animales de decenas de toneladas pudieran sostener cuellos larguísimos.
   - texto: Tireóforos, acorazados,
-  - texto: Ornitóporos, picos de pato
+  - texto: Ornitópodos, picos de pato
     explicacion: |
-      El término correcto es **ornitópodos**, un grupo de ornitisquios que incluye a los hadrosaurios o dinosaurios de pico de pato. Los tireóforos (estegosaurios y anquilosaurios) son otro grupo de ornitisquios.
+      Los **ornitópodos** son un grupo de dinosaurios ornitisquios herbívoros que incluye a los hadrosaurios, los famosos dinosaurios de pico de pato. Los tireóforos (estegosaurios y anquilosaurios) son otro grupo de ornitisquios.
 - versos:
   - texto: Señores del cotarro durante todo el mesozoico
   - texto: Iridio por el mundo, con un origen cósmico

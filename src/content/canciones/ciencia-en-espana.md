@@ -62,9 +62,10 @@ letra:
       - texto: Leo la tesis este mes
         explicacion: >
           La **tesis doctoral** es el trabajo de investigación original con el
-          que se obtiene el título de doctor. Se defiende ante un tribunal, que
-          puede otorgar la mención de **sobresaliente cum laude**, la
-          calificación más alta. "Cum Laude de andén" juega con esa mención.
+          que se obtiene el título de doctor. En España "leer" la tesis
+          significa defenderla ante un tribunal, que puede otorgar la mención de
+          **cum laude** (por unanimidad), la distinción más alta; el chiste es
+          que aquí la "lectura" ocurre en el metro. "Cum Laude de andén" juega con esa mención.
       - texto: Lugar de lectura, la línea 3
       - texto: Leerla en el metro está bien
       - texto: Cum Laude de andén

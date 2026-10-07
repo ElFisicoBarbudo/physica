@@ -27,7 +27,7 @@ letra:
 - versos:
   - texto: Ni fermiones, ni bosones
     explicacion: |
-      Las partículas se clasifican en **fermiones** (espín semientero, como electrones y protones, que cumplen el principio de exclusión de Pauli) y **bosones** (espín entero, como el fotón). El verso bromea con que, en la vida diaria, a la química le basta con "protones y electrones" (aunque el protón no es elemental, sino que está formado por quarks).
+      Las partículas se clasifican en **fermiones** (espín semientero, como electrones y protones, que cumplen el principio de exclusión de Pauli) y **bosones** (espín entero, como el fotón). El verso bromea con que, en la vida diaria, a la química le basta con "protones y electrones" (más los neutrones; y el protón no es elemental, sino que está formado por quarks).
   - texto: Son protones y electrones
   - texto: Hago todo lo que puedo
     explicacion: |
@@ -65,7 +65,7 @@ letra:
       Los **chemtrails** son una teoría conspirativa según la cual los aviones rociarían sustancias secretas. Las estelas blancas reales son **estelas de condensación**: el vapor de agua de los gases de escape se condensa y se congela en aire muy frío y húmedo, y su duración depende de la humedad de la atmósfera.
   - texto: Ni magufos ni lejía
     explicacion: |
-      "**Magufo**" es un término coloquial para quien cree en pseudociencias. La mención de la **lejía** (hipoclorito de sodio, $\mathrm{NaClO}$) alude a ciertos productos que se vendieron como "remedios milagro" a base de compuestos de cloro: ingerirlos es peligroso y las autoridades sanitarias han advertido contra ellos.
+      "**Magufo**" es un término coloquial para quien cree en pseudociencias. La mención de la **lejía** (hipoclorito de sodio, $\mathrm{NaClO}$) alude a productos a base de cloro (lejía o el llamado "MMS" o "dióxido de cloro", que se obtiene a partir de clorito de sodio) que se han vendido como "remedios milagro": ingerirlos o administrarlos es peligroso, puede causar intoxicaciones graves y las autoridades sanitarias han advertido contra ellos.
   - texto: Son física y química
 - versos:
   - texto: En el átomo hemos sentido

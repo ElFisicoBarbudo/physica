@@ -111,11 +111,11 @@ letra:
       - texto: "Our soviet hero Валенти́на would crush Sally in the arena"
         traduccion: "Nuestra heroína soviética Valentina aplastaría a Sally en la arena"
         explicacion: |
-          **Valentina Tereshkova** fue la primera mujer en viajar al espacio, en 1963. **Sally Ride** fue la primera astronauta estadounidense, veinte años después, en 1983.
+          **Valentina Tereshkova** fue la primera mujer en viajar al espacio, en 1963. **Sally Ride** fue la primera mujer estadounidense en viajar al espacio, veinte años después, en 1983.
       - texto: "And the Союз 11... hmmm...."
         traduccion: "Y el Soyuz 11... hmmm...."
         explicacion: |
-          La misión **Soyuz 11** (1971) acabó en tragedia: durante el regreso a la Tierra la cápsula se despresurizó y murieron sus tres tripulantes. Son las únicas personas que han muerto fuera de la atmósfera.
+          La misión **Soyuz 11** (1971) acabó en tragedia: durante el regreso a la Tierra la cápsula se despresurizó y murieron sus tres tripulantes. Son las únicas personas que han muerto en el espacio (por encima de los 100 km de altitud).
       - texto: "российская наука goes pum pum like Калашникова"
         traduccion: "La ciencia rusa dispara «pum pum» como una Kaláshnikov"
       - texto: "российская наука goes pum pum like Калашникова"
@@ -147,4 +147,4 @@ referencias:
 
 Nada puede viajar más rápido que la luz en el vacío. Pero la luz **no va igual de rápido en todos los medios**: en el agua avanza a solo unas tres cuartas partes de su velocidad en el vacío. Y una partícula con carga eléctrica sí puede ir más rápido que eso. Cuando lo hace, emite un destello de luz azulada: la **radiación de Cherenkov**.
 
-Es el brillo azul que se ve en las piscinas de los reactores nucleares. Lo observó por primera vez el físico soviético **Pável Cherenkov** en 1934, y le valió el Premio Nobel de Física de 1958, compartido con Ilyá Frank e Ígor Tamm, que lo explicaron teóricamente. De ahí el hardbass, el vodka y toda la estética soviética de la canción.
+Es el brillo azul que se ve en las piscinas de los reactores nucleares. Lo estudió de forma sistemática el físico soviético **Pável Cherenkov** a partir de 1934, y le valió el Premio Nobel de Física de 1958, compartido con Ilyá Frank e Ígor Tamm, que lo explicaron teóricamente. De ahí el hardbass, el vodka y toda la estética soviética de la canción.
