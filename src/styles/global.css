@@ -254,17 +254,21 @@ iframe {
 }
 
 @media (max-width: 520px) {
-  /* En el móvil el logo ya lleva a las canciones: el menú se queda en lo esencial. */
-  .cabecera nav a:nth-child(-n + 2) {
-    display: none;
+  /* En el móvil el menú baja a una segunda fila con las tres secciones y el botón al azar. */
+  .cabecera {
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
   }
 
-  .cabecera nav .nav-azar span {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
+  .cabecera nav {
+    justify-content: space-between;
+    margin-inline: -0.35rem;
+    width: calc(100% + 0.7rem);
+  }
+
+  .cabecera nav a {
+    padding-inline: 0.5rem;
+    white-space: nowrap;
   }
 }
 
