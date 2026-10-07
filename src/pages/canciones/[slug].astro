@@ -132,8 +132,6 @@ let n = 0;
           }
           <label><input type="checkbox" role="switch" data-alterna="con-explicaciones" /> Explicaciones</label>
         </div>
-        <p class="pista">Activa las explicaciones para ver la física que esconde cada verso marcado{conTraduccion && ', y la traducción para leer la letra en castellano'}.</p>
-
         <div class="letra" id="letra-contenido">
           {
             d.letra.map((s) => (
@@ -585,7 +583,11 @@ let n = 0;
   }
 
   .interruptores input:checked {
-    background: var(--acento);
+    background: var(--senal);
+  }
+
+  .interruptores input:checked::before {
+    background: #151a3a;
   }
 
   .interruptores input:checked::before {
@@ -607,17 +609,6 @@ let n = 0;
 
   .seccion + .seccion {
     margin-top: 2rem;
-  }
-
-  .pista {
-    margin: -0.25rem 0 0.5rem;
-    font-size: 0.92rem;
-    color: var(--tinta-suave);
-    transition: opacity 0.3s ease;
-  }
-
-  #letra:has(:checked) .pista {
-    display: none;
   }
 
   /* Cada verso tiene dos columnas fijas en pantallas anchas (letra | explicación): nada se recoloca al activar las
