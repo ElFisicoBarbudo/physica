@@ -120,7 +120,7 @@ content:
         type: reference
         options:
           collection: colaboradores
-        multiple: true
+          multiple: true
         description: Si la canción es con otro canal o persona, elígela aquí y saldrá una sección con sus enlaces. Si no está en la lista, créala primero en "Colaboradores".
       - name: creditos
         label: Créditos

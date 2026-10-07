@@ -1,6 +1,5 @@
 ---
 import QRCode from 'qrcode';
-import { render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import { NOMBRE, cancionesOrdenadas, idiomas, md, url, youtubeUrl } from '../../../lib/util';
 
@@ -11,7 +10,6 @@ export async function getStaticPaths() {
 
 const { cancion } = Astro.props;
 const d = cancion.data;
-const { Content } = await render(cancion);
 
 // El QR lleva al videoclip; si aún no hay vídeo, a la página de la canción.
 const paginaCancion = new URL(url(`canciones/${cancion.id}/`), Astro.site).href;
@@ -55,7 +53,7 @@ let n = 0;
 
     <section>
       <h2>Presentación del tema</h2>
-      <div class="prosa"><Content /></div>
+      <div class="prosa" set:html={md(cancion.body ?? '')} />
     </section>
 
     {
