@@ -27,21 +27,16 @@ trayectoria:
       - Sección de Física en *Órbita Laika* (La 2, RTVE), dos temporadas
       - Copresentador de *Balears Fa Ciència* en la televisión autonómica balear
       - Colaborador de *Balears Fa Ciència* en la radio autonómica
-      - Entrevistas en *Voces CSIC Balears* y *Radio Sicómoro*
-  - titulo: Divulgación
-    items:
-      - Miembro de Big Van Ciencia
-      - Coordinador de Pint of Science Palma desde 2017
-      - Scenio y *100cia al Cubo*, ciencia dentro de Minecraft
+      - Presentador en *Voces CSIC Balears* y *Radio Sicómoro*
   - titulo: Libros
     items:
-      - "*Caos, orden y otras movidas del universo*"
-      - "*Mi primer eclipse*"
+      - "*Caos, orden y otras movidas del universo*, Editorial Oberon"
+      - "*Mi primer eclipse*, Edicions Cort"
   - titulo: Reconocimientos
     items:
-      - Nominado a los Premios TikTok como creador educativo (2022)
-      - Reconocimiento IPFest en divulgación (2025)
       - Premio EDE en la categoría de Ciencia (2026)
+      - Reconocimiento IPFest en divulgación (2025)
+      - Nominado a los Premios TikTok como creador educativo (2022)
 ---
 Estudié física en la Universitat de les Illes Balears (UIB), donde fui dando tumbos entre las diferentes ramas hasta darme cuenta de que no podía (ni quería) elegir qué parte de la física me gustaba más, así que acabé haciendo un máster en sistemas complejos en el IFISC. Por el camino pasé por el concurso de monólogos científicos FameLab y descubrí que contar la ciencia mola casi tanto como hacerla.
 
