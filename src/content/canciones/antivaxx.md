@@ -157,12 +157,11 @@ actividades:
   - Haz una lista de las afirmaciones del narrador y busca para cada una un dato
     verificable de una fuente fiable (OMS, ministerio de sanidad, CDC) que la
     desmienta.
-  - Calcula el porcentaje de población que debe estar inmunizada para lograr
-    inmunidad de grupo si R0 = 4, 8 y 15, usando 1 - 1/R0.
   - Explica con tus palabras cómo funciona una vacuna y qué es la memoria
     inmunológica.
   - Investiga la historia de la erradicación de la viruela y por qué no se ha
     conseguido lo mismo con el sarampión.
+  - Busca información sobre el origen del movimiento antivacunas.
 referencias:
   - titulo: Vacuna
     autor: Wikipedia
