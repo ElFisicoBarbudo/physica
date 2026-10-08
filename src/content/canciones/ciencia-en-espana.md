@@ -208,8 +208,8 @@ referencias:
     url: https://es.wikipedia.org/wiki/Tesis_doctoral
 ---
 
-Esta canción es la excepción del repertorio: no va de leyes físicas, sino de cómo se hace ciencia en España. A golpe de punk rock y mucho sarcasmo, un joven investigador repasa su día a día: convocatorias que dependen del BOE, ayudas que llegan tarde, estancias en el extranjero, tesis leídas en el metro y una estabilidad que siempre está «un poquito más allá».
+Esta canción es la excepción del repertorio: no va de leyes físicas, sino de cómo se hace ciencia en España. A golpe de **punk rock** y mucho sarcasmo, un joven investigador repasa su día a día: convocatorias que dependen del BOE, ayudas que llegan tarde, estancias en el extranjero, tesis leídas en el metro y una estabilidad que siempre está «un poquito más allá».
 
-Ojo, es una caricatura. Muchos versos son exageraciones a propósito (ir nadando a Sídney, usar botellas de cola como probetas), y el «Ya lo he aceptado y no está mal» del estribillo es pura ironía amarga. Pero detrás hay temas reales: la financiación de la investigación, la evaluación por publicaciones y la salud mental de quien empieza su carrera.
+Ojo, es una caricatura. Muchos versos son exageraciones a propósito (ir nadando a Sídney, usar botellas de cola como probetas), y el «Ya lo he aceptado y no está mal» del estribillo es pura ironía amarga. Pero detrás hay temas reales: la **financiación de la investigación**, la **evaluación por publicaciones** y la **salud mental** de quien empieza su carrera.
 
 Con alumnado de bachillerato da para un buen debate sobre qué significa dedicarse a la ciencia y por qué la política científica nos importa a todos.

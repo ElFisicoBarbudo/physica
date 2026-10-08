@@ -137,6 +137,6 @@ referencias:
 
 *Mi calculadora* es una declaración de amor, en clave de comedia, al objeto que acompaña a cualquier estudiante de ciencias: la calculadora científica. La letra recorre toda la relación, desde el alivio de dejar de hacer cuentas a mano hasta los líos con sus teclas y sus modos.
 
-Detrás de las bromas hay contenido de verdad. El seno, el coseno y la tangente son herramientas básicas para describir ángulos, ondas y movimientos, y el eterno drama entre **radianes y grados** es una de las causas más típicas de errores en los exámenes. También aparece la tecla Ans, que guarda el último resultado.
+Detrás de las bromas hay contenido de verdad. El **seno, el coseno y la tangente** son herramientas básicas para describir ángulos, ondas y movimientos, y el eterno drama entre **radianes y grados** es una de las causas más típicas de errores en los exámenes. También aparece la **tecla Ans**, que guarda el último resultado.
 
 En clase te sirve para repasar la trigonometría de forma ligera, para recordar que la calculadora solo hace lo que le pides (y con la configuración que tenga) y para animar a conocer bien una herramienta que se usa todos los días.

@@ -224,8 +224,8 @@ referencias:
     url: https://www.youtube.com/watch?v=XlwM0tkgsoI
 ---
 
-Durante más de mil trescientos años, la imagen del cosmos en Europa y el mundo islámico fue la de Claudio Ptolomeo, astrónomo de Alejandría del siglo II. En su *Almagesto* puso la Tierra inmóvil en el centro, y lo hizo con tanta precisión matemática que permitía predecir la posición de los planetas.
+Durante más de mil trescientos años, la imagen del cosmos en Europa y el mundo islámico fue el **geocentrismo** de Claudio Ptolomeo, astrónomo de Alejandría del siglo II. En su *Almagesto* puso la Tierra inmóvil en el centro, y lo hizo con tanta precisión matemática que permitía predecir la posición de los planetas.
 
 En 1543 Nicolás Copérnico publicó *De revolutionibus*, con el Sol cerca del centro y la Tierra como un planeta más, que gira sobre sí misma y alrededor del Sol. La canción los pone a pelearse en una batalla de rap, con guiños a Rheticus, Kepler y Galileo.
 
-Más allá del humor, deja una idea clave: el heliocentrismo no ganó de golpe. Copérnico seguía usando círculos y epiciclos, y su modelo no predecía mucho mejor que el de Ptolomeo. Ideal para hablar en clase de cómo cambian los modelos científicos.
+Más allá del humor, deja una idea clave: el **heliocentrismo** no ganó de golpe. Copérnico seguía usando círculos y **epiciclos**, y su modelo no predecía mucho mejor que el de Ptolomeo. Ideal para hablar en clase de cómo cambian los modelos científicos.

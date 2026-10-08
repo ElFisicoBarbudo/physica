@@ -143,8 +143,8 @@ referencias:
     autor: "N. W. Ashcroft y N. D. Mermin"
 ---
 
-En 1900, poco después de que J. J. Thomson identificara el electrón, Paul Drude propuso un modelo sencillo para explicar por qué los metales conducen la electricidad: tratar los electrones como un **gas de partículas clásicas** que se mueven libres entre los iones de la red y chocan de vez en cuando. Con eso reproduce la ley de Ohm y obtiene la conductividad, $\sigma = n e^2 \tau / m$.
+En 1900, poco después de que J. J. Thomson identificara el electrón, Paul Drude propuso un modelo sencillo para explicar por qué los metales conducen la electricidad: tratar los electrones como un **gas de partículas clásicas** que se mueven libres entre los iones de la red y chocan de vez en cuando. Con eso reproduce la **ley de Ohm** y obtiene la conductividad, $\sigma = n e^2 \tau / m$.
 
 La canción lo cuenta desde dentro, en plan cyberpunk: la red cristalina es una cárcel infinita, el campo eléctrico arrastra a todos en la misma dirección y los choques no dan tregua. Así se visualizan la **velocidad de deriva** y el tiempo entre colisiones sin fórmulas.
 
-El modelo también falla, y la letra lo reconoce: Sommerfeld tuvo que corregirlo con el principio de exclusión de Pauli. Un ejemplo perfecto de cómo un modelo imperfecto puede ser muy útil.
+El modelo también falla, y la letra lo reconoce: Sommerfeld tuvo que corregirlo con el **principio de exclusión de Pauli**. Un ejemplo perfecto de cómo un modelo imperfecto puede ser muy útil.
