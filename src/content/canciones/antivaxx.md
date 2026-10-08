@@ -175,6 +175,10 @@ referencias:
   - titulo: Tiomersal
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Tiomersal
+  - titulo: La curiosa historia de cómo el movimiento antivacunas nació hace 150
+      años en Inglaterra
+    autor: BBC
+    url: https://www.bbc.com/mundo/noticias-50952151
 ---
 *AntiVaxx* es una canción de trap irónica. El narrador adopta la voz de un padre que rechaza las vacunas y, a base de exageraciones y falacias, deja en evidencia lo débil que es ese discurso. Nada de lo que afirma es cierto: la gracia está en reconocer qué hay de erróneo en cada frase.
 
