@@ -47,7 +47,7 @@ letra:
   - texto: Una idea muy brillante la que aquí he expuesto
   - texto: espera que la apunto en mi Amalgesto
     explicacion: |
-      El *Almagesto* es la gran obra astronómica de Ptolomeo, de hacia el año 150. Su título original griego era *Sintaxis matemática*. El nombre procede del árabe *al-majisṭī*, "el grandísimo". La letra escribe "Amalgesto", una variante.
+      El *Almagesto* es la gran obra astronómica de Ptolomeo, de hacia el año 150. Su título original griego era *Sintaxis matemática*. El nombre procede del árabe *al-majisṭī*, adaptación del griego *megístē*, "la más grande". La letra escribe "Amalgesto", una variante.
 - versos:
   - texto: Y como el primer móvil en la esfera exterior
     explicacion: |
@@ -74,7 +74,7 @@ letra:
 - versos:
   - texto: El centro del cosmos no es nuestro planeta,
     explicacion: |
-      Matiz histórico: en el modelo de Copérnico el centro de las órbitas está cerca del Sol, no exactamente en él. También introdujo el movimiento de rotación de la Tierra, que explica el giro aparente del cielo.
+      Matiz histórico: en el modelo de Copérnico el centro de las órbitas está cerca del Sol, no exactamente en él. También incorporó la rotación diaria de la Tierra, una idea ya planteada en la Antigüedad (por ejemplo, por Heráclides del Ponto), que explica el giro aparente del cielo.
   - texto: Es el Sol el que todo el sistema sujeta
   - texto: Alrededor Venus, Marte o Mercurio giran
   - texto: Mientras las demás estrellas del cosmos miran
@@ -121,7 +121,7 @@ letra:
   - texto: El pensamiento medieval mi idea romperá
   - texto: y a grandes como Kepler o Galileo inspirará
     explicacion: |
-      Johannes Kepler dedujo en 1609 que las órbitas son elipses, con datos de Tycho Brahe. Galileo Galilei usó el telescopio hacia 1609-1610 para observar las fases de Venus y las lunas de Júpiter, hallazgos difíciles de encajar con un modelo geocéntrico simple.
+      Johannes Kepler publicó en 1609, en su *Astronomia nova*, que las órbitas de los planetas son elipses, a partir de las observaciones de Tycho Brahe. Galileo Galilei usó el telescopio hacia 1609-1610 para observar las fases de Venus y las lunas de Júpiter, hallazgos difíciles de encajar con un modelo geocéntrico simple.
 - versos:
   - texto: Mi visión transformará el mundo
   - texto: a pesar del cristianismo iracundo
@@ -140,8 +140,6 @@ letra:
 - versos:
   - texto: Copérnico pringao, prusiano del montón
   - texto: hasta un simio te confunde con Colón
-    explicacion: |
-      Chiste de parecido fonético. Cristóbal Colón fue casi contemporáneo de Copérnico: nació en 1451 y cruzó el Atlántico en 1492, cuando Copérnico tenía unos 19 años. Sobre "prusiano", Copérnico nació en Toruń, en la Prusia Real, entonces bajo la Corona de Polonia.
 - versos:
   - texto: Ptolomeo, eres simple
   - texto: Tu nombre es ridículo, parece un chiste

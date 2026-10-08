@@ -43,7 +43,7 @@ letra:
   - versos:
       - texto: "Newton descubrió la gravedad"
         explicacion: |
-          Matiz importante: la gravedad ya actuaba mucho antes de Newton (lo que él hizo fue formular la **ley matemática** que la describe y demostrar que la misma fuerza rige la caída de los cuerpos en la Tierra y el movimiento de la Luna y los planetas). Esa ley es muy precisa, pero no es la última palabra: en campos gravitatorios muy intensos la sustituye la relatividad general de Einstein.
+          Matiz importante: la gravedad ya actuaba mucho antes de Newton (lo que él hizo fue formular la **ley matemática** que la describe y demostrar que la misma fuerza rige la caída de los cuerpos en la Tierra y el movimiento de la Luna y los planetas). Esa ley es muy precisa, pero no es la última palabra: en campos gravitatorios muy intensos, o cuando se necesita mucha precisión (la órbita de Mercurio, los relojes de los satélites GPS), la sustituye la relatividad general de Einstein.
   - versos:
       - texto: "Una ley general de aplicación universal"
         explicacion: |

@@ -47,7 +47,7 @@ letra:
   - texto: Somos la marea
   - texto: Que fluye sin parar
     explicacion: |
-      El movimiento ordenado resultante es la **velocidad de deriva**, $v_d = -e E \tau / m$. Es muy pequeña, de una fracción de milímetro por segundo en un cable de cobre con corrientes domésticas, mucho menor que la velocidad térmica de los electrones. La corriente se establece casi al instante porque todo el gas se pone en marcha a la vez.
+      El movimiento ordenado resultante es la **velocidad de deriva**, $v_d = -e E \tau / m$. Es muy pequeña, de una fracción de milímetro por segundo en un cable de cobre con corrientes domésticas, mucho menor que la velocidad térmica de los electrones. Aun así, la corriente se establece casi al instante, porque el campo eléctrico se propaga por el circuito a una velocidad cercana a la de la luz y pone en marcha a la vez a todos los electrones del cable.
 - versos:
   - texto: Ya son del núcleo
   - texto: Deja atrás a los caídos

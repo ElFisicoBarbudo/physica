@@ -28,8 +28,7 @@ letra:
         traduccion: Oscuro, en el centro de la galaxia
         explicacion: >
           En el centro de nuestra galaxia, la Vía Láctea, hay un agujero negro
-          supermasivo llamado **Sagitario A\***. Este agujero negro tiene una
-          masa enorme, equivalente a millones de veces la del Sol.
+          supermasivo llamado **Sagitario A\***. Su masa equivale a unos **4 millones de veces** la del Sol, y en 2022 el Event Horizon Telescope publicó la primera imagen de su entorno.
       - texto: Attract all the bodies within its field
         traduccion: Atrae a todos los cuerpos dentro de su campo
       - texto: Ripping gas clouds like bloody meat
@@ -87,12 +86,7 @@ letra:
         explicacion: >
           Según una teoría propuesta por el físico Stephen Hawking, los agujeros
           negros podrían emitir una forma especial de radiación llamada
-          **radiación de Hawking**. Esto ocurre porque en el espacio vacío
-          aparecen y desaparecen constantemente pares de partícula y
-          antipartícula. Si estas partículas se forman justo en el horizonte de
-          sucesos, una puede caer en el agujero negro mientras la otra escapa al
-          espacio. Aunque esta teoría es fascinante, todavía no ha sido
-          confirmada experimentalmente.
+          **radiación de Hawking**. Surge al combinar la física cuántica con la relatividad general. Se suele explicar con una imagen simplificada, que el propio Hawking usaba. En el vacío aparecen y desaparecen pares de partícula y antipartícula, y si se forman junto al horizonte de sucesos, una puede caer en el agujero negro mientras la otra escapa. Es una predicción teórica muy aceptada, pero aún no se ha observado: para agujeros negros de masa estelar o mayor es tan débil que resulta indetectable.
       - texto: Try not to fall, eternal damnation
         traduccion: Intenta no caer, perdición eterna
       - texto: You're gonna die by Spaghettification
@@ -110,8 +104,7 @@ letra:
           Si te acercaras demasiado a un agujero negro, experimentarías algo
           llamado **espaguetificación**. Esto ocurre porque la gravedad es mucho
           más fuerte en tus pies (si están más cerca del agujero negro) que en
-          tu cabeza. Esta diferencia estiraría tu cuerpo como si fueras un
-          espagueti hasta destrozarte por completo.
+          tu cabeza. Esta diferencia, llamada **fuerza de marea**, estiraría tu cuerpo como si fueras un espagueti hasta destrozarte por completo. Curiosamente, ocurre antes de cruzar el horizonte en los agujeros negros pequeños, de masa estelar. En uno supermasivo como Sagitario A\*, las fuerzas de marea en el horizonte son más suaves y cruzarías la frontera entero; la espaguetificación llegaría ya dentro.
   - versos:
       - texto: Gravity, strong enough to shatter
         traduccion: Gravedad, tan fuerte que destroza

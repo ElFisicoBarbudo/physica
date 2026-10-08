@@ -71,7 +71,7 @@ letra:
       - texto: "Nuclear reactors are not green anymore"
         traduccion: "Los reactores nucleares ya no son ecológicos"
         explicacion: |
-          Juego de palabras: en la cultura popular la radiactividad se pinta de verde, pero el brillo real de los reactores sumergidos en agua es **azul**, por la radiación de Cherenkov de los electrones rápidos que se producen en las desintegraciones radiactivas del combustible.
+          Juego de palabras: en la cultura popular la radiactividad se pinta de verde, pero el brillo real de los reactores sumergidos en agua es **azul**, por la radiación de Cherenkov de los electrones rápidos que se producen en el combustible: los que emiten los productos de fisión en sus desintegraciones beta y los que arrancan los rayos gamma al chocar con el agua.
       - texto: "Russian scientists were acing the Cold War"
         traduccion: "Los científicos rusos arrasaban en la Guerra Fría"
       - texto: "Are you disrespecting Па́вел Черенко́в my pal?"

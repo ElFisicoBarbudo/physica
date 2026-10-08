@@ -69,8 +69,7 @@ letra:
       - texto: Pero la Tierra también lo está
   - versos:
       - texto: Sois súbditos de Ibáñez, como Mortadelo
-        explicacion: Ibáñez es un creador de contenido conocido por defender la "teoría"
-          de la Tierra plana. Aquí se hace un chiste confundiéndolo con
+        explicacion: Se refiere a Oliver Ibáñez, un youtuber español conocido por defender que la Tierra es plana. Aquí se hace un chiste confundiéndolo con
           Francisco Ibáñez, mítico dibujante de los cómics **Mortadelo y
           Filemón**.
       - texto: porque negáis que haya un Sol en el subsuelo
@@ -96,7 +95,7 @@ letra:
         explicacion: >
           Esta es la clave del pensamiento crítico: una afirmación hay que
           **contrastarla con varias fuentes independientes y fiables**, no con
-          vídeos que se citan unos a otros. Como decía Carl Sagan, "afirmaciones
+          vídeos que se citan unos a otros. Como popularizó Carl Sagan, "afirmaciones
           extraordinarias requieren pruebas extraordinarias".
       - texto: Si no la Tierra es hueca como el hueco que hay entre mis dientes
   - versos:
@@ -108,10 +107,7 @@ letra:
       - texto: la Tierra es hueca como aguacate sin el hueso
   - versos:
       - texto: Dallas Thomson es la Alicia que cayó en el agujero
-        explicacion: "**Dallas Thompson** es un nombre asociado en ámbitos
-          pseudocientíficos a una supuesta expedición al Polo Norte en busca de
-          una entrada a la Tierra Hueca y a su desaparición. Es una leyenda de
-          la conspiranoia sin fuentes fiables que la respalden."
+        explicacion: "**Dallas Thompson** contó en 2002, en el programa de radio estadounidense *Coast to Coast AM*, que una experiencia cercana a la muerte le había revelado la Tierra hueca, y anunció una expedición a la supuesta entrada del Polo Norte. Después se le perdió la pista, lo que alimentó la leyenda. Ninguna de sus afirmaciones tiene base científica."
       - texto: Atlantes, reptilianos y antiguos guerreros
       - texto: En la corteza exterior todo es aburrido
       - texto: En la cavidad polar hay fiesta, pah eso hemos venido
