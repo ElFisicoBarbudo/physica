@@ -110,10 +110,9 @@ letra:
     versos:
       - texto: Newton descubrió la gravedad
 actividades:
-  - Pon un ejemplo cotidiano de cada una de las tres leyes de Newton.
-  - Si la masa de un cuerpo se duplica y la fuerza que actúa sobre él se
-    mantiene, ¿qué le pasa a su aceleración?
-  - ¿Por qué Plutón dejó de considerarse un planeta en 2006?
+  - "Busca un ejemplo cotidiano de cada una de las tres leyes de Newton y explícaselo a un compañero o compañera."
+  - "Investiga si la historia de la manzana que cae sobre Newton es real y qué descubrió él en realidad sobre la gravedad."
+  - "Busca por qué Plutón dejó de considerarse un planeta en 2006 y debatid en clase si estáis de acuerdo con la decisión."
 referencias:
   - titulo: Leyes de Newton
     autor: Wikipedia

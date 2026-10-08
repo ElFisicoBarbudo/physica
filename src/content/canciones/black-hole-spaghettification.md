@@ -148,13 +148,10 @@ letra:
       - texto: In the black hole
         traduccion: En el agujero negro
 actividades:
-  - ¿Por qué decimos que un agujero negro es "negro"? Si no emite luz, ¿cómo
-    sabemos que existe?
-  - Explica con tus palabras qué es la espaguetificación y por qué la gravedad
-    no tira igual de tus pies que de tu cabeza.
-  - ¿Qué diferencia hay entre el horizonte de sucesos y la singularidad?
-  - Busca qué es Sagitario A\* y cuándo se publicó la primera imagen de un
-    agujero negro.
+  - "Piensa: si un agujero negro no emite luz, ¿cómo sabemos que existe? Busca qué métodos usan los astrónomos para detectarlos."
+  - "Explica con tus palabras qué es la espaguetificación y por qué la gravedad no tira igual de tus pies que de tu cabeza."
+  - "Busca la diferencia entre el horizonte de sucesos y la singularidad, y explícala con un dibujo o una analogía."
+  - "Investiga qué es Sagitario A\\* y cuándo se publicó la primera imagen de un agujero negro."
 referencias:
   - titulo: HOY SÍ que vas a entender los AGUJEROS NEGROS
     autor: Date un Vlog

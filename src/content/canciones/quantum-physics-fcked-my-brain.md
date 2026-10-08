@@ -105,11 +105,10 @@ letra:
           Este es el fin de la física que tanto te gusta
 
 actividades:
-  - "La canción dice que las leyes de Newton \"llegan a su fin\". ¿Significa eso que son falsas? Explica en qué situaciones siguen siendo válidas."
-  - "Enuncia con tus palabras el principio de incertidumbre. ¿Por qué no lo notamos al lanzar una pelota de baloncesto?"
+  - "La canción dice que las leyes de Newton \"llegan a su fin\". ¿Significa eso que son falsas? Piensa en qué situaciones siguen siendo válidas."
+  - "Busca información sobre el principio de incertidumbre y explícalo con tus palabras. ¿Por qué no lo notamos al lanzar una pelota de baloncesto?"
   - "Busca tres aparatos que tengas en casa cuyo funcionamiento dependa de la física cuántica y explica brevemente por qué."
   - "\"Nothing but probability\". Compara cómo responde la física clásica y cómo responde la cuántica a la pregunta \"¿dónde estará la partícula dentro de un segundo?\"."
-
 referencias:
   - titulo: "Mecánica cuántica"
     autor: "Wikipedia"

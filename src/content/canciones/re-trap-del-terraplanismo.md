@@ -133,11 +133,10 @@ letra:
       - texto: Cabeza vacía, la verdad
       - texto: Pero la Tierra también lo está
 actividades:
-  - Elige tres afirmaciones de la canción y explica qué prueba científica las
-    desmiente.
-  - ¿Cómo sabemos cómo es el interior de la Tierra si nadie ha llegado a él?
-  - Busca un bulo científico que haya circulado por redes sociales y explica
-    cómo comprobarías si es cierto.
+  - "Elige tres afirmaciones de la canción y busca qué prueba científica las desmiente."
+  - "Investiga cómo sabemos cómo es el interior de la Tierra si nadie ha llegado a él."
+  - "Busca un bulo científico que haya circulado por redes sociales y explica cómo comprobarías si es cierto."
+  - "Debatid en clase por qué hay personas que siguen creyendo que la Tierra es plana a pesar de las pruebas."
 referencias:
   - titulo: Tierra hueca
     autor: Wikipedia

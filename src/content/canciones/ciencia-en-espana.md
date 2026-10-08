@@ -186,14 +186,10 @@ letra:
       - texto: Ya lo he aceptado y no está mal
       - texto: Ciencia en España
 actividades:
-  - Pide a tu alumnado que lea la letra y distinga qué versos son hipérboles
-    humorísticas y cuáles reflejan situaciones reales.
-  - Organiza un debate sobre cómo debería financiarse la investigación pública y
-    qué papel tienen los plazos y las convocatorias.
-  - Pide que busquen en fuentes oficiales cómo se convoca un contrato
-    predoctoral y cuáles son las fases de una carrera científica.
-  - "Simula en clase la revisión por pares: cada pareja evalúa de forma anónima
-    un breve informe de laboratorio de otra pareja."
+  - "Lee la letra y distingue qué versos son exageraciones humorísticas y cuáles reflejan situaciones reales. Justifica tu elección."
+  - "Debatid en clase cómo debería financiarse la investigación pública y qué papel tienen los plazos y las convocatorias."
+  - "Busca en fuentes oficiales cómo se convoca un contrato predoctoral y cuáles son las fases de una carrera científica."
+  - "Simulad en clase la revisión por pares: en parejas, evaluad de forma anónima un breve informe de laboratorio de otra pareja."
 referencias:
   - titulo: Revisión por pares
     autor: Wikipedia

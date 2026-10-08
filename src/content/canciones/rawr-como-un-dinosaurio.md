@@ -138,10 +138,10 @@ letra:
     explicacion: |
       Frase del Dr. Ian Malcolm en *Parque Jurásico*. En la película todos los animales son hembras, y el ADN de rana que completa su genoma, un recurso ficticio, les permite cambiar de sexo y reproducirse. Tiene algo de base real: algunos peces, como el pez payaso, cambian de sexo de forma natural, y las hembras de algunos reptiles, como el dragón de Komodo, pueden tener crías sin macho (**partenogénesis**).
 actividades:
-  - "Clasifica una lista de animales prehistóricos (pterosaurios, mosasaurios, estegosaurios, cocodrilos) en dinosaurios y no dinosaurios y justifica cada respuesta."
-  - "Compara el esqueleto de un ave actual con el de un terópodo e identifica los rasgos que comparten."
-  - "Investiga el hallazgo de la capa de iridio y escribe un argumento a favor y otro en contra de la hipótesis del impacto como causa principal de la extinción."
-  - "Busca tres errores científicos de la película Parque Jurásico y propón qué se sabe hoy sobre cada uno."
+  - "Busca información sobre pterosaurios, mosasaurios, estegosaurios y cocodrilos, clasifícalos en dinosaurios y no dinosaurios, y justifica cada respuesta."
+  - "Busca imágenes del esqueleto de un ave actual y del de un terópodo, y señala los rasgos que comparten."
+  - "Investiga el hallazgo de la capa de iridio y prepara un argumento a favor y otro en contra de la hipótesis del impacto como causa principal de la extinción. Después, debatidlo en clase."
+  - "Busca tres errores científicos de la película Parque Jurásico y averigua qué se sabe hoy sobre cada uno."
 referencias:
   - titulo: "Dinosauria"
     autor: "Wikipedia"

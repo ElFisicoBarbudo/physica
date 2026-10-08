@@ -111,11 +111,10 @@ letra:
   - texto: Yo quiero tu dinero, a ti que te den por culo
 
 actividades:
-  - "Calcula cuántas veces hay que diluir 1:100 una disolución de 1 mol de sustancia para que, en promedio, quede menos de una molécula."
-  - "Diseña un experimento sencillo con grupo de control y ciego para comprobar si un supuesto remedio funciona mejor que un placebo."
-  - "Analiza en grupos los argumentos del narrador y señala la falacia que comete en cada estrofa."
+  - "Busca qué significan las diluciones homeopáticas (por ejemplo, 30CH) e investiga si después de tantas diluciones queda alguna molécula de la sustancia original."
+  - "Diseña sobre el papel un experimento con grupo de control y doble ciego para comprobar si un supuesto remedio funciona mejor que un placebo. Explica para qué sirve cada parte."
+  - "Analiza en grupo los argumentos del narrador y señala la falacia que comete en cada estrofa."
   - "Investiga qué ocurrió con el experimento de Benveniste sobre la memoria del agua y por qué la reproducibilidad es clave en ciencia."
-
 referencias:
   - titulo: "Homeopatía"
     autor: "Wikipedia"

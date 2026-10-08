@@ -151,14 +151,10 @@ letra:
           estudios revisados por pares y en evidencia acumulada, no en la fama
           de quien opina.
 actividades:
-  - Haz una lista de las afirmaciones del narrador y busca para cada una un dato
-    verificable de una fuente fiable (OMS, ministerio de sanidad, CDC) que la
-    desmienta.
-  - Explica con tus palabras cómo funciona una vacuna y qué es la memoria
-    inmunológica.
-  - Investiga la historia de la erradicación de la viruela y por qué no se ha
-    conseguido lo mismo con el sarampión.
-  - Busca información sobre el origen del movimiento antivacunas.
+  - "Haz una lista de las afirmaciones del narrador y busca, para cada una, un dato de una fuente fiable (OMS, Ministerio de Sanidad, CDC) que la desmienta."
+  - "Busca información sobre cómo funciona una vacuna y qué es la memoria inmunológica, y explícaselo con tus palabras a un compañero o compañera."
+  - "Investiga cómo se erradicó la viruela y piensa por qué no se ha conseguido lo mismo con el sarampión."
+  - "Busca información sobre el origen del movimiento antivacunas. Después, debatid en clase por qué los bulos sobre salud se difunden tan rápido."
 referencias:
   - titulo: Vacuna
     autor: Wikipedia

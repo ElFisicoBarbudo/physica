@@ -166,14 +166,10 @@ letra:
       - texto: 科学って呼んでるだけだ
         traduccion: y pesado que hay detrás de todo ello
 actividades:
-  - Escribe, en orden, las fases que sigue un artículo científico desde que se
-    envía a una revista hasta que se publica.
-  - Explica por qué un experimento científico debe poder repetirse y qué ocurre
-    si otro laboratorio no logra obtener el mismo resultado.
-  - Busca el nombre de tres revistas científicas y averigua en qué áreas
-    publican.
-  - Diseña un experimento sencillo de clase y enumera qué cosas podrían
-    estropear la muestra.
+  - "Busca qué fases sigue un artículo científico desde que se envía a una revista hasta que se publica, y ordénalas."
+  - "Piensa por qué un experimento científico debe poder repetirse y qué ocurre si otro laboratorio no logra obtener el mismo resultado."
+  - "Busca el nombre de tres revistas científicas y averigua en qué áreas publican."
+  - "Imagina un experimento sencillo de clase y haz una lista de las cosas que podrían estropear la muestra. Después, comparad las listas en grupo."
 referencias:
   - titulo: Revisión por pares
     autor: Wikipedia

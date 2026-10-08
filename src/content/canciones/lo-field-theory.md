@@ -74,11 +74,9 @@ letra:
           cómo se comunica la ciencia: primero los datos y su incertidumbre,
           después la conclusión.
 actividades:
-  - ¿Por qué en física de partículas se expresa la masa en unidades de energía?
-    ¿Qué ecuación lo permite?
-  - Explica con tus palabras qué significa que un resultado tenga una
-    significación de "cinco sigma".
-  - ¿Qué diferencia hay entre el campo de Higgs y el bosón de Higgs?
+  - "Investiga por qué en física de partículas se expresa la masa en unidades de energía y qué ecuación lo permite."
+  - "Busca qué significa que un resultado tenga una significación de \"cinco sigma\" y explícalo con tus palabras."
+  - "Busca la diferencia entre el campo de Higgs y el bosón de Higgs, e intenta explicarla con una analogía."
 referencias:
   - titulo: Bosón de Higgs
     autor: Wikipedia
