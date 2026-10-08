@@ -14,9 +14,7 @@ temas:
   - Física de partículas
   - Historia de la ciencia
 avisos:
-  - Contiene lenguaje muy malsonante y contenido sexual explícito, en inglés y
-    en ruso. Revísala antes de usarla en clase.
-  - Canción en tono de parodia de los tópicos soviéticos de la Guerra Fría.
+  - Contiene lenguaje malsonante en inglés y en ruso.
 creditos:
   - rol: Voz
     nombre: Adrián García
@@ -42,8 +40,9 @@ letra:
           más energía hace falta para acelerarla, y alcanzarla requeriría una
           energía infinita.
       - texto: But this is Russia, sending bitches to the space, да
-        traduccion: Pero esto es Rusia, mandamos zorras al espacio, sí
-  - versos:
+        traduccion: Pero esto es Rusia, mandamos perras al espacio, sí
+  - seccion: Verso 2
+    versos:
       - texto: It’s not cheating if we slow down the light
         traduccion: No es hacer trampa si ralentizamos la luz
       - texto: We put it under water, speed below c
@@ -54,7 +53,7 @@ letra:
           $v = c/n$. En el agua $n \approx 1{,}33$, así que la luz va a unos
           $0{,}75\,c$, unos 225 000 km/s. Un electrón muy energético puede
           superar esa velocidad sin violar la relatividad, porque sigue yendo
-          más despacio que $c$.
+          más despacio que $c$, la velocidad de la luz en el vacío.
       - texto: Our charged particles become bright
         traduccion: Nuestras partículas cargadas se vuelven brillantes
       - texto: Blue photons emitted, Черенковская синь
@@ -65,7 +64,7 @@ letra:
           produce un estampido sónico. Esa luz es más intensa en las longitudes
           de onda cortas, por eso suele verse **azul**. *Черенковская синь*
           significa "azul de Cherenkov".
-  - seccion: Coro
+  - seccion: Pre-coro
     versos:
       - texto: We’re partyin’ and drinkin’ cold vodka in our triple stripe
         traduccion: Estamos de fiesta y bebiendo vodka frío con nuestras tres rayas
@@ -79,14 +78,14 @@ letra:
           MAGIC, en La Palma, detectan esos destellos para estudiar el universo
           de altas energías.
       - texto: Tryin’ to steal our Nobel prize? сука
-        traduccion: ¿Intentas robarnos el Premio Nobel? ****
+        traduccion: ¿Intentas robarnos el Premio Nobel?
         explicacion: >
           El **Premio Nobel de Física de 1958** fue para Pável Cherenkov, Ilyá
           Frank e Ígor Tamm, los primeros científicos soviéticos en recibir el
           Nobel de Física.
       - texto: You better try to steal my big dick with ‘peluca’
         traduccion: Más te vale intentar robarme mi gran polla con una «peluca»
-  - seccion: Drop
+  - seccion: Coro
     versos:
       - texto: 0.75c
         traduccion: 0,75c
@@ -95,11 +94,11 @@ letra:
           0{,}75\,c$. Por encima de esa velocidad, una partícula cargada emite
           radiación de Cherenkov en el agua.
       - texto: Черенков Синий
-        traduccion: Azul Cherenkov
-  - seccion: Verso 2
+        traduccion: Azul de Cherenkov
+  - seccion: Verso 3
     versos:
       - texto: Nuclear reactors are not green anymore
-        traduccion: Los reactores nucleares ya no son ecológicos
+        traduccion: Los reactores nucleares ya no son verdes
         explicacion: >
           Juego de palabras: en la cultura popular la radiactividad se pinta de
           verde, pero el brillo real de los reactores sumergidos en agua es
@@ -108,36 +107,37 @@ letra:
           en sus desintegraciones beta y los que arrancan los rayos gamma al
           chocar con el agua.
       - texto: Russian scientists were acing the Cold War
-        traduccion: Los científicos rusos arrasaban en la Guerra Fría
+        traduccion: Científicos rusos arrasando en la Guerra Fría
       - texto: Are you disrespecting Па́вел Черенко́в my pal?
-        traduccion: ¿Le estás faltando al respeto a Pavel Cherenkov, mi amigo?
+        traduccion: Amigo ¿le estás faltando al respeto a Pavel Cherenkov?
       - texto: Listen to me bitch, Я твой рот ебал
-        traduccion: Escúchame, zorra, te he follado la boca
-  - versos:
+        traduccion: Escúchame, perra
+  - seccion: Verso 4
+    versos:
       - texto: Гопник kicking your ass with powerful hardbass
-        traduccion: Un gopnik te da una paliza con un potente hardbass
-      - texto: Космическая oasting with cold квас
-        traduccion: Fiesta espacial con kvas frío
+        traduccion: Un gopnik pateando culos a ritmo de un potente hardbass
+      - texto: Космическая toasting with cold квас
+        traduccion: Fiesta espacial brindando con kvas frío
       - texto: Put a Cherenkov detector in the Sputnik три
         traduccion: Pon un detector de Cherenkov en el Sputnik III
       - texto: Blue photons emitted, Черенковская синь
         traduccion: Se emiten fotones azules, azul de Cherenkov
-  - seccion: Coro
+  - seccion: Pre-coro
     versos:
       - texto: We’re partyin’ and drinkin’ cold vodka in our triple stripe
         traduccion: Estamos de fiesta y bebiendo vodka frío con nuestras tres rayas
       - texto: Our commie eyes can see the gamma rays
         traduccion: Nuestros ojos comunistas pueden ver los rayos gamma
       - texto: Tryin’ to steal our Nobel prize? сука
-        traduccion: ¿Intentas robarnos el Premio Nobel? Zorra
+        traduccion: ¿Intentas robarnos el Premio Nobel? Perra
       - texto: You better try to steal my big dick with ‘peluca’
         traduccion: Más te vale intentar robarme mi gran polla con una «peluca»
-  - seccion: Drop
+  - seccion: Coro
     versos:
       - texto: 0.75c
         traduccion: 0,75 c
       - texto: Черенков Синий
-        traduccion: Cherenkov Azul
+        traduccion: Azul de Cherenkov
   - seccion: Puente
     versos:
       - texto: The N1 was cooler than the Saturn V
@@ -162,12 +162,12 @@ letra:
           Son las únicas personas que han muerto en el espacio (por encima de
           los 100 km de altitud).
       - texto: российская наука goes pum pum like Калашникова
-        traduccion: La ciencia rusa dispara «pum pum» como una Kaláshnikov
+        traduccion: La ciencia rusa hace «pum pum» como una Kaláshnikov
       - texto: российская наука goes pum pum like Калашникова
-        traduccion: La ciencia rusa dispara «pum pum» como una Kaláshnikov
+        traduccion: La ciencia rusa hace «pum pum» como una Kaláshnikov
       - texto: российская наука
-        traduccion: La ciencia rusa
-  - seccion: Drop
+        traduccion: Ciencia rusa
+  - seccion: Coro
     versos:
       - texto: 0.75c
         traduccion: 0,75c
