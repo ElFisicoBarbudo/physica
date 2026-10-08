@@ -217,12 +217,15 @@ referencias:
   - titulo: Nicolás Copérnico
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Nicol%C3%A1s_Cop%C3%A9rnico
+  - titulo: Claudio Ptolomeo
+    autor: Wikipedia
+    url: https://es.wikipedia.org/wiki/Claudio_Ptolomeo
   - titulo: Heliocentrismo
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Heliocentrismo
-  - titulo: De revolutionibus orbium coelestium
-    autor: Wikipedia
-    url: https://es.wikipedia.org/wiki/De_revolutionibus_orbium_coelestium
+  - titulo: El Libro que Derrumbó 1000 Años de Creencias
+    autor: Date un Vlog
+    url: https://www.youtube.com/watch?v=XlwM0tkgsoI
 ---
 Durante más de mil trescientos años, la imagen del cosmos que dominó en Europa y en el mundo islámico fue la de Claudio Ptolomeo, un astrónomo que trabajó en Alejandría en el siglo II. En su *Almagesto* describió un universo con la Tierra inmóvil en el centro y los demás astros girando a su alrededor, y lo hizo con tanta precisión matemática que permitía predecir las posiciones de los planetas con una exactitud notable para su época.
 
