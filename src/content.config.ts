@@ -79,6 +79,8 @@ const paginas = defineCollection({
     // Enlace completo a una imagen, o ruta dentro de public/ (por ejemplo "media/adrian.jpg").
     foto: z.string().nullish(),
     enlaces: z.array(z.object({ nombre: z.string(), url: z.string().url() })).default([]),
+    // Resumen del currículum en la columna lateral: cada grupo tiene un título y varias líneas.
+    trayectoria: z.array(z.object({ titulo: z.string(), items: z.array(z.string()).default([]) })).default([]),
   }),
 });
 

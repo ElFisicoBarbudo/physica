@@ -39,6 +39,19 @@ content:
           - name: url
             label: Enlace
             type: string
+      - name: trayectoria
+        label: Trayectoria (columna lateral)
+        description: Resumen de tu currículum en grupos, por ejemplo Formación, Medios o Premios.
+        type: object
+        list: true
+        fields:
+          - name: titulo
+            label: Título del grupo
+            type: string
+          - name: items
+            label: Líneas
+            type: string
+            list: true
       - name: body
         label: Biografía
         type: rich-text
