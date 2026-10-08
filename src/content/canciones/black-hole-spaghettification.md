@@ -23,7 +23,8 @@ creditos:
   - rol: Masterización
     nombre: Arachnoid Audio
 letra:
-  - versos:
+  - seccion: Verso 1
+    versos:
       - texto: Dark, in the center of the galaxy
         traduccion: Oscuro, en el centro de la galaxia
         explicacion: >
@@ -69,7 +70,8 @@ letra:
           Alrededor del agujero negro hay una región llamada **horizonte de
           sucesos**. Es como una frontera invisible: si algo cruza este límite,
           no puede volver a salir, ni siquiera la luz.
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: Black hole beast
         traduccion: Bestia del agujero negro
       - texto: Swallows everything
@@ -78,7 +80,8 @@ letra:
         traduccion: Bestia del agujero negro
       - texto: Devours everything
         traduccion: Todo lo devora
-  - versos:
+  - seccion: Verso 2
+    versos:
       - texto: Destroyer of worlds, endless attraction
         traduccion: Destructor de mundos, atracción sin fin
       - texto: Invisible except for Hawking's radiation
@@ -91,7 +94,8 @@ letra:
         traduccion: Intenta no caer, perdición eterna
       - texto: You're gonna die by Spaghettification
         traduccion: Vas a morir por espaguetificación
-  - versos:
+  - seccion: Puente
+    versos:
       - texto: Once you enter the black hole
         traduccion: Una vez entras en el agujero negro
       - texto: All your atoms are rearranged
@@ -105,7 +109,8 @@ letra:
           llamado **espaguetificación**. Esto ocurre porque la gravedad es mucho
           más fuerte en tus pies (si están más cerca del agujero negro) que en
           tu cabeza. Esta diferencia, llamada **fuerza de marea**, estiraría tu cuerpo como si fueras un espagueti hasta destrozarte por completo. Curiosamente, ocurre antes de cruzar el horizonte en los agujeros negros pequeños, de masa estelar. En uno supermasivo como Sagitario A\*, las fuerzas de marea en el horizonte son más suaves y cruzarías la frontera entero; la espaguetificación llegaría ya dentro.
-  - versos:
+  - seccion: Outro
+    versos:
       - texto: Gravity, strong enough to shatter
         traduccion: Gravedad, tan fuerte que destroza
       - texto: Density, countless quantity of matter
@@ -146,6 +151,6 @@ referencias:
     autor: BBC News Mundo
     url: https://www.youtube.com/watch?v=dMEho2ZcVtE
 ---
-Imagina un lugar en el espacio donde la gravedad es tan fuerte que nada, ni siquiera la luz, puede escapar. Eso es, básicamente, un agujero negro. Los agujeros negros se forman cuando una estrella muy masiva muere y su núcleo colapsa. Según la relatividad general, este colapso comprime la masa de la estrella en un punto increíblemente pequeño y denso que recibe el nombre de **singularidad** (aunque los físicos sospechan que una teoría cuántica de la gravedad lo describiría de otra forma). Muy denso, como el **deathcore**, uno de los géneros más pesados dentro de la música metal.
+Imagina un lugar en el espacio donde la gravedad es tan fuerte que nada, ni siquiera la luz, puede escapar. Eso es, básicamente, un agujero negro. Los agujeros negros de masa estelar se forman cuando una estrella muy masiva muere y su núcleo colapsa (el origen de los supermasivos, como el del centro de nuestra galaxia, todavía se investiga). Según la relatividad general, ese colapso comprime la masa de la estrella en un punto increíblemente pequeño y denso que recibe el nombre de **singularidad** (aunque los físicos sospechan que una teoría cuántica de la gravedad lo describiría de otra forma). Muy denso, como el **deathcore**, uno de los géneros más pesados dentro de la música metal.
 
 Alrededor de la singularidad de los agujeros negros, existe una región llamada el **horizonte de sucesos**. Si algo cruza este horizonte, no puede salir. Una frontera de no retorno. Aunque los agujeros negros son "negros" (porque ni siquiera la luz puede escapar), podemos detectar su presencia por los efectos que tienen en las estrellas y las nubes de gas cercanas. Pero ¿qué pasaría si un humano se acercase a un agujero negro?

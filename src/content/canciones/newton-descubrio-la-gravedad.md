@@ -20,7 +20,8 @@ creditos:
     nombre: "Adrián García"
 
 letra:
-  - versos:
+  - seccion: Verso 1
+    versos:
       - texto: "El 4 de enero de 1643"
         explicacion: |
           En la Inglaterra de la época todavía se usaba el **calendario juliano**, y según él Newton nació el **25 de diciembre de 1642**. En el calendario gregoriano, el que usamos hoy, esa fecha corresponde al 4 de enero de 1643.
@@ -29,7 +30,8 @@ letra:
       - texto: "Mecánica, termo, óptica, fluidos, es la referencia"
         explicacion: |
           Newton tocó casi todas las ramas de la física: además de la mecánica, descompuso la luz blanca con un prisma, construyó el primer **telescopio reflector** que funcionó, formuló una **ley del enfriamiento** y estudió la viscosidad de los fluidos (por eso hablamos de "fluidos newtonianos").
-  - versos:
+  - seccion: Pre-coro
+    versos:
       - texto: "1ª Ley de Newton"
         explicacion: |
           **Principio de inercia**: un cuerpo permanece en reposo o en movimiento rectilíneo uniforme si no actúa ninguna fuerza neta sobre él.
@@ -40,11 +42,13 @@ letra:
         explicacion: |
           **Principio de acción y reacción**: si un cuerpo ejerce una fuerza sobre otro, este ejerce sobre el primero una fuerza igual y de sentido contrario.
       - texto: "Pero hay una ley que debes conocer"
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: "Newton descubrió la gravedad"
         explicacion: |
           Matiz importante: la gravedad ya actuaba mucho antes de Newton (lo que él hizo fue formular la **ley matemática** que la describe y demostrar que la misma fuerza rige la caída de los cuerpos en la Tierra y el movimiento de la Luna y los planetas). Esa ley es muy precisa, pero no es la última palabra: en campos gravitatorios muy intensos, o cuando se necesita mucha precisión (la órbita de Mercurio, los relojes de los satélites GPS), la sustituye la relatividad general de Einstein.
-  - versos:
+  - seccion: Verso 2
+    versos:
       - texto: "Una ley general de aplicación universal"
         explicacion: |
           La **ley de la gravitación universal**: dos cuerpos cualesquiera se atraen con una fuerza proporcional al producto de sus masas e inversamente proporcional al cuadrado de la distancia entre ellos, $F = G\,\dfrac{m_1 m_2}{r^2}$. Es "universal" porque vale igual en la Tierra que en el resto del cosmos.
@@ -55,16 +59,20 @@ letra:
       - texto: "de los 8 planetas que orbitan, también de plutón"
         explicacion: |
           Desde 2006 el Sistema Solar tiene **ocho planetas**: la Unión Astronómica Internacional reclasificó a **Plutón** como planeta enano. Pero las leyes de Newton describen igual de bien su órbita que la de cualquier otro cuerpo.
-  - versos:
+  - seccion: Pre-coro
+    versos:
       - texto: "1ª Ley de Newton"
       - texto: "2ª Ley de Newton"
       - texto: "3ª Ley de Newton"
       - texto: "Pero hay una ley que debes conocer"
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: "Newton descubrió la gravedad"
-  - versos:
+  - seccion: Puente
+    versos:
       - texto: "El caballero Sir Isaac Newton fue el impulsor de un nuevo tipo de ciencia, una ciencia general y objetiva. Desarrolló el cálculo diferencial, la cinemática y muchas cosas más. Pero no solo eso, también descubrió la ley que rige el movimiento del universo: la gravedad."
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: "Newton descubrió la gravedad"
 
 actividades:

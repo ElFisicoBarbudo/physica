@@ -23,7 +23,8 @@ creditos:
 - rol: Masterización
   nombre: Adrián García
 letra:
-- versos:
+- seccion: Verso 1
+  versos:
   - texto: Desde que ella nació es lo más bonito de mi vida
   - texto: Una bebé rosita que salió de una vagina
   - texto: Se la ve tan indefensa y tan desprotegida
@@ -35,7 +36,8 @@ letra:
   - texto: Y es que el peor cabrón es el doctor que inyecta química a un menor
     explicacion: |
       El narrador exagera. Todo es **química**, incluidos el agua y el aire. Las vacunas llevan un **antígeno** (una parte o una versión debilitada o inactivada del patógeno, o instrucciones para fabricarlo) y unos pocos componentes más, en cantidades muy pequeñas, y se prueban en **ensayos clínicos** antes de aprobarse.
-- versos:
+- seccion: Coro
+  versos:
   - texto: Anti-Vaxx
 - versos:
   - texto: Difteria, Tos Ferina,Varicela y Sarampión
@@ -44,7 +46,8 @@ letra:
     explicacion: |
       Son enfermedades reales y graves. La **viruela** se erradicó gracias a la vacunación: la OMS declaró su erradicación en 1980. La polio ha desaparecido de casi todo el mundo y el sarampión sigue provocando brotes cuando baja la cobertura vacunal.
   - texto: Ya adelanté trabajo redactando su esquela
-- versos:
+- seccion: Verso 2
+  versos:
   - texto: Fuerte como el hierro ella tiene la salud
   - texto: Pero inyectándole mercurio acabará en un ataúd
     explicacion: |
@@ -62,12 +65,14 @@ letra:
   - texto: 'Yo no me puse una y mira: estoy bien bueno'
     explicacion: |
       Es un ejemplo de **sesgo del superviviente** y de pensamiento anecdótico: que a una persona no le haya pasado nada no demuestra que la enfermedad no sea peligrosa. Además, quien no se vacuna suele estar protegido en parte por quienes sí lo están.
-- versos:
+- seccion: Coro
+  versos:
   - texto: Difteria, Tos Ferina,Varicela y Sarampión
   - texto: Neumococo, Hepatitis, Parecen los PokémonGo
   - texto: Papiloma, Rubéola, Poliomielitis y Viruela
   - texto: Cuando toca vacuna mi hija no va a la escuela
-- versos:
+- seccion: Verso 3
+  versos:
   - texto: Decidí no vacunar y volvería a hacer mismo
   - texto: prefiero las paperas a un atisbo de autismo
     explicacion: |
@@ -92,7 +97,8 @@ letra:
     explicacion: |
       La frase no es de Jenner, sino que se dice a menudo de él. No es un dato medible, sino una valoración, aunque tiene base: se calcula que la viruela mató a cientos de millones de personas en el siglo XX antes de su erradicación. La comparación con la cerveza es una broma del narrador, no un argumento.
   - texto: Pues como el que inventó la cerveza y nadie recuerda su nombre
-- versos:
+- seccion: Outro
+  versos:
   - texto: Os creéis en lo cierto porque os apoyan todos los doctores
   - texto: Bah, ¿qué sabrán ellos? Me fio más de un par de instagramers y famosos actores
     explicacion: |

@@ -22,7 +22,8 @@ creditos:
 - rol: Masterización
   nombre: Adrián García
 letra:
-- versos:
+- seccion: Intro
+  versos:
   - texto: '2018'
   - texto: Vamos
 - versos:
@@ -32,7 +33,8 @@ letra:
   - texto: Que te vuelven loco los dinosaurios, que hasta te los desayunas
   - texto: Que te gustan esas galletas, pájaro
   - texto: Viva Michael Crichton
-- versos:
+- seccion: Verso 1
+  versos:
   - texto: Tres tranquis Triceratops traman trincar un helecho
   - texto: El T. rex no pierde ojo, está al acecho
   - texto: Como el Pako y el barbudo, te atacan por la izquierda
@@ -54,19 +56,22 @@ letra:
   - texto: con esos pulgares dando like a esta canción
     explicacion: |
       El "like" viene de los **pulgares**: el iguanodón tenía en cada mano un pulgar muy grande en forma de espina cónica, que probablemente usaba para defenderse o para manipular comida. Al principio se interpretó como un cuerno en la nariz, hasta que aparecieron esqueletos más completos.
-- versos:
+- seccion: Pre-coro
+  versos:
   - texto: No te rias de mis brazos o te pego un buen bocao
     explicacion: |
       Los brazos del *T. rex* eran muy cortos en proporción, pero fuertes y musculosos. Su función exacta sigue siendo objeto de debate. Se han hallado plumas en tiranosauroides más antiguos y de menor tamaño, como *Yutyrannus* (de hace unos 125 millones de años), pero las impresiones de piel conocidas del *T. rex* muestran escamas y no hay evidencia directa de un plumaje extenso en el adulto.
   - texto: No te rias de mis plumas que ya voy burlao
-- versos:
+- seccion: Coro
+  versos:
   - texto: Haciendo RAWR como un dinosaurio
   - texto: Buscando huesos por el barrio
   - texto: Haciendo RAWR como un dinosaurio
   - texto: Su descendiente es tu canario
     explicacion: |
       Las aves son **dinosaurios terópodos**: su linaje evolucionó dentro de ese grupo, hecho respaldado por numerosos fósiles con plumas, como *Archaeopteryx* o los dromeosáuridos emplumados. Por eso se dice que los dinosaurios no se extinguieron del todo.
-- versos:
+- seccion: Verso 2
+  versos:
   - texto: Aparecieron en el triásico
   - texto: 230 millones de años
     explicacion: |
@@ -96,15 +101,18 @@ letra:
   - texto: Cuidadito no te rías de estos pájaros cantores
   - texto: Empieza el ataque cuando llegas a un claro
   - texto: Y no llega de frente, si no por los lados
-- versos:
+- seccion: Pre-coro
+  versos:
   - texto: No te rias de mis brazos o te pego un buen bocao
   - texto: No te rias de mis plumas que ya voy burlao
-- versos:
+- seccion: Coro
+  versos:
   - texto: Haciendo RAWR como un dinosaurio
   - texto: Buscando huesos por el barrio
   - texto: Haciendo RAWR como un dinosaurio
   - texto: Su descendiente es tu canario
-- versos:
+- seccion: Puente
+  versos:
   - texto: Pterodáctilo
     explicacion: |
       Los **pterosaurios** eran reptiles voladores, parientes cercanos de los dinosaurios pero no dinosaurios. *Pterodactylus* es un género concreto, aunque el nombre popular se aplica a casi todos. Los mosasaurios (reptiles marinos emparentados con lagartos y serpientes) y los plesiosaurios (reptiles marinos de cuello largo) son otros linajes que tampoco son dinosaurios.
@@ -117,12 +125,14 @@ letra:
     explicacion: |
       Los cocodrilos son **arcosaurios**, grupo que comparte con los dinosaurios y las aves, pero no son dinosaurios. Entre los reptiles actuales, los cocodrilos son los parientes más cercanos de las aves, de ahí que se confundan con facilidad.
   - texto: ¿En serio tío? Que no, que no es un dinosaurio
-- versos:
+- seccion: Coro
+  versos:
   - texto: Haciendo RAWR como un dinosaurio
   - texto: Buscando huesos por el barrio
   - texto: Haciendo RAWR como un dinosaurio
   - texto: Su descendiente es tu canario
-- versos:
+- seccion: Outro
+  versos:
   - texto: ¿Quiere decir que un grupo compuesto enteramente por animales hembras puede procrear?
   - texto: No, digo sencillamente que la vida… se abre camino
     explicacion: |

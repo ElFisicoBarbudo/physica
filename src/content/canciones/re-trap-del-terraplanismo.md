@@ -25,7 +25,8 @@ creditos:
   - rol: Masterización
     nombre: Adrián García
 letra:
-  - versos:
+  - seccion: Intro
+    versos:
       - texto: Rompiendo mi silencio para armar el beef
         explicacion: Un beef es conflicto entre dos o más artistas. Esta canción nace
           como una respuesta irónica al **Trap del Terraplanismo** de los
@@ -35,7 +36,8 @@ letra:
       - texto: Shhhhhhhhhhhhhhhhh empezamos
         explicacion: Homenaje al divulgador C de Ciencia, que siempre empieza sus vídeos
           con esta frase.
-  - versos:
+  - seccion: Verso 1
+    versos:
       - texto: Yo soy Pimpcipio Activo, el original
       - texto: vuestro trap terraplanista, pues no está mal
       - texto: pero os vengo aquí a recordar
@@ -53,7 +55,8 @@ letra:
           tiene una equivalencia segura). Otras pruebas sencillas: la sombra curva de
           la Tierra en los eclipses de Luna o los barcos que desaparecen "de
           abajo arriba" por el horizonte.
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: Hueca
       - texto: La Tierra es hueca
         explicacion: "La teoría de la Tierra hueca es **pseudociencia**. Conocemos el
@@ -67,7 +70,8 @@ letra:
       - texto: La Tierra es hueca
       - texto: Cabeza vacía, la verdad
       - texto: Pero la Tierra también lo está
-  - versos:
+  - seccion: Verso 2
+    versos:
       - texto: Sois súbditos de Ibáñez, como Mortadelo
         explicacion: Se refiere a Oliver Ibáñez, un youtuber español conocido por defender que la Tierra es plana. Aquí se hace un chiste confundiéndolo con
           Francisco Ibáñez, mítico dibujante de los cómics **Mortadelo y
@@ -106,12 +110,13 @@ letra:
       - texto: "Te lo vuelvo a explicar por si andas espeso:"
       - texto: la Tierra es hueca como aguacate sin el hueso
   - versos:
-      - texto: Dallas Thomson es la Alicia que cayó en el agujero
+      - texto: Dallas Thompson es la Alicia que cayó en el agujero
         explicacion: "**Dallas Thompson** contó en 2002, en el programa de radio estadounidense *Coast to Coast AM*, que una experiencia cercana a la muerte le había revelado la Tierra hueca, y anunció una expedición a la supuesta entrada del Polo Norte. Después se le perdió la pista, lo que alimentó la leyenda. Ninguna de sus afirmaciones tiene base científica."
       - texto: Atlantes, reptilianos y antiguos guerreros
       - texto: En la corteza exterior todo es aburrido
       - texto: En la cavidad polar hay fiesta, pah eso hemos venido
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: Hueca
       - texto: La Tierra es hueca
       - texto: Yo no estoy macizo, la verdad

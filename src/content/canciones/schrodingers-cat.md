@@ -20,7 +20,8 @@ creditos:
     nombre: "Adrián García"
 
 letra:
-  - versos:
+  - seccion: Verso 1
+    versos:
       - texto: "Hey there, it's quantum mechanics time"
         traduccion: "Hola, es la hora de la mecánica cuántica."
       - texto: "cute cat, let's make an experiment:"
@@ -28,10 +29,11 @@ letra:
       - texto: "put it in a box with poisonous gas"
         traduccion: "metémoslo en una caja con gas venenoso,"
       - texto: "with fifty percent chance of decay"
-        traduccion: "con un 50 % de probabilidades de morir."
+        traduccion: "con un 50 % de probabilidad de desintegrarse."
         explicacion: |
           En el planteamiento original, la caja contiene una cantidad tan pequeña de **sustancia radiactiva** que en una hora hay un 50 % de probabilidad de que se desintegre uno de sus átomos. Si ocurre, un contador Geiger lo detecta y activa un martillo que rompe un frasco de veneno (ácido cianhídrico). *Decay* significa "desintegración". Es un experimento **mental**: nunca se ha hecho con un gato real.
-  - versos:
+  - seccion: Pre-coro
+    versos:
       - texto: "Half times, kitty survives,"
         traduccion: "La mitad de las veces, el gatito sobrevive;"
       - texto: "half times, kitty goes bye bye"
@@ -54,7 +56,8 @@ letra:
         traduccion: "la mitad de las veces, el gatito sobrevive;"
       - texto: "half times, kitty goes bye bye"
         traduccion: "la otra mitad, el gatito se va para siempre."
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: "Schrödinger's cat's dead,"
         traduccion: "El gato de Schrödinger está muerto,"
       - texto: "Schrödinger's cat's alive"
@@ -65,7 +68,8 @@ letra:
         traduccion: "Solo hay que abrir la caja."
         explicacion: |
           Al abrir la caja hacemos una **medida**, y según la interpretación de Copenhague la superposición "colapsa" en uno solo de los resultados: el gato está vivo o está muerto. Hoy la **decoherencia** ayuda a explicar por qué los objetos grandes, que interactúan constantemente con su entorno, no se ven nunca en superposición.
-  - versos:
+  - seccion: Verso 2
+    versos:
       - texto: "We must understand,"
         traduccion: "Debemos entenderlo:"
       - texto: "the cat takes a stand"
@@ -76,7 +80,8 @@ letra:
           Juego de palabras con el refrán inglés *curiosity killed the cat* ("la curiosidad mató al gato"): aquí es nuestra medida, el acto de mirar, la que decide el resultado.
       - texto: "our measurement keeps it alive"
         traduccion: "nuestra medición lo mantiene vivo."
-  - versos:
+  - seccion: Pre-coro
+    versos:
       - texto: "Half times, kitty survives,"
         traduccion: "La mitad de las veces, el gatito sobrevive;"
       - texto: "half times, kitty goes bye bye"
@@ -95,7 +100,8 @@ letra:
         traduccion: "la mitad de las veces, el gatito sobrevive;"
       - texto: "half times, kitty goes bye bye"
         traduccion: "la otra mitad, el gatito se va para siempre."
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: "Schrödinger's cat's dead,"
         traduccion: "El gato de Schrödinger está muerto,"
       - texto: "Schrödinger's cat's alive"

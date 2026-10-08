@@ -23,9 +23,11 @@ creditos:
 - rol: Masterización
   nombre: Adrián García
 letra:
-- versos:
+- seccion: Intro
+  versos:
   - texto: Samuel te quiero, muack
-- versos:
+- seccion: Verso 1
+  versos:
   - texto: Se creen muy graciosillos esos cientificuchos
   - texto: Hablan mucho pero chucho, no los escucho
   - texto: El método científico no es la única verdad
@@ -55,10 +57,12 @@ letra:
   - texto: No seas bocachancla, esto te interesa
   - texto: El agua lo cura todo, es que es de cajón
   - texto: Esto es homeopatía, para ti cabrón
-- versos:
+- seccion: Coro
+  versos:
   - texto: Soy un homeópata, mira como curo
   - texto: Al método científico que le den por culo
-- versos:
+- seccion: Verso 2
+  versos:
   - texto: La medicina clásica ha quedado obsoleta
     explicacion: |
       Afirmación falsa y paradójica: la medicina basada en pruebas ha aumentado la esperanza de vida con vacunas, antibióticos y cirugía, mientras que la homeopatía no ha demostrado eficacia más allá del **efecto placebo**.
@@ -79,10 +83,12 @@ letra:
     explicacion: |
       Chiste que se vuelve contra el propio argumento: si el agua "recordase" todo lo que ha contenido, recordaría también la orina, los medicamentos y los contaminantes que han pasado por ella a lo largo de su historia, y no solo la sustancia elegida por el homeópata. Tal "memoria selectiva" no tiene sentido físico.
   - texto: No sea que el agua recuerde mi orina
-- versos:
+- seccion: Coro
+  versos:
   - texto: Soy un homeópata, mira como curo
   - texto: Al método científico que le den por culo
-- versos:
+- seccion: Verso 3
+  versos:
   - texto: Los que nos critican se autoretratan
   - texto: No soy un timador, si hasta llevo bata
   - texto: Tenemos los mejores medicamentos
@@ -97,7 +103,8 @@ letra:
     explicacion: |
       Un **placebo** es una sustancia sin principio activo, y los preparados homeopáticos muy diluidos lo son a todos los efectos. Algunos estudios (como el de Waber y colaboradores en *JAMA*, 2008, con un placebo analgésico) sugieren además que un precio alto puede aumentar la mejoría percibida, de modo que "cuestan un huevo" no refuta nada.
   - texto: ¿Cómo lo van a ser si cuestan un huevo?
-- versos:
+- seccion: Coro
+  versos:
   - texto: Soy un homeópata, curo
   - texto: Al método científico que le den por culo
   - texto: Soy un homeópata, mira como curo

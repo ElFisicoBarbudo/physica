@@ -23,7 +23,8 @@ creditos:
     nombre: "Hazzmet"
 
 letra:
-  - versos:
+  - seccion: Verso 1
+    versos:
       - texto: "So the lightspeed is fast, really fast"
         traduccion: "Así que la velocidad de la luz es rápida, muy rápida"
       - texto: "No chance of beating the photons in a race"
@@ -47,7 +48,8 @@ letra:
         traduccion: "Se emiten fotones azules, azul de Cherenkov"
         explicacion: |
           Cuando una partícula cargada supera la velocidad de la luz en el medio, emite luz en forma de **cono**, igual que un avión supersónico produce un estampido sónico. Esa luz es más intensa en las longitudes de onda cortas, por eso la vemos **azul**. *Черенковская синь* significa "azul de Cherenkov".
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: "We’re partyin’ and drinkin’ cold vodka in our triple stripe"
         traduccion: "Estamos de fiesta y bebiendo vodka frío con nuestras tres rayas"
       - texto: "Our commie eyes can see the gamma rays"
@@ -60,14 +62,16 @@ letra:
           El **Premio Nobel de Física de 1958** fue para Pável Cherenkov, Ilyá Frank e Ígor Tamm, los primeros científicos soviéticos en recibir el Nobel de Física.
       - texto: "You better try to steal my big dick with ‘peluca’"
         traduccion: "Más te vale intentar robarme mi gran polla con una «peluca»"
-  - versos:
+  - seccion: Drop
+    versos:
       - texto: "0.75c"
         traduccion: "0,75c"
         explicacion: |
           Es la velocidad de la luz en el agua: $c/n = c/1{,}33 \approx 0{,}75\,c$. Por encima de esa velocidad, una partícula cargada emite radiación de Cherenkov en el agua.
       - texto: "Черенков Синий"
         traduccion: "Azul Cherenkov"
-  - versos:
+  - seccion: Verso 2
+    versos:
       - texto: "Nuclear reactors are not green anymore"
         traduccion: "Los reactores nucleares ya no son ecológicos"
         explicacion: |
@@ -87,7 +91,8 @@ letra:
         traduccion: "Pon un detector de Cherenkov en el Sputnik III"
       - texto: "Blue photons emitted, Черенковская синь"
         traduccion: "Se emiten fotones azules, azul de Cherenkov"
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: "We’re partyin’ and drinkin’ cold vodka in our triple stripe"
         traduccion: "Estamos de fiesta y bebiendo vodka frío con nuestras tres rayas"
       - texto: "Our commie eyes can see the gamma rays"
@@ -96,12 +101,14 @@ letra:
         traduccion: "¿Intentas robarnos el Premio Nobel? Zorra"
       - texto: "You better try to steal my big dick with ‘peluca’"
         traduccion: "Más te vale intentar robarme mi gran polla con una «peluca»"
-  - versos:
+  - seccion: Drop
+    versos:
       - texto: "0.75c"
         traduccion: "0,75 c"
       - texto: "Черенков Синий"
         traduccion: "Cherenkov Azul"
-  - versos:
+  - seccion: Puente
+    versos:
       - texto: "The N1 was cooler than the Saturn V"
         traduccion: "El N1 era más molón que el Saturno V"
         explicacion: |
@@ -122,7 +129,8 @@ letra:
         traduccion: "La ciencia rusa dispara «pum pum» como una Kaláshnikov"
       - texto: "российская наука"
         traduccion: "La ciencia rusa"
-  - versos:
+  - seccion: Drop
+    versos:
       - texto: "0.75c"
         traduccion: "0,75c"
       - texto: "Черенков Синий"

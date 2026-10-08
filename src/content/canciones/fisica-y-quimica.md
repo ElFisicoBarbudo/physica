@@ -24,7 +24,8 @@ creditos:
 - rol: Masterización
   nombre: Lo Pintan Studios
 letra:
-- versos:
+- seccion: Verso 1
+  versos:
   - texto: Ni fermiones, ni bosones
     explicacion: |
       Las partículas se clasifican en **fermiones** (espín semientero, como electrones y protones, que cumplen el principio de exclusión de Pauli) y **bosones** (espín entero, como el fotón). El verso bromea con que, en la vida diaria, a la química le basta con "protones y electrones" (más los neutrones; y el protón no es elemental, sino que está formado por quarks).
@@ -37,13 +38,15 @@ letra:
   - texto: de la ciencia cocineros
   - texto: Hago todo lo que puedo
   - texto: No nos quiero juntos
-- versos:
+- seccion: Pre-coro
+  versos:
   - texto: Realidad alternativa
   - texto: Tierra plana o vacía
     explicacion: |
       Alude a la **Tierra plana** y a la **Tierra hueca**, ideas sin base científica. La forma casi esférica de la Tierra se conoce desde la Antigüedad, y la sismología muestra que el interior del planeta es sólido y líquido (corteza, manto y núcleo), no una cavidad vacía.
   - texto: Son física y química
-- versos:
+- seccion: Verso 2
+  versos:
   - texto: Siempre friego, que te friego
   - texto: Todo muelles vaya muermo
     explicacion: |
@@ -59,7 +62,8 @@ letra:
     explicacion: |
       La **teoría del todo** sería una teoría que unificase la relatividad general y la mecánica cuántica en un único marco. Hoy no existe una versión confirmada, y de ahí el "anhelo" del verso, que además es un guiño a la reconciliación de física y química.
   - texto: Pa’ que esté to’ junto
-- versos:
+- seccion: Pre-coro
+  versos:
   - texto: Con chemtrails que nos rocían
     explicacion: |
       Los **chemtrails** son una teoría conspirativa según la cual los aviones rociarían sustancias secretas. Las estelas blancas reales son **estelas de condensación**: el vapor de agua de los gases de escape se condensa y se congela en aire muy frío y húmedo, y su duración depende de la humedad de la atmósfera.
@@ -67,7 +71,8 @@ letra:
     explicacion: |
       "**Magufo**" es un término coloquial para quien cree en pseudociencias. La mención de la **lejía** (hipoclorito de sodio, $\mathrm{NaClO}$) alude a productos a base de cloro (lejía o el llamado "MMS" o "dióxido de cloro", que se obtiene a partir de clorito de sodio) que se han vendido como "remedios milagro": ingerirlos o administrarlos es peligroso, puede causar intoxicaciones graves y las autoridades sanitarias han advertido contra ellos.
   - texto: Son física y química
-- versos:
+- seccion: Coro
+  versos:
   - texto: En el átomo hemos sentido
     explicacion: |
       Final romántico con base real: los enlaces químicos se explican por el comportamiento de los **electrones** de los átomos, descrito por la **mecánica cuántica**. Así, "las leyes de las dos" convergen en el átomo y un electrón compartido puede, literalmente, unir dos átomos.
@@ -77,13 +82,15 @@ letra:
   - texto: antes partido
   - texto: lo ha unido
   - texto: un electrón
-- versos:
+- seccion: Pre-coro
+  versos:
   - texto: Medicina alternativa
   - texto: Ni Reiki ni-homeopatía
     explicacion: |
       El **Reiki** (imposición de manos para canalizar una supuesta energía) y la **homeopatía** (diluciones extremas) no han mostrado eficacia superior al placebo en ensayos clínicos bien diseñados. Por eso las autoridades sanitarias recomiendan no sustituir tratamientos probados por ellos.
   - texto: Son física y química
-- versos:
+- seccion: Coro
+  versos:
   - texto: En el átomo hemos sentido
   - texto: y comprendido
   - texto: las leyes de las dos

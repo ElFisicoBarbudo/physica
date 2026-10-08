@@ -142,7 +142,7 @@ content:
           - name: seccion
             label: Nombre de la sección
             type: string
-            description: 'Opcional: Estrofa 1, Estribillo, Puente...'
+            description: 'Opcional: Intro, Verso 1, Pre-coro, Coro, Puente, Outro... Se muestra con el interruptor «Estructura». Si varias estrofas seguidas forman la misma sección, pon el nombre solo en la primera.'
           - name: versos
             label: Versos
             type: object
