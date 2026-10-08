@@ -8,15 +8,7 @@ if (!pagina) throw new Error('Falta src/content/paginas/conoceme.md');
 const p = pagina.data;
 const { Content } = await render(pagina);
 const foto = p.foto && (/^https?:/.test(p.foto) ? p.foto : url(p.foto));
-
-// Las voces que han cantado en las canciones salen de los créditos de cada una.
 const canciones = await cancionesOrdenadas();
-const voces = new Map<string, string[]>();
-for (const c of canciones) {
-  for (const cr of c.data.creditos.filter((cr) => cr.rol === 'Voz' && cr.nombre !== 'Adrián García')) {
-    voces.set(cr.nombre, [...(voces.get(cr.nombre) ?? []), c.data.titulo]);
-  }
-}
 ---
 
 <Base titulo={p.titulo} descripcion={p.lema} actual="conoceme">
@@ -40,7 +32,16 @@ for (const c of canciones) {
           )
         }
       </div>
-      {foto && <img class="foto" src={foto} alt={`Retrato de ${p.nombre}`} width="768" height="1365" />}
+      {
+        foto && (
+          <div class="retrato">
+            <img class="foto" src={foto} alt={`Retrato de ${p.nombre}`} width="768" height="1365" />
+            <span class="sello" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M2 16c3-9 6-9 9 0s6 9 9 0 6-9 10 0" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" /></svg>
+            </span>
+          </div>
+        )
+      }
     </div>
   </div>
 
@@ -49,21 +50,6 @@ for (const c of canciones) {
 
     <aside class="lateral">
       <a class="boton" href={url('#canciones')}>Ver las {canciones.length} canciones</a>
-      {
-        voces.size > 0 && (
-          <section>
-            <h2>Voces invitadas</h2>
-            <ul class="voces">
-              {[...voces].map(([nombre, temas]) => (
-                <li>
-                  <strong>{nombre}</strong>
-                  <span>{temas.join(', ')}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )
-      }
     </aside>
   </div>
   </main>
@@ -78,17 +64,17 @@ for (const c of canciones) {
   .cabeza-dentro {
     display: grid;
     gap: 2rem;
-    align-items: end;
+    align-items: center;
   }
 
   @media (min-width: 800px) {
     .cabeza-dentro {
-      grid-template-columns: 1fr 22rem;
+      grid-template-columns: 1fr 20rem;
       gap: 4rem;
     }
   }
 
-  .cabeza-dentro > div {
+  .cabeza-dentro > div:first-child {
     padding-bottom: 3rem;
   }
 
@@ -132,18 +118,53 @@ for (const c of canciones) {
     color: #151a3a;
   }
 
-  /* La foto se apoya en el borde inferior de la banda, como si saliera de ella. */
+  /* Foto redonda con un aro amarillo desplazado y el sello de la onda del logo. */
+  .retrato {
+    position: relative;
+    width: min(100%, 18rem);
+    aspect-ratio: 1;
+    justify-self: center;
+    margin-bottom: 3rem;
+  }
+
+  .retrato::before {
+    content: '';
+    position: absolute;
+    inset: -0.7rem;
+    border-radius: 50%;
+    border: 3px solid var(--senal);
+    transform: translate(0.6rem, 0.5rem);
+  }
+
   .foto {
+    position: relative;
     display: block;
     width: 100%;
-    max-width: 22rem;
-    height: auto;
-    aspect-ratio: 4 / 5;
+    height: 100%;
     object-fit: cover;
-    object-position: top;
-    border-radius: 200px 200px 0 0;
+    object-position: 50% 18%;
+    border-radius: 50%;
     background: rgb(255 255 255 / 0.1);
-    justify-self: center;
+  }
+
+  .sello {
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0.6rem;
+    display: grid;
+    place-items: center;
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    background: var(--senal);
+    color: #151a3a;
+    border: 4px solid var(--banda);
+    transform: rotate(-12deg);
+  }
+
+  .sello svg {
+    width: 62%;
+    height: auto;
   }
 
   .cuerpo {
@@ -174,27 +195,4 @@ for (const c of canciones) {
     align-items: flex-start;
   }
 
-  .lateral h2 {
-    font-size: 1.5rem;
-  }
-
-  .voces {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .voces li {
-    padding: 0.7rem 0;
-    border-top: 1px solid var(--linea);
-  }
-
-  .voces strong {
-    display: block;
-  }
-
-  .voces span {
-    color: var(--tinta-suave);
-    font-size: 0.95rem;
-  }
 </style>
