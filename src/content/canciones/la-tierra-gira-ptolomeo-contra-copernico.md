@@ -30,24 +30,23 @@ letra:
       - texto: χαίρετε mis queridos amigos
       - texto: Tomad asiento y abrid esas orejas
       - texto: Pues hoy descubriremos, una tontería…
-      - texto: como funciona todo el cosmos
-  - versos:
+      - texto: Como funciona todo el cosmos
+  - seccion: Verso 1 · Ptolomeo
+    versos:
       - texto: Una pregunta ancestral ronda nuestra mente
       - texto: "que a todo buen filósofo trae de cabeza:"
       - texto: ¿cual es nuestro lugar en este mundo complejo
       - texto: tan lleno de incertezas?
-  - seccion: Verso 1 · Ptolomeo
-    versos:
       - texto: pero encontré la solución, dejad que os la argumente
       - texto: Mira hacia arriba ¿ves el cielo? ¿lo notas girar?
-        explicacion: >
-          El movimiento diurno de los astros es una apariencia que se explica de
-          dos maneras: el cielo gira alrededor de una Tierra fija (modelo
-          geocéntrico) o la Tierra rota sobre su eje. Para la observación
-          cotidiana ambas son indistinguibles.
+        explicacion: "El movimiento diurno de los astros es una apariencia que se
+          explica de dos maneras: el cielo gira alrededor de una Tierra fija
+          (modelo geocéntrico) o la Tierra rota sobre su eje. Para la
+          observación cotidiana ambas son indistinguibles."
       - texto: todo parece centrado en esta,
       - texto: la Tierra, nuestro amado hogar
-  - versos:
+  - seccion: Verso 2 · Ptolomeo
+    versos:
       - texto: El suelo no se mueve, está fijo, quieto
         explicacion: >
           El geocentrismo se apoyaba en argumentos de sentido común, recogidos
@@ -66,22 +65,19 @@ letra:
           nombre procede del árabe *al-majisṭī*, adaptación del griego
           *megístē*, "la más grande". La letra escribe "Amalgesto", una
           variante.
-  - versos:
       - texto: Y como el primer móvil en la esfera exterior
-        explicacion: >
-          El **primer móvil** (*primum mobile*) es la esfera más externa, que
+        explicacion: El **primer móvil** (*primum mobile*) es la esfera más externa, que
           transmite el movimiento a todas las demás. Es una idea de la
           cosmología aristotélica y medieval, no del Almagesto, de modo que
           Ptolomeo la usa aquí en sentido figurado.
       - texto: mi flow lo engloba todo, mi inteligencia es superior
       - texto: lo grito a lo grande, no necesito dar rodeos
       - texto: "apuntalo bien baby: mi nombre es Claudio Ptolomeo"
-        explicacion: >
-          Claudio Ptolomeo (c. 100 - c. 170) trabajó en Alejandría. Para ajustar
-          el movimiento aparente de los planetas, incluidos sus retrocesos,
-          empleó **epiciclos**, **deferentes** y el **ecuante**, un modelo
-          geométrico muy eficaz.
-  - seccion: Verso 2 · Copérnico
+        explicacion: Claudio Ptolomeo (c. 100 - c. 170) trabajó en Alejandría. Para
+          ajustar el movimiento aparente de los planetas, incluidos sus
+          retrocesos, empleó **epiciclos**, **deferentes** y el **ecuante**, un
+          modelo geométrico muy eficaz.
+  - seccion: Verso 3 · Copérnico
     versos:
       - texto: Sobre las revoluciones de las esferas celestes
         explicacion: >
@@ -140,15 +136,16 @@ letra:
       - texto: Y el nombre de Copérnico por siempre sonará
   - seccion: Coro
     versos:
+      - texto: Gira, gira, el cielo gira
       - texto: la bóveda celeste centrada en nuestros cuerpos
       - texto: Somos el centro del universo
       - texto: Ptolomeo contra Copérnico
   - versos:
-      - texto: Gira, gira, el cielo gira
-      - texto: Dando vueltas al Sol en un sistema Solar
+      - texto: Gira, gira, la Tierra gira
+      - texto: Dando vueltas al Sol en un sistema solar
       - texto: Nuestro ego caerá ante el modelo heliocéntrico
       - texto: Ptolomeo contra Copérnico
-  - seccion: Verso 3
+  - seccion: Verso X · Ptolomeo
     versos:
       - texto: Ptolomeo. Oh, Ptolomeo
       - texto: ¿dónde estás que no te veo?
@@ -163,7 +160,8 @@ letra:
       - texto: No puedes evitar demostrar que eres un necio
       - texto: ¿Y planteas que el ser humano no es el punto central?
       - texto: Saluda a tus problemas contra el poder clerical
-  - versos:
+  - seccion: Verso x · Copérnico
+    versos:
       - texto: Asustado te veo, amigo Ptolomeo
       - texto: Sabes que con mi teoría tu culo pateo
       - texto: El pensamiento medieval mi idea romperá
@@ -186,7 +184,7 @@ letra:
       - texto: Somos el centro del universo
       - texto: Ptolomeo contra Copérnico
   - versos:
-      - texto: Gira, gira, el cielo gira
+      - texto: Gira, gira, la Tierra gira
       - texto: Dando vueltas al Sol en un sistema Solar
       - texto: Nuestro ego caerá antel modelo heliocéntrico
       - texto: Ptolomeo contra Copérnico
@@ -198,7 +196,7 @@ letra:
       - texto: Ptolomeo, eres simple
       - texto: Tu nombre es ridículo, parece un chiste
   - versos:
-      - texto: Bah, antes de organizar, organiza tu pelo
+      - texto: Antes de organizar, organiza tu pelo
       - texto: saldrias ganando si te lo arrancan en un duelo
   - versos:
       - texto: Te extinguirás como al final del Pérmico
@@ -207,7 +205,7 @@ letra:
           fue la mayor extinción masiva conocida. Es un anacronismo evidente:
           nada tiene que ver con los astrónomos, que vivieron muchos millones de
           años después.
-      - texto: "que se enteren todos: Soy Copérnico"
+      - texto: "que se enteren todos: soy Copérnico"
   - seccion: Coro
     versos:
       - texto: Gira, gira, el cielo gira
@@ -215,7 +213,7 @@ letra:
       - texto: Somos el centro del universo
       - texto: Ptolomeo contra Copérnico
   - versos:
-      - texto: Gira, gira, el cielo gira
+      - texto: Gira, gira, la Tierra gira
       - texto: Dando vueltas al Sol en un sistema Solar
       - texto: Nuestro ego caerá ante el modelo heliocéntrico
       - texto: Ptolomeo contra Copérnico
