@@ -178,16 +178,14 @@ letra:
       - texto: Dando vueltas al Sol en un sistema Solar
       - texto: Nuestro ego caerá antel modelo heliocéntrico
       - texto: Ptolomeo contra Copérnico
-  - seccion: Puente · Ptolomeo
+  - seccion: Puente · Copérnico
     versos:
       - texto: Copérnico pringao, prusiano del montón
       - texto: hasta un simio te confunde con Colón
-  - seccion: Puente · Copérnico
-    versos:
       - texto: Ptolomeo, eres simple
       - texto: Tu nombre es ridículo, parece un chiste
       - texto: Antes de organizar, organiza tu pelo
-      - texto: saldrias ganando si te lo arrancan en un duelo
+      - texto: saldrías ganando si te lo arrancan en un duelo
       - texto: Te extinguirás como al final del Pérmico
         explicacion: >
           La extinción del final del Pérmico, hace unos 252 millones de años,
@@ -206,11 +204,9 @@ letra:
       - texto: Nuestro ego caerá ante el modelo heliocéntrico
       - texto: Ptolomeo contra Copérnico
 actividades:
-  - Pide al alumnado que observe el movimiento aparente de la Luna o de Marte
-    durante varias semanas y discuta qué modelo explica mejor lo que ve.
   - Dibuja con compás el movimiento retrógrado de un planeta usando deferente y
     epiciclo, y compáralo con la explicación heliocéntrica.
-  - Organiza un debate escolar en el que un grupo defienda el geocentrismo con
+  - Organizad un debate en clase en el que un grupo defienda el geocentrismo con
     los argumentos de su época y otro el heliocentrismo.
   - Busca en la letra los anacronismos y las licencias históricas, y corrígelos
     con ayuda de una fuente fiable.
