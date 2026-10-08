@@ -231,4 +231,4 @@ Durante más de mil trescientos años, la imagen del cosmos que dominó en Europ
 
 En 1543 Nicolás Copérnico publicó *De revolutionibus orbium coelestium*, donde situaba al Sol cerca del centro del sistema y a la Tierra como un planeta más, con un movimiento de rotación diario y otro de traslación anual. La canción pone a ambos a insultarse al ritmo de un rap, e incluye guiños a Rheticus, Kepler y Galileo. Más allá del humor, muestra una idea clave: el heliocentrismo no se impuso de golpe, y el propio Copérnico seguía usando órbitas circulares y epiciclos, de modo que su modelo no predecía mucho mejor que el de Ptolomeo.
 
-La letra mezcla anacronismos deliberados con datos históricos, así que es un buen recurso para discutir cómo se construyen y se sustituyen los modelos científicos. Las explicaciones de los versos aclaran dónde el chiste se aparta de la historia real.
+La letra mezcla anacronismos deliberados con datos históricos, así que es un buen recurso para discutir cómo se construyen y se sustituyen los modelos científicos.
