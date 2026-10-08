@@ -16,6 +16,22 @@ Al guardar, Pages CMS hace el commit y GitHub Actions vuelve a publicar la web e
 
 ## Añadir una canción
 
+Hay dos scripts que ayudan:
+
+```sh
+# Crea src/content/canciones/<slug>.md con la letra dividida en estrofas y secciones,
+# borrador: true y marcas TODO en los textos que faltan por redactar.
+npm run nueva -- --titulo "Mi canción" --youtube https://youtu.be/XXXXXXXXXXX \
+  --spotify https://open.spotify.com/track/... --estilo Trap --letra letra.txt [--idioma en]
+
+# Revisa longitudes, negritas, traducciones, TODO pendientes... de una canción (o de todas).
+npm run comprobar -- mi-cancion
+```
+
+En la letra, una línea en blanco separa estrofas y una línea como `[Coro]` o `Verso 2:` da nombre a la estrofa siguiente.
+
+A mano:
+
 1. Copia uno de los archivos de `src/content/canciones/` (por ejemplo `black-hole-spaghettification.md`) y dale un nombre nuevo. El nombre del archivo será la dirección de la página: `mi-cancion.md` → `/canciones/mi-cancion/`.
 2. Rellena la cabecera (entre las líneas `---`):
 
