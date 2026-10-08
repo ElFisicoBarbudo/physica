@@ -12,10 +12,11 @@ resumen: Una oda punk a la física y la química como las ciencias que explican 
   átomo que une a ambas disciplinas. Sirve para repasar vocabulario básico y
   desmontar bulos como los chemtrails o la homeopatía.
 temas:
-  - Física
   - Química
   - Pseudociencia
   - Vida de científico
+  - Física clásica
+  - Física cuántica
 colaboradores:
   - el-orbytal
 creditos:
