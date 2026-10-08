@@ -10,6 +10,7 @@ resumen: Un rapero pseudocientífico defiende que la Tierra es hueca. Una parodi
   para practicar el pensamiento crítico.
 temas:
   - Pseudociencia
+  - Crítica social
 avisos:
   - "Canción irónica: el narrador defiende a propósito ideas falsas (que la
     Tierra es hueca) para burlarse de la pseudociencia. Nada de lo que afirma es
@@ -52,9 +53,9 @@ letra:
           año 240 a. C., **Eratóstenes** midió su circunferencia comparando la
           sombra de un palo en dos ciudades distintas el mismo día, con un error
           pequeño (difícil de precisar, porque la unidad que usó, el estadio, no
-          tiene una equivalencia segura). Otras pruebas sencillas: la sombra curva de
-          la Tierra en los eclipses de Luna o los barcos que desaparecen "de
-          abajo arriba" por el horizonte.
+          tiene una equivalencia segura). Otras pruebas sencillas: la sombra
+          curva de la Tierra en los eclipses de Luna o los barcos que
+          desaparecen "de abajo arriba" por el horizonte.
   - seccion: Coro
     versos:
       - texto: Hueca
@@ -73,8 +74,9 @@ letra:
   - seccion: Verso 2
     versos:
       - texto: Sois súbditos de Ibáñez, como Mortadelo
-        explicacion: Se refiere a Oliver Ibáñez, un youtuber español conocido por defender que la Tierra es plana. Aquí se hace un chiste confundiéndolo con
-          Francisco Ibáñez, mítico dibujante de los cómics **Mortadelo y
+        explicacion: Se refiere a Oliver Ibáñez, un youtuber español conocido por
+          defender que la Tierra es plana. Aquí se hace un chiste confundiéndolo
+          con Francisco Ibáñez, mítico dibujante de los cómics **Mortadelo y
           Filemón**.
       - texto: porque negáis que haya un Sol en el subsuelo
         explicacion: >
@@ -99,8 +101,8 @@ letra:
         explicacion: >
           Esta es la clave del pensamiento crítico: una afirmación hay que
           **contrastarla con varias fuentes independientes y fiables**, no con
-          vídeos que se citan unos a otros. Como popularizó Carl Sagan, "afirmaciones
-          extraordinarias requieren pruebas extraordinarias".
+          vídeos que se citan unos a otros. Como popularizó Carl Sagan,
+          "afirmaciones extraordinarias requieren pruebas extraordinarias".
       - texto: Si no la Tierra es hueca como el hueco que hay entre mis dientes
   - versos:
       - texto: Un mundo bajo mis pies como en Stranger Things
@@ -111,7 +113,12 @@ letra:
       - texto: la Tierra es hueca como aguacate sin el hueso
   - versos:
       - texto: Dallas Thompson es la Alicia que cayó en el agujero
-        explicacion: "**Dallas Thompson** contó en 2002, en el programa de radio estadounidense *Coast to Coast AM*, que una experiencia cercana a la muerte le había revelado la Tierra hueca, y anunció una expedición a la supuesta entrada del Polo Norte. Después se le perdió la pista, lo que alimentó la leyenda. Ninguna de sus afirmaciones tiene base científica."
+        explicacion: "**Dallas Thompson** contó en 2002, en el programa de radio
+          estadounidense *Coast to Coast AM*, que una experiencia cercana a la
+          muerte le había revelado la Tierra hueca, y anunció una expedición a
+          la supuesta entrada del Polo Norte. Después se le perdió la pista, lo
+          que alimentó la leyenda. Ninguna de sus afirmaciones tiene base
+          científica."
       - texto: Atlantes, reptilianos y antiguos guerreros
       - texto: En la corteza exterior todo es aburrido
       - texto: En la cavidad polar hay fiesta, pah eso hemos venido
