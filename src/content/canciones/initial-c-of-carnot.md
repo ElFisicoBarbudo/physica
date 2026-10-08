@@ -8,7 +8,6 @@ spotify: https://open.spotify.com/track/0WR5lrXgfbBg1275L4sU1R
 estilo: Eurobeat
 genero: >
   El **eurobeat** es música electrónica de baile nacida en Italia a finales de los años 80, heredera del italo disco. Se reconoce enseguida: tempo muy rápido, sintetizadores llenos de melodía, estribillos épicos y voces en inglés. Curiosamente, aunque se producía en Italia, donde de verdad triunfó fue en Japón, gracias a los recopilatorios *Super Eurobeat* y al anime *Initial D*, sobre carreras de coches por puertos de montaña. De ahí el guiño del título: aquí la inicial es la C… de Carnot.
-genero_borrador: true
 idioma: en
 resumen: "Eurobeat a toda velocidad para Sadi Carnot y su ciclo ideal, el que marca el límite de eficiencia de cualquier máquina que convierte calor en trabajo. Muy útil para arrancar con la termodinámica y ver por qué ningún motor puede aprovechar todo el calor que recibe."
 temas:
@@ -173,6 +172,9 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Ciclo_de_Carnot
 ---
-Antes de que existieran las centrales eléctricas modernas o los motores de coches de alta gama, un joven ingeniero y físico francés llamado **Nicolas Léonard Sadi Carnot** se preguntó cuál era la forma más eficiente posible de transformar calor en trabajo. Esta pregunta lo llevó a definir, a principios del siglo XIX, el famoso **ciclo de Carnot**, una secuencia ideal de procesos que describe el funcionamiento teórico perfecto de una **máquina térmica**. Es decir, que ninguna máquina térmica que trabaje entre las mismas dos temperaturas puede ser más eficiente que la que imaginó Carnot.
 
-La **eficiencia** de este ciclo depende solo de las temperaturas entre las que opera la máquina, y su modelo aún hoy es una referencia para ingenieros y científicos. ¿Y qué mejor ritmo para hablar de eficiencia que el **eurobeat**, el género musical perfecto para las carreras de coches, para explicar cómo una máquina puede aprovechar cada gota de energía?
+Mucho antes de las centrales eléctricas o los coches de carreras, un joven ingeniero francés, **Sadi Carnot**, se hizo una pregunta clave: ¿cuál es la forma más eficiente posible de convertir calor en trabajo? Para responderla imaginó, a principios del siglo XIX, el **ciclo de Carnot**, una secuencia ideal de procesos que describe la **máquina térmica** perfecta.
+
+Su conclusión sigue vigente: ninguna máquina que trabaje entre las mismas dos temperaturas puede superar la eficiencia de la de Carnot, y esa eficiencia depende solo de esas dos temperaturas. Por eso su modelo es todavía una referencia para ingenieros y científicos.
+
+¿Y qué mejor ritmo para hablar de eficiencia que el **eurobeat**, la música de las carreras de coches? En clase es un buen arranque para la termodinámica y para entender por qué ningún motor puede aprovechar todo el calor que recibe.

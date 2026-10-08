@@ -8,7 +8,6 @@ spotify: https://open.spotify.com/track/4SMK6g0HggVR1phiZBgzuJ
 estilo: Hardbass
 genero: >
   El **hardbass** (o *hard bass*) es un estilo de música electrónica surgido en Rusia hacia finales de los 90 y principios de los 2000, con raíces en el hard house y el hardstyle europeos. Se reconoce por un bombo machacón y muy rápido, un bajo que rebota a contratiempo y gritos o consignas en ruso. En la década de 2010 se convirtió en un meme de internet ligado a la estética *gopnik*: chándal de tres rayas, sentadillas en cuclillas y kvas. Justo el ambiente que parodia la canción mientras explica el efecto Cherenkov.
-genero_borrador: true
 idioma: en-ru
 resumen: "Hardbass soviético sobre el brillo azul de los reactores nucleares, que aparece cuando una partícula corre más que la luz… en el agua. Ideal para explicar la radiación de Cherenkov y por qué la luz no va igual de rápido en todos los medios."
 temas:
@@ -199,6 +198,9 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/P%C3%A1vel_Cherenkov
 ---
-Nada puede viajar más rápido que la luz en el vacío. Pero la luz **no va igual de rápido en todos los medios**: en el agua avanza a solo unas tres cuartas partes de su velocidad en el vacío. Y una partícula con carga eléctrica sí puede ir más rápido que eso. Cuando lo hace, emite un destello de luz azulada: la **radiación de Cherenkov**.
 
-Es el brillo azul que se ve en las piscinas de los reactores nucleares. Lo estudió de forma sistemática el físico soviético **Pável Cherenkov** a partir de 1934, y le valió el Premio Nobel de Física de 1958, compartido con Ilyá Frank e Ígor Tamm, que lo explicaron teóricamente. De ahí el hardbass, el vodka y toda la estética soviética de la canción.
+Nada viaja más rápido que la luz en el vacío. Pero la luz **no va igual de rápido en todos los medios**: en el agua avanza a solo unas tres cuartas partes de esa velocidad. Y una partícula con carga sí puede superar eso. Cuando lo hace, deja tras de sí un destello azulado: la **radiación de Cherenkov**, el brillo azul que se ve en las piscinas de los reactores nucleares.
+
+Lo estudió a fondo el físico soviético **Pável Cherenkov** a partir de 1934, y le valió el Nobel de Física de 1958, compartido con Ilyá Frank e Ígor Tamm, que lo explicaron teóricamente. De ahí el hardbass, el vodka y toda la estética soviética de la canción.
+
+En clase te sirve para hablar del índice de refracción, de por qué la velocidad de la luz depende del medio y de cómo se usa este efecto para detectar partículas.

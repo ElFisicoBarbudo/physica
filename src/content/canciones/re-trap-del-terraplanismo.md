@@ -7,7 +7,6 @@ youtube: UaIj_i9aNhQ
 estilo: Trap
 genero: >
   Pocos géneros se prestan tanto a la parodia como el **trap**: frases cortas que se repiten, ad-libs (esos «¡yeah!» o «¡skrt!» de fondo), voces con Auto-Tune y una actitud de ostentación exagerada. Además, desde sus orígenes en el rap, las «guerras» entre artistas que se responden con canciones (el famoso *beef*) son parte del espectáculo. Esta canción juega justo con eso: un rapero pseudocientífico contesta a otros traps terraplanistas, y la seguridad con la que suelta cada disparate es precisamente el chiste.
-genero_borrador: true
 idioma: es
 resumen: "Un rapero pseudocientífico responde a los traps terraplanistas con una teoría aún más loca: que la Tierra es hueca. Cada verso es un bulo listo para desmontar con física y para aprender a distinguir una fuente fiable de una que no lo es."
 temas:
@@ -150,6 +149,9 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Erat%C3%B3stenes
 ---
-Esta canción es una **parodia**. Su protagonista, el rapero "Pimpcipio Activo", responde a otros *traps* terraplanistas que se hicieron virales y defiende una teoría todavía más disparatada: que **la Tierra es hueca**.
 
-Precisamente por eso funciona en clase: cada verso es una afirmación sin base que se puede desmontar con física. Sirve para hablar de cómo conocemos el interior de la Tierra sin haber llegado a él, de cómo sabemos que la Tierra es esférica desde hace más de dos mil años y, sobre todo, de **cómo distinguir una fuente fiable de un bulo**.
+Esta canción es una **parodia**. Su protagonista, el rapero «Pimpcipio Activo», responde a otros traps terraplanistas que se hicieron virales y, para no ser menos, defiende una teoría todavía más disparatada: que **la Tierra es hueca**, con un sol en su interior y agujeros en los polos que la NASA nos oculta.
+
+Precisamente por eso funciona tan bien en clase: cada verso es una afirmación sin base que se puede desmontar con física. Sabemos cómo es el interior de la Tierra sin haber llegado a él gracias a las ondas de los terremotos, y sabemos que es esférica desde hace más de dos mil años.
+
+Úsala para trabajar la estructura interna de la Tierra y la gravedad, pero sobre todo para algo que va más allá de la física: aprender a **distinguir una fuente fiable de un bulo**, por muy seguro que suene quien lo cuenta.

@@ -7,7 +7,6 @@ spotify: https://open.spotify.com/track/6n7xO4XjDyMkdxEfsQMi0m
 estilo: Trap
 genero: >
   El **trap** dio el salto a España en la década de 2010, con colectivos como PXXR GVNG (de donde salió Yung Beef) y artistas como Bad Gyal o C. Tangana en sus inicios. Casi a la vez, en Puerto Rico y el resto de Latinoamérica creció el trap latino, con figuras como Bad Bunny o Anuel AA, que lo mezclaron con el reguetón. En pocos años pasó de los barrios a las listas de éxitos. Su mezcla de graves enormes y frases cortas y repetitivas lo hace pegadizo… incluso para repasar dinosaurios.
-genero_borrador: true
 resumen: "Un trap con mucho humor que repasa los grandes grupos de dinosaurios, defiende que las aves son dinosaurios y cuenta la extinción del final del Cretácico. Llévala a clase para aclarar los errores más típicos sobre qué es (y qué no es) un dinosaurio."
 temas:
 - Paleontología
@@ -158,8 +157,8 @@ referencias:
     autor: "L. W. Álvarez, W. Álvarez, F. Asaro y H. V. Michel (Science, 1980)"
 ---
 
-Pocos temas despiertan tanta curiosidad en el aula como los dinosaurios, y pocos están rodeados de tantas ideas erróneas. Esta canción, con un tono de trap y muchas referencias a la cultura popular, como *Parque Jurásico* y la película *En busca del valle encantado*, aprovecha esa fascinación para colar contenidos rigurosos de paleontología.
+Pocos temas enganchan tanto en el aula como los dinosaurios, y pocos arrastran tantos errores. Este trap, lleno de humor y de guiños a *Parque Jurásico* o *En busca del valle encantado*, aprovecha esa fascinación para colar paleontología de la buena.
 
-La letra repasa a los principales grupos de dinosaurios: terópodos, saurópodos, tireóforos y ornitópodos. Recuerda que las aves son los descendientes vivos de los terópodos, y que muchos animales populares, como los pterosaurios, los plesiosaurios, los mosasaurios o los cocodrilos, no son dinosaurios. También cuenta cómo la extinción del final del Cretácico, asociada al impacto de Chicxulub y a la anomalía de iridio, acabó con todos los dinosaurios salvo las aves. Incluye un guiño a una pieza española, el *Concavenator*, hallado en Cuenca.
+La letra repasa los grandes grupos (terópodos, saurópodos, tireóforos y ornitópodos), recuerda que las aves son dinosaurios, descendientes de los terópodos, y deja claro que pterosaurios, plesiosaurios, mosasaurios o cocodrilos no lo son. También cuenta la extinción del final del Cretácico, ligada al impacto de Chicxulub y a la anomalía de iridio, e incluye un guiño al *Concavenator*, hallado en Cuenca.
 
-Como siempre en este tipo de canciones, conviene leerla con ojo crítico. Algunos versos son licencias humorísticas o simplifican en exceso, y las explicaciones de cada verso señalan dónde. Es una buena oportunidad para trabajar la diferencia entre lo que sabemos con evidencia fósil y lo que la ficción ha imaginado.
+Algunos versos son licencias humorísticas, y las explicaciones lo señalan. En clase te sirve para separar lo que sabemos por los fósiles de lo que ha imaginado la ficción.

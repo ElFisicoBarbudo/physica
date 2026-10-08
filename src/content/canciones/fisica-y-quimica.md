@@ -8,7 +8,6 @@ spotify: https://open.spotify.com/track/3B0vnoYCFVIyrUA018b2eI
 estilo: Punk rock
 genero: >
   El **punk** llegó a España a finales de los años 70, en plena Transición, y en los 80 tuvo escenas muy potentes: el humor absurdo de Siniestro Total en Galicia, la Movida madrileña o el llamado rock radical vasco, con grupos como La Polla Records o Eskorbuto. Junto a la música crecieron los fanzines, los conciertos autogestionados y los sellos independientes. Rapidez, guitarras distorsionadas y estribillos para corear a gritos: el formato perfecto para una oda a las ciencias que explican el mundo.
-genero_borrador: true
 idioma: es
 resumen: "Una oda punk a la física y la química, las ciencias que de verdad explican el mundo, con guiños a bosones, muelles, aminas y al átomo que las une. Da mucho juego para repasar vocabulario y desmontar bulos como los chemtrails o la homeopatía."
 temas:
@@ -171,10 +170,9 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Teor%C3%ADa_del_todo
 ---
-Esta canción es una versión de *Física o química*, el tema de Despistaos que sonaba en la cabecera de la serie española del mismo nombre (Antena 3, 2008-2011). La serie contaba las aventuras de un grupo de adolescentes en un instituto, pero, inexplicablemente, nunca se dio en ella una clase de Física ni de Química.
 
-Física y química comparten aulas, laboratorios y a menudo profesorado, y en secundaria se estudian juntas, pero a veces se las pone en rivalidad. Esta canción lo lleva a la comedia: la letra mezcla términos de ambas materias (fermiones, bosones, muelles, aminas, tolueno) con críticas a la pseudociencia, y termina con un final romántico en el que es un electrón el que reconcilia a las dos ciencias.
+Es una versión de *Física o química*, el tema de Despistaos que abría la serie del mismo nombre (Antena 3, 2008-2011). Una serie ambientada en un instituto en la que, curiosamente, nunca se vio una clase de Física ni de Química.
 
-El hilo conductor es que las dos descansan sobre las mismas leyes. La química explica cómo los átomos se unen compartiendo o intercambiando electrones, y esa explicación la da la mecánica cuántica, es decir, la física. Frente a esto, la letra enumera ideas sin respaldo científico (Tierra plana o hueca, chemtrails, Reiki, homeopatía, uso de lejía como remedio) que sustituyen el conocimiento contrastado por "realidades alternativas".
+La canción juega con la supuesta rivalidad entre las dos asignaturas y la convierte en comedia: mezcla vocabulario de ambas (fermiones, bosones, muelles, aminas, tolueno) con pullas a la pseudociencia (Tierra plana, chemtrails, Reiki, homeopatía), y acaba con un electrón reconciliándolas. Y es que en el fondo son lo mismo: la química explica cómo se unen los átomos, y esa explicación la da la mecánica cuántica, es decir, la física.
 
-En clase la canción sirve de repaso divertido de vocabulario y de excusa para trabajar el pensamiento crítico: cada referencia se puede convertir en una pequeña investigación sobre qué dice realmente la ciencia. Las explicaciones de los versos ofrecen un punto de partida, siempre con la cautela de un borrador pendiente de revisión.
+En clase es un repaso de vocabulario muy divertido, y cada referencia puede convertirse en una pequeña investigación sobre qué dice de verdad la ciencia.

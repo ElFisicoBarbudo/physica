@@ -8,7 +8,6 @@ spotify: https://open.spotify.com/track/0VuRvo6bUjA7oXZyr3IQ6U
 estilo: Punk rock
 genero: >
   El **punk rock** estalló a mediados de los años 70 entre Nueva York (Ramones) y Londres (Sex Pistols, The Clash) como reacción a un rock que se había vuelto largo, técnico y caro. Su receta: canciones cortas y rápidas, pocos acordes, actitud de «hazlo tú mismo» y letras que critican sin pelos en la lengua lo que no funciona en la sociedad. No hacía falta ser un virtuoso para montar un grupo, solo tener algo que decir. Por eso encaja tan bien para cantar las penurias de la ciencia en España.
-genero_borrador: true
 idioma: es
 resumen: "Un doctorando cuenta con humor negro y mucho punk lo que es investigar en España: plazos del BOE, pagos que nunca llegan, falta de material y precariedad. Abre la puerta a un buen debate en clase sobre cómo se financia la ciencia."
 temas:
@@ -208,8 +207,9 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Tesis_doctoral
 ---
-Esta canción es la excepción del repertorio: no habla de leyes físicas, sino de las condiciones en que se hace ciencia. Con un tono de punk rock y mucho sarcasmo, el narrador es un joven investigador que repasa el día a día de una carrera de fondo: convocatorias que dependen de fechas oficiales, ayudas que se resuelven o se pagan tarde, estancias en el extranjero, tesis que se leen en el transporte público y una estabilidad laboral que siempre parece estar "un poquito más allá".
 
-Conviene leerla como lo que es, una caricatura. Muchos versos son hipérboles deliberadas (ir nadando a Sídney, usar botellas de cola como probetas), y el estribillo "Ya lo he aceptado y no está mal" funciona como ironía amarga, no como una defensa de la situación. Tras el humor hay temas reales y discutidos: la financiación pública de la investigación, la evaluación mediante publicaciones, el acceso a la literatura científica y la salud mental de quienes inician su carrera.
+Esta canción es la excepción del repertorio: no va de leyes físicas, sino de cómo se hace ciencia en España. A golpe de punk rock y mucho sarcasmo, un joven investigador repasa su día a día: convocatorias que dependen del BOE, ayudas que llegan tarde, estancias en el extranjero, tesis leídas en el metro y una estabilidad que siempre está «un poquito más allá».
 
-Para el profesorado puede ser un buen punto de partida para hablar con el alumnado de bachillerato sobre qué significa dedicarse a la ciencia, cómo funciona el sistema de publicación y revisión por pares y por qué la política científica nos concierne a todos.
+Ojo, es una caricatura. Muchos versos son exageraciones a propósito (ir nadando a Sídney, usar botellas de cola como probetas), y el «Ya lo he aceptado y no está mal» del estribillo es pura ironía amarga. Pero detrás hay temas reales: la financiación de la investigación, la evaluación por publicaciones y la salud mental de quien empieza su carrera.
+
+Con alumnado de bachillerato da para un buen debate sobre qué significa dedicarse a la ciencia y por qué la política científica nos importa a todos.

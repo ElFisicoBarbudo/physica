@@ -7,7 +7,6 @@ spotify: https://open.spotify.com/track/3D2t6NUbSdgy9WvnEbMrwB
 estilo: Cyberpunk
 genero: >
   Más que un género musical, **cyberpunk** es una corriente de la ciencia ficción: futuros llenos de tecnología, megaempresas y ciudades de neón, popularizada en los 80 por *Blade Runner* (1982) o la novela *Neuromante* (1984) de William Gibson. La música que se asocia a esa estética suele ser electrónica oscura y agresiva: sintetizadores distorsionados, bajos industriales y ritmos mecánicos, cerca del synthwave más duro (*darksynth*) o del industrial. El videojuego *Cyberpunk 2077* (2020), al que guiña el título, volvió a ponerla de moda.
-genero_borrador: true
 resumen: "Un electrón atrapado en una red metálica nos cuenta, en plan cyberpunk, cómo el modelo de Drude explica la corriente eléctrica y por qué la cuántica tuvo que enmendarlo. Sirve para ver la ley de Ohm desde dentro y hasta dónde llega un modelo clásico."
 temas:
 - Física del estado sólido
@@ -144,8 +143,8 @@ referencias:
     autor: "N. W. Ashcroft y N. D. Mermin"
 ---
 
-En 1900, poco después de que J. J. Thomson identificara el electrón, Paul Drude propuso un modelo sencillo para explicar por qué los metales conducen la electricidad y el calor. Su idea fue tratar los electrones de valencia como un **gas de partículas clásicas** que se mueven libremente entre los iones fijos de la red, y que de vez en cuando sufren colisiones. Con unas pocas hipótesis consigue reproducir la ley de Ohm y obtener una expresión para la conductividad, $\sigma = n e^2 \tau / m$, además de interpretar el efecto Hall.
+En 1900, poco después de que J. J. Thomson identificara el electrón, Paul Drude propuso un modelo sencillo para explicar por qué los metales conducen la electricidad: tratar los electrones como un **gas de partículas clásicas** que se mueven libres entre los iones de la red y chocan de vez en cuando. Con eso reproduce la ley de Ohm y obtiene la conductividad, $\sigma = n e^2 \tau / m$.
 
-La canción adopta el punto de vista de un electrón, con una estética de ciudad distópica: la red cristalina es una cárcel infinita, el campo eléctrico es la fuerza que arrastra a todos en la misma dirección y los choques son el obstáculo constante. Es una metáfora útil para el alumnado, porque permite visualizar la **velocidad de deriva** y el papel del tiempo medio entre colisiones sin necesidad de formalismo.
+La canción lo cuenta desde dentro, en plan cyberpunk: la red cristalina es una cárcel infinita, el campo eléctrico arrastra a todos en la misma dirección y los choques no dan tregua. Así se visualizan la **velocidad de deriva** y el tiempo entre colisiones sin fórmulas.
 
-El modelo también tiene límites, y la segunda mitad de la letra los recorre: el calor específico electrónico que predecía no coincidía con el observado, y fue Arnold Sommerfeld quien lo corrigió al aplicar el principio de exclusión de Pauli. Más tarde, la teoría de bandas explicó por qué algunos materiales son conductores y otros aislantes. Es un buen ejemplo de cómo un modelo imperfecto puede ser muy fecundo y de cómo la ciencia lo refina.
+El modelo también falla, y la letra lo reconoce: Sommerfeld tuvo que corregirlo con el principio de exclusión de Pauli. Un ejemplo perfecto de cómo un modelo imperfecto puede ser muy útil.
