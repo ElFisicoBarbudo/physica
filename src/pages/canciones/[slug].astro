@@ -135,12 +135,12 @@ let n = 0;
           {
             conEstructura && (
               <label>
-                <input type="checkbox" role="switch" data-alterna="con-estructura" /> Estructura
+                <input type="checkbox" role="switch" data-alterna="con-estructura" checked={conEstructura} /> Estructura
               </label>
             )
           }
         </div>
-        <div class="letra" id="letra-contenido">
+        <div class:list={['letra', { 'con-estructura': conEstructura }]} id="letra-contenido">
           {
             d.letra.map((s) => (
               <div class="seccion">
