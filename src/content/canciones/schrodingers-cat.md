@@ -7,8 +7,7 @@ youtube: wgL145YioTY
 spotify: https://open.spotify.com/track/7EIcU2mLP33X1vVj4tgEdP
 estilo: Rockabilly
 idioma: en
-resumen: "El experimento mental más famoso de la física cuántica, a ritmo de
-  rockabilly: un gato vivo y muerto a la vez."
+resumen: "Rockabilly para el experimento mental más famoso de la cuántica: un gato encerrado en una caja, vivo y muerto a la vez hasta que alguien la abre. Genial para presentar la superposición y el papel de la medida en la física cuántica."
 temas:
   - Física cuántica
   - Física de partículas

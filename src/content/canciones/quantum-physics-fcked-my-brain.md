@@ -5,7 +5,7 @@ idioma: "en"
 youtube: "qp3c3zxAbNQ"
 spotify: "https://open.spotify.com/track/29fiemIFJWweYcdL0OFXBa"
 estilo: "Metalcore"
-resumen: "Dónde se acaba la física de Newton y por qué en el mundo cuántico solo podemos hablar de probabilidades."
+resumen: "Metalcore para el momento en que la física de Newton deja de funcionar y el mundo cuántico solo nos deja hablar de probabilidades. Funciona muy bien para abrir el tema preguntando qué significa que una teoría funcione aunque nadie la entienda del todo."
 temas: [Física cuántica, Física de partículas]
 orden: 8
 borrador: true

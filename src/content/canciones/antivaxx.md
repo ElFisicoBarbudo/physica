@@ -7,10 +7,7 @@ youtube: wPULp0Nn5Ds
 spotify: https://open.spotify.com/track/6DPv0G6ST218PHGflWkujP
 estilo: Trap
 idioma: es
-resumen: Canción irónica en la que el narrador defiende a propósito argumentos
-  antivacunas, todos falsos, para ridiculizarlos. Sirve en clase para desmontar
-  bulos con datos sobre inmunidad de grupo, ensayos clínicos y la historia de la
-  vacunación.
+resumen: "Un antivacunas muy convencido suelta, uno detrás de otro, todos los bulos de manual (y ninguno se sostiene). Viene al pelo para desmontarlos en clase con datos sobre inmunidad de grupo, ensayos clínicos y la historia de las vacunas."
 temas:
   - Pseudociencia
 avisos:

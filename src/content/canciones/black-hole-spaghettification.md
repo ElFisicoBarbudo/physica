@@ -7,8 +7,7 @@ youtube: wBtFe005OjQ
 spotify: https://open.spotify.com/track/2Rtvlj00gWTJgaNi4ho61W
 estilo: Deathcore
 idioma: en
-resumen: Qué es un agujero negro, cómo lo detectamos sin verlo y qué le pasaría
-  a un humano que cayera en uno.
+resumen: "¿Qué te pasaría si cayeras en un agujero negro? Spoiler: acabarías hecho un espagueti. Perfecta para explicar qué es un agujero negro, qué es el horizonte de sucesos y cómo los detectamos aunque no se puedan ver."
 temas:
   - Agujeros negros
   - Astrofísica

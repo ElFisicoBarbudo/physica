@@ -5,7 +5,7 @@ idioma: es
 youtube: mlvj7C9f-Ls
 spotify: https://open.spotify.com/track/4kZmlHfYUhqNYmSOUHkG6W
 estilo: Trap
-resumen: "Un homeópata de caricatura defiende con soberbia que el agua tiene memoria y que la ciencia sobra, mientras la letra delata el absurdo de sus argumentos. Sirve para trabajar diluciones, número de Avogadro, placebo y pensamiento crítico ante las pseudoterapias."
+resumen: "Un homeópata de caricatura jura que el agua tiene memoria y que la ciencia sobra, y cuanto más habla, más se le ve el plumero. Con ella puedes trabajar diluciones, el número de Avogadro, el efecto placebo y el pensamiento crítico."
 temas:
 - Pseudociencia
 orden: 11

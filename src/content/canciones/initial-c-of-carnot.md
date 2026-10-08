@@ -7,8 +7,7 @@ youtube: Z3zpaBX3ihQ
 spotify: https://open.spotify.com/track/0WR5lrXgfbBg1275L4sU1R
 estilo: Eurobeat
 idioma: en
-resumen: "Sadi Carnot y su ciclo ideal: el límite de lo eficiente que puede ser
-  cualquier máquina que convierte calor en trabajo."
+resumen: "Eurobeat a toda velocidad para Sadi Carnot y su ciclo ideal, el que marca el límite de eficiencia de cualquier máquina que convierte calor en trabajo. Muy útil para arrancar con la termodinámica y ver por qué ningún motor puede aprovechar todo el calor que recibe."
 temas:
   - Termodinámica
   - Historia de la ciencia

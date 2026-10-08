@@ -5,7 +5,7 @@ idioma: es
 youtube: FSl2FlwCT3g
 spotify: https://open.spotify.com/track/6n7xO4XjDyMkdxEfsQMi0m
 estilo: Trap
-resumen: "Un trap lleno de humor que recorre los grandes grupos de dinosaurios, defiende que las aves son dinosaurios y repasa la extinción del final del Cretácico. Sirve en clase para aclarar los errores más comunes sobre qué es y qué no es un dinosaurio."
+resumen: "Un trap con mucho humor que repasa los grandes grupos de dinosaurios, defiende que las aves son dinosaurios y cuenta la extinción del final del Cretácico. Llévala a clase para aclarar los errores más típicos sobre qué es (y qué no es) un dinosaurio."
 temas:
 - Paleontología
 orden: 16

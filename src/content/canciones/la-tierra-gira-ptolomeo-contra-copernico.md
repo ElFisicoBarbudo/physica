@@ -6,10 +6,7 @@ borrador: true
 youtube: FRU8XN4_dyU
 estilo: Rap
 idioma: es
-resumen: Una batalla de rap entre Ptolomeo y Copérnico que enfrenta el modelo
-  geocéntrico con el heliocéntrico. Sirve para introducir en clase la revolución
-  copernicana y cómo cambia un modelo científico cuando cambian las
-  observaciones.
+resumen: "Ptolomeo y Copérnico se enfrentan en una batalla de rap: la Tierra en el centro contra el Sol en el centro. Una forma muy viva de presentar la revolución copernicana y de ver cómo cambia un modelo científico cuando cambian las observaciones."
 temas:
   - Historia de la ciencia
   - Astrofísica

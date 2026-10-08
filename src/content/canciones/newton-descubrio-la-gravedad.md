@@ -7,7 +7,7 @@ youtube: jTCBr85cLeM
 spotify: https://open.spotify.com/track/06SZ4AUPq3c1rHCwTEWnlX
 estilo: Ska
 idioma: es
-resumen: Un ska para repasar las tres leyes de Newton y la ley que mueve los planetas.
+resumen: "Ska para repasar a Isaac Newton, sus tres leyes del movimiento y la gravitación universal, que explica con las mismas ecuaciones la caída de una manzana y las órbitas de los planetas. Un buen punto de partida para la dinámica en secundaria."
 temas:
   - Física clásica
   - Historia de la ciencia

@@ -6,8 +6,7 @@ borrador: true
 youtube: UaIj_i9aNhQ
 estilo: Trap
 idioma: es
-resumen: Un rapero pseudocientífico defiende que la Tierra es hueca. Una parodia
-  para practicar el pensamiento crítico.
+resumen: "Un rapero pseudocientífico responde a los traps terraplanistas con una teoría aún más loca: que la Tierra es hueca. Cada verso es un bulo listo para desmontar con física y para aprender a distinguir una fuente fiable de una que no lo es."
 temas:
   - Pseudociencia
   - Crítica social
