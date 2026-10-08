@@ -185,4 +185,4 @@ referencias:
 
 Con ella puedes hablar de cosas que rara vez salen en el aula: que los experimentos se repiten, que las muestras se estropean, que los resultados se publican en artículos y que antes otros especialistas los evalúan mediante la **revisión por pares**. Hasta sale *Nature*, una de las revistas científicas más conocidas.
 
-Es un buen punto de partida para contar cómo funciona la ciencia de verdad, lejos de la imagen del genio solitario, y para hablar de paciencia, reproducibilidad e integridad en la investigación.
+Es un buen punto de partida para contar cómo funciona la ciencia de verdad, lejos de la imagen del genio solitario, y para hablar de paciencia, **reproducibilidad** e **integridad** en la investigación.

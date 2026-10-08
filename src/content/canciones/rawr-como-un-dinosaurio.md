@@ -159,6 +159,6 @@ referencias:
 
 Pocos temas enganchan tanto en el aula como los dinosaurios, y pocos arrastran tantos errores. Este trap, lleno de humor y de guiños a *Parque Jurásico* o *En busca del valle encantado*, aprovecha esa fascinación para colar paleontología de la buena.
 
-La letra repasa los grandes grupos (terópodos, saurópodos, tireóforos y ornitópodos), recuerda que las aves son dinosaurios, descendientes de los terópodos, y deja claro que pterosaurios, plesiosaurios, mosasaurios o cocodrilos no lo son. También cuenta la extinción del final del Cretácico, ligada al impacto de Chicxulub y a la anomalía de iridio, e incluye un guiño al *Concavenator*, hallado en Cuenca.
+La letra repasa los grandes grupos (**terópodos**, **saurópodos**, **tireóforos** y **ornitópodos**), recuerda que las aves son dinosaurios, descendientes de los terópodos, y deja claro que pterosaurios, plesiosaurios, mosasaurios o cocodrilos no lo son. También cuenta la extinción del final del Cretácico, ligada al **impacto de Chicxulub** y a la anomalía de iridio, e incluye un guiño al *Concavenator*, hallado en Cuenca.
 
 Algunos versos son licencias humorísticas, y las explicaciones lo señalan. En clase te sirve para separar lo que sabemos por los fósiles de lo que ha imaginado la ficción.

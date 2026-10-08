@@ -175,6 +175,6 @@ referencias:
 
 *AntiVaxx* es un trap irónico: el narrador se mete en la piel de un padre antivacunas que va soltando, uno tras otro, todos los bulos de manual. Ninguno se sostiene, y ahí está la gracia: pillar qué falla en cada frase.
 
-La realidad es justo la contraria. Las vacunas son una de las medidas de salud pública que más vidas han salvado: gracias a ellas se erradicó la viruela, y la polio, la difteria o el sarampión se han reducido muchísimo. Eso sí, cuando la vacunación baja, algunas de esas enfermedades vuelven.
+La realidad es justo la contraria. Las **vacunas** son una de las medidas de **salud pública** que más vidas han salvado: gracias a ellas se erradicó la viruela, y la polio, la difteria o el sarampión se han reducido muchísimo. Eso sí, cuando baja la **cobertura vacunal**, algunas de esas enfermedades vuelven.
 
 En clase es perfecta para entrenar el **pensamiento crítico**: distinguir una anécdota de un dato, una fuente fiable de un mensaje en redes y un consenso científico de una opinión. Ve verso a verso, lee la explicación de cada uno y contrasta las cifras con fuentes oficiales actualizadas.

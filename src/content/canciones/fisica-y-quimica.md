@@ -173,6 +173,6 @@ referencias:
 
 Es una versión de *Física o química*, el tema de Despistaos que abría la serie del mismo nombre (Antena 3, 2008-2011). Una serie ambientada en un instituto en la que, curiosamente, nunca se vio una clase de Física ni de Química.
 
-La canción juega con la supuesta rivalidad entre las dos asignaturas y la convierte en comedia: mezcla vocabulario de ambas (fermiones, bosones, muelles, aminas, tolueno) con pullas a la pseudociencia (Tierra plana, chemtrails, Reiki, homeopatía), y acaba con un electrón reconciliándolas. Y es que en el fondo son lo mismo: la química explica cómo se unen los átomos, y esa explicación la da la mecánica cuántica, es decir, la física.
+La canción juega con la supuesta rivalidad entre las dos asignaturas y la convierte en comedia: mezcla vocabulario de ambas (**fermiones**, **bosones**, muelles, aminas, tolueno) con pullas a la **pseudociencia** (Tierra plana, chemtrails, Reiki, homeopatía), y acaba con un electrón reconciliándolas. Y es que en el fondo son lo mismo: la química explica cómo se unen los átomos, y esa explicación la da la **mecánica cuántica**, es decir, la física.
 
 En clase es un repaso de vocabulario muy divertido, y cada referencia puede convertirse en una pequeña investigación sobre qué dice de verdad la ciencia.

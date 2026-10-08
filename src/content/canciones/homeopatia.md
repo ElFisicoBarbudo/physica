@@ -134,6 +134,6 @@ referencias:
 
 La homeopatía nació a finales del siglo XVIII y propone curar con preparados diluidos una y otra vez, agitándolos entre dilución y dilución. Este trap la retrata con ironía: el narrador es un «homeópata» arrogante que desprecia el método científico, defiende la «memoria del agua» y recomienda dejar los tratamientos médicos. Nada de lo que dice es cierto, y sus argumentos se caen solos.
 
-Hay mucha química detrás. Una dilución homeopática habitual puede llegar a $10^{-60}$ o más, muy por debajo de lo que permite el **número de Avogadro** ($6{,}022 \times 10^{23}$ entidades por mol): lo normal es que no quede ni una molécula del ingrediente original. Y los ensayos clínicos no muestran que funcione mejor que un placebo.
+Hay mucha química detrás. Una dilución homeopática habitual puede llegar a $10^{-60}$ o más, muy por debajo de lo que permite el **número de Avogadro** ($6{,}022 \times 10^{23}$ entidades por mol): lo normal es que no quede ni una molécula del ingrediente original. Y los **ensayos clínicos** no muestran que funcione mejor que un placebo.
 
-En clase puedes pasar de la risa al análisis: hacer cuentas de diluciones, distinguir placebo de eficacia real y hablar de por qué dejar un tratamiento probado puede ser peligroso.
+En clase puedes pasar de la risa al análisis: hacer cuentas de diluciones, distinguir **placebo** de **eficacia real** y hablar de por qué dejar un tratamiento probado puede ser peligroso.

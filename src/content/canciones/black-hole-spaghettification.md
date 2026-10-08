@@ -173,6 +173,6 @@ referencias:
 
 Imagina un sitio del espacio donde la gravedad es tan bestia que nada, ni siquiera la luz, puede escapar. Eso es un agujero negro. Los de masa estelar nacen cuando una estrella muy masiva muere y su núcleo colapsa; según la relatividad general, toda esa masa acaba en un punto diminuto y densísimo, la **singularidad** (aunque se sospecha que una teoría cuántica de la gravedad lo describiría de otra forma). Denso, como el **deathcore**.
 
-Alrededor está el **horizonte de sucesos**, la frontera de no retorno: lo que la cruza ya no sale. Y aunque no podamos verlos, sabemos dónde están por lo que hacen a las estrellas y al gas de su alrededor.
+Alrededor está el **horizonte de sucesos**, la frontera de no retorno: lo que la cruza ya no sale. Aunque no podamos verlos, sabemos dónde están por lo que hacen a las estrellas cercanas.
 
 ¿Y si cayeras tú dentro? La canción te lo cuenta sin anestesia: acabarías estirado como un espagueti. Es un buen gancho para hablar de gravedad, fuerzas de marea y de cómo se estudia lo que no se puede ver.
