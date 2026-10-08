@@ -35,8 +35,8 @@ trayectoria:
   - titulo: Reconocimientos
     items:
       - Premio EDE en la categoría de Ciencia (2026)
-      - Reconocimiento IPFest en divulgación (2025)
-      - Nominado a los Premios TikTok como creador educativo (2022)
+      - Premio IPFest en la categoría de Divulgación (2025)
+      - Nominado a los Premios TikTok como creador educativo referente (2022)
 ---
 Estudié física en la Universitat de les Illes Balears (UIB), donde fui dando tumbos entre las diferentes ramas hasta darme cuenta de que no podía (ni quería) elegir qué parte de la física me gustaba más, así que acabé haciendo un máster en sistemas complejos en el IFISC. Por el camino pasé por el concurso de monólogos científicos FameLab y descubrí que contar la ciencia mola casi tanto como hacerla.
 
