@@ -6,6 +6,9 @@ borrador: false
 youtube: Z3zpaBX3ihQ
 spotify: https://open.spotify.com/track/0WR5lrXgfbBg1275L4sU1R
 estilo: Eurobeat
+genero: >
+  El **eurobeat** es música electrónica de baile nacida en Italia a finales de los años 80, heredera del italo disco. Se reconoce enseguida: tempo muy rápido, sintetizadores llenos de melodía, estribillos épicos y voces en inglés. Curiosamente, aunque se producía en Italia, donde de verdad triunfó fue en Japón, gracias a los recopilatorios *Super Eurobeat* y al anime *Initial D*, sobre carreras de coches por puertos de montaña. De ahí el guiño del título: aquí la inicial es la C… de Carnot.
+genero_borrador: true
 idioma: en
 resumen: "Eurobeat a toda velocidad para Sadi Carnot y su ciclo ideal, el que marca el límite de eficiencia de cualquier máquina que convierte calor en trabajo. Muy útil para arrancar con la termodinámica y ver por qué ningún motor puede aprovechar todo el calor que recibe."
 temas:

@@ -6,6 +6,9 @@ borrador: true
 youtube: l3p82dHC9IQ
 spotify: https://open.spotify.com/track/3j0JssDyNKrZcYPNZecJfX
 estilo: Lofi
+genero: >
+  El **lo-fi** (de *low fidelity*, «baja fidelidad») empezó siendo la etiqueta de las grabaciones caseras, con ruido y defectos. Hoy se usa sobre todo para el lo-fi hip hop: bases lentas y relajadas, acordes de jazz, crujidos de vinilo y un sonido algo «sucio» a propósito. Productores como J Dilla o Nujabes se consideran sus precursores, y en la década de 2010 se volvió enormemente popular gracias a las emisiones de YouTube de música «para estudiar y relajarse». Perfecto para escuchar la física de partículas sin agobios.
+genero_borrador: true
 idioma: en
 resumen: "El 4 de julio de 2012 el CERN anunció el bosón de Higgs, y esta canción lofi está hecha con las voces de aquel día. En clase te ayuda a explicar qué es el campo de Higgs y cómo las partículas adquieren su masa."
 temas:

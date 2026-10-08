@@ -6,6 +6,9 @@ borrador: true
 youtube: wBtFe005OjQ
 spotify: https://open.spotify.com/track/2Rtvlj00gWTJgaNi4ho61W
 estilo: Deathcore
+genero: >
+  El **deathcore** nació en Estados Unidos a principios de los 2000 al juntar dos mundos: la brutalidad del death metal (guitarras muy graves, baterías a toda velocidad, voces guturales) y los *breakdowns* del metalcore y el hardcore, esos pasajes lentos y pesadísimos pensados para que el público salte. Bandas como Suicide Silence, Whitechapel o Job for a Cowboy lo hicieron popular a mediados de esa década. Afinaciones bajísimas, gritos y sensación de aplastamiento: la banda sonora ideal para un agujero negro devorándolo todo.
+genero_borrador: true
 idioma: en
 resumen: "¿Qué te pasaría si cayeras en un agujero negro? Spoiler: acabarías hecho un espagueti. Perfecta para explicar qué es un agujero negro, qué es el horizonte de sucesos y cómo los detectamos aunque no se puedan ver."
 temas:

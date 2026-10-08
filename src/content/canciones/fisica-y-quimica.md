@@ -6,6 +6,9 @@ borrador: true
 youtube: JKdoCbZQ1MA
 spotify: https://open.spotify.com/track/3B0vnoYCFVIyrUA018b2eI
 estilo: Punk rock
+genero: >
+  El **punk** llegó a España a finales de los años 70, en plena Transición, y en los 80 tuvo escenas muy potentes: el humor absurdo de Siniestro Total en Galicia, la Movida madrileña o el llamado rock radical vasco, con grupos como La Polla Records o Eskorbuto. Junto a la música crecieron los fanzines, los conciertos autogestionados y los sellos independientes. Rapidez, guitarras distorsionadas y estribillos para corear a gritos: el formato perfecto para una oda a las ciencias que explican el mundo.
+genero_borrador: true
 idioma: es
 resumen: "Una oda punk a la física y la química, las ciencias que de verdad explican el mundo, con guiños a bosones, muelles, aminas y al átomo que las une. Da mucho juego para repasar vocabulario y desmontar bulos como los chemtrails o la homeopatía."
 temas:

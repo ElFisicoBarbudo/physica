@@ -6,6 +6,9 @@ borrador: true
 youtube: 0VOIH801GUs
 spotify: https://open.spotify.com/track/6HYiQuxHE9p9ss90qdqa1P
 estilo: Pop punk
+genero: >
+  El **pop punk** toma la velocidad y las guitarras del punk rock y les añade melodías y estribillos pegadizos propios del pop. Tiene precursores a finales de los 70, como Buzzcocks, pero su gran momento llegó en los 90 con Green Day, The Offspring o blink-182, y siguió en los 2000 con Sum 41 o Avril Lavigne. Sus letras suelen hablar con humor de la adolescencia: el instituto, los amores, el aburrimiento… y, por qué no, de la relación de amor y odio con la calculadora en los exámenes.
+genero_borrador: true
 idioma: es
 resumen: "Una oda cómica a la calculadora científica: senos, cosenos, tangentes, la tecla Ans y el eterno drama de radianes contra grados. Te sirve para repasar trigonometría y, de paso, aprender a usar la calculadora sin sustos."
 temas:

@@ -6,6 +6,9 @@ borrador: true
 youtube: rh3MFPgCDv4
 spotify: https://open.spotify.com/track/4SMK6g0HggVR1phiZBgzuJ
 estilo: Hardbass
+genero: >
+  El **hardbass** (o *hard bass*) es un estilo de música electrónica surgido en Rusia hacia finales de los 90 y principios de los 2000, con raíces en el hard house y el hardstyle europeos. Se reconoce por un bombo machacón y muy rápido, un bajo que rebota a contratiempo y gritos o consignas en ruso. En la década de 2010 se convirtió en un meme de internet ligado a la estética *gopnik*: chándal de tres rayas, sentadillas en cuclillas y kvas. Justo el ambiente que parodia la canción mientras explica el efecto Cherenkov.
+genero_borrador: true
 idioma: en-ru
 resumen: "Hardbass soviético sobre el brillo azul de los reactores nucleares, que aparece cuando una partícula corre más que la luz… en el agua. Ideal para explicar la radiación de Cherenkov y por qué la luz no va igual de rápido en todos los medios."
 temas:
