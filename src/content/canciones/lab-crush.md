@@ -156,13 +156,15 @@ letra:
         traduccion: porque eres mi amor del laboratorio
   - seccion: Outro
     versos:
-      - texto: It's not that there are things that science can't explain
-        traduccion: No es que haya cosas que la ciencia no pueda explicar
-      - texto: You look for the rules behind those things
+      - texto: |
+          「科学ではわからないこともある」じゃねえ。
+        traduccion: No es que haya cosas que la ciencia no pueda explicar.
+      - texto: わからねぇことにルールを探す。
         traduccion: Lo que se busca son las leyes que hay detrás de esas cosas
+        explicacion: そのクッソ地道な努力を
       - texto: Science is just a name for the steady
         traduccion: La ciencia no es más que el nombre que se le da al esfuerzo constante
-      - texto: pain-in-the-ass effort that goes behind it
+      - texto: 科学って呼んでるだけだ
         traduccion: y pesado que hay detrás de todo ello
 actividades:
   - Escribe, en orden, las fases que sigue un artículo científico desde que se
