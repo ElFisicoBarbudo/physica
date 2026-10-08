@@ -7,7 +7,10 @@ youtube: wgL145YioTY
 spotify: https://open.spotify.com/track/7EIcU2mLP33X1vVj4tgEdP
 estilo: Rockabilly
 idioma: en
-resumen: "Rockabilly para el experimento mental más famoso de la cuántica: un gato encerrado en una caja, vivo y muerto a la vez hasta que alguien la abre. Genial para presentar la superposición y el papel de la medida en la física cuántica."
+resumen: "Rockabilly para el experimento mental más famoso de la cuántica: un
+  gato encerrado en una caja, vivo y muerto a la vez hasta que alguien la abre.
+  Genial para presentar la superposición y el papel de la medida en la física
+  cuántica."
 temas:
   - Física cuántica
   - Física de partículas
@@ -24,13 +27,13 @@ letra:
   - seccion: Verso 1
     versos:
       - texto: Hey there, it's quantum mechanics time
-        traduccion: Hola, es la hora de la mecánica cuántica.
+        traduccion: Hola, es la hora de la mecánica cuántica
       - texto: "cute cat, let's make an experiment:"
-        traduccion: "Gatito, hagamos un experimento:"
+        traduccion: "Gatito, vamos a hacer un experimento:"
       - texto: put it in a box with poisonous gas
-        traduccion: metémoslo en una caja con gas venenoso,
+        traduccion: metémoslo en una caja con gas venenoso
       - texto: with fifty percent chance of decay
-        traduccion: con un 50 % de probabilidad de desintegrarse.
+        traduccion: con un 50 % de probabilidad de desintegrarse
         explicacion: >
           En el planteamiento original, la caja contiene una cantidad tan
           pequeña de **sustancia radiactiva** que en una hora hay un 50 % de
@@ -40,24 +43,24 @@ letra:
           experimento **mental**: nunca se ha hecho con un gato real.
   - seccion: Pre-coro
     versos:
-      - texto: Half times, kitty survives,
-        traduccion: La mitad de las veces, el gatito sobrevive;
+      - texto: Half times, kitty survives
+        traduccion: La mitad de las veces, el gatito sobrevive
       - texto: half times, kitty goes bye bye
-        traduccion: la otra mitad, el gatito se va para siempre.
+        traduccion: la otra mitad, el gatito se va para siempre
   - versos:
-      - texto: Until we look inside,
-        traduccion: Hasta que miremos dentro,
+      - texto: Until we look inside
+        traduccion: Hasta que miremos dentro
       - texto: the cat is dead and alive
-        traduccion: el gato está muerto y vivo a la vez.
+        traduccion: el gato está muerto y vivo a la vez
         explicacion: >
           Es la idea de **superposición**: un sistema cuántico puede estar en
           una combinación de varios estados a la vez hasta que se mide.
           Schrödinger llevó esta idea al extremo, a un gato, para mostrar que
           algo parecía no encajar al aplicarla a objetos grandes.
       - texto: If we do it enough times
-        traduccion: Si lo hacemos suficientes veces,
-      - texto: with enough gas and enough cats,
-        traduccion: con suficiente gas y suficientes gatos,
+        traduccion: Si lo hacemos suficientes veces
+      - texto: with enough gas and enough cats
+        traduccion: con suficiente gas y suficientes gatos
         explicacion: >
           La mecánica cuántica no predice qué pasará en un caso concreto, sino
           **probabilidades**. Si repitiéramos el experimento muchas veces, en
@@ -65,19 +68,19 @@ letra:
           no (el reparto exacto variaría un poco de una serie a otra).
   - versos:
       - texto: half times, kitty survives
-        traduccion: la mitad de las veces, el gatito sobrevive;
+        traduccion: la mitad de las veces, el gatito sobrevive
       - texto: half times, kitty goes bye bye
         traduccion: la otra mitad, el gatito se va para siempre.
   - seccion: Coro
     versos:
-      - texto: Schrödinger's cat's dead,
-        traduccion: El gato de Schrödinger está muerto,
+      - texto: Schrödinger's cat's dead
+        traduccion: El gato de Schrödinger está muerto
       - texto: Schrödinger's cat's alive
-        traduccion: el gato de Schrödinger está vivo.
+        traduccion: el gato de Schrödinger está vivo
       - texto: How do we find out?
         traduccion: ¿Cómo lo averiguamos?
       - texto: Just open the box
-        traduccion: Solo hay que abrir la caja.
+        traduccion: Solo hay que abrir la caja
         explicacion: >
           Al abrir la caja hacemos una **medida**. Según la interpretación de
           Copenhague, la superposición "colapsa" en uno solo de los resultados
@@ -87,52 +90,55 @@ letra:
           con su entorno, no se ven nunca en superposición.
   - seccion: Verso 2
     versos:
-      - texto: We must understand,
-        traduccion: "Debemos entenderlo:"
+      - texto: We must understand
+        traduccion: Debemos entenderlo
       - texto: the cat takes a stand
-        traduccion: el gato toma una decisión.
-      - texto: Our curiosity kills the cat,
-        traduccion: Nuestra curiosidad mata al gato,
+        traduccion: el gato toma una decisión
+      - texto: Our curiosity kills the cat
+        traduccion: Nuestra curiosidad mata al gato
         explicacion: >
           Juego de palabras con el refrán inglés *curiosity killed the cat* ("la
           curiosidad mató al gato"): aquí es nuestra medida, el acto de mirar,
           la que decide el resultado.
       - texto: our measurement keeps it alive
-        traduccion: nuestra medición lo mantiene vivo.
+        traduccion: nuestra medición lo mantiene vivo
   - seccion: Pre-coro
     versos:
-      - texto: Half times, kitty survives,
-        traduccion: La mitad de las veces, el gatito sobrevive;
+      - texto: Half times, kitty survives
+        traduccion: La mitad de las veces, el gatito sobrevive
       - texto: half times, kitty goes bye bye
-        traduccion: la otra mitad, el gatito se va para siempre.
+        traduccion: la otra mitad, el gatito se va para siempre
   - versos:
       - texto: Until we look inside
-        traduccion: Hasta que miremos dentro,
+        traduccion: Hasta que miremos dentro
       - texto: the cat is dead and alive
-        traduccion: el gato está muerto y vivo.
+        traduccion: el gato está muerto y vivo
       - texto: If we do it enough times
-        traduccion: Si lo hacemos suficientes veces,
-      - texto: with enough gas and enough cats,
-        traduccion: con suficiente gas y suficientes gatos,
+        traduccion: Si lo hacemos suficientes veces
+      - texto: with enough gas and enough cats
+        traduccion: con suficiente gas y suficientes gatos
   - versos:
       - texto: half times, kitty survives
-        traduccion: la mitad de las veces, el gatito sobrevive;
+        traduccion: la mitad de las veces, el gatito sobrevive
       - texto: half times, kitty goes bye bye
-        traduccion: la otra mitad, el gatito se va para siempre.
+        traduccion: la otra mitad, el gatito se va para siempre
   - seccion: Coro
     versos:
-      - texto: Schrödinger's cat's dead,
-        traduccion: El gato de Schrödinger está muerto,
+      - texto: Schrödinger's cat's dead
+        traduccion: El gato de Schrödinger está muerto
       - texto: Schrödinger's cat's alive
-        traduccion: el gato de Schrödinger está vivo.
+        traduccion: el gato de Schrödinger está vivo
       - texto: How do we find out?
         traduccion: ¿Cómo lo averiguamos?
       - texto: Just open the box
-        traduccion: Solo hay que abrir la caja.
+        traduccion: Solo hay que abrir la caja
 actividades:
-  - "Busca información sobre qué es la superposición cuántica y explícala con tus palabras."
-  - "Piensa por qué Schrödinger eligió un gato, un objeto cotidiano, para su experimento mental."
-  - "Investiga qué dice la interpretación de Copenhague sobre el gato y debatid en clase si el gato está \"vivo y muerto a la vez\" antes de abrir la caja."
+  - Busca información sobre qué es la superposición cuántica y explícala con tus
+    palabras.
+  - Piensa por qué Schrödinger eligió un gato, un objeto cotidiano, para su
+    experimento mental.
+  - Investiga qué dice la interpretación de Copenhague sobre el gato y debatid
+    en clase si el gato está "vivo y muerto a la vez" antes de abrir la caja.
 referencias:
   - titulo: Gato de Schrödinger
     autor: Wikipedia
