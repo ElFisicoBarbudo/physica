@@ -25,7 +25,8 @@ creditos:
   - rol: Masterización
     nombre: Adrián García
 letra:
-  - versos:
+  - seccion: Verso 1
+    versos:
       - texto: Ha llegao la fecha, límite del BOE
         explicacion: >
           Las convocatorias públicas de ayudas a la investigación (contratos
@@ -58,7 +59,8 @@ letra:
           una exageración evidente; el chiste del gimnasio juega con "sacar
           ventaja" de una situación precaria.
       - texto: Todo ventajas, así me ahorré el gimnasio
-  - versos:
+  - seccion: Pre-coro
+    versos:
       - texto: Leo la tesis este mes
         explicacion: >
           La **tesis doctoral** es el trabajo de investigación original con el
@@ -74,7 +76,8 @@ letra:
       - texto: De libros de ESO puedo tirar
       - texto: Ya lo he aceptado y no está mal
       - texto: Ciencia en España
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: Otro retraso al pagar
       - texto: Seguro que ha sido un despiste más
       - texto: Gracias a eso trabajo más
@@ -83,7 +86,8 @@ letra:
       - texto: Chanchullos retrasos y mucho más
       - texto: Ya lo he aceptado y no está mal
       - texto: Ciencia en España
-  - versos:
+  - seccion: Verso 2
+    versos:
       - texto: Dicen que lo mío es investigación de campo
       - texto: Con lo que cobro estoy durmiendo bajo un árbol
       - texto: Botellas de cola me sirven como probeta
@@ -103,7 +107,8 @@ letra:
       - texto: De un premio nobel, hemos traído al primo
       - texto: El ministerio por fin me ha dao el dinero
       - texto: Al baño de arriba de estancia un mes estero
-  - versos:
+  - seccion: Pre-coro
+    versos:
       - texto: En microscopios vamos a ahorrar
       - texto: Usando las gafas de mi abuela
         explicacion: >
@@ -128,7 +133,8 @@ letra:
       - texto: He conseguido mucha ansiedad
       - texto: Ya lo he aceptado y no está mal
       - texto: Ciencia en España
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: Mi salud mental no está tan mal
         explicacion: >
           Varias encuestas y estudios internacionales sobre doctorandos señalan
@@ -143,7 +149,8 @@ letra:
       - texto: Chanchullos retrasos y mucho más
       - texto: Ya lo he aceptado y no está mal
       - texto: Ciencia en España
-  - versos:
+  - seccion: Pre-coro
+    versos:
       - texto: Claro que tengo vida social
       - texto: El piso comparto con 7 más
       - texto: De fin de semana voy a viajar
@@ -164,7 +171,8 @@ letra:
           financiación.
       - texto: Ya lo he aceptado y no está mal
       - texto: Ciencia en España
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: Pronto mi plaza podré sacar
         explicacion: >
           La **carrera investigadora** suele encadenar contratos temporales

@@ -12,7 +12,7 @@ const verso = z.object({
 });
 
 const seccion = z.object({
-  seccion: z.string().optional(), // "Estrofa 1", "Estribillo"...
+  seccion: z.string().optional(), // "Intro", "Verso 1", "Coro", "Puente"...
   versos: z.array(verso),
 });
 

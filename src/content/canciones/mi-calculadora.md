@@ -20,7 +20,8 @@ creditos:
 - rol: Masterización
   nombre: Adrián García
 letra:
-- versos:
+- seccion: Verso 1
+  versos:
   - texto: Ya estaba cansado de hacerlo a mano
     explicacion: |
       Antes de las calculadoras de bolsillo, las operaciones y las funciones trigonométricas se resolvían a mano o con **tablas** y reglas de cálculo. Las calculadoras científicas se popularizaron en la década de 1970 y cambiaron la forma de hacer cálculos en clase.
@@ -30,12 +31,14 @@ letra:
   - texto: Recuerdo la primera vez que la vi
   - texto: A esas buenas teclas no me pude resistir
   - texto: No descansé hasta que fuiste toda para mi
-- versos:
+- seccion: Pre-coro
+  versos:
   - texto: Las mates ahora cambiarán
   - texto: Con ella a mi lado todo será genial
   - texto: Ya no perderé tiempo al calcular
   - texto: Es darle al ON y empezar a flipar
-- versos:
+- seccion: Coro
+  versos:
   - texto: Es mi calculadora
   - texto: Es mi calculadora
   - texto: Los mejores senos que vi en mi vida
@@ -45,7 +48,8 @@ letra:
   - texto: Estaremos juntos hasta que te quedes sin pila
     explicacion: |
       Muchas calculadoras científicas combinan una **célula solar** con una pila de botón de reserva. Si la pila se agota, la calculadora puede apagarse con poca luz, de ahí la broma sobre el final de la relación.
-- versos:
+- seccion: Verso 2
+  versos:
   - texto: No se chivó de cuando puse mis chuletas
   - texto: En su tapa
   - texto: Qué misteriosas sus teclas de arriba
@@ -58,25 +62,29 @@ letra:
   - texto: Tú siempre serás mi a mor prepúber
   - texto: La alegría de volver a clase
   - texto: La mañana de los lunes
-- versos:
+- seccion: Pre-coro
+  versos:
   - texto: Las mates ahora cambiarán
   - texto: con ella a mi lado todo será genial
   - texto: Ya no perderé tiempo al calcular
   - texto: Es darle al ON y empezar a flipar
-- versos:
+- seccion: Coro
+  versos:
   - texto: Es mi calculadora
   - texto: Es mi calculadora
   - texto: Los mejores senos que vi en mi vida
   - texto: Habitante perpetua en mi mochila
   - texto: Estaremos juntos hasta que te quedes sin pila
-- versos:
+- seccion: Puente
+  versos:
   - texto: Me hace gracia calcular la raíz de tu ans
     explicacion: |
       **Ans** es la tecla que recupera el último resultado calculado, y la raíz cuadrada $\sqrt{x}$ es la operación inversa de elevar al cuadrado. Calcular $\sqrt{\text{Ans}}$ permite encadenar operaciones sin reescribir números.
   - texto: Me paso horas tecleando tu sin, cos y tan
     explicacion: |
       Son las tres **razones trigonométricas** básicas: seno, coseno y tangente. Están relacionadas por $\tan\theta=\dfrac{\sin\theta}{\cos\theta}$ y por la identidad $\sin^2\theta+\cos^2\theta=1$.
-- versos:
+- seccion: Coro
+  versos:
   - texto: Es mi calculadora
   - texto: Es mi calculadora
   - texto: Los mejores senos que vi en mi vida

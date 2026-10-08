@@ -22,7 +22,8 @@ creditos:
 - rol: Masterización
   nombre: Adrián García
 letra:
-- versos:
+- seccion: Intro
+  versos:
   - texto: χαίρετε mis queridos amigos
   - texto: Tomad asiento y abrid esas orejas
   - texto: Pues hoy descubriremos, una tontería…
@@ -32,7 +33,8 @@ letra:
   - texto: 'que a todo buen filósofo trae de cabeza:'
   - texto: ¿cual es nuestro lugar en este mundo complejo
   - texto: tan lleno de incertezas?
-- versos:
+- seccion: Verso 1 · Ptolomeo
+  versos:
   - texto: pero encontré la solución, dejad que os la argumente
   - texto: Mira hacia arriba ¿ves el cielo? ¿lo notas girar?
     explicacion: |
@@ -57,7 +59,8 @@ letra:
   - texto: 'apuntalo bien baby: mi nombre es Claudio Ptolomeo'
     explicacion: |
       Claudio Ptolomeo (c. 100 - c. 170) trabajó en Alejandría. Para ajustar el movimiento aparente de los planetas, incluidos sus retrocesos, empleó **epiciclos**, **deferentes** y el **ecuante**, un modelo geométrico muy eficaz.
-- versos:
+- seccion: Verso 2 · Copérnico
+  versos:
   - texto: Sobre las revoluciones de las esferas celestes
     explicacion: |
       Es la traducción del título de *De revolutionibus orbium coelestium* (1543), la obra de Copérnico. Copérnico lo cita aquí como su gran obra, publicada el año de su muerte.
@@ -89,12 +92,13 @@ letra:
   - texto: Y las preguntas sobre el universo multiplica
 - versos:
   - texto: En vida mi obra publicada no veré,
-  - texto: Será Rethicus quien deje la tarea acabada
+  - texto: Será Rheticus quien deje la tarea acabada
     explicacion: |
       Georg Joachim **Rheticus**, joven astrónomo discípulo de Copérnico, publicó en 1540 la *Narratio prima*, un resumen de su teoría, y animó a Copérnico a publicar la obra completa. La impresión final se hizo en Núremberg, con un prólogo sin firma añadido por Andreas Osiander. Se suele contar que Copérnico recibió un ejemplar impreso poco antes de morir en 1543, aunque la anécdota no está bien documentada.
   - texto: Asi en la historia de la ciencia se grabará
   - texto: Y el nombre de Copérnico por siempre sonará
-- versos:
+- seccion: Coro
+  versos:
   - texto: la bóveda celeste centrada en nuestros cuerpos
   - texto: Somos el centro del universo
   - texto: Ptolomeo contra Copérnico
@@ -103,7 +107,8 @@ letra:
   - texto: Dando vueltas al Sol en un sistema Solar
   - texto: Nuestro ego caerá ante el modelo heliocéntrico
   - texto: Ptolomeo contra Copérnico
-- versos:
+- seccion: Verso 3
+  versos:
   - texto: Ptolomeo. Oh, Ptolomeo
   - texto: ¿dónde estás que no te veo?
   - texto: Aquí estoy, mi amor
@@ -127,7 +132,8 @@ letra:
   - texto: a pesar del cristianismo iracundo
   - texto: Sorry bro, el sol es el centro del universo
   - texto: y por eso te escuece tanto este verso
-- versos:
+- seccion: Coro
+  versos:
   - texto: Gira, gira, el cielo gira
   - texto: la bóveda celeste centrada en nuestros cuerpos
   - texto: Somos el centro del universo
@@ -137,7 +143,8 @@ letra:
   - texto: Dando vueltas al Sol en un sistema Solar
   - texto: Nuestro ego caerá antel modelo heliocéntrico
   - texto: Ptolomeo contra Copérnico
-- versos:
+- seccion: Puente
+  versos:
   - texto: Copérnico pringao, prusiano del montón
   - texto: hasta un simio te confunde con Colón
 - versos:
@@ -151,7 +158,8 @@ letra:
     explicacion: |
       La extinción del final del Pérmico, hace unos 252 millones de años, fue la mayor extinción masiva conocida. Es un anacronismo evidente: nada tiene que ver con los astrónomos, que vivieron muchos millones de años después.
   - texto: 'que se enteren todos: Soy Copérnico'
-- versos:
+- seccion: Coro
+  versos:
   - texto: Gira, gira, el cielo gira
   - texto: la bóveda celeste centrada en nuestros cuerpos
   - texto: Somos el centro del universo

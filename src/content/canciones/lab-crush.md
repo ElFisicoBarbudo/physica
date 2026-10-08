@@ -20,7 +20,8 @@ creditos:
 - rol: Masterización
   nombre: Adrián García
 letra:
-- versos:
+- seccion: Verso 1
+  versos:
   - texto: Friday noon, in the lab
     traduccion: Viernes al mediodía, en el laboratorio
   - texto: My heart stops when you pass by
@@ -44,7 +45,8 @@ letra:
       En ciencia es habitual **repetir** los experimentos, y un fallo a mitad de camino puede obligar a empezar de cero. La repetición es parte del método científico: un resultado fiable debe poder **reproducirse**.
   - texto: so you can’t leave, babe, you gotta start again
     traduccion: para que no puedas irte, cariño, tendrás que empezar de nuevo
-- versos:
+- seccion: Pre-coro
+  versos:
   - texto: My plan will work
     traduccion: Mi plan funcionará
   - texto: I’ll drop
@@ -61,7 +63,8 @@ letra:
     traduccion: ¡qué desperdicio!
   - texto: Oh no, start again
     traduccion: Oh, no, vuelve a empezar
-- versos:
+- seccion: Coro
+  versos:
   - texto: I’ll ruin my experiment for you
     traduccion: Arruinaré mi experimento por ti
   - texto: And treat you better than your peer review
@@ -72,7 +75,8 @@ letra:
     traduccion: Arruinaré tu experimento por nosotros
   - texto: '''cause you''re my lab crush'
     traduccion: porque eres mi amor de laboratorio
-- versos:
+- seccion: Verso 2
+  versos:
   - texto: Our love will transcend
     traduccion: Nuestro amor trascenderá
   - texto: that last paper you just sent
@@ -87,7 +91,8 @@ letra:
     traduccion: El AMOR es nuestra nueva nomenclatura
     explicacion: |
       La **nomenclatura** es el conjunto de reglas para nombrar de forma inequívoca objetos científicos: elementos y compuestos químicos, especies, genes... El verso juega con la idea de que el amor sería el nuevo sistema de nombres del dúo.
-- versos:
+- seccion: Pre-coro
+  versos:
   - texto: My plan
     traduccion: Mi plan
   - texto: will work
@@ -104,12 +109,14 @@ letra:
     traduccion: ¡Qué desperdicio!
   - texto: Oh no, start again
     traduccion: Oh, no, hay que volver a empezar
-- versos:
+- seccion: Puente
+  versos:
   - texto: I’ll ruin my experiment for you
     traduccion: Arruinaré mi experimento por ti
   - texto: I’ll ruin your experiment for us
     traduccion: Arruinaré tu experimento por nosotros
-- versos:
+- seccion: Coro
+  versos:
   - texto: I’ll ruin my experiment for you
     traduccion: Arruinaré mi experimento por ti
   - texto: And treat you better than your peer review

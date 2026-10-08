@@ -22,13 +22,14 @@ creditos:
     nombre: "Adrián García"
 
 letra:
-  - versos:
+  - seccion: Intro
+    versos:
       - texto: "Quantum physics fucked my brain"
         traduccion: "La física cuántica me ha j*dido la cabeza"
         explicacion: |
           No es solo una frase de metalcore: es la reacción habitual de quien estudia física cuántica por primera vez. Se atribuye a **Niels Bohr** la frase de que "quien no se queda perplejo con la teoría cuántica es que no la ha entendido". Nuestra intuición se formó manejando piedras, pelotas y coches, y ahí las reglas son otras.
 
-  - seccion: "Estrofa 1"
+  - seccion: "Verso 1"
     versos:
       - texto: "This is the end of the physics that you know"
         traduccion: "Este es el fin de la física tal y como la conoces"
@@ -45,7 +46,7 @@ letra:
         explicacion: |
           La mecánica cuántica se construye, igual que la geometría, sobre unos pocos **postulados** que no se demuestran: se asumen y se comprueba que sus consecuencias coinciden con los experimentos. Dicen, entre otras cosas, que el estado de un sistema se describe con una **función de onda**, que las magnitudes medibles solo pueden tomar ciertos valores y que la medida altera el sistema. Son extraños, pero ninguna predicción suya ha fallado todavía.
 
-  - seccion: "Estribillo"
+  - seccion: "Coro"
     versos:
       - texto: "You cannot say"
         traduccion: "No puedes decir"
@@ -64,7 +65,7 @@ letra:
       - texto: "Quantum mechanics fucked this"
         traduccion: "La mecánica cuántica se lo ha jodido"
 
-  - seccion: "Estrofa 2"
+  - seccion: "Verso 2"
     versos:
       - texto: "Don't try to understand this shit"
         traduccion: "No intentes entender esta mierda"
@@ -90,7 +91,7 @@ letra:
         explicacion: |
           **Erwin Schrödinger** (1887-1961) publicó en 1926 una formulación distinta y equivalente, basada en una ecuación de ondas: la **ecuación de Schrödinger**, que es la que se estudia en clase. Es el mismo Schrödinger del gato, que tiene su propia canción en esta web.
 
-  - seccion: "Final"
+  - seccion: "Outro"
     versos:
       - texto: |
           This is the end of the physics

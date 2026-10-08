@@ -17,6 +17,7 @@ const d = cancion.data;
 const todos = await getCollection('colaboradores');
 const colaboradores = d.colaboradores.map((id) => todos.find((c) => c.id === id)).filter((c) => c !== undefined);
 const conTraduccion = d.idioma !== 'es' && d.letra.some((s) => s.versos.some((v) => v.traduccion));
+const conEstructura = d.letra.some((s) => s.seccion);
 // En GitHub Actions se generan los PDF tras la compilación (ver scripts/generar-pdfs.mjs).
 const hayPdf = import.meta.env.PUBLIC_FICHAS_PDF === 'true';
 let n = 0;
@@ -131,12 +132,25 @@ let n = 0;
             )
           }
           <label><input type="checkbox" role="switch" data-alterna="con-explicaciones" /> Explicaciones</label>
+          {
+            conEstructura && (
+              <label>
+                <input type="checkbox" role="switch" data-alterna="con-estructura" /> Estructura
+              </label>
+            )
+          }
         </div>
         <div class="letra" id="letra-contenido">
           {
             d.letra.map((s) => (
               <div class="seccion">
-                {s.seccion && <h3>{s.seccion}</h3>}
+                {s.seccion && (
+                  <div class="plegable plegable-estructura">
+                    <div>
+                      <h3>{s.seccion}</h3>
+                    </div>
+                  </div>
+                )}
                 {s.versos.map((v) => {
                   const num = v.explicacion ? ++n : null;
                   return (
@@ -599,12 +613,20 @@ let n = 0;
     outline-offset: 2px;
   }
 
+  /* Nombre de la sección (Intro, Verso, Coro...): solo se ve con el interruptor «Estructura». */
+  .plegable-estructura {
+    --t: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --d: 0s;
+  }
+
   .seccion h3 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--acento);
-    margin: 2.5rem 0 0.75rem;
+    margin: 0;
+    padding-bottom: 0.5rem;
   }
 
   .seccion + .seccion {
@@ -704,7 +726,8 @@ let n = 0;
   }
 
   .con-traduccion .plegable-traduccion,
-  .con-explicaciones .plegable-explicacion {
+  .con-explicaciones .plegable-explicacion,
+  .con-estructura .plegable-estructura {
     grid-template-rows: 1fr;
     opacity: 1;
     visibility: visible;

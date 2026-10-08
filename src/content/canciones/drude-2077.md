@@ -20,7 +20,8 @@ creditos:
 - rol: Masterización
   nombre: Adrián García
 letra:
-- versos:
+- seccion: Verso 1
+  versos:
   - texto: Presa en esta gran red
     explicacion: |
       La **red cristalina** de un metal es una disposición periódica de iones positivos. En el modelo de Drude esos iones están fijos y los electrones de valencia se mueven entre ellos. Paul Drude publicó el modelo en 1900, solo tres años después de que Thomson identificara el electrón.
@@ -32,7 +33,8 @@ letra:
     explicacion: |
       Los electrones de conducción no están ligados a un átomo concreto: forman un **gas de electrones libres**. Drude supone además que no interaccionan entre sí ni con los iones, salvo en las colisiones.
   - texto: podría echar a andar
-- versos:
+- seccion: Coro
+  versos:
   - texto: Noto como aumenta
   - texto: El potencial
     explicacion: |
@@ -63,7 +65,8 @@ letra:
 - versos:
   - texto: Drude, Drude
   - texto: Modelo de Drude
-- versos:
+- seccion: Verso 2
+  versos:
   - texto: Conductividad,
     explicacion: |
       El modelo da $\sigma = n e^2 \tau / m$, que reproduce la **ley de Ohm** en su forma microscópica, $\vec{j} = \sigma \vec{E}$. También explica que los buenos conductores del calor suelen serlo de la electricidad (ley de Wiedemann-Franz), aunque en parte por una cancelación de errores.
@@ -95,7 +98,8 @@ letra:
   - texto: La última está vacía
     explicacion: |
       En un **aislante** la banda de valencia está completamente llena y la siguiente, la de conducción, está vacía, con un gap grande entre ambas. Sin estados libres cercanos, un campo eléctrico moderado no puede acelerar a los electrones y no hay corriente.
-- versos:
+- seccion: Coro
+  versos:
   - texto: Noto como aumenta
   - texto: El potencial
   - texto: Me arrastra
