@@ -2,6 +2,7 @@
 titulo: Black Hole Spaghettification
 artista: El Físico Barbudo
 orden: 1
+borrador: true
 youtube: wBtFe005OjQ
 spotify: https://open.spotify.com/track/2Rtvlj00gWTJgaNi4ho61W
 estilo: Deathcore
@@ -11,6 +12,7 @@ resumen: Qué es un agujero negro, cómo lo detectamos sin verlo y qué le pasar
 temas:
   - Agujeros negros
   - Astrofísica
+  - Relatividad
 avisos:
   - Contiene lenguaje malsonante.
 creditos:
@@ -29,7 +31,9 @@ letra:
         traduccion: Oscuro, en el centro de la galaxia
         explicacion: >
           En el centro de nuestra galaxia, la Vía Láctea, hay un agujero negro
-          supermasivo llamado **Sagitario A\***. Su masa equivale a unos **4 millones de veces** la del Sol, y en 2022 el Event Horizon Telescope publicó la primera imagen de su entorno.
+          supermasivo llamado **Sagitario A\***. Su masa equivale a unos **4
+          millones de veces** la del Sol, y en 2022 el Event Horizon Telescope
+          publicó la primera imagen de su entorno.
       - texto: Attract all the bodies within its field
         traduccion: Atrae a todos los cuerpos dentro de su campo
       - texto: Ripping gas clouds like bloody meat
@@ -46,7 +50,8 @@ letra:
           su alrededor. Cerca del agujero negro, la materia se calienta tanto
           que emite **rayos X y ondas de radio**. Estas señales nos permiten
           saber dónde están.
-  - versos:
+  - seccion: Verso 2
+    versos:
       - texto: Black, no photon can escape
         traduccion: Negro, ningún fotón puede escapar
         explicacion: >
@@ -59,7 +64,11 @@ letra:
       - texto: Lawless, unknown physics wait inside
         traduccion: Sin leyes, dentro te espera física desconocida
         explicacion: >
-          En el centro de un agujero negro, la relatividad general predice una **singularidad**, una región donde sus ecuaciones dejan de dar una descripción válida. Eso indica que hace falta una teoría más completa que combine gravedad y física cuántica, y que aún no sabemos qué ocurre allí.
+          En el centro de un agujero negro, la relatividad general predice una
+          **singularidad**, una región donde sus ecuaciones dejan de dar una
+          descripción válida. Eso indica que hace falta una teoría más completa
+          que combine gravedad y física cuántica, y que aún no sabemos qué
+          ocurre allí.
       - texto: Horizon, once you cross it you're tied
         traduccion: Horizonte, una vez lo cruzas estás atado
         explicacion: >
@@ -76,7 +85,7 @@ letra:
         traduccion: Bestia del agujero negro
       - texto: Devours everything
         traduccion: Todo lo devora
-  - seccion: Verso 2
+  - seccion: Verso 3
     versos:
       - texto: Destroyer of worlds, endless attraction
         traduccion: Destructor de mundos, atracción sin fin
@@ -85,10 +94,18 @@ letra:
         explicacion: >
           Según una teoría propuesta por el físico Stephen Hawking, los agujeros
           negros podrían emitir una forma especial de radiación llamada
-          **radiación de Hawking**. Surge al combinar la física cuántica con la relatividad general. Se suele explicar con una imagen simplificada, que el propio Hawking usaba. En el vacío aparecen y desaparecen pares de partícula y antipartícula, y si se forman junto al horizonte de sucesos, una puede caer en el agujero negro mientras la otra escapa. Es una predicción teórica con amplio respaldo, que procede de combinar la teoría cuántica de campos con la relatividad general, pero aún no se ha observado: para agujeros negros de masa estelar o mayor es tan débil que resulta indetectable.
+          **radiación de Hawking**. Surge al combinar la física cuántica con la
+          relatividad general. Se suele explicar con una imagen simplificada,
+          que el propio Hawking usaba. En el vacío aparecen y desaparecen pares
+          de partícula y antipartícula, y si se forman junto al horizonte de
+          sucesos, una puede caer en el agujero negro mientras la otra escapa.
+          Es una predicción teórica con amplio respaldo, que procede de combinar
+          la teoría cuántica de campos con la relatividad general, pero aún no
+          se ha observado: para agujeros negros de masa estelar o mayor es tan
+          débil que resulta indetectable.
       - texto: Try not to fall, eternal damnation
         traduccion: Intenta no caer, perdición eterna
-      - texto: You're gonna die by Spaghettification
+      - texto: You're gonna die by spaghettification
         traduccion: Vas a morir por espaguetificación
   - seccion: Puente
     versos:
@@ -104,8 +121,13 @@ letra:
           Si te acercaras demasiado a un agujero negro, experimentarías algo
           llamado **espaguetificación**. Esto ocurre porque la gravedad es mucho
           más fuerte en tus pies (si están más cerca del agujero negro) que en
-          tu cabeza. Esta diferencia, llamada **fuerza de marea**, estiraría tu cuerpo como si fueras un espagueti hasta destrozarte por completo. Curiosamente, ocurre antes de cruzar el horizonte en los agujeros negros pequeños, de masa estelar. En uno supermasivo como Sagitario A\*, las fuerzas de marea en el horizonte son más suaves y cruzarías la frontera entero; la espaguetificación llegaría ya dentro.
-  - seccion: Outro
+          tu cabeza. Esta diferencia, llamada **fuerza de marea**, estiraría tu
+          cuerpo como si fueras un espagueti hasta destrozarte por completo.
+          Curiosamente, ocurre antes de cruzar el horizonte en los agujeros
+          negros pequeños, de masa estelar. En uno supermasivo como Sagitario
+          A\*, las fuerzas de marea en el horizonte son más suaves y cruzarías
+          la frontera entero; la espaguetificación llegaría ya dentro.
+  - seccion: Verso 4
     versos:
       - texto: Gravity, strong enough to shatter
         traduccion: Gravedad, tan fuerte que destroza
@@ -119,8 +141,8 @@ letra:
           Según la **teoría de la relatividad general** de Einstein, el espacio
           y el tiempo están conectados y pueden deformarse debido a la masa de
           los objetos. Un agujero negro distorsiona tanto el espacio-tiempo que
-          en su centro aparece una singularidad, donde la propia teoría deja
-          de ser válida.
+          en su centro aparece una singularidad, donde la propia teoría deja de
+          ser válida.
       - texto: Spaghetti will be your eternal shape
         traduccion: Tendrás forma de espagueti para siempre
       - texto: In the black hole
@@ -146,6 +168,9 @@ referencias:
   - titulo: ¿Qué pasa dentro de un agujero negro?
     autor: BBC News Mundo
     url: https://www.youtube.com/watch?v=dMEho2ZcVtE
+  - titulo: Espaguetización
+    autor: Wikipedia
+    url: https://es.wikipedia.org/wiki/Espaguetizaci%C3%B3n
 ---
 Imagina un lugar en el espacio donde la gravedad es tan fuerte que nada, ni siquiera la luz, puede escapar. Eso es, básicamente, un agujero negro. Los agujeros negros de masa estelar se forman cuando una estrella muy masiva muere y su núcleo colapsa (el origen de los supermasivos, como el del centro de nuestra galaxia, todavía se investiga). Según la relatividad general, ese colapso comprime la masa de la estrella en un punto increíblemente pequeño y denso que recibe el nombre de **singularidad** (aunque los físicos sospechan que una teoría cuántica de la gravedad lo describiría de otra forma). Muy denso, como el **deathcore**, uno de los géneros más pesados dentro de la música metal.
 
