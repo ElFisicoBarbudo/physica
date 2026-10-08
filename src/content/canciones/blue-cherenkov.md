@@ -41,6 +41,8 @@ letra:
           energía infinita.
       - texto: But this is Russia, sending bitches to the space, да
         traduccion: Pero esto es Rusia, mandamos perras al espacio, sí
+        explicacion: |
+          La **perra Laika** fue lanzada el 3 de noviembre de 1957 en el Sputnik 2, y fue el primer animal que orbitó la Tierra. Murió a las pocas horas por el sobrecalentamiento de la cápsula: la misión no estaba pensada para recuperarla. Es la referencia del verso a los vuelos espaciales soviéticos con animales.
   - seccion: Verso 2
     versos:
       - texto: It’s not cheating if we slow down the light
@@ -108,6 +110,8 @@ letra:
           chocar con el agua.
       - texto: Russian scientists were acing the Cold War
         traduccion: Científicos rusos arrasando en la Guerra Fría
+        explicacion: |
+          La **Guerra Fría** (1947-1991) enfrentó a la URSS y a Estados Unidos en la carrera nuclear y en la carrera espacial. Los logros científicos soviéticos, como el Nobel de 1958, servían también como escaparate político de esa rivalidad.
       - texto: Are you disrespecting Па́вел Черенко́в my pal?
         traduccion: Amigo ¿le estás faltando al respeto a Pavel Cherenkov?
       - texto: Listen to me bitch, Я твой рот ебал
@@ -120,6 +124,8 @@ letra:
         traduccion: Fiesta espacial brindando con kvas frío
       - texto: Put a Cherenkov detector in the Sputnik три
         traduccion: Pon un detector de Cherenkov en el Sputnik III
+        explicacion: |
+          El **Sputnik 3**, lanzado en mayo de 1958, llevaba instrumentos para medir los rayos cósmicos, entre ellos un detector Cherenkov. Es uno de los primeros usos de esta técnica en el espacio.
       - texto: Blue photons emitted, Черенковская синь
         traduccion: Se emiten fotones azules, azul de Cherenkov
   - seccion: Pre-coro
@@ -148,6 +154,8 @@ letra:
           llevó a los astronautas del programa Apolo a la Luna.
       - texto: Your Fat Man nothing to do against a Царь
         traduccion: Tu «Fat Man» no puede hacer nada contra un «Tsár»
+        explicacion: |
+          **Fat Man** fue la bomba lanzada sobre Nagasaki en 1945, de unos 21 kilotones. La **Tsar Bomba** (царь-бомба), la bomba soviética más potente jamás detonada, se probó en 1961 con unos 50 megatones, más de dos mil veces más. Estaba diseñada para unos 100 megatones, pero se probó con la mitad de potencia. El verso compara el poder destructivo de ambas potencias.
       - texto: Our soviet hero Валенти́на would crush Sally in the arena
         traduccion: Nuestra heroína soviética Valentina aplastaría a Sally en la arena
         explicacion: >
