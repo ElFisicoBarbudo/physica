@@ -7,9 +7,7 @@ youtube: 0VOIH801GUs
 spotify: https://open.spotify.com/track/6HYiQuxHE9p9ss90qdqa1P
 estilo: Pop punk
 idioma: es
-resumen: Una oda cómica a la calculadora científica, con sus senos, cosenos y
-  tangentes, su tecla Ans y el eterno dilema entre radianes y grados. Sirve en
-  clase para repasar trigonometría y para aprender a usar bien la calculadora.
+resumen: "Una oda cómica a la calculadora científica: senos, cosenos, tangentes, la tecla Ans y el eterno drama de radianes contra grados. Te sirve para repasar trigonometría y, de paso, aprender a usar la calculadora sin sustos."
 temas:
   - Vida de científico
   - Matemáticas

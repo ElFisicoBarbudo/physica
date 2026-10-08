@@ -7,10 +7,7 @@ youtube: JKdoCbZQ1MA
 spotify: https://open.spotify.com/track/3B0vnoYCFVIyrUA018b2eI
 estilo: Punk rock
 idioma: es
-resumen: Una oda punk a la física y la química como las ciencias que explican el
-  mundo frente a la pseudociencia, con guiños a bosones, muelles, aminas y al
-  átomo que une a ambas disciplinas. Sirve para repasar vocabulario básico y
-  desmontar bulos como los chemtrails o la homeopatía.
+resumen: "Una oda punk a la física y la química, las ciencias que de verdad explican el mundo, con guiños a bosones, muelles, aminas y al átomo que las une. Da mucho juego para repasar vocabulario y desmontar bulos como los chemtrails o la homeopatía."
 temas:
   - Química
   - Pseudociencia

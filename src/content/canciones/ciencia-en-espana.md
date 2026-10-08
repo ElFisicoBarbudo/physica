@@ -7,10 +7,7 @@ youtube: HD5EbQt3BaM
 spotify: https://open.spotify.com/track/0VuRvo6bUjA7oXZyr3IQ6U
 estilo: Punk rock
 idioma: es
-resumen: "Un doctorando cuenta con humor negro y punk las penurias de la carrera
-  investigadora: plazos del BOE, pagos que no llegan, falta de material y
-  precariedad. Sirve para abrir en clase un debate informado sobre cómo se
-  financia y se organiza la ciencia."
+resumen: "Un doctorando cuenta con humor negro y mucho punk lo que es investigar en España: plazos del BOE, pagos que nunca llegan, falta de material y precariedad. Abre la puerta a un buen debate en clase sobre cómo se financia la ciencia."
 temas:
   - Crítica social
   - Vida de científico

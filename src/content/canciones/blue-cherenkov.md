@@ -7,8 +7,7 @@ youtube: rh3MFPgCDv4
 spotify: https://open.spotify.com/track/4SMK6g0HggVR1phiZBgzuJ
 estilo: Hardbass
 idioma: en-ru
-resumen: Hardbass soviético sobre la luz azul que aparece cuando algo viaja más
-  rápido que la luz… en el agua.
+resumen: "Hardbass soviético sobre el brillo azul de los reactores nucleares, que aparece cuando una partícula corre más que la luz… en el agua. Ideal para explicar la radiación de Cherenkov y por qué la luz no va igual de rápido en todos los medios."
 temas:
   - Física nuclear
   - Física de partículas

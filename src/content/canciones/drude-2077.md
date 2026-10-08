@@ -5,7 +5,7 @@ idioma: es
 youtube: yLl6Lkdai8I
 spotify: https://open.spotify.com/track/3D2t6NUbSdgy9WvnEbMrwB
 estilo: Cyberpunk
-resumen: "Un electrón atrapado en una red metálica cuenta, en clave cyberpunk, cómo el modelo de Drude explica la conducción eléctrica y por qué la cuántica tuvo que corregirlo. Sirve para introducir en clase la conductividad, la ley de Ohm microscópica y los límites de un modelo clásico."
+resumen: "Un electrón atrapado en una red metálica nos cuenta, en plan cyberpunk, cómo el modelo de Drude explica la corriente eléctrica y por qué la cuántica tuvo que enmendarlo. Sirve para ver la ley de Ohm desde dentro y hasta dónde llega un modelo clásico."
 temas:
 - Física del estado sólido
 orden: 15

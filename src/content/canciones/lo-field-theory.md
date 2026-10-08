@@ -7,8 +7,7 @@ youtube: l3p82dHC9IQ
 spotify: https://open.spotify.com/track/3j0JssDyNKrZcYPNZecJfX
 estilo: Lofi
 idioma: en
-resumen: El día que el CERN anunció el bosón de Higgs, convertido en una canción
-  lofi con las voces de sus protagonistas.
+resumen: "El 4 de julio de 2012 el CERN anunció el bosón de Higgs, y esta canción lofi está hecha con las voces de aquel día. En clase te ayuda a explicar qué es el campo de Higgs y cómo las partículas adquieren su masa."
 temas:
   - Física de partículas
   - Historia de la ciencia

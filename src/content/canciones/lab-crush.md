@@ -7,10 +7,7 @@ youtube: raK5pVifQ44
 spotify: https://open.spotify.com/track/15yQZQPzShqWKry79raNxb
 estilo: Future Bass
 idioma: en
-resumen: "Una investigadora planea sabotear el experimento de su compañero de
-  laboratorio para que no se vaya, y por el camino repasa la rutina real de la
-  ciencia: muestras, repeticiones, revisión por pares y publicaciones. Sirve en
-  clase para hablar con humor de cómo se trabaja de verdad en un laboratorio."
+resumen: "Una investigadora planea sabotear el experimento de su compañero para que no se marche y, de paso, nos enseña la rutina real del laboratorio: muestras, repeticiones, revisión por pares y publicaciones. Para contar con humor cómo se hace ciencia de verdad."
 temas:
   - Vida de científico
 creditos:
