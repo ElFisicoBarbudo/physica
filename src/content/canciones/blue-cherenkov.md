@@ -125,7 +125,7 @@ letra:
       - texto: Put a Cherenkov detector in the Sputnik три
         traduccion: Pon un detector de Cherenkov en el Sputnik III
         explicacion: |
-          El **Sputnik 3**, lanzado el 15 de mayo de 1958, llevaba doce instrumentos científicos para medir la presión y la composición de la alta atmósfera. El verso le atribuye un detector Cherenkov, que no aparece en la lista habitual de su carga científica: es una licencia de la letra.
+          El **Sputnik 3**, lanzado el 15 de mayo de 1958, llevaba doce instrumentos científicos, entre ellos un **detector Cherenkov** que medía destellos de luz en un plástico transparente, y detectores de radiación cósmica. Es uno de los primeros usos de esta técnica en el espacio.
       - texto: Blue photons emitted, Черенковская синь
         traduccion: Se emiten fotones azules, azul de Cherenkov
   - seccion: Pre-coro
