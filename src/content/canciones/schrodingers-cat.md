@@ -67,7 +67,7 @@ letra:
       - texto: "Just open the box"
         traduccion: "Solo hay que abrir la caja."
         explicacion: |
-          Al abrir la caja hacemos una **medida**, y según la interpretación de Copenhague la superposición "colapsa" en uno solo de los resultados: el gato está vivo o está muerto. Hoy la **decoherencia** ayuda a explicar por qué los objetos grandes, que interactúan constantemente con su entorno, no se ven nunca en superposición.
+          Al abrir la caja hacemos una **medida**. Según la interpretación de Copenhague, la superposición "colapsa" en uno solo de los resultados posibles: el gato está vivo o está muerto. Otras interpretaciones describen la medida de otro modo. Hoy la **decoherencia** ayuda a explicar por qué los objetos grandes, que interactúan constantemente con su entorno, no se ven nunca en superposición.
   - seccion: Verso 2
     versos:
       - texto: "We must understand,"

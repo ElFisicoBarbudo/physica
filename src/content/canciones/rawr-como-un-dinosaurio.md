@@ -81,7 +81,7 @@ letra:
   - texto: Los saurópodos con su cuello largo
   - texto: Que no eran macizos, eran neumáticos
     explicacion: |
-      Los saurópodos tenían vértebras con cavidades llenas de **sacos aéreos**, similares a los de las aves, que aligeraban el esqueleto. Eso ayudó a que animales de decenas de toneladas pudieran sostener cuellos larguísimos.
+      Los saurópodos tenían huesos y vértebras con cavidades neumáticas relacionadas con un sistema de **sacos aéreos**, parecido al de las aves, que aligeraba el esqueleto. Eso ayudó a que animales de decenas de toneladas pudieran sostener cuellos larguísimos.
   - texto: Tireóforos, acorazados,
   - texto: Ornitópodos, picos de pato
     explicacion: |
@@ -136,7 +136,7 @@ letra:
   - texto: ¿Quiere decir que un grupo compuesto enteramente por animales hembras puede procrear?
   - texto: No, digo sencillamente que la vida… se abre camino
     explicacion: |
-      Frase del Dr. Ian Malcolm en *Parque Jurásico*. En la historia, los animales eran todos hembras, pero el ADN de rana usado para completar su genoma les permitió cambiar de sexo y reproducirse. Tiene algo de base real: algunos peces, como el pez payaso, cambian de sexo de forma natural, y las hembras de algunos reptiles, como el dragón de Komodo, pueden tener crías sin macho (**partenogénesis**).
+      Frase del Dr. Ian Malcolm en *Parque Jurásico*. En la película todos los animales son hembras, y el ADN de rana que completa su genoma, un recurso ficticio, les permite cambiar de sexo y reproducirse. Tiene algo de base real: algunos peces, como el pez payaso, cambian de sexo de forma natural, y las hembras de algunos reptiles, como el dragón de Komodo, pueden tener crías sin macho (**partenogénesis**).
 actividades:
   - "Clasifica una lista de animales prehistóricos (pterosaurios, mosasaurios, estegosaurios, cocodrilos) en dinosaurios y no dinosaurios y justifica cada respuesta."
   - "Compara el esqueleto de un ave actual con el de un terópodo e identifica los rasgos que comparten."

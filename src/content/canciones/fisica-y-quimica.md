@@ -43,7 +43,7 @@ letra:
   - texto: Realidad alternativa
   - texto: Tierra plana o vacía
     explicacion: |
-      Alude a la **Tierra plana** y a la **Tierra hueca**, ideas sin base científica. La forma casi esférica de la Tierra se conoce desde la Antigüedad, y la sismología muestra que el interior del planeta es sólido y líquido (corteza, manto y núcleo), no una cavidad vacía.
+      Alude a la **Tierra plana** y a la **Tierra hueca**, ideas sin base científica. La forma casi esférica de la Tierra se conoce desde la Antigüedad, y la sismología muestra que el interior del planeta tiene capas: la corteza, un manto principalmente sólido, un núcleo externo líquido y un núcleo interno sólido, no una cavidad vacía.
   - texto: Son física y química
 - seccion: Verso 2
   versos:
@@ -87,7 +87,7 @@ letra:
   - texto: Medicina alternativa
   - texto: Ni Reiki ni-homeopatía
     explicacion: |
-      El **Reiki** (imposición de manos para canalizar una supuesta energía) y la **homeopatía** (diluciones extremas) no han mostrado eficacia superior al placebo en ensayos clínicos bien diseñados. Por eso las autoridades sanitarias recomiendan no sustituir tratamientos probados por ellos.
+      El **Reiki** (imposición de manos para canalizar una supuesta energía) y la **homeopatía** (diluciones extremas) las revisiones disponibles no encuentran una eficacia específica consistente por encima del efecto placebo. Por eso las autoridades sanitarias recomiendan no sustituir tratamientos probados por ellos.
   - texto: Son física y química
 - seccion: Coro
   versos:

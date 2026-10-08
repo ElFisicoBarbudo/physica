@@ -31,7 +31,7 @@ letra:
   - texto: Intento escapar
   - texto: Nada aquí me ata
     explicacion: |
-      Los electrones de conducción no están ligados a un átomo concreto: forman un **gas de electrones libres**. Drude supone además que no interaccionan entre sí ni con los iones, salvo en las colisiones.
+      Los electrones de conducción no están ligados a un átomo concreto: forman un **gas de electrones libres**. Drude supone además que no interaccionan entre sí ni con los iones, salvo en las colisiones. Es una idealización clásica, útil pero simplificada.
   - texto: podría echar a andar
 - seccion: Coro
   versos:
@@ -97,7 +97,7 @@ letra:
       En un sólido, los niveles de energía permitidos para los electrones se agrupan en **bandas** separadas por intervalos prohibidos (**gaps**). Esta estructura surge de resolver la ecuación de Schrödinger en un potencial periódico.
   - texto: La última está vacía
     explicacion: |
-      En un **aislante** la banda de valencia está completamente llena y la siguiente, la de conducción, está vacía, con un gap grande entre ambas. Sin estados libres cercanos, un campo eléctrico moderado no puede acelerar a los electrones y no hay corriente.
+      En el modelo sencillo de **aislante** de bandas, la banda de valencia está completamente llena y la siguiente, la de conducción, está vacía, con un gap grande entre ambas. Sin estados libres cercanos, un campo eléctrico moderado no puede acelerar a los electrones y no hay corriente.
 - seccion: Coro
   versos:
   - texto: Noto como aumenta

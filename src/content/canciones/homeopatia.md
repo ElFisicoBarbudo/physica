@@ -41,7 +41,7 @@ letra:
       La **memoria del agua** sostiene que el agua conservaría la huella de sustancias disueltas. En 1988 el inmunólogo Jacques Benveniste publicó un resultado en esa línea en la revista *Nature*, pero otros laboratorios no consiguieron reproducirlo, ni tampoco un equipo de revisión enviado por la propia revista. Además, los enlaces de hidrógeno del agua líquida se reorganizan en tiempos del orden de picosegundos, sin que se conozca ningún mecanismo para una "memoria" estable.
   - texto: ¿Que el principio activo no está presente?
     explicacion: |
-      Es una consecuencia de las **diluciones seriadas**: en una dilución 30C se diluye 1 parte en 100 treinta veces seguidas ($10^{-60}$). Como un mol contiene unas $6{,}022 \times 10^{23}$ moléculas, a partir de aproximadamente 12C ($10^{-24}$) lo normal es que no quede ni una molécula de la sustancia original.
+      Es una consecuencia de las **diluciones seriadas**: en una dilución 30C se diluye 1 parte en 100 treinta veces seguidas ($10^{-60}$). Como un mol contiene unas $6{,}022 \times 10^{23}$ moléculas, a partir de aproximadamente 12C ($10^{-24}$) la probabilidad de que quede alguna molécula de la sustancia original es muy pequeña, y el punto exacto depende de la cantidad y el volumen iniciales.
   - texto: Pues como tu flow, que es inexistente
 - versos:
   - texto: Y deja esa quimio, que yo te curo
@@ -53,7 +53,7 @@ letra:
 - versos:
   - texto: Arsénico que cura tu dolor de cabeza
     explicacion: |
-      El **arsénico** es un tóxico bien conocido. Los preparados homeopáticos de arsénico suelen estar tan diluidos que no contienen cantidades relevantes, por lo que ni curan ni intoxican. El mensaje del verso es falso: lo que sí es cierto es el principio de la toxicología de que **"la dosis hace el veneno"**.
+      El **arsénico** es un tóxico bien conocido. En las diluciones homeopáticas de arsénico suele no quedar una cantidad relevante, pero la etiqueta no garantiza que todos los productos tengan la misma concentración ni que no haya riesgos de fabricación. El mensaje del verso es falso: lo que sí es cierto es el principio de la toxicología de que **"la dosis hace el veneno"**.
   - texto: No seas bocachancla, esto te interesa
   - texto: El agua lo cura todo, es que es de cajón
   - texto: Esto es homeopatía, para ti cabrón
