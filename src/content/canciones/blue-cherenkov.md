@@ -42,7 +42,7 @@ letra:
       - texto: But this is Russia, sending bitches to the space, да
         traduccion: Pero esto es Rusia, mandamos perras al espacio, sí
         explicacion: |
-          La **perra Laika** fue lanzada el 3 de noviembre de 1957 en el Sputnik 2, y fue el primer animal que orbitó la Tierra. Murió a las pocas horas por el sobrecalentamiento de la cápsula: la misión no estaba pensada para recuperarla. Es la referencia del verso a los vuelos espaciales soviéticos con animales.
+          La **perra Laika** fue lanzada el 3 de noviembre de 1957 en el Sputnik 2, y fue el primer animal que orbitó la Tierra. Según la versión más extendida, murió a las pocas horas por el sobrecalentamiento de la cápsula, y la misión no estaba pensada para recuperarla. Algunas fuentes rusas hablaron después de que sobrevivió cuatro días. Es la referencia del verso a los vuelos espaciales soviéticos con animales.
   - seccion: Verso 2
     versos:
       - texto: It’s not cheating if we slow down the light
@@ -125,7 +125,7 @@ letra:
       - texto: Put a Cherenkov detector in the Sputnik три
         traduccion: Pon un detector de Cherenkov en el Sputnik III
         explicacion: |
-          El **Sputnik 3**, lanzado en mayo de 1958, llevaba instrumentos para medir los rayos cósmicos, entre ellos un detector Cherenkov. Es uno de los primeros usos de esta técnica en el espacio.
+          El **Sputnik 3**, lanzado el 15 de mayo de 1958, llevaba doce instrumentos científicos para medir la presión y la composición de la alta atmósfera. El verso le atribuye un detector Cherenkov, que no aparece en la lista habitual de su carga científica: es una licencia de la letra.
       - texto: Blue photons emitted, Черенковская синь
         traduccion: Se emiten fotones azules, azul de Cherenkov
   - seccion: Pre-coro
