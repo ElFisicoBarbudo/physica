@@ -7,7 +7,7 @@ youtube: jTCBr85cLeM
 spotify: https://open.spotify.com/track/06SZ4AUPq3c1rHCwTEWnlX
 estilo: Ska
 genero: >
-  El **ska** nació en Jamaica a finales de los años 50 y principios de los 60, mezclando ritmos locales como el mento con el rhythm and blues estadounidense. Su sello es el contratiempo: la guitarra y el piano golpean entre los tiempos fuertes, mientras una sección de vientos (trompetas, saxos, trombones) pone la alegría. Del ska salieron el rocksteady y el reggae. Volvió con fuerza en Inglaterra a finales de los 70 (The Specials, Madness) y en los 90 se mezcló con el punk; en España, Ska-P es el ejemplo más conocido.
+  El **ska** nació en Jamaica a finales de los años 50 y principios de los 60, mezclando ritmos locales como el mento con el rhythm and blues estadounidense. Su sello es el contratiempo: la guitarra y el piano golpean entre los tiempos fuertes, mientras una sección de vientos (trompetas, saxos, trombones) pone la alegría. Del ska salieron el rocksteady y el reggae. Volvió con fuerza en Inglaterra a finales de los 70 (The Specials, Madness) y en los 90 se mezcló con el punk rock; en España, Ska-P es el ejemplo más conocido.
 idioma: es
 resumen: "Ska para repasar a Isaac Newton, sus tres leyes del movimiento y la gravitación universal, que explica con las mismas ecuaciones la caída de una manzana y las órbitas de los planetas. Un buen punto de partida para la dinámica en secundaria."
 temas:

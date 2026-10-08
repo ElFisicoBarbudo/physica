@@ -7,7 +7,7 @@ youtube: HD5EbQt3BaM
 spotify: https://open.spotify.com/track/0VuRvo6bUjA7oXZyr3IQ6U
 estilo: Punk rock
 genero: >
-  El **punk rock** estalló a mediados de los años 70 entre Nueva York (Ramones) y Londres (Sex Pistols, The Clash) como reacción a un rock que se había vuelto largo, técnico y caro. Su receta: canciones cortas y rápidas, pocos acordes, actitud de «hazlo tú mismo» y letras que critican sin pelos en la lengua lo que no funciona en la sociedad. No hacía falta ser un virtuoso para montar un grupo, solo tener algo que decir. Por eso encaja tan bien para cantar las penurias de la ciencia en España.
+  El **punk rock** es la parte musical del punk, un movimiento contracultural más amplio que también tenía su estética, sus fanzines y su actitud. Como género nació a mediados de los años 70 entre Nueva York (Ramones) y Londres (Sex Pistols, The Clash): rock reducido a lo esencial, con guitarra eléctrica distorsionada, bajo y batería, canciones cortas y rápidas y pocos acordes. Frente a un rock que se había vuelto largo y técnico, bastaba con tener algo que decir. Por eso encaja tan bien para cantar las penurias de la ciencia en España.
 idioma: es
 resumen: "Un doctorando cuenta con humor negro y mucho punk lo que es investigar en España: plazos del BOE, pagos que nunca llegan, falta de material y precariedad. Abre la puerta a un buen debate en clase sobre cómo se financia la ciencia."
 temas:
