@@ -161,8 +161,7 @@ letra:
         traduccion: No es que haya cosas que la ciencia no pueda explicar.
       - texto: わからねぇことにルールを探す。
         traduccion: Lo que se busca son las leyes que hay detrás de esas cosas
-        explicacion: そのクッソ地道な努力を
-      - texto: Science is just a name for the steady
+      - texto: そのクッソ地道な努力を
         traduccion: La ciencia no es más que el nombre que se le da al esfuerzo constante
       - texto: 科学って呼んでるだけだ
         traduccion: y pesado que hay detrás de todo ello
