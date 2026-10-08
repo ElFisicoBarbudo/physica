@@ -32,7 +32,7 @@ letra:
       - texto: Desde que ella nació es lo más bonito de mi vida
       - texto: Una bebé rosita que salió de una vagina
       - texto: Se la ve tan indefensa y tan desprotegida
-      - texto: Que te arrancaré la puta cara si le haces una herida
+      - texto: que te arrancaré la puta cara si le haces una herida
   - seccion: Verso 2
     versos:
       - texto: Y en cuanto creció un poquito me la intentaron colar
@@ -47,9 +47,9 @@ letra:
           **ensayos clínicos** antes de aprobarse.
   - seccion: Coro
     versos:
-      - texto: Difteria, Tos Ferina,Varicela, Sarampión
-      - texto: Neumococo, Hepatitis, parecen los PokémonGo
-      - texto: Papiloma, Rubéola, Poliomielitis, Viruela
+      - texto: Difteria, tos ferina, varicela, sarampión
+      - texto: Neumococo, hepatitis, parecen los PokémonGo
+      - texto: Papiloma, rubéola, poliomielitis, viruela
         explicacion: >
           Son enfermedades reales y graves. La **viruela** se erradicó gracias a
           la vacunación: la OMS declaró su erradicación en 1980. La polio ha
@@ -82,7 +82,7 @@ letra:
           **intramuscular** o subcutánea, no intravenosa, con agujas finas. Los
           efectos graves son muy raros y se vigilan de forma continua mediante
           sistemas de **farmacovigilancia**.
-      - texto: Vacunas malignas, vacunas veneno
+      - texto: Vacunas son malignas, vacunas son veneno
       - texto: "Yo no me puse una y mira: estoy bien bueno"
         explicacion: >
           Es un ejemplo de **sesgo del superviviente** y de pensamiento
@@ -91,9 +91,9 @@ letra:
           protegido en parte por quienes sí lo están.
   - seccion: Coro
     versos:
-      - texto: Difteria, Tos Ferina,Varicela y Sarampión
-      - texto: Neumococo, Hepatitis, Parecen los PokémonGo
-      - texto: Papiloma, Rubéola, Poliomielitis, Viruela
+      - texto: Difteria, tos ferina, varicela, sarampión
+      - texto: Neumococo, hepatitis, parecen los PokémonGo
+      - texto: Papiloma, rubéola, poliomielitis, viruela
       - texto: Cuando toca vacuna mi hija no va a la escuela
   - seccion: Verso 5
     versos:
@@ -106,7 +106,7 @@ letra:
           encontrado relación. Las paperas, además, pueden causar complicaciones
           como meningitis o sordera.
       - texto: Aprende a respetar, que esta es mi decisión
-      - texto: Lo de la inmunidad de grupo un fake  new más del montón
+      - texto: Lo de la inmunidad de grupo un fake new más del montón
         explicacion: >
           La **inmunidad de grupo** es real: si una proporción suficientemente
           alta de la población es inmune, el patógeno circula con dificultad y
@@ -123,11 +123,11 @@ letra:
           cuerpo genera anticuerpos y células de memoria (linfocitos B y T) que
           responden con rapidez si el patógeno real aparece. Es el principio de
           toda vacunación.
-      - texto: Yo no soy imbécil aparta esa sustancia asesina
+      - texto: Yo no soy imbécil, aparta esa sustancia asesina
       - texto: que se inyecta en el brazo como si fuera heroína
   - seccion: Outro 1
     versos:
-      - texto: Edward Jenner, pf, dejad de dar la puta matraca
+      - texto: Edward Jenner, dejad de dar la matraca
       - texto: si lo único que hizo fue curarle el costipado a una vaca
         explicacion: >
           Falso. En 1796 **Edward Jenner** observó que quienes habían pasado la
