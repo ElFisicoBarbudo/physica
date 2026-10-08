@@ -1,74 +1,294 @@
 ---
-// Interferencia de ondas para la portada: dos ondas viajeras de distinta frecuencia se superponen
-// y la resultante (en amarillo) se apaga suavemente hacia los extremos. Es decorativa: sin interacción.
+// Cuerda de guitarra para la portada. Vibra como una cuerda real: cada pulsación se descompone en
+// sus armónicos (modos normales), que oscilan y se amortiguan por separado; los más agudos se apagan
+// antes. Se puede pulsar, arrastrar o rasguear con el ratón, y con Intro o Espacio desde el teclado.
+// Las barras de la derecha muestran en vivo cuánto suena cada armónico. El sonido está apagado por defecto.
+const ARMONICOS = 8;
 ---
 
-<figure class="ondas" data-ondas>
-  <svg viewBox="0 0 1000 160" preserveAspectRatio="none" aria-hidden="true">
-    <path class="onda onda-a" d="" />
-    <path class="onda onda-b" d="" />
-    <path class="onda onda-suma" d="" />
+<figure class="cuerda" data-cuerda>
+  <svg
+    viewBox="0 0 1000 200"
+    preserveAspectRatio="none"
+    role="button"
+    tabindex="0"
+    aria-label="Tocar la cuerda"
+  >
+    <defs>
+      <linearGradient id="cuerda-desvanece" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="0" stop-color="#ffd43b" stop-opacity="0.05" />
+        <stop offset="0.5" stop-color="#ffd43b" stop-opacity="0.34" />
+        <stop offset="1" stop-color="#ffd43b" stop-opacity="0.05" />
+      </linearGradient>
+    </defs>
+    <line class="reposo" x1="0" y1="100" x2="1000" y2="100" />
+    <path class="envolvente" d="" fill="url(#cuerda-desvanece)" />
+    <path class="modo" d="" />
+    <path class="modo" d="" />
+    <path class="modo" d="" />
+    <path class="brillo" d="" />
+    <path class="hilo" d="" />
+    <line class="puente" x1="2" y1="70" x2="2" y2="130" />
+    <line class="puente" x1="998" y1="70" x2="998" y2="130" />
   </svg>
-  <button type="button" class="pausa" aria-pressed="false">
-    <span data-texto>Pausar animación</span>
-  </button>
+  <div class="notas" aria-hidden="true"></div>
+  <figcaption class="mandos">
+    <p class="pista">
+      <span class="con-raton">Pulsa, arrastra o pasa el ratón por la cuerda.</span>
+      <span class="tactil">Toca la cuerda para hacerla vibrar.</span>
+    </p>
+    <div class="espectro" aria-hidden="true">
+      <span class="espectro-titulo">Armónicos</span>
+      <span class="barras">
+        {Array.from({ length: ARMONICOS }, (_, i) => <span class="barra" title={`Armónico ${i + 1}`}><i /></span>)}
+      </span>
+    </div>
+    <div class="botones">
+      <button type="button" class="mando" data-sonido aria-pressed="false">Activar sonido</button>
+      <button type="button" class="mando" data-pausa aria-pressed="false">Pausar animación</button>
+    </div>
+  </figcaption>
 </figure>
 
 <script>
   const W = 1000;
-  const MEDIO = 80;
-  const PUNTOS = 200;
+  const MEDIO = 100;
+  const MAX = 78; // desplazamiento máximo en unidades del viewBox
+  const N = 12; // modos que se simulan
+  const VISIBLES = 8; // modos que se muestran en las barras
+  const PUNTOS = 220;
+  const W1 = 2 * Math.PI * 0.9; // frecuencia angular visual del fundamental (rad/s)
+  const F0 = 110; // tono real del fundamental cuando suena (La2)
 
-  type Onda = [amplitud: number, ondas: number, velocidad: number, fase: number];
-  const A: Onda = [34, 2.5, 0.7, 0];
-  const B: Onda = [26, 4, -0.5, 1.4];
+  // Coeficientes de una cuerda pulsada en la posición p (0..1) con altura h: forma triangular.
+  const pulso = (p: number, h: number) =>
+    Array.from({ length: N }, (_, i) => {
+      const n = i + 1;
+      return (2 * h * Math.sin(n * Math.PI * p)) / (n * n * Math.PI * Math.PI * p * (1 - p));
+    });
+  const amortigua = (n: number) => 0.2 + 0.035 * n * n;
 
-  const onda = ([amp, k, w, f]: Onda, x: number, t: number) => amp * Math.sin(2 * Math.PI * k * (x / W) - w * t + f);
-  // Ventana: 0 en los bordes y 1 en el centro, para que la onda nazca y muera sin cortes.
-  const ventana = (x: number) => Math.pow(Math.sin(Math.PI * (x / W)), 0.8);
-
-  for (const fig of document.querySelectorAll<HTMLElement>('[data-ondas]')) {
-    const a = fig.querySelector<SVGPathElement>('.onda-a')!;
-    const b = fig.querySelector<SVGPathElement>('.onda-b')!;
-    const suma = fig.querySelector<SVGPathElement>('.onda-suma')!;
-    const pausa = fig.querySelector<HTMLButtonElement>('.pausa')!;
-    const texto = fig.querySelector<HTMLElement>('[data-texto]')!;
+  for (const fig of document.querySelectorAll<HTMLElement>('[data-cuerda]')) {
+    const svg = fig.querySelector('svg')!;
+    const hilo = fig.querySelector<SVGPathElement>('.hilo')!;
+    const brillo = fig.querySelector<SVGPathElement>('.brillo')!;
+    const envolvente = fig.querySelector<SVGPathElement>('.envolvente')!;
+    const modos = [...fig.querySelectorAll<SVGPathElement>('.modo')];
+    const barras = [...fig.querySelectorAll<HTMLElement>('.barra i')];
+    const bPausa = fig.querySelector<HTMLButtonElement>('[data-pausa]')!;
+    const bSonido = fig.querySelector<HTMLButtonElement>('[data-sonido]')!;
+    const notas = fig.querySelector<HTMLElement>('.notas')!;
     const quieta = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Estado de cada modo como número complejo q + i·v/ω: así el avance en el tiempo es un giro exacto.
+    const re = new Float64Array(N);
+    const im = new Float64Array(N);
+    const senos = Array.from({ length: N }, (_, i) =>
+      Float64Array.from({ length: PUNTOS + 1 }, (_, k) => Math.sin(((i + 1) * Math.PI * k) / PUNTOS)),
+    );
 
     let visible = true;
     let pausada = quieta;
-    let t = 1.2;
+    let sonido = false;
+    let agarre: { x: number; y: number } | null = null;
+    let reposo = 0;
     let anterior = performance.now();
+    let audio: AudioContext | null = null;
 
-    const trazo = (f: (x: number) => number) => {
-      let d = '';
-      for (let i = 0; i <= PUNTOS; i++) {
-        const x = (i / PUNTOS) * W;
-        d += `${i ? 'L' : 'M'}${x.toFixed(1)} ${(MEDIO - f(x) * ventana(x)).toFixed(1)}`;
+    // Cada pulsación suelta una nota musical que sube y se desvanece desde el punto pulsado.
+    const nota = (p: number) => {
+      if (quieta || notas.childElementCount > 6) return;
+      const n = document.createElement('span');
+      n.textContent = ['♪', '♫', '♬', '♩'][Math.floor(Math.random() * 4)];
+      n.style.left = `${(p * 100).toFixed(1)}%`;
+      n.style.setProperty('--deriva', `${(Math.random() * 60 - 30).toFixed(0)}px`);
+      n.style.setProperty('--giro', `${(Math.random() * 40 - 20).toFixed(0)}deg`);
+      n.addEventListener('animationend', () => n.remove());
+      notas.append(n);
+    };
+
+    const pulsar = (p: number, h: number, suena = true) => {
+      p = Math.min(0.97, Math.max(0.03, p));
+      pulso(p, h).forEach((b, i) => (re[i] += b));
+      if (Math.abs(h) > 20) nota(p);
+      if (suena) tocar(pulso(p, 1));
+    };
+
+    const tocar = (b: number[]) => {
+      if (!sonido) return;
+      audio ??= new AudioContext();
+      const ahora = audio.currentTime;
+      const total = audio.createGain();
+      total.gain.value = 0.18;
+      total.connect(audio.destination);
+      b.slice(0, VISIBLES).forEach((a, i) => {
+        const n = i + 1;
+        const g = audio!.createGain();
+        const o = audio!.createOscillator();
+        const dura = 2.6 / n;
+        o.frequency.value = F0 * n;
+        g.gain.setValueAtTime(0.0001, ahora);
+        g.gain.exponentialRampToValueAtTime(Math.max(0.0002, Math.abs(a)), ahora + 0.005);
+        g.gain.exponentialRampToValueAtTime(0.0001, ahora + dura);
+        o.connect(g).connect(total);
+        o.start(ahora);
+        o.stop(ahora + dura + 0.05);
+      });
+    };
+
+    const desplazamiento = (k: number) => {
+      if (agarre) {
+        const xk = k / PUNTOS;
+        return xk < agarre.x ? (agarre.y * xk) / agarre.x : (agarre.y * (1 - xk)) / (1 - agarre.x);
       }
-      return d;
+      let y = 0;
+      for (let i = 0; i < N; i++) y += re[i] * senos[i][k];
+      return y;
     };
 
     const dibujar = () => {
-      a.setAttribute('d', trazo((x) => onda(A, x, t)));
-      b.setAttribute('d', trazo((x) => onda(B, x, t)));
-      suma.setAttribute('d', trazo((x) => (onda(A, x, t) + onda(B, x, t)) * 0.9));
+      let d = '';
+      for (let k = 0; k <= PUNTOS; k++) {
+        const y = Math.max(-MAX, Math.min(MAX, desplazamiento(k)));
+        d += `${k ? 'L' : 'M'}${((k / PUNTOS) * W).toFixed(1)} ${(MEDIO - y).toFixed(1)}`;
+      }
+      hilo.setAttribute('d', d);
+      brillo.setAttribute('d', d);
+
+      // Envolvente: hasta dónde llega la cuerda en una oscilación, como en una foto de larga exposición.
+      let arriba = '';
+      let abajo = '';
+      for (let k = 0; k <= PUNTOS; k++) {
+        let e = 0;
+        if (!agarre) for (let i = 0; i < N; i++) e += Math.hypot(re[i], im[i]) * Math.abs(senos[i][k]);
+        e = Math.min(MAX, e);
+        const x = ((k / PUNTOS) * W).toFixed(1);
+        arriba += `${k ? 'L' : 'M'}${x} ${(MEDIO - e).toFixed(1)}`;
+        abajo = `L${x} ${(MEDIO + e).toFixed(1)}` + abajo;
+      }
+      envolvente.setAttribute('d', `${arriba}${abajo}Z`);
+
+      // Los tres primeros armónicos, por separado, en blanco tenue: la cuerda amarilla es su suma.
+      modos.forEach((m, i) => {
+        let dm = '';
+        for (let k = 0; k <= PUNTOS; k += 2) {
+          const y = agarre ? 0 : re[i] * senos[i][k];
+          dm += `${k ? 'L' : 'M'}${((k / PUNTOS) * W).toFixed(1)} ${(MEDIO - y).toFixed(1)}`;
+        }
+        m.setAttribute('d', dm);
+      });
+
+      barras.forEach((b, i) => {
+        const a = agarre ? 0 : Math.hypot(re[i], im[i]);
+        b.style.transform = `scaleY(${Math.min(1, Math.sqrt(a / 40)).toFixed(3)})`;
+      });
     };
+
+    const avanzar = (dt: number) => {
+      let energia = 0;
+      for (let i = 0; i < N; i++) {
+        const n = i + 1;
+        const giro = n * W1 * dt;
+        const c = Math.cos(giro);
+        const s = Math.sin(giro);
+        const f = Math.exp(-amortigua(n) * dt);
+        const r = (re[i] * c + im[i] * s) * f;
+        im[i] = (im[i] * c - re[i] * s) * f;
+        re[i] = r;
+        energia += re[i] * re[i] + im[i] * im[i];
+      }
+      // Si nadie la toca, la cuerda se pulsa sola de vez en cuando.
+      reposo = energia < 30 ? reposo + dt : 0;
+      if (reposo > 1.2 && !agarre) {
+        reposo = 0;
+        pulsar(0.15 + Math.random() * 0.7, (Math.random() < 0.5 ? -1 : 1) * (45 + Math.random() * 25), false);
+      }
+    };
+
+    // Coordenadas del puntero en unidades del viewBox.
+    const punto = (e: PointerEvent) => {
+      const r = svg.getBoundingClientRect();
+      return { x: (e.clientX - r.left) / r.width, y: MEDIO - ((e.clientY - r.top) / r.height) * 200 };
+    };
+    const alturaEn = (x: number) => desplazamiento(Math.round(Math.min(1, Math.max(0, x)) * PUNTOS));
+
+    let previo: { x: number; y: number; t: number } | null = null;
+
+    svg.addEventListener('pointerdown', (e) => {
+      const p = punto(e);
+      if (e.pointerType === 'touch') {
+        // En móvil, un toque pulsa la cuerda (arrastrar se reserva para desplazar la página).
+        pulsar(p.x, Math.sign(p.y || 1) * Math.min(MAX * 0.8, Math.max(30, Math.abs(p.y))));
+        return;
+      }
+      svg.setPointerCapture(e.pointerId);
+      re.fill(0);
+      im.fill(0);
+      agarre = { x: Math.min(0.97, Math.max(0.03, p.x)), y: Math.max(-MAX * 0.8, Math.min(MAX * 0.8, p.y)) };
+      fig.classList.add('agarrada');
+      dibujar();
+    });
+
+    svg.addEventListener('pointermove', (e) => {
+      const p = punto(e);
+      const ahora = performance.now();
+      if (agarre) {
+        agarre = { x: Math.min(0.97, Math.max(0.03, p.x)), y: Math.max(-MAX * 0.8, Math.min(MAX * 0.8, p.y)) };
+        if (pausada) dibujar();
+      } else if (previo && e.pointerType === 'mouse') {
+        // Rasgueo: si el ratón cruza la cuerda, la pulsa con fuerza proporcional a la velocidad.
+        const antes = previo.y - alturaEn(previo.x);
+        const ahoraRel = p.y - alturaEn(p.x);
+        if (antes * ahoraRel < 0) {
+          const v = Math.abs(p.y - previo.y) / Math.max(1, ahora - previo.t);
+          pulsar(p.x, Math.sign(previo.y - p.y) * Math.min(MAX * 0.7, 12 + v * 18));
+        }
+      }
+      previo = { ...p, t: ahora };
+    });
+
+    const soltar = () => {
+      if (!agarre) return;
+      const { x, y } = agarre;
+      agarre = null;
+      fig.classList.remove('agarrada');
+      pulsar(x, y);
+      if (pausada) dibujar();
+    };
+    svg.addEventListener('pointerup', soltar);
+    svg.addEventListener('pointercancel', soltar);
+    svg.addEventListener('pointerleave', () => (previo = null));
+
+    svg.addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      e.preventDefault();
+      pulsar(0.2 + Math.random() * 0.6, (Math.random() < 0.5 ? -1 : 1) * 55);
+      if (pausada) dibujar();
+    });
 
     const etiquetar = () => {
-      pausa.setAttribute('aria-pressed', String(pausada));
-      texto.textContent = pausada ? 'Reanudar animación' : 'Pausar animación';
+      bPausa.setAttribute('aria-pressed', String(pausada));
+      bPausa.textContent = pausada ? 'Reanudar animación' : 'Pausar animación';
+      bSonido.setAttribute('aria-pressed', String(sonido));
+      bSonido.textContent = sonido ? 'Silenciar' : 'Activar sonido';
     };
 
-    pausa.addEventListener('click', () => {
+    bPausa.addEventListener('click', () => {
       pausada = !pausada;
       anterior = performance.now();
       etiquetar();
     });
+    bSonido.addEventListener('click', () => {
+      sonido = !sonido;
+      if (sonido) audio?.resume();
+      etiquetar();
+    });
 
+    // Primera imagen: la cuerda recién pulsada, ya vibrando un poco.
+    pulsar(0.3, 66, false);
+    avanzar(0.35);
     dibujar();
     etiquetar();
-    if (quieta) continue;
 
     new IntersectionObserver(([e]) => (visible = e.isIntersecting)).observe(fig);
 
@@ -76,7 +296,7 @@
       const dt = Math.min(0.05, (ahora - anterior) / 1000);
       anterior = ahora;
       if (visible && !pausada && !document.hidden) {
-        t += dt;
+        avanzar(dt);
         dibujar();
       }
       requestAnimationFrame(paso);
@@ -86,57 +306,203 @@
 </script>
 
 <style>
-  .ondas {
+  .cuerda {
+    position: relative;
     margin: 0;
+  }
+
+  .notas {
+    position: absolute;
+    inset: 0 0 auto;
+    height: clamp(130px, 15vw, 190px);
+    pointer-events: none;
+  }
+
+  .notas :global(span) {
+    position: absolute;
+    top: 45%;
+    translate: -50% 0;
+    color: var(--senal);
+    font-size: clamp(1.4rem, 2.6vw, 2.1rem);
+    line-height: 1;
+    animation: nota 2.2s ease-out forwards;
+  }
+
+  @keyframes nota {
+    0% {
+      opacity: 0;
+      transform: translate(0, 0) scale(0.6);
+    }
+    15% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(var(--deriva), -120px) rotate(var(--giro)) scale(1.1);
+    }
   }
 
   svg {
     display: block;
     width: 100%;
-    height: clamp(80px, 11vw, 130px);
+    height: clamp(130px, 15vw, 190px);
     overflow: visible;
+    cursor: grab;
+    touch-action: pan-y;
+    border-radius: 12px;
   }
 
-  .onda {
+  .agarrada svg {
+    cursor: grabbing;
+  }
+
+  svg:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  svg:focus-visible {
+    outline: 3px solid var(--senal);
+    outline-offset: 6px;
+  }
+
+  path,
+  line {
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
     vector-effect: non-scaling-stroke;
   }
 
-  .onda-a {
-    stroke: rgb(255 255 255 / 0.3);
+  .envolvente {
+    stroke: none;
+  }
+
+  .reposo {
+    stroke: rgb(255 255 255 / 0.12);
+    stroke-width: 1;
+    stroke-dasharray: 2 6;
+  }
+
+  .modo {
+    stroke: rgb(255 255 255 / 0.34);
     stroke-width: 1.5;
   }
 
-  .onda-b {
-    stroke: rgb(255 255 255 / 0.18);
-    stroke-width: 1.5;
+  .modo + .modo {
+    stroke: rgb(255 255 255 / 0.24);
   }
 
-  .onda-suma {
+  .modo + .modo + .modo {
+    stroke: rgb(255 255 255 / 0.16);
+  }
+
+  .brillo {
     stroke: var(--senal);
-    stroke-width: 3;
+    stroke-width: 10;
+    opacity: 0.18;
   }
 
-  .pausa {
+  .hilo {
+    stroke: var(--senal);
+    stroke-width: 3.5;
+  }
+
+  .puente {
+    stroke: #fff;
+    stroke-width: 5;
+  }
+
+  .mandos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.5rem;
+    margin-top: 0.75rem;
+    color: var(--banda-suave);
+    font-size: 0.95rem;
+  }
+
+  .pista {
+    margin: 0;
+    flex: 1 1 16rem;
+  }
+
+  .espectro {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 0.6rem;
+  }
+
+  .espectro-titulo {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .barras {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 28px;
+  }
+
+  .barra {
+    display: block;
+    width: 7px;
+    height: 100%;
+    border-radius: 2px;
+    background: rgb(255 255 255 / 0.12);
+    overflow: hidden;
+  }
+
+  .barra i {
+    display: block;
+    height: 100%;
+    background: var(--senal);
+    transform-origin: bottom;
+    transform: scaleY(0);
+  }
+
+  .botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .mando {
     display: inline-flex;
     align-items: center;
     min-height: 44px;
-    margin-top: 0.25rem;
-    padding: 0 0.25rem;
-    border: 0;
-    border-radius: 8px;
+    padding: 0 1rem;
+    border: 1px solid rgb(255 255 255 / 0.45);
+    border-radius: 999px;
     background: none;
     color: #fff;
     font: inherit;
     font-size: 0.95rem;
-    text-decoration: underline;
-    text-underline-offset: 3px;
+    font-weight: 700;
     cursor: pointer;
   }
 
-  .pausa:hover {
-    color: var(--senal);
+  .mando:hover,
+  .mando[aria-pressed='true'] {
+    background: var(--senal);
+    border-color: var(--senal);
+    color: #151a3a;
+  }
+
+  .tactil {
+    display: none;
+  }
+
+  @media (hover: none) {
+    .con-raton {
+      display: none;
+    }
+
+    .tactil {
+      display: inline;
+    }
   }
 </style>

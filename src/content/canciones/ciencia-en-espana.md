@@ -69,17 +69,20 @@ letra:
       - texto: Lugar de lectura, la línea 3
       - texto: Leerla en el metro está bien
       - texto: Cum Laude de andén
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: Quien quiere comprar un manual
       - texto: De libros de ESO puedo tirar
       - texto: Ya lo he aceptado y no está mal
       - texto: Ciencia en España
-  - seccion: Coro
+  - seccion: Pre-coro
     versos:
       - texto: Otro retraso al pagar
       - texto: Seguro que ha sido un despiste más
       - texto: Gracias a eso trabajo más
       - texto: Duermo en el lab
+  - seccion: Coro
+    versos:
       - texto: Poco y mal para investigar
       - texto: Chanchullos retrasos y mucho más
       - texto: Ya lo he aceptado y no está mal
@@ -126,12 +129,13 @@ letra:
           polémica legal en varios países. El verso lo menciona como recurso de
           quien carece de acceso institucional; en clase conviene distinguirlo
           de las vías legales de acceso abierto.
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: ¿Cómo que no nos dan nada?
       - texto: He conseguido mucha ansiedad
       - texto: Ya lo he aceptado y no está mal
       - texto: Ciencia en España
-  - seccion: Coro
+  - seccion: Pre-coro
     versos:
       - texto: Mi salud mental no está tan mal
         explicacion: >
@@ -142,7 +146,8 @@ letra:
       - texto: Llorar en la ducha para aguantar
       - texto: Higiene corporal y mental
       - texto: Todo en un pack
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: Poco y mal para investigar
       - texto: Chanchullos retrasos y mucho más
       - texto: Ya lo he aceptado y no está mal
@@ -153,7 +158,8 @@ letra:
       - texto: El piso comparto con 7 más
       - texto: De fin de semana voy a viajar
       - texto: A la cocina
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: Mis papers no rechazan más
         explicacion: >
           Los artículos (*papers*) pasan por la **revisión por pares**: otros
@@ -169,7 +175,7 @@ letra:
           financiación.
       - texto: Ya lo he aceptado y no está mal
       - texto: Ciencia en España
-  - seccion: Coro
+  - seccion: Pre-coro
     versos:
       - texto: Pronto mi plaza podré sacar
         explicacion: >
@@ -180,7 +186,8 @@ letra:
       - texto: Si aguanto esto un poquito más
       - texto: Ya llega por fin mi estabilidad
       - texto: A los cuarenta
-  - versos:
+  - seccion: Coro
+    versos:
       - texto: Poco y mal para investigar
       - texto: Chanchullos retrasos y mucho más
       - texto: Ya lo he aceptado y no está mal

@@ -58,24 +58,27 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
     </section>
 
     <section id="como-usar" class="como-usar envoltura">
-      <p class="sobre">En el aula</p>
+      <p class="sobre">En clase</p>
       <h2>Cómo usarlas en clase</h2>
+      <p class="como-usar-intro">
+        No hace falta preparar nada: cada canción trae lo necesario para una sesión, tanto si quieres un repaso de cinco minutos como una clase entera.
+      </p>
       <ol class="pasos">
         <li>
-          <h3>Elige una canción</h3>
-          <p>Filtra por tema y quédate con la que encaje con lo que estás dando.</p>
+          <h3>Elige la canción</h3>
+          <p>Filtra por tema para dar con la que encaja con lo que estáis viendo, o deja que el dado elija por ti.</p>
         </li>
         <li>
-          <h3>Ponla en clase</h3>
-          <p>Proyecta el videoclip. Si está en inglés, activa la traducción y aparece bajo cada verso.</p>
+          <h3>Escuchadla juntos</h3>
+          <p>Proyecta el videoclip. Si la canción está en inglés, activa la traducción y aparecerá debajo de cada verso.</p>
         </li>
         <li>
-          <h3>Desgrana la letra</h3>
-          <p>Activa las explicaciones: cada verso marcado cuenta la física que esconde. Úsalas para guiar el debate.</p>
+          <h3>Tirad del hilo</h3>
+          <p>Activa las explicaciones y detente en los versos marcados: cada uno esconde un concepto de física con el que lanzar preguntas al grupo.</p>
         </li>
         <li>
           <h3>Reparte la ficha</h3>
-          <p>Descarga el PDF con la letra explicada, actividades y un código QR que lleva al vídeo.</p>
+          <p>Descarga la ficha en PDF, con la letra explicada, actividades para el alumnado y un código QR que lleva al vídeo.</p>
         </li>
       </ol>
     </section>
@@ -256,6 +259,13 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
 
   .como-usar {
     margin-top: 6rem;
+  }
+
+  .como-usar-intro {
+    max-width: 40rem;
+    margin: 0.5rem 0 0;
+    font-size: 1.15rem;
+    color: var(--tinta-suave);
   }
 
   /* Cuatro pasos en orden: la numeración es real, así que se muestra. */

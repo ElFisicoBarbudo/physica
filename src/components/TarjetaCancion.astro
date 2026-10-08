@@ -28,7 +28,6 @@ const d = cancion.data;
     <div class="cuerpo">
       <p class="estilo">
         {[d.estilo, idiomaEn[d.idioma]].filter(Boolean).join(', ')}
-        {d.borrador && <span class="borrador">Borrador</span>}
       </p>
       <h3>{d.titulo}</h3>
       <p class="resumen">{d.resumen}</p>
@@ -114,17 +113,6 @@ const d = cancion.data;
     color: var(--acento);
   }
 
-  /* Pendiente de revisión por el autor: se quita solo al desmarcar «borrador» en el CMS. */
-  .borrador {
-    display: inline-block;
-    margin-left: 0.4rem;
-    padding: 0.1rem 0.5rem;
-    border-radius: 999px;
-    border: 1px solid currentColor;
-    font-size: 0.72rem;
-    letter-spacing: 0.06em;
-    vertical-align: 0.1em;
-  }
 
   h3 {
     font-size: 1.4rem;
