@@ -119,14 +119,10 @@ letra:
           $0{,}894$.
       - texto: Estaremos juntos hasta que te quedes sin pila
 actividades:
-  - Calcula con tu calculadora sin 30, primero en modo grados y luego en modo
-    radianes, y explica por qué los resultados son distintos.
-  - Convierte a radianes los ángulos de 30°, 45°, 90° y 180°, y comprueba el
-    resultado con la calculadora.
-  - Averigua qué hacen las teclas de segunda función de tu calculadora (por
-    ejemplo, SHIFT y las teclas de color) y escribe tres ejemplos.
-  - Comprueba con varios ángulos que sin²θ + cos²θ = 1 y que tan θ = sin θ / cos
-    θ.
+  - "Prueba sin 30 en tu calculadora en modo grados y en modo radianes. Piensa por qué salen resultados distintos y explica con tus palabras qué es un radián."
+  - "Investiga por qué en ciencia se prefieren los radianes y de dónde viene la costumbre de dividir la circunferencia en 360°."
+  - "Averigua qué hacen las teclas de segunda función de tu calculadora (por ejemplo, SHIFT y las teclas de color) y comparte con tus compañeros un truco que no conocieran."
+  - "Debatid en clase: ¿la calculadora nos hace pensar menos o nos ayuda a pensar mejor? ¿Cuándo puede engañarnos un resultado?"
 referencias:
   - titulo: Calculadora
     autor: Wikipedia

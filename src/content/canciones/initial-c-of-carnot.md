@@ -162,12 +162,10 @@ letra:
       - texto: We’re chasing victory
         traduccion: Estamos persiguiendo la victoria
 actividades:
-  - ¿Qué es una máquina térmica? Pon dos ejemplos de tu vida cotidiana.
-  - Ordena las cuatro fases del ciclo de Carnot que aparecen en el estribillo e
-    indica en cuáles cambia la temperatura del gas.
-  - Una máquina ideal trabaja entre 500 K y 300 K. Calcula su rendimiento máximo
-    con la fórmula de Carnot.
-  - ¿Por qué ningún motor real puede alcanzar el rendimiento del ciclo de Carnot?
+  - "Piensa qué es una máquina térmica y busca dos ejemplos en tu vida cotidiana."
+  - "Ordena las cuatro fases del ciclo de Carnot que aparecen en el estribillo e indica en cuáles cambia la temperatura del gas."
+  - "Busca qué rendimiento tiene un motor de coche real. ¿Por qué ningún motor puede aprovechar todo el calor ni alcanzar el rendimiento del ciclo de Carnot?"
+  - "Investiga quién fue Sadi Carnot y por qué le interesaban tanto las máquinas de vapor."
 referencias:
   - titulo: Ciclo de Carnot
     autor: Wikipedia

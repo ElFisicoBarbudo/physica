@@ -150,14 +150,10 @@ letra:
       - texto: lo ha unido
       - texto: un electrón
 actividades:
-  - Pide al alumnado que clasifique los términos de la canción (fermión, amina,
-    muelle, enlace...) en física, química o ambas.
-  - Propón una investigación sobre qué son realmente las estelas de condensación
-    y qué factores determinan que duren más o menos.
-  - Calcula con una hoja de cálculo cuánto se estira un muelle según la ley de
-    Hooke para distintas masas y representa $F$ frente a $x$.
-  - Debate en grupos por qué la física y la química se estudian juntas y qué
-    conceptos comparten (átomo, electrón, energía).
+  - "Clasifica los términos de la canción (fermión, amina, muelle, enlace...) en física, química o ambas, y compara tu clasificación con la de un compañero o compañera."
+  - "Investiga qué son realmente las estelas de condensación de los aviones y qué factores determinan que duren más o menos."
+  - "Busca objetos cotidianos que se comporten como un muelle y piensa qué tienen en común según la ley de Hooke."
+  - "Debatid en grupos por qué la física y la química se estudian juntas y qué conceptos comparten (átomo, electrón, energía)."
 referencias:
   - titulo: Ley de elasticidad de Hooke
     autor: Wikipedia

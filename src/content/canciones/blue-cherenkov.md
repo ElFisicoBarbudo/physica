@@ -182,11 +182,10 @@ letra:
       - texto: Черенков Синий
         traduccion: Azul de Cherenkov
 actividades:
-  - Calcula la velocidad de la luz en el agua sabiendo que su índice de
-    refracción es 1,33.
-  - ¿Por qué la radiación de Cherenkov no contradice la relatividad especial?
-  - Compara la radiación de Cherenkov con el estampido sónico de un avión
-    supersónico. ¿En qué se parecen?
+  - "Busca información sobre por qué la luz viaja más despacio en el agua que en el vacío y qué es el índice de refracción."
+  - "Piensa y explica con tus palabras por qué la radiación de Cherenkov no contradice la relatividad especial."
+  - "Compara la radiación de Cherenkov con el estampido sónico de un avión supersónico. ¿En qué se parecen? ¿En qué se diferencian?"
+  - "Busca fotos del brillo azul de la piscina de un reactor nuclear e investiga para qué se usa la radiación de Cherenkov en los detectores de partículas."
 referencias:
   - titulo: Radiación de Cherenkov
     autor: Wikipedia

@@ -204,12 +204,9 @@ letra:
       - texto: Nuestro ego caerá ante el modelo heliocéntrico
       - texto: Ptolomeo contra Copérnico
 actividades:
-  - Dibuja con compás el movimiento retrógrado de un planeta usando deferente y
-    epiciclo, y compáralo con la explicación heliocéntrica.
-  - Organizad un debate en clase en el que un grupo defienda el geocentrismo con
-    los argumentos de su época y otro el heliocentrismo.
-  - Busca en la letra los anacronismos y las licencias históricas, y corrígelos
-    con ayuda de una fuente fiable.
+  - "Busca una animación del movimiento retrógrado de Marte y compara cómo lo explicaba el modelo de Ptolomeo, con epiciclos, y cómo lo explica el de Copérnico."
+  - "Organizad un debate en clase en el que un grupo defienda el geocentrismo con los argumentos de su época y otro el heliocentrismo."
+  - "Busca en la letra los anacronismos y las licencias históricas, y corrígelos con ayuda de una fuente fiable."
 referencias:
   - titulo: Almagesto
     autor: Wikipedia

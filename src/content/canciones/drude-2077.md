@@ -123,10 +123,10 @@ letra:
   - texto: Drude, Drude
   - texto: Modelo de Drude
 actividades:
-  - "Pide al alumnado que calcule la velocidad de deriva en un cable de cobre de 1 mm² por el que circula 1 A, y que compare el resultado con la velocidad de la luz."
-  - "Simula con una hoja de cálculo o un applet el movimiento de un electrón con colisiones aleatorias, con y sin campo eléctrico, y compara las trayectorias medias."
-  - "Debate en grupo por qué un modelo que falla en el calor específico sigue enseñándose, y qué papel juegan las hipótesis simplificadoras en la física."
-  - "Clasifica materiales cotidianos como conductores, semiconductores o aislantes y explica la diferencia con el esquema de bandas."
+  - "Busca a qué velocidad se mueven de verdad los electrones dentro de un cable. ¿Cómo es posible que la bombilla se encienda en cuanto pulsas el interruptor?"
+  - "Piensa por qué los choques de los electrones con los iones del metal hacen que un cable se caliente, y busca aparatos de casa que aprovechen ese efecto."
+  - "Debatid en grupo por qué un modelo que falla en el calor específico sigue enseñándose, y qué papel juegan las hipótesis simplificadoras en la física."
+  - "Clasifica materiales cotidianos como conductores, semiconductores o aislantes, y busca cómo explica la diferencia el modelo de bandas."
 referencias:
   - titulo: "Modelo de Drude"
     autor: "Wikipedia"

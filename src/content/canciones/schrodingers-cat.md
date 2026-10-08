@@ -131,11 +131,9 @@ letra:
       - texto: Just open the box
         traduccion: Solo hay que abrir la caja.
 actividades:
-  - Explica con tus palabras qué es la superposición cuántica.
-  - ¿Por qué crees que Schrödinger eligió un gato, un objeto cotidiano, para su
-    experimento mental?
-  - Si repites el experimento 200 veces, ¿cuántos gatos esperarías que
-    sobrevivieran? ¿Saldría siempre ese número exacto?
+  - "Busca información sobre qué es la superposición cuántica y explícala con tus palabras."
+  - "Piensa por qué Schrödinger eligió un gato, un objeto cotidiano, para su experimento mental."
+  - "Investiga qué dice la interpretación de Copenhague sobre el gato y debatid en clase si el gato está \"vivo y muerto a la vez\" antes de abrir la caja."
 referencias:
   - titulo: Gato de Schrödinger
     autor: Wikipedia
