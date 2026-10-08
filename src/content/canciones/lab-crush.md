@@ -70,7 +70,7 @@ letra:
   - texto: And treat you better than your peer review
     traduccion: Y te trataré mejor que tu comité de revisión
     explicacion: |
-      La **revisión por pares** (*peer review*) es el proceso por el que expertos independientes, normalmente anónimos, evalúan un manuscrito antes de que una revista lo publique. Suele ser exigente: los revisores piden aclaraciones, nuevos datos o correcciones, de ahí el chiste de que cualquier trato sería mejor.
+      La **revisión por pares** (*peer review*) es el proceso por el que expertos independientes, a menudo anónimos, aunque no siempre, evalúan un manuscrito antes de que una revista lo publique. Suele ser exigente: los revisores piden aclaraciones, nuevos datos o correcciones, de ahí el chiste de que cualquier trato sería mejor.
   - texto: I’ll ruin your experiment for us
     traduccion: Arruinaré tu experimento por nosotros
   - texto: '''cause you''re my lab crush'

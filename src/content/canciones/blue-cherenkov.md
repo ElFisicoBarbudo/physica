@@ -41,13 +41,13 @@ letra:
       - texto: "We put it under water, speed below c"
         traduccion: "La metemos bajo el agua, a una velocidad inferior a c"
         explicacion: |
-          La luz se frena al atravesar un material. Lo mide el **índice de refracción** $n$: la velocidad de la luz en el medio es $v = c/n$. En el agua $n \approx 1{,}33$, así que la luz va a unos $0{,}75\,c$, unos 225 000 km/s. Un electrón muy energético puede superar esa velocidad sin violar la relatividad, porque sigue yendo más despacio que $c$.
+          La luz se propaga más despacio en un material que en el vacío. Lo mide el **índice de refracción** $n$: la velocidad de la luz en el medio es $v = c/n$. En el agua $n \approx 1{,}33$, así que la luz va a unos $0{,}75\,c$, unos 225 000 km/s. Un electrón muy energético puede superar esa velocidad sin violar la relatividad, porque sigue yendo más despacio que $c$.
       - texto: "Our charged particles become bright"
         traduccion: "Nuestras partículas cargadas se vuelven brillantes"
       - texto: "Blue photons emitted, Черенковская синь"
         traduccion: "Se emiten fotones azules, azul de Cherenkov"
         explicacion: |
-          Cuando una partícula cargada supera la velocidad de la luz en el medio, emite luz en forma de **cono**, igual que un avión supersónico produce un estampido sónico. Esa luz es más intensa en las longitudes de onda cortas, por eso la vemos **azul**. *Черенковская синь* significa "azul de Cherenkov".
+          Cuando una partícula cargada supera la velocidad de la luz en el medio, emite luz en forma de **cono**, igual que un avión supersónico produce un estampido sónico. Esa luz es más intensa en las longitudes de onda cortas, por eso suele verse **azul**. *Черенковская синь* significa "azul de Cherenkov".
   - seccion: Coro
     versos:
       - texto: "We’re partyin’ and drinkin’ cold vodka in our triple stripe"
@@ -55,7 +55,7 @@ letra:
       - texto: "Our commie eyes can see the gamma rays"
         traduccion: "Nuestros ojos comunistas pueden ver los rayos gamma"
         explicacion: |
-          Nadie puede ver los rayos gamma. Pero cuando un rayo gamma muy energético llega del espacio y choca con la atmósfera, produce una cascada de partículas cargadas que emiten **radiación de Cherenkov**. Telescopios como los MAGIC, en La Palma, detectan esos destellos para estudiar el universo de altas energías.
+          Nadie puede ver los rayos gamma. Pero cuando un rayo gamma muy energético llega del espacio y choca con la atmósfera, inicia una cascada de partículas cargadas secundarias, que emiten **radiación de Cherenkov**; los telescopios detectan esa luz. Telescopios como los MAGIC, en La Palma, detectan esos destellos para estudiar el universo de altas energías.
       - texto: "Tryin’ to steal our Nobel prize? сука"
         traduccion: "¿Intentas robarnos el Premio Nobel? ****"
         explicacion: |

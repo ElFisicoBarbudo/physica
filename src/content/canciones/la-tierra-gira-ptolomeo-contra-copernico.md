@@ -82,7 +82,7 @@ letra:
   - texto: Alrededor Venus, Marte o Mercurio giran
   - texto: Mientras las demás estrellas del cosmos miran
     explicacion: |
-      Copérnico situó las estrellas muy lejos, en una esfera fija, lo que explica por qué no se veía paralaje. No se midió hasta 1838, cuando Friedrich Bessel lo logró con la estrella 61 Cygni.
+      Copérnico situó las estrellas muy lejos, en una esfera fija, lo que explica por qué no se veía paralaje. La paralaje anual no se midió de forma convincente hasta 1838, cuando Friedrich Bessel lo logró con la estrella 61 Cygni.
 - versos:
   - texto: En órbitas circulares perfectas se ordenan
     explicacion: |

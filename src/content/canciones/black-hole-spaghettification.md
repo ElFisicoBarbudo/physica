@@ -59,11 +59,7 @@ letra:
       - texto: Lawless, unknown physics wait inside
         traduccion: Sin leyes, dentro te espera física desconocida
         explicacion: >
-          En el centro de un agujero negro se encuentra lo que llamamos
-          **singularidad**, un punto donde toda la masa del agujero negro está
-          concentrada en un espacio increíblemente pequeño. Aquí, las leyes
-          físicas que conocemos dejan de funcionar, y los científicos aún no
-          saben exactamente qué ocurre en este lugar tan extremo.
+          En el centro de un agujero negro, la relatividad general predice una **singularidad**, una región donde sus ecuaciones dejan de dar una descripción válida. Eso indica que hace falta una teoría más completa que combine gravedad y física cuántica, y que aún no sabemos qué ocurre allí.
       - texto: Horizon, once you cross it you're tied
         traduccion: Horizonte, una vez lo cruzas estás atado
         explicacion: >
@@ -89,7 +85,7 @@ letra:
         explicacion: >
           Según una teoría propuesta por el físico Stephen Hawking, los agujeros
           negros podrían emitir una forma especial de radiación llamada
-          **radiación de Hawking**. Surge al combinar la física cuántica con la relatividad general. Se suele explicar con una imagen simplificada, que el propio Hawking usaba. En el vacío aparecen y desaparecen pares de partícula y antipartícula, y si se forman junto al horizonte de sucesos, una puede caer en el agujero negro mientras la otra escapa. Es una predicción teórica muy aceptada, pero aún no se ha observado: para agujeros negros de masa estelar o mayor es tan débil que resulta indetectable.
+          **radiación de Hawking**. Surge al combinar la física cuántica con la relatividad general. Se suele explicar con una imagen simplificada, que el propio Hawking usaba. En el vacío aparecen y desaparecen pares de partícula y antipartícula, y si se forman junto al horizonte de sucesos, una puede caer en el agujero negro mientras la otra escapa. Es una predicción teórica con amplio respaldo, que procede de combinar la teoría cuántica de campos con la relatividad general, pero aún no se ha observado: para agujeros negros de masa estelar o mayor es tan débil que resulta indetectable.
       - texto: Try not to fall, eternal damnation
         traduccion: Intenta no caer, perdición eterna
       - texto: You're gonna die by Spaghettification

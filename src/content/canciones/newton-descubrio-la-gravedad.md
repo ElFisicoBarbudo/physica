@@ -29,7 +29,7 @@ letra:
       - texto: "Sir Isaac Newton caballero de la ciencia"
       - texto: "Mecánica, termo, óptica, fluidos, es la referencia"
         explicacion: |
-          Newton tocó casi todas las ramas de la física: además de la mecánica, descompuso la luz blanca con un prisma, construyó el primer **telescopio reflector** que funcionó, formuló una **ley del enfriamiento** y estudió la viscosidad de los fluidos (por eso hablamos de "fluidos newtonianos").
+          Newton tocó casi todas las ramas de la física: además de la mecánica, descompuso la luz blanca con un prisma, construyó uno de los primeros **telescopios reflectores** prácticos, formuló una **ley del enfriamiento** y estudió la viscosidad de los fluidos (por eso hablamos de "fluidos newtonianos").
   - seccion: Pre-coro
     versos:
       - texto: "1ª Ley de Newton"

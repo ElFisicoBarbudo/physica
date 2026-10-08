@@ -29,9 +29,7 @@ letra:
     versos:
       - texto: Ha llegao la fecha, límite del BOE
         explicacion: >
-          Las convocatorias públicas de ayudas a la investigación (contratos
-          predoctorales, proyectos, movilidad) se publican en el **Boletín
-          Oficial del Estado (BOE)** o se rigen por plazos oficiales. Cumplir
+          Muchas convocatorias públicas de ayudas a la investigación (contratos predoctorales, proyectos, movilidad) se publican en el **Boletín Oficial del Estado (BOE)** o en sedes electrónicas, y tienen plazos oficiales. Cumplir
           los plazos de solicitud es obligatorio, mientras que la resolución y
           el pago por parte de la administración pueden retrasarse, y de ahí el
           contraste del verso siguiente.
@@ -138,7 +136,7 @@ letra:
       - texto: Mi salud mental no está tan mal
         explicacion: >
           Varias encuestas y estudios internacionales sobre doctorandos señalan
-          una incidencia notable de **ansiedad y estrés**. El humor de la
+          niveles elevados de **ansiedad, estrés o malestar psicológico**. El humor de la
           estrofa es amargo: el narrador minimiza un problema real que merece
           atención y no solo bromas.
       - texto: Llorar en la ducha para aguantar

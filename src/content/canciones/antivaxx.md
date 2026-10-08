@@ -70,9 +70,7 @@ letra:
       - texto: Yo me curo de los virus con este milenario imán
         explicacion: >
           Un imán no cura ninguna infección. No existe prueba científica de ese
-          efecto, y las redes sociales no sustituyen a la evidencia médica. Los
-          virus se combaten con el sistema inmune, que las vacunas entrenan, y
-          con tratamientos probados.
+          efecto, y las redes sociales no sustituyen a la evidencia médica. Las vacunas preparan al sistema inmunitario para prevenir infecciones o reducir su gravedad. Algunas infecciones víricas cuentan con tratamientos antivirales específicos.
   - seccion: Verso 4
     versos:
       - texto: Son gordas, muy afiladas y están hechas de metal
@@ -131,8 +129,7 @@ letra:
       - texto: si lo único que hizo fue curarle el costipado a una vaca
         explicacion: >
           Falso. En 1796 **Edward Jenner** observó que quienes habían pasado la
-          viruela de las vacas parecían protegidos contra la viruela humana, e
-          inoculó material de la viruela bovina a un niño, James Phipps. De
+          viruela de las vacas parecían protegidos contra la viruela humana, e inoculó material de una lesión de viruela vacuna a un niño, James Phipps. De
           *vacca* viene la palabra **vacuna**. Fue el comienzo de la vacunación
           moderna.
       - texto: ¿Que "ha salvado más vidas que el trabajo de cualquier otro hombre"?
