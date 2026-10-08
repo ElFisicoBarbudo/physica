@@ -7,7 +7,6 @@ youtube: FRU8XN4_dyU
 estilo: Rap
 genero: >
   El **rap** consiste en recitar versos rimados y con ritmo sobre una base musical. Nació a principios de los años 70 en el Bronx, en Nueva York, en fiestas de barrio donde DJ como Kool Herc alargaban los fragmentos instrumentales de los discos para que los MC animaran al público. Es uno de los cuatro elementos de la cultura hip hop, junto al DJ, el grafiti y el breakdance. Las batallas de improvisación entre raperos son una tradición del género: como esta, entre Ptolomeo y Copérnico.
-genero_borrador: true
 idioma: es
 resumen: "Ptolomeo y Copérnico se enfrentan en una batalla de rap: la Tierra en el centro contra el Sol en el centro. Una forma muy viva de presentar la revolución copernicana y de ver cómo cambia un modelo científico cuando cambian las observaciones."
 temas:
@@ -224,8 +223,9 @@ referencias:
     autor: Date un Vlog
     url: https://www.youtube.com/watch?v=XlwM0tkgsoI
 ---
-Durante más de mil trescientos años, la imagen del cosmos que dominó en Europa y en el mundo islámico fue la de Claudio Ptolomeo, un astrónomo que trabajó en Alejandría en el siglo II. En su *Almagesto* describió un universo con la Tierra inmóvil en el centro y los demás astros girando a su alrededor, y lo hizo con tanta precisión matemática que permitía predecir las posiciones de los planetas con una exactitud notable para su época.
 
-En 1543 Nicolás Copérnico publicó *De revolutionibus orbium coelestium*, donde situaba al Sol cerca del centro del sistema y a la Tierra como un planeta más, con un movimiento de rotación diario y otro de traslación anual. La canción pone a ambos a insultarse al ritmo de un rap, e incluye guiños a Rheticus, Kepler y Galileo. Más allá del humor, muestra una idea clave: el heliocentrismo no se impuso de golpe, y el propio Copérnico seguía usando órbitas circulares y epiciclos, de modo que su modelo no predecía mucho mejor que el de Ptolomeo.
+Durante más de mil trescientos años, la imagen del cosmos en Europa y el mundo islámico fue la de Claudio Ptolomeo, astrónomo de Alejandría del siglo II. En su *Almagesto* puso la Tierra inmóvil en el centro, y lo hizo con tanta precisión matemática que permitía predecir la posición de los planetas.
 
-La letra mezcla anacronismos deliberados con datos históricos, así que es un buen recurso para discutir cómo se construyen y se sustituyen los modelos científicos.
+En 1543 Nicolás Copérnico publicó *De revolutionibus*, con el Sol cerca del centro y la Tierra como un planeta más, que gira sobre sí misma y alrededor del Sol. La canción los pone a pelearse en una batalla de rap, con guiños a Rheticus, Kepler y Galileo.
+
+Más allá del humor, deja una idea clave: el heliocentrismo no ganó de golpe. Copérnico seguía usando círculos y epiciclos, y su modelo no predecía mucho mejor que el de Ptolomeo. Ideal para hablar en clase de cómo cambian los modelos científicos.

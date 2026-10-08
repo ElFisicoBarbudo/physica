@@ -35,9 +35,8 @@ const canciones = defineCollection({
     // Enlace completo a la canción en Spotify.
     spotify: z.string().url().nullish(),
     estilo: z.string().nullish(), // estilo musical: "Deathcore", "Eurobeat"...
-    // Breve historia o descripción del estilo musical, con su aviso de revisión pendiente.
+    // Breve historia o descripción del estilo musical.
     genero: z.string().nullish(),
-    genero_borrador: z.boolean().default(false),
     resumen: z.string(),
     temas: z.array(z.string()).default([]),
     nivel: z.string().nullish(),

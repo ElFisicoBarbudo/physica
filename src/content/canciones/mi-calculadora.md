@@ -8,7 +8,6 @@ spotify: https://open.spotify.com/track/6HYiQuxHE9p9ss90qdqa1P
 estilo: Pop punk
 genero: >
   El **pop punk** toma la velocidad y las guitarras del punk rock y les añade melodías y estribillos pegadizos propios del pop. Tiene precursores a finales de los 70, como Buzzcocks, pero su gran momento llegó en los 90 con Green Day, The Offspring o blink-182, y siguió en los 2000 con Sum 41 o Avril Lavigne. Sus letras suelen hablar con humor de la adolescencia: el instituto, los amores, el aburrimiento… y, por qué no, de la relación de amor y odio con la calculadora en los exámenes.
-genero_borrador: true
 idioma: es
 resumen: "Una oda cómica a la calculadora científica: senos, cosenos, tangentes, la tecla Ans y el eterno drama de radianes contra grados. Te sirve para repasar trigonometría y, de paso, aprender a usar la calculadora sin sustos."
 temas:
@@ -135,8 +134,9 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Funci%C3%B3n_trigonom%C3%A9trica
 ---
-*Mi calculadora* es una declaración de amor cómica a un objeto que acompaña a todo estudiante de ciencias: la calculadora científica. La letra recorre la vida con ella, desde el alivio de dejar de calcular a mano hasta los líos con sus teclas y modos.
 
-Detrás de las bromas hay conceptos reales de matemáticas y física. El seno, el coseno y la tangente son herramientas básicas para describir ángulos, ondas y movimientos, y el famoso conflicto entre **radianes y grados** es una de las causas más habituales de errores en los exámenes.
+*Mi calculadora* es una declaración de amor, en clave de comedia, al objeto que acompaña a cualquier estudiante de ciencias: la calculadora científica. La letra recorre toda la relación, desde el alivio de dejar de hacer cuentas a mano hasta los líos con sus teclas y sus modos.
 
-La canción sirve para repasar de forma ligera la trigonometría, para recordar que una calculadora solo hace lo que se le pide (y con la configuración que tiene) y para animar a leer el manual de la herramienta que usamos todos los días.
+Detrás de las bromas hay contenido de verdad. El seno, el coseno y la tangente son herramientas básicas para describir ángulos, ondas y movimientos, y el eterno drama entre **radianes y grados** es una de las causas más típicas de errores en los exámenes. También aparece la tecla Ans, que guarda el último resultado.
+
+En clase te sirve para repasar la trigonometría de forma ligera, para recordar que la calculadora solo hace lo que le pides (y con la configuración que tenga) y para animar a conocer bien una herramienta que se usa todos los días.

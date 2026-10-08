@@ -8,7 +8,6 @@ spotify: https://open.spotify.com/track/2Rtvlj00gWTJgaNi4ho61W
 estilo: Deathcore
 genero: >
   El **deathcore** nació en Estados Unidos a principios de los 2000 al juntar dos mundos: la brutalidad del death metal (guitarras muy graves, baterías a toda velocidad, voces guturales) y los *breakdowns* del metalcore y el hardcore, esos pasajes lentos y pesadísimos pensados para que el público salte. Bandas como Suicide Silence, Whitechapel o Job for a Cowboy lo hicieron popular a mediados de esa década. Afinaciones bajísimas, gritos y sensación de aplastamiento: la banda sonora ideal para un agujero negro devorándolo todo.
-genero_borrador: true
 idioma: en
 resumen: "¿Qué te pasaría si cayeras en un agujero negro? Spoiler: acabarías hecho un espagueti. Perfecta para explicar qué es un agujero negro, qué es el horizonte de sucesos y cómo los detectamos aunque no se puedan ver."
 temas:
@@ -171,6 +170,9 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Espaguetizaci%C3%B3n
 ---
-Imagina un lugar en el espacio donde la gravedad es tan fuerte que nada, ni siquiera la luz, puede escapar. Eso es, básicamente, un agujero negro. Los agujeros negros de masa estelar se forman cuando una estrella muy masiva muere y su núcleo colapsa (el origen de los supermasivos, como el del centro de nuestra galaxia, todavía se investiga). Según la relatividad general, ese colapso comprime la masa de la estrella en un punto increíblemente pequeño y denso que recibe el nombre de **singularidad** (aunque los físicos sospechan que una teoría cuántica de la gravedad lo describiría de otra forma). Muy denso, como el **deathcore**, uno de los géneros más pesados dentro de la música metal.
 
-Alrededor de la singularidad de los agujeros negros, existe una región llamada el **horizonte de sucesos**. Si algo cruza este horizonte, no puede salir. Una frontera de no retorno. Aunque los agujeros negros son "negros" (porque ni siquiera la luz puede escapar), podemos detectar su presencia por los efectos que tienen en las estrellas y las nubes de gas cercanas. Pero ¿qué pasaría si un humano se acercase a un agujero negro?
+Imagina un sitio del espacio donde la gravedad es tan bestia que nada, ni siquiera la luz, puede escapar. Eso es un agujero negro. Los de masa estelar nacen cuando una estrella muy masiva muere y su núcleo colapsa; según la relatividad general, toda esa masa acaba en un punto diminuto y densísimo, la **singularidad** (aunque se sospecha que una teoría cuántica de la gravedad lo describiría de otra forma). Denso, como el **deathcore**.
+
+Alrededor está el **horizonte de sucesos**, la frontera de no retorno: lo que la cruza ya no sale. Y aunque no podamos verlos, sabemos dónde están por lo que hacen a las estrellas y al gas de su alrededor.
+
+¿Y si cayeras tú dentro? La canción te lo cuenta sin anestesia: acabarías estirado como un espagueti. Es un buen gancho para hablar de gravedad, fuerzas de marea y de cómo se estudia lo que no se puede ver.

@@ -8,7 +8,6 @@ spotify: https://open.spotify.com/track/6DPv0G6ST218PHGflWkujP
 estilo: Trap
 genero: >
   El **trap** nació en el sur de Estados Unidos, sobre todo en Atlanta, a finales de los 90 y principios de los 2000. Su nombre viene de las *trap houses*, las casas donde se vendía droga, y sus primeras letras hablaban de esa vida sin adornos. Artistas como T.I., Gucci Mane o Young Jeezy lo pusieron en el mapa. Musicalmente es una rama del rap del sur: ritmo lento y pesado, bajos que retumban y hi-hats rapidísimos. Aquí esa actitud chulesca se la lleva un antivacunas con mucha seguridad y poca razón.
-genero_borrador: true
 idioma: es
 resumen: "Un antivacunas muy convencido suelta, uno detrás de otro, todos los bulos de manual (y ninguno se sostiene). Viene al pelo para desmontarlos en clase con datos sobre inmunidad de grupo, ensayos clínicos y la historia de las vacunas."
 temas:
@@ -173,8 +172,9 @@ referencias:
     autor: BBC
     url: https://www.bbc.com/mundo/noticias-50952151
 ---
-*AntiVaxx* es una canción de trap irónica. El narrador adopta la voz de un padre que rechaza las vacunas y, a base de exageraciones y falacias, deja en evidencia lo débil que es ese discurso. Nada de lo que afirma es cierto: la gracia está en reconocer qué hay de erróneo en cada frase.
 
-Las vacunas son una de las intervenciones de salud pública con mayor impacto de la historia. Gracias a ellas la viruela se erradicó y enfermedades como la polio, la difteria o el sarampión se han reducido de forma drástica. Cuando la cobertura vacunal baja, algunas de ellas vuelven a aparecer.
+*AntiVaxx* es un trap irónico: el narrador se mete en la piel de un padre antivacunas que va soltando, uno tras otro, todos los bulos de manual. Ninguno se sostiene, y ahí está la gracia: pillar qué falla en cada frase.
 
-En el aula, la canción permite practicar el **pensamiento crítico**: distinguir una anécdota de un dato, una fuente fiable de una red social, y un consenso científico de una opinión. Recomendamos comentar cada verso, leer la explicación asociada y contrastar las cifras con fuentes oficiales actualizadas.
+La realidad es justo la contraria. Las vacunas son una de las medidas de salud pública que más vidas han salvado: gracias a ellas se erradicó la viruela, y la polio, la difteria o el sarampión se han reducido muchísimo. Eso sí, cuando la vacunación baja, algunas de esas enfermedades vuelven.
+
+En clase es perfecta para entrenar el **pensamiento crítico**: distinguir una anécdota de un dato, una fuente fiable de un mensaje en redes y un consenso científico de una opinión. Ve verso a verso, lee la explicación de cada uno y contrasta las cifras con fuentes oficiales actualizadas.

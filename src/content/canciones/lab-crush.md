@@ -8,7 +8,6 @@ spotify: https://open.spotify.com/track/15yQZQPzShqWKry79raNxb
 estilo: Future Bass
 genero: >
   El **future bass** es un estilo de música electrónica que se popularizó en la primera mitad de la década de 2010, con productores como Flume o Hudson Mohawke entre sus referentes. Sus rasgos más reconocibles son los acordes de sintetizador grandes y brillantes que parecen «respirar» al ritmo del bombo (un efecto llamado *sidechain*), las voces aceleradas y troceadas y un ambiente dulce y emocional. Esa mezcla de energía y ternura lo ha convertido en uno de los sonidos favoritos para hablar de amor, también del amor de laboratorio.
-genero_borrador: true
 idioma: en
 resumen: "Una investigadora planea sabotear el experimento de su compañero para que no se marche y, de paso, nos enseña la rutina real del laboratorio: muestras, repeticiones, revisión por pares y publicaciones. Para contar con humor cómo se hace ciencia de verdad."
 temas:
@@ -181,8 +180,9 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/M%C3%A9todo_cient%C3%ADfico
 ---
-*Lab Crush* es una canción de amor ambientada en un laboratorio. Una investigadora, enamorada de un compañero que está a punto de terminar su jornada, decide estropear a propósito un experimento para retenerlo. Es una exageración cómica, pero la letra está llena de elementos reales del trabajo científico.
 
-La canción permite hablar de aspectos que rara vez salen en el aula: que los experimentos se repiten, que las muestras pueden estropearse, que los resultados se comunican en artículos y que antes de publicarse los evalúan otros especialistas mediante la **revisión por pares**. También menciona *Nature*, una de las revistas científicas más conocidas.
+*Lab Crush* es una canción de amor ambientada en un laboratorio. Una investigadora, enamorada de un compañero que está a punto de irse, decide estropear su experimento para retenerlo. Es una exageración cómica (sabotear el trabajo de otra persona es, evidentemente, nada ético), pero la letra está llena de detalles reales del trabajo científico.
 
-Para el profesorado puede ser un buen punto de partida para conversar sobre cómo funciona realmente la ciencia, más allá de la imagen del genio solitario, y sobre la importancia de la paciencia, la reproducibilidad y la integridad en la investigación. Conviene recalcar que sabotear el trabajo de otra persona es, evidentemente, una conducta nada ética: el humor de la canción depende de ello.
+Con ella puedes hablar de cosas que rara vez salen en el aula: que los experimentos se repiten, que las muestras se estropean, que los resultados se publican en artículos y que antes otros especialistas los evalúan mediante la **revisión por pares**. Hasta sale *Nature*, una de las revistas científicas más conocidas.
+
+Es un buen punto de partida para contar cómo funciona la ciencia de verdad, lejos de la imagen del genio solitario, y para hablar de paciencia, reproducibilidad e integridad en la investigación.

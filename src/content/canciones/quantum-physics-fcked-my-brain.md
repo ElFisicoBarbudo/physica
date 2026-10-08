@@ -7,7 +7,6 @@ spotify: "https://open.spotify.com/track/29fiemIFJWweYcdL0OFXBa"
 estilo: "Metalcore"
 genero: >
   El **metalcore** fusiona el heavy metal (riffs afilados, doble bombo, algún solo de guitarra) con la energía y los *breakdowns* del hardcore punk. Sus raíces están en la escena hardcore estadounidense de finales de los 80 y los 90, y vivió su gran explosión en los 2000 con bandas como Killswitch Engage, Bullet for My Valentine o Parkway Drive. Uno de sus rasgos más típicos es alternar estrofas gritadas con estribillos cantados en limpio, muy melódicos. Gritos para el caos cuántico y melodía para intentar entenderlo.
-genero_borrador: true
 resumen: "Metalcore para el momento en que la física de Newton deja de funcionar y el mundo cuántico solo nos deja hablar de probabilidades. Funciona muy bien para abrir el tema preguntando qué significa que una teoría funcione aunque nadie la entienda del todo."
 temas: [Física cuántica, Física de partículas]
 orden: 8
@@ -124,6 +123,8 @@ referencias:
     url: "https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_de_Schr%C3%B6dinger"
 ---
 
-Durante más de dos siglos, la física de **Newton** funcionó tan bien que parecía definitiva: dadas la posición y la velocidad iniciales de un cuerpo, sus ecuaciones decían exactamente dónde estaría en cualquier instante futuro. Esa certeza se rompió al estudiar lo muy pequeño.
+Durante más de dos siglos, la física de **Newton** funcionó tan bien que parecía definitiva: conociendo la posición y la velocidad de un cuerpo, sus ecuaciones decían exactamente dónde estaría en cualquier momento. Esa certeza saltó por los aires al estudiar lo muy pequeño.
 
-Entre 1900 y 1927, los átomos obligaron a aceptar unas reglas nuevas e incómodas: la energía viene en paquetes (**cuantos**), las partículas se comportan también como ondas, no se puede conocer todo a la vez y el resultado de una medida solo se puede predecir en términos de **probabilidad**. Esta canción es la reacción emocional a ese descubrimiento, y sirve para abrir el tema preguntando a la clase qué significa que una teoría "funcione" aunque nadie la entienda del todo.
+Entre 1900 y 1927, los átomos obligaron a aceptar unas reglas nuevas e incómodas: la energía viene en paquetes (**cuantos**), las partículas también se comportan como ondas, no se puede conocer todo a la vez y el resultado de una medida solo se puede predecir en términos de **probabilidad**. Heisenberg y Schrödinger, que aparecen en la letra, están entre sus protagonistas.
+
+Esta canción es la reacción emocional a todo eso, a gritos de metalcore. En clase funciona muy bien para abrir el tema con una pregunta: ¿qué significa que una teoría funcione aunque nadie la entienda del todo?

@@ -7,7 +7,6 @@ spotify: https://open.spotify.com/track/4kZmlHfYUhqNYmSOUHkG6W
 estilo: Trap
 genero: >
   Si el **trap** suena tan contundente es en buena parte gracias a una máquina: la caja de ritmos Roland TR-808, lanzada a principios de los 80. Su bombo, alargado hasta convertirse en un bajo grave que hace vibrar los altavoces, es la firma del género, junto con los hi-hats en ráfagas y la caja marcando un ritmo a medio tiempo. Muchos temas añaden voces retocadas con Auto-Tune. Una curiosidad física: esos graves están tan cerca del límite de nuestro oído que a veces se notan más en el pecho que en las orejas.
-genero_borrador: true
 resumen: "Un homeópata de caricatura jura que el agua tiene memoria y que la ciencia sobra, y cuanto más habla, más se le ve el plumero. Con ella puedes trabajar diluciones, el número de Avogadro, el efecto placebo y el pensamiento crítico."
 temas:
 - Pseudociencia
@@ -133,8 +132,8 @@ referencias:
     url: "https://es.wikipedia.org/wiki/Placebo"
 ---
 
-La homeopatía es una práctica creada a finales del siglo XVIII que propone curar con preparados diluidos de forma sucesiva y agitados entre dilución y dilución. Esta canción de trap la retrata con ironía: el narrador es un "homeópata" arrogante que rechaza el método científico, recomienda abandonar tratamientos médicos y defiende ideas como la "memoria del agua". Nada de lo que afirma es cierto, y la gracia está en que sus argumentos se desmontan solos.
+La homeopatía nació a finales del siglo XVIII y propone curar con preparados diluidos una y otra vez, agitándolos entre dilución y dilución. Este trap la retrata con ironía: el narrador es un «homeópata» arrogante que desprecia el método científico, defiende la «memoria del agua» y recomienda dejar los tratamientos médicos. Nada de lo que dice es cierto, y sus argumentos se caen solos.
 
-Hay un hilo químico muy claro. Una dilución homeopática habitual puede llegar a factores de $10^{-60}$ o más, mucho más allá del límite fijado por el **número de Avogadro** ($6{,}022 \times 10^{23}$ entidades por mol), a partir del cual es muy improbable que quede una sola molécula del ingrediente de partida. Los ensayos clínicos y las revisiones sistemáticas no han mostrado que estos preparados funcionen mejor que un placebo.
+Hay mucha química detrás. Una dilución homeopática habitual puede llegar a $10^{-60}$ o más, muy por debajo de lo que permite el **número de Avogadro** ($6{,}022 \times 10^{23}$ entidades por mol): lo normal es que no quede ni una molécula del ingrediente original. Y los ensayos clínicos no muestran que funcione mejor que un placebo.
 
-En el aula la canción permite pasar de la risa al análisis: hacer cuentas de diluciones, distinguir entre efecto placebo y eficacia real, y discutir por qué abandonar un tratamiento probado por una pseudoterapia puede ser grave. Las explicaciones de los versos señalan en cada caso lo que dice la ciencia frente a lo que dice el narrador.
+En clase puedes pasar de la risa al análisis: hacer cuentas de diluciones, distinguir placebo de eficacia real y hablar de por qué dejar un tratamiento probado puede ser peligroso.
