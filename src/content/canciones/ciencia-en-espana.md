@@ -108,8 +108,7 @@ letra:
       - texto: Usando las gafas de mi abuela
         explicacion: >
           Un **microscopio óptico** combina lentes convergentes para ampliar la
-          imagen. Las gafas de una persona hipermétrope también son lentes
-          convergentes, pero su aumento es muy pequeño, parecido al de una lupa
+          imagen. Las gafas de cerca de una persona con presbicia (vista cansada) o hipermetropía también son lentes convergentes, pero su aumento es muy pequeño, parecido al de una lupa
           floja, y no sirven para observar células o microorganismos.
       - texto: No tengo acceso a revistas
         explicacion: >

@@ -72,7 +72,7 @@ letra:
       - texto: "Between high and low temperature"
         traduccion: "Entre temperatura alta y baja"
         explicacion: |
-          El ciclo de Carnot funciona gracias a una **diferencia de temperaturas**: una fuente caliente que aporta calor, y una fuente fría donde se expulsa lo que no se puede aprovechar. La eficiencia del ciclo depende solo de estas dos temperaturas. Cuanto mayor sea esa diferencia, mayor es el rendimiento.
+          El ciclo de Carnot funciona gracias a una **diferencia de temperaturas**: una fuente caliente que aporta calor, y una fuente fría donde se expulsa lo que no se puede aprovechar. La eficiencia del ciclo depende solo de estas dos temperaturas, en concreto de su cociente. Para una fuente caliente dada, cuanto más fría sea la fuente fría, mayor es el rendimiento.
 
           En fórmula, con las temperaturas en kelvin: $\eta = 1 - \dfrac{T_\text{fría}}{T_\text{caliente}}$.
       - texto: "you’re about to win the race"
@@ -82,7 +82,7 @@ letra:
       - texto: "in the most efficient shape"
         traduccion: "en la forma más eficiente"
         explicacion: |
-          Una de las metas en física e ingeniería es lograr máxima potencia con el menor desperdicio de energía. El ciclo de Carnot, aunque ideal, representa esa búsqueda de perfección. Su estructura (dos transformaciones isotérmicas y dos isentrópicas) es la forma más eficiente de convertir calor en trabajo. Aunque en la práctica hay pérdidas por fricción, fugas de calor, etc., este modelo nos da una referencia clara de cómo debería ser el ciclo "perfecto". Eso sí, el ciclo de Carnot maximiza el rendimiento, no la potencia: al ser reversible tendría que funcionar infinitamente despacio, así que su potencia sería nula.
+          Una de las metas en física e ingeniería es aprovechar la energía con el menor desperdicio posible. El ciclo de Carnot, aunque ideal, representa esa búsqueda de perfección. Su estructura (dos transformaciones isotérmicas y dos isentrópicas) es la forma más eficiente de convertir calor en trabajo. Aunque en la práctica hay pérdidas por fricción, fugas de calor, etc., este modelo nos da una referencia clara de cómo debería ser el ciclo "perfecto". Eso sí, el ciclo de Carnot maximiza el rendimiento, no la potencia: al ser reversible tendría que funcionar infinitamente despacio, así que su potencia sería nula.
   - versos:
       - texto: "Cholera's grip, a battle he couldn't fight"
         traduccion: "El cólera lo cazó, una batalla que no pudo luchar"

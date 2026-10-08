@@ -126,7 +126,7 @@ letra:
   - texto: ¿Quiere decir que un grupo compuesto enteramente por animales hembras puede procrear?
   - texto: No, digo sencillamente que la vida… se abre camino
     explicacion: |
-      Frase del Dr. Ian Malcolm en *Parque Jurásico*. En la historia, los animales eran todos hembras, pero algunos cambiaron de sexo y se reprodujeron. Algunos reptiles y peces pueden hacer cosas parecidas, lo que da algo de base real al guion.
+      Frase del Dr. Ian Malcolm en *Parque Jurásico*. En la historia, los animales eran todos hembras, pero el ADN de rana usado para completar su genoma les permitió cambiar de sexo y reproducirse. Tiene algo de base real: algunos peces, como el pez payaso, cambian de sexo de forma natural, y las hembras de algunos reptiles, como el dragón de Komodo, pueden tener crías sin macho (**partenogénesis**).
 actividades:
   - "Clasifica una lista de animales prehistóricos (pterosaurios, mosasaurios, estegosaurios, cocodrilos) en dinosaurios y no dinosaurios y justifica cada respuesta."
   - "Compara el esqueleto de un ave actual con el de un terópodo e identifica los rasgos que comparten."

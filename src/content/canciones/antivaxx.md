@@ -42,7 +42,7 @@ letra:
   - texto: Neumococo, Hepatitis, parecen los PokémonGo
   - texto: Papiloma, Rubéola, Poliomielitis, Viruela
     explicacion: |
-      Son enfermedades reales y graves. La **viruela** se eliminó gracias a la vacunación: la OMS declaró su erradicación en 1980. La polio ha desaparecido de casi todo el mundo y el sarampión sigue provocando brotes cuando baja la cobertura vacunal.
+      Son enfermedades reales y graves. La **viruela** se erradicó gracias a la vacunación: la OMS declaró su erradicación en 1980. La polio ha desaparecido de casi todo el mundo y el sarampión sigue provocando brotes cuando baja la cobertura vacunal.
   - texto: Ya adelanté trabajo redactando su esquela
 - versos:
   - texto: Fuerte como el hierro ella tiene la salud
@@ -90,7 +90,7 @@ letra:
       Falso. En 1796 **Edward Jenner** observó que quienes habían pasado la viruela de las vacas parecían protegidos contra la viruela humana, e inoculó material de la viruela bovina a un niño, James Phipps. De *vacca* viene la palabra **vacuna**. Fue el comienzo de la vacunación moderna.
   - texto: ¿Que "ha salvado más vidas que el trabajo de cualquier otro hombre"?
     explicacion: |
-      La frase se atribuye a menudo a Jenner o se dice de él, pero no es un dato exacto, sino una estimación: se calcula que la viruela mató a cientos de millones de personas en el siglo XX antes de su erradicación. La comparación con la cerveza es una broma del narrador, no un argumento.
+      La frase no es de Jenner, sino que se dice a menudo de él. No es un dato medible, sino una valoración, aunque tiene base: se calcula que la viruela mató a cientos de millones de personas en el siglo XX antes de su erradicación. La comparación con la cerveza es una broma del narrador, no un argumento.
   - texto: Pues como el que inventó la cerveza y nadie recuerda su nombre
 - versos:
   - texto: Os creéis en lo cierto porque os apoyan todos los doctores

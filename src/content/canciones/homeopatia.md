@@ -66,7 +66,7 @@ letra:
   - texto: Si a ti no te funciona, por favor respeta
   - texto: De la homeopatía, poyron es el profeta
     explicacion: |
-      La homeopatía fue formulada a finales del siglo XVIII por el médico alemán **Samuel Hahnemann**, con ideas como "lo semejante cura lo semejante" y la dilución progresiva del remedio.
+      "Poyron" es un guiño a **Boiron**, el laboratorio francés que es el mayor fabricante de productos homeopáticos del mundo. El fundador real de la homeopatía fue el médico alemán **Samuel Hahnemann**, a finales del siglo XVIII, con ideas como "lo semejante cura lo semejante" y la dilución progresiva del remedio.
 - versos:
   - texto: Pilla un principio activo y disuélvelo
     explicacion: |

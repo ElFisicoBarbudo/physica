@@ -30,7 +30,7 @@ letra:
       - texto: "with fifty percent chance of decay"
         traduccion: "con un 50 % de probabilidades de morir."
         explicacion: |
-          En el experimento original, la caja contiene un **átomo radiactivo** con un 50 % de probabilidad de desintegrarse en una hora. Si se desintegra, un contador Geiger lo detecta y activa un mecanismo que libera un veneno. *Decay* significa "desintegración". Es un experimento **mental**: nunca se ha hecho con un gato real.
+          En el planteamiento original, la caja contiene una cantidad tan pequeña de **sustancia radiactiva** que en una hora hay un 50 % de probabilidad de que se desintegre uno de sus átomos. Si ocurre, un contador Geiger lo detecta y activa un martillo que rompe un frasco de veneno (ácido cianhídrico). *Decay* significa "desintegración". Es un experimento **mental**: nunca se ha hecho con un gato real.
   - versos:
       - texto: "Half times, kitty survives,"
         traduccion: "La mitad de las veces, el gatito sobrevive;"

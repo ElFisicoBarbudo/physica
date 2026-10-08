@@ -24,7 +24,7 @@ letra:
       - texto: "I'm rather surprised that it happened in my lifetime"
         traduccion: "Me sorprende bastante que haya ocurrido durante mi vida."
         explicacion: |
-          En 1964 **Peter Higgs** (y, de forma independiente, François Englert y Robert Brout, entre otros) propuso el mecanismo que da masa a las partículas. Hicieron falta 48 años y el mayor acelerador de partículas del mundo, el LHC, para encontrar el bosón. Higgs tenía 83 años; al año siguiente, en 2013, recibió el **Premio Nobel de Física** junto a Englert.
+          En 1964 **Peter Higgs** (y, de forma independiente, François Englert y Robert Brout, entre otros) propuso el mecanismo que da masa a las partículas elementales, como el electrón, los quarks o los bosones W y Z. Ojo: la mayor parte de la masa de un protón no viene del Higgs, sino de la energía de la interacción fuerte que mantiene unidos a sus quarks. Hicieron falta 48 años y el mayor acelerador de partículas del mundo, el LHC, para encontrar el bosón. Higgs tenía 83 años; al año siguiente, en 2013, recibió el **Premio Nobel de Física** junto a Englert.
   - versos:
       - texto: "This is what we get: They line up extremely well and in the region of 125 GeV they combine to give us a combined significance of five standard deviations"
         traduccion: "Esto es lo que obtenemos: se alinean extremadamente bien y, en la región de los 125 GeV, se combinan para ofrecernos una significación combinada de cinco desviaciones estándar."

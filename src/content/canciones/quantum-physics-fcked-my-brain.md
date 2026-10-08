@@ -33,13 +33,13 @@ letra:
       - texto: "This is the end of the physics that you know"
         traduccion: "Este es el fin de la física tal y como la conoces"
         explicacion: |
-          A finales del siglo XIX la física parecía casi terminada: la mecánica de Newton, el electromagnetismo de Maxwell y la termodinámica explicaban prácticamente todo. Pero tres problemas pequeños (la radiación del cuerpo negro, el efecto fotoeléctrico y los espectros de los átomos) no encajaban, y resolverlos obligó a reescribir la física desde cero.
+          A finales del siglo XIX muchos físicos veían la física casi completa: la mecánica de Newton, el electromagnetismo de Maxwell y la termodinámica explicaban prácticamente todo. Pero tres problemas pequeños (la radiación del cuerpo negro, el efecto fotoeléctrico y los espectros de los átomos) no encajaban, y resolverlos obligó a construir una física nueva, la cuántica, para el mundo de los átomos.
       - texto: "A new world of science to explore"
         traduccion: "Un nuevo mundo científico por explorar"
       - texto: "Where the Newton's laws come to an end"
         traduccion: "Donde las leyes de Newton llegan a su fin"
         explicacion: |
-          Las leyes de Newton no son falsas: son una **aproximación** excelente para objetos grandes y lentos. Dejan de funcionar cuando el tamaño del sistema se acerca a la escala atómica, unos $10^{-10}$ metros. Por eso la cuántica no "sustituye" a la física de clase: la contiene como caso límite.
+          Las leyes de Newton no son falsas: son una **aproximación** excelente para objetos grandes y lentos. Dejan de funcionar en el mundo de los átomos (unos $10^{-10}$ metros), donde manda la cuántica, y también a velocidades cercanas a la de la luz, donde manda la relatividad. Por eso la cuántica no "sustituye" a la física de clase: la contiene como caso límite.
       - texto: "By the assumption of six weird postulates"
         traduccion: "Por la suposición de seis postulados extraños"
         explicacion: |
@@ -52,7 +52,7 @@ letra:
       - texto: "Where the hell it will be"
         traduccion: "dónde coño estará"
         explicacion: |
-          Aquí está el **principio de incertidumbre de Heisenberg**: no se puede conocer a la vez, y con precisión arbitraria, la posición y la cantidad de movimiento de una partícula. Matemáticamente, $\Delta x \cdot \Delta p \geq \hbar/2$. No es un problema de aparatos malos ni de falta de habilidad: es una propiedad de la naturaleza. Un electrón no tiene una trayectoria definida esperando a ser descubierta.
+          Aquí está el **principio de incertidumbre de Heisenberg**: no se puede conocer a la vez, y con precisión arbitraria, la posición y la cantidad de movimiento de una partícula. Matemáticamente, $\Delta x \cdot \Delta p \geq \hbar/2$. No es un problema de aparatos malos ni de falta de habilidad: es una propiedad de la naturaleza. En la interpretación habitual de la cuántica, un electrón no tiene una trayectoria definida esperando a ser descubierta.
       - texto: "The laws of quantum mechanics fucked this"
         traduccion: "Las leyes de la mecánica cuántica se lo han jodido"
       - texto: "You cannot say"
@@ -60,7 +60,7 @@ letra:
       - texto: "Nothing but probability"
         traduccion: "nada más que probabilidad"
         explicacion: |
-          La física clásica es **determinista**: con las condiciones iniciales de un proyectil puedes calcular exactamente dónde caerá. La cuántica solo da **probabilidades**: la función de onda te dice qué posibilidad hay de encontrar la partícula en cada sitio. Esto es lo que incomodaba a Einstein, que lo resumió en su famoso "Dios no juega a los dados". Los experimentos, por ahora, le han dado la razón a los dados.
+          La física clásica es **determinista**: con las condiciones iniciales de un proyectil puedes calcular exactamente dónde caerá. La cuántica solo da **probabilidades**: la función de onda te dice qué posibilidad hay de encontrar la partícula en cada sitio. Esto es lo que incomodaba a Einstein, que lo resumió en su famoso "Dios no juega a los dados". Los experimentos sobre las **desigualdades de Bell** (Premio Nobel de Física de 2022) descartaron las teorías de "variables ocultas locales" con las que Einstein esperaba recuperar el determinismo, aunque el debate sobre cómo interpretar la cuántica sigue abierto.
       - texto: "Quantum mechanics fucked this"
         traduccion: "La mecánica cuántica se lo ha jodido"
 
@@ -69,7 +69,7 @@ letra:
       - texto: "Don't try to understand this shit"
         traduccion: "No intentes entender esta mierda"
         explicacion: |
-          Es, en broma, un consejo real de la historia de la física: la llamada actitud de *"shut up and calculate"* ("cállate y calcula", expresión popularizada por el físico N. David Mermin). La cuántica predice los resultados con una precisión asombrosa, pero qué significa *de verdad* la función de onda sigue siendo objeto de debate. **Richard Feynman** lo decía sin rodeos: "creo que puedo afirmar con seguridad que nadie entiende la mecánica cuántica".
+          Es, en broma, un consejo real de la historia de la física: la llamada actitud de *"shut up and calculate"* ("cállate y calcula", expresión acuñada en 1989 por el físico N. David Mermin y atribuida a menudo, por error, a Feynman). La cuántica predice los resultados con una precisión asombrosa, pero qué significa *de verdad* la función de onda sigue siendo objeto de debate. **Richard Feynman** lo decía sin rodeos: "creo que puedo afirmar con seguridad que nadie entiende la mecánica cuántica".
       - texto: "Deal with it, there's no escape for you"
         traduccion: "Acéptalo, no hay escapatoria para ti"
       - texto: "This is the end of the physics that you love"
