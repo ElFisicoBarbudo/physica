@@ -178,7 +178,7 @@ letra:
       - texto: Dando vueltas al Sol en un sistema Solar
       - texto: Nuestro ego caerá antel modelo heliocéntrico
       - texto: Ptolomeo contra Copérnico
-  - seccion: Puente · Copérnico
+  - seccion: Puente
     versos:
       - texto: Copérnico pringao, prusiano del montón
       - texto: hasta un simio te confunde con Colón
