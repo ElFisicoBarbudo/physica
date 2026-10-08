@@ -6,6 +6,9 @@ borrador: true
 youtube: HD5EbQt3BaM
 spotify: https://open.spotify.com/track/0VuRvo6bUjA7oXZyr3IQ6U
 estilo: Punk rock
+genero: >
+  El **punk rock** estalló a mediados de los años 70 entre Nueva York (Ramones) y Londres (Sex Pistols, The Clash) como reacción a un rock que se había vuelto largo, técnico y caro. Su receta: canciones cortas y rápidas, pocos acordes, actitud de «hazlo tú mismo» y letras que critican sin pelos en la lengua lo que no funciona en la sociedad. No hacía falta ser un virtuoso para montar un grupo, solo tener algo que decir. Por eso encaja tan bien para cantar las penurias de la ciencia en España.
+genero_borrador: true
 idioma: es
 resumen: "Un doctorando cuenta con humor negro y mucho punk lo que es investigar en España: plazos del BOE, pagos que nunca llegan, falta de material y precariedad. Abre la puerta a un buen debate en clase sobre cómo se financia la ciencia."
 temas:

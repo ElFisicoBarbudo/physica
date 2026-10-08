@@ -6,6 +6,9 @@ borrador: true
 youtube: wPULp0Nn5Ds
 spotify: https://open.spotify.com/track/6DPv0G6ST218PHGflWkujP
 estilo: Trap
+genero: >
+  El **trap** nació en el sur de Estados Unidos, sobre todo en Atlanta, a finales de los 90 y principios de los 2000. Su nombre viene de las *trap houses*, las casas donde se vendía droga, y sus primeras letras hablaban de esa vida sin adornos. Artistas como T.I., Gucci Mane o Young Jeezy lo pusieron en el mapa. Musicalmente es una rama del rap del sur: ritmo lento y pesado, bajos que retumban y hi-hats rapidísimos. Aquí esa actitud chulesca se la lleva un antivacunas con mucha seguridad y poca razón.
+genero_borrador: true
 idioma: es
 resumen: "Un antivacunas muy convencido suelta, uno detrás de otro, todos los bulos de manual (y ninguno se sostiene). Viene al pelo para desmontarlos en clase con datos sobre inmunidad de grupo, ensayos clínicos y la historia de las vacunas."
 temas:

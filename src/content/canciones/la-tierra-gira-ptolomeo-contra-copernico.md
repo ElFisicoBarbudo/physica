@@ -5,6 +5,9 @@ orden: 17
 borrador: true
 youtube: FRU8XN4_dyU
 estilo: Rap
+genero: >
+  El **rap** consiste en recitar versos rimados y con ritmo sobre una base musical. Nació a principios de los años 70 en el Bronx, en Nueva York, en fiestas de barrio donde DJ como Kool Herc alargaban los fragmentos instrumentales de los discos para que los MC animaran al público. Es uno de los cuatro elementos de la cultura hip hop, junto al DJ, el grafiti y el breakdance. Las batallas de improvisación entre raperos son una tradición del género: como esta, entre Ptolomeo y Copérnico.
+genero_borrador: true
 idioma: es
 resumen: "Ptolomeo y Copérnico se enfrentan en una batalla de rap: la Tierra en el centro contra el Sol en el centro. Una forma muy viva de presentar la revolución copernicana y de ver cómo cambia un modelo científico cuando cambian las observaciones."
 temas:

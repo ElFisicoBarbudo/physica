@@ -93,6 +93,15 @@ content:
       - name: estilo
         label: Estilo musical
         type: string
+      - name: genero
+        label: Sobre el género musical
+        type: text
+        description: Breve historia o descripción del estilo (unas 60-90 palabras). Sale al final de la página de la canción. Admite negrita con **texto**.
+      - name: genero_borrador
+        label: Texto del género pendiente de revisión
+        type: boolean
+        description: Desactívalo cuando hayas revisado el texto sobre el género y desaparecerá el aviso.
+        default: false
       - name: anio
         label: Año
         type: number

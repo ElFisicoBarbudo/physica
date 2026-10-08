@@ -5,6 +5,9 @@ idioma: es
 youtube: mlvj7C9f-Ls
 spotify: https://open.spotify.com/track/4kZmlHfYUhqNYmSOUHkG6W
 estilo: Trap
+genero: >
+  Si el **trap** suena tan contundente es en buena parte gracias a una máquina: la caja de ritmos Roland TR-808, lanzada a principios de los 80. Su bombo, alargado hasta convertirse en un bajo grave que hace vibrar los altavoces, es la firma del género, junto con los hi-hats en ráfagas y la caja marcando un ritmo a medio tiempo. Muchos temas añaden voces retocadas con Auto-Tune. Una curiosidad física: esos graves están tan cerca del límite de nuestro oído que a veces se notan más en el pecho que en las orejas.
+genero_borrador: true
 resumen: "Un homeópata de caricatura jura que el agua tiene memoria y que la ciencia sobra, y cuanto más habla, más se le ve el plumero. Con ella puedes trabajar diluciones, el número de Avogadro, el efecto placebo y el pensamiento crítico."
 temas:
 - Pseudociencia

@@ -100,6 +100,7 @@ let n = 0;
           {d.letra.length > 0 && <li><a href="#letra">Letra explicada</a></li>}
           {d.actividades.length > 0 && <li><a href="#actividades">Actividades</a></li>}
           {d.referencias.length > 0 && <li><a href="#referencias">Para saber más</a></li>}
+          {d.genero && <li><a href="#genero">El género musical</a></li>}
         </ul>
       </aside>
     </div>
@@ -110,6 +111,7 @@ let n = 0;
         {d.letra.length > 0 && <li><a href="#letra">Letra explicada</a></li>}
         {d.actividades.length > 0 && <li><a href="#actividades">Actividades</a></li>}
         {d.referencias.length > 0 && <li><a href="#referencias">Para saber más</a></li>}
+        {d.genero && <li><a href="#genero">El género</a></li>}
       </ul>
     </nav>
 
@@ -216,6 +218,16 @@ let n = 0;
               </li>
             ))}
           </ul>
+        </section>
+      )
+    }
+
+    {
+      d.genero && (
+        <section id="genero" class="bloque">
+          <h2>{d.estilo ? `El género: ${d.estilo}` : 'El género musical'}</h2>
+          <div class="prosa genero" set:html={md(d.genero)} />
+          {d.genero_borrador && <p class="aviso-ejemplo genero-aviso">Este texto sobre el género está pendiente de revisión.</p>}
         </section>
       )
     }
@@ -513,6 +525,15 @@ let n = 0;
   .presentacion {
     font-size: 1.15rem;
     max-width: 46rem;
+  }
+
+  .genero {
+    max-width: 46rem;
+  }
+
+  .genero-aviso {
+    display: inline-block;
+    margin-top: 1rem;
   }
 
   #letra > h2 {

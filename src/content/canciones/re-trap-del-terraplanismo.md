@@ -5,6 +5,9 @@ orden: 4
 borrador: true
 youtube: UaIj_i9aNhQ
 estilo: Trap
+genero: >
+  Pocos géneros se prestan tanto a la parodia como el **trap**: frases cortas que se repiten, ad-libs (esos «¡yeah!» o «¡skrt!» de fondo), voces con Auto-Tune y una actitud de ostentación exagerada. Además, desde sus orígenes en el rap, las «guerras» entre artistas que se responden con canciones (el famoso *beef*) son parte del espectáculo. Esta canción juega justo con eso: un rapero pseudocientífico contesta a otros traps terraplanistas, y la seguridad con la que suelta cada disparate es precisamente el chiste.
+genero_borrador: true
 idioma: es
 resumen: "Un rapero pseudocientífico responde a los traps terraplanistas con una teoría aún más loca: que la Tierra es hueca. Cada verso es un bulo listo para desmontar con física y para aprender a distinguir una fuente fiable de una que no lo es."
 temas:

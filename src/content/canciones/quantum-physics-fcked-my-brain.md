@@ -5,6 +5,9 @@ idioma: "en"
 youtube: "qp3c3zxAbNQ"
 spotify: "https://open.spotify.com/track/29fiemIFJWweYcdL0OFXBa"
 estilo: "Metalcore"
+genero: >
+  El **metalcore** fusiona el heavy metal (riffs afilados, doble bombo, algún solo de guitarra) con la energía y los *breakdowns* del hardcore punk. Sus raíces están en la escena hardcore estadounidense de finales de los 80 y los 90, y vivió su gran explosión en los 2000 con bandas como Killswitch Engage, Bullet for My Valentine o Parkway Drive. Uno de sus rasgos más típicos es alternar estrofas gritadas con estribillos cantados en limpio, muy melódicos. Gritos para el caos cuántico y melodía para intentar entenderlo.
+genero_borrador: true
 resumen: "Metalcore para el momento en que la física de Newton deja de funcionar y el mundo cuántico solo nos deja hablar de probabilidades. Funciona muy bien para abrir el tema preguntando qué significa que una teoría funcione aunque nadie la entienda del todo."
 temas: [Física cuántica, Física de partículas]
 orden: 8
