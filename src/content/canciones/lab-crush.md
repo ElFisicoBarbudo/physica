@@ -142,6 +142,8 @@ letra:
         traduccion: Arruinaré mi experimento por ti
       - texto: I’ll ruin your experiment for us
         traduccion: Arruinaré tu experimento por nosotros
+      - texto: Cause you are my lab crush
+        traduccion: Porque eres mi amor de laboratorio
   - seccion: Coro
     versos:
       - texto: I’ll ruin my experiment for you
@@ -152,6 +154,16 @@ letra:
         traduccion: Arruinaré tu experimento por nosotros
       - texto: cause you’re my lab crush
         traduccion: porque eres mi amor del laboratorio
+  - seccion: Outro
+    versos:
+      - texto: It's not that there are things that science can't explain
+        traduccion: No es que haya cosas que la ciencia no pueda explicar
+      - texto: You look for the rules behind those things
+        traduccion: Lo que se busca son las leyes que hay detrás de esas cosas
+      - texto: Science is just a name for the steady
+        traduccion: La ciencia no es más que el nombre que se le da al esfuerzo constante
+      - texto: pain-in-the-ass effort that goes behind it
+        traduccion: y pesado que hay detrás de todo ello
 actividades:
   - Escribe, en orden, las fases que sigue un artículo científico desde que se
     envía a una revista hasta que se publica.
