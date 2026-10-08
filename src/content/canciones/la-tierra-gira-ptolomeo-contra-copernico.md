@@ -45,8 +45,6 @@ letra:
           observación cotidiana ambas son indistinguibles."
       - texto: todo parece centrado en esta,
       - texto: la Tierra, nuestro amado hogar
-  - seccion: Verso 2 · Ptolomeo
-    versos:
       - texto: El suelo no se mueve, está fijo, quieto
         explicacion: >
           El geocentrismo se apoyaba en argumentos de sentido común, recogidos
@@ -77,7 +75,7 @@ letra:
           ajustar el movimiento aparente de los planetas, incluidos sus
           retrocesos, empleó **epiciclos**, **deferentes** y el **ecuante**, un
           modelo geométrico muy eficaz.
-  - seccion: Verso 3 · Copérnico
+  - seccion: Verso 2 · Copérnico
     versos:
       - texto: Sobre las revoluciones de las esferas celestes
         explicacion: >
@@ -87,7 +85,6 @@ letra:
       - texto: ¿Te suena? Debería. Es mi gran obra.
       - texto: La que llevará las viejas teorías al precipicio
       - texto: Nicolas Copérnico a su servicio
-  - versos:
       - texto: Desde pequeño siempre tuve la intuición
       - texto: que lo que decían los clásicos tenía algún error
         explicacion: >
@@ -96,7 +93,6 @@ letra:
           impuso frente al sentido común y la física aristotélica.
       - texto: ¿Que en el centro del universo está la Tierra?
       - texto: Eso solo lo piensa quién se cree una estrella
-  - versos:
       - texto: El centro del cosmos no es nuestro planeta,
         explicacion: >
           Matiz histórico: en el modelo de Copérnico el centro de las órbitas
@@ -112,7 +108,6 @@ letra:
           explica por qué no se veía paralaje. La paralaje anual no se midió de
           forma convincente hasta 1838, cuando Friedrich Bessel lo logró con la
           estrella 61 Cygni.
-  - versos:
       - texto: En órbitas circulares perfectas se ordenan
         explicacion: >
           Copérnico mantuvo órbitas circulares y tuvo que añadir pequeños
@@ -122,7 +117,6 @@ letra:
       - texto: y eternas vueltas a su alrededor encadenan
       - texto: Así mi visión tu teoría petrifica
       - texto: Y las preguntas sobre el universo multiplica
-  - versos:
       - texto: En vida mi obra publicada no veré,
       - texto: Será Rheticus quien deje la tarea acabada
         explicacion: >
@@ -140,18 +134,16 @@ letra:
       - texto: la bóveda celeste centrada en nuestros cuerpos
       - texto: Somos el centro del universo
       - texto: Ptolomeo contra Copérnico
-  - versos:
       - texto: Gira, gira, la Tierra gira
       - texto: Dando vueltas al Sol en un sistema solar
       - texto: Nuestro ego caerá ante el modelo heliocéntrico
       - texto: Ptolomeo contra Copérnico
-  - seccion: Verso X · Ptolomeo
+  - seccion: Verso 3 · Ptolomeo
     versos:
       - texto: Ptolomeo. Oh, Ptolomeo
       - texto: ¿dónde estás que no te veo?
       - texto: Aquí estoy, mi amor
       - texto: aplastando con mis manos a este perdedor
-  - versos:
       - texto: ¿Que el Sol está en el centro? ¿Eso dices? ¡Sacrilegio!
         explicacion: >
           La reacción de la Iglesia no fue inmediata. El libro de Copérnico
@@ -160,7 +152,7 @@ letra:
       - texto: No puedes evitar demostrar que eres un necio
       - texto: ¿Y planteas que el ser humano no es el punto central?
       - texto: Saluda a tus problemas contra el poder clerical
-  - seccion: Verso x · Copérnico
+  - seccion: Verso 4 · Copérnico
     versos:
       - texto: Asustado te veo, amigo Ptolomeo
       - texto: Sabes que con mi teoría tu culo pateo
@@ -172,7 +164,6 @@ letra:
           Tycho Brahe. Galileo Galilei usó el telescopio hacia 1609-1610 para
           observar las fases de Venus y las lunas de Júpiter, hallazgos
           difíciles de encajar con un modelo geocéntrico simple.
-  - versos:
       - texto: Mi visión transformará el mundo
       - texto: a pesar del cristianismo iracundo
       - texto: Sorry bro, el sol es el centro del universo
@@ -183,22 +174,20 @@ letra:
       - texto: la bóveda celeste centrada en nuestros cuerpos
       - texto: Somos el centro del universo
       - texto: Ptolomeo contra Copérnico
-  - versos:
       - texto: Gira, gira, la Tierra gira
       - texto: Dando vueltas al Sol en un sistema Solar
       - texto: Nuestro ego caerá antel modelo heliocéntrico
       - texto: Ptolomeo contra Copérnico
-  - seccion: Puente
+  - seccion: Puente · Ptolomeo
     versos:
       - texto: Copérnico pringao, prusiano del montón
       - texto: hasta un simio te confunde con Colón
-  - versos:
+  - seccion: Puente · Copérnico
+    versos:
       - texto: Ptolomeo, eres simple
       - texto: Tu nombre es ridículo, parece un chiste
-  - versos:
       - texto: Antes de organizar, organiza tu pelo
       - texto: saldrias ganando si te lo arrancan en un duelo
-  - versos:
       - texto: Te extinguirás como al final del Pérmico
         explicacion: >
           La extinción del final del Pérmico, hace unos 252 millones de años,
@@ -212,7 +201,6 @@ letra:
       - texto: la bóveda celeste centrada en nuestros cuerpos
       - texto: Somos el centro del universo
       - texto: Ptolomeo contra Copérnico
-  - versos:
       - texto: Gira, gira, la Tierra gira
       - texto: Dando vueltas al Sol en un sistema Solar
       - texto: Nuestro ego caerá ante el modelo heliocéntrico
