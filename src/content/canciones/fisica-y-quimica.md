@@ -131,6 +131,8 @@ referencias:
     url: "https://es.wikipedia.org/wiki/Teor%C3%ADa_del_todo"
 ---
 
+Esta canción es una versión de *Física o química*, el tema de Despistaos que sonaba en la cabecera de la serie española del mismo nombre (Antena 3, 2008-2011). La serie contaba las aventuras de un grupo de adolescentes en un instituto, pero, inexplicablemente, nunca se dio en ella una clase de Física ni de Química.
+
 Física y química comparten aulas, laboratorios y a menudo profesorado, y en secundaria se estudian juntas, pero a veces se las pone en rivalidad. Esta canción lo lleva a la comedia: la letra mezcla términos de ambas materias (fermiones, bosones, muelles, aminas, tolueno) con críticas a la pseudociencia, y termina con un final romántico en el que es un electrón el que reconcilia a las dos ciencias.
 
 El hilo conductor es que las dos descansan sobre las mismas leyes. La química explica cómo los átomos se unen compartiendo o intercambiando electrones, y esa explicación la da la mecánica cuántica, es decir, la física. Frente a esto, la letra enumera ideas sin respaldo científico (Tierra plana o hueca, chemtrails, Reiki, homeopatía, uso de lejía como remedio) que sustituyen el conocimiento contrastado por "realidades alternativas".
