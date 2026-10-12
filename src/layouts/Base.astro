@@ -3,6 +3,8 @@ import 'katex/dist/katex.min.css';
 import '../styles/global.css';
 import BotonAzar from '../components/BotonAzar.astro';
 import { NOMBRE, url } from '../lib/util';
+// Ajustes generales editables desde Pages CMS.
+import ajustes from '../ajustes.json';
 
 interface Props {
   titulo?: string;
@@ -49,7 +51,7 @@ const tituloCompleto = titulo ? `${titulo} | ${NOMBRE}` : `${NOMBRE}: la física
   <body class={claseBody}>
     <a class="saltar no-print" href="#contenido">Saltar al contenido</a>
     {
-      actual !== 'feedback' && (
+      ajustes.en_pruebas && actual !== 'feedback' && (
         <p class="en-pruebas no-print">
           <span class="en-pruebas-chapa">Beta</span>
           <span>La web está en pruebas.</span>
