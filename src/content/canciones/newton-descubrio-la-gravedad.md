@@ -7,9 +7,18 @@ youtube: jTCBr85cLeM
 spotify: https://open.spotify.com/track/06SZ4AUPq3c1rHCwTEWnlX
 estilo: Ska
 genero: >
-  El **ska** nació en Jamaica a finales de los años 50 y principios de los 60, mezclando ritmos locales como el mento con el rhythm and blues estadounidense. Su sello es el contratiempo: la guitarra y el piano golpean entre los tiempos fuertes, mientras una sección de vientos (trompetas, saxos, trombones) pone la alegría. Del ska salieron el rocksteady y el reggae. Volvió con fuerza en Inglaterra a finales de los 70 (The Specials, Madness) y en los 90 se mezcló con el punk rock; en España, Ska-P es el ejemplo más conocido.
+  El **ska** nació en Jamaica a finales de los años 50 y principios de los 60,
+  mezclando ritmos locales como el mento con el rhythm and blues estadounidense.
+  Su sello es el contratiempo: la guitarra y el piano golpean entre los tiempos
+  fuertes, mientras una sección de vientos (trompetas, saxos, trombones) pone la
+  alegría. Del ska salieron el rocksteady y el reggae. Volvió con fuerza en
+  Inglaterra a finales de los 70 (The Specials, Madness) y en los 90 se mezcló
+  con el punk rock; en España, Ska-P es el ejemplo más conocido.
 idioma: es
-resumen: "Ska para repasar a Isaac Newton, sus tres leyes del movimiento y la gravitación universal, que explica con las mismas ecuaciones la caída de una manzana y las órbitas de los planetas. Un buen punto de partida para la dinámica en secundaria."
+resumen: Ska para repasar a Isaac Newton, sus tres leyes del movimiento y la
+  gravitación universal, que explica con las mismas ecuaciones la caída de una
+  manzana y las órbitas de los planetas. Un buen punto de partida para la
+  dinámica en secundaria.
 temas:
   - Física clásica
   - Historia de la ciencia
@@ -112,9 +121,12 @@ letra:
     versos:
       - texto: Newton descubrió la gravedad
 actividades:
-  - "Busca un ejemplo cotidiano de cada una de las tres leyes de Newton y explícaselo a un compañero o compañera."
-  - "Investiga si la historia de la manzana que cae sobre Newton es real y qué descubrió él en realidad sobre la gravedad."
-  - "Busca por qué Plutón dejó de considerarse un planeta en 2006 y debatid en clase si estáis de acuerdo con la decisión."
+  - Busca un ejemplo cotidiano de cada una de las tres leyes de Newton y
+    explícaselo a un compañero o compañera.
+  - Investiga si la historia de la manzana que cae sobre Newton es real y qué
+    descubrió él en realidad sobre la gravedad.
+  - Busca por qué Plutón dejó de considerarse un planeta en 2006 y debatid en
+    clase si estáis de acuerdo con la decisión.
 referencias:
   - titulo: Leyes de Newton
     autor: Wikipedia
@@ -125,8 +137,10 @@ referencias:
   - titulo: Isaac Newton
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Isaac_Newton
+  - titulo: "#3 Biografía científicas - Isaac Newton, un genio mezquino"
+    autor: Date un Vlog
+    url: https://youtu.be/uw2WhlxDdRQ?si=Uc_pd6nPMEohRpW5
 ---
-
 **Isaac Newton** (1643-1727) es probablemente el físico más influyente de la historia. En sus *Principia* (1687) formuló las **tres leyes del movimiento** y la **ley de la gravitación universal**, y con ellas consiguió algo revolucionario: explicar con las mismas ecuaciones la caída de una manzana y las órbitas de los planetas. Además, desarrolló el cálculo y trabajó en óptica, entre muchas otras cosas.
 
 Esta canción repasa su figura y sus leyes a ritmo de ska, con un estribillo pensado para que se quede en la cabeza. La idea de fondo es potente: las leyes que rigen lo que pasa en la Tierra son las mismas que gobiernan el cielo, algo que hasta entonces no estaba nada claro.
