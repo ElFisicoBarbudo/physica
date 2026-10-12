@@ -6,9 +6,18 @@ borrador: true
 youtube: UaIj_i9aNhQ
 estilo: Trap
 genero: >
-  Pocos géneros se prestan tanto a la parodia como el **trap**: frases cortas que se repiten, ad-libs (esos «¡yeah!» o «¡skrt!» de fondo), voces con Auto-Tune y una actitud de ostentación exagerada. Además, desde sus orígenes en el rap, las «guerras» entre artistas que se responden con canciones (el famoso *beef*) son parte del espectáculo. Esta canción juega justo con eso: un rapero pseudocientífico contesta a otros traps terraplanistas, y la seguridad con la que suelta cada disparate es precisamente el chiste.
+  Pocos géneros se prestan tanto a la parodia como el **trap**: frases cortas
+  que se repiten, ad-libs (esos «¡yeah!» o «¡skrt!» de fondo), voces con
+  Auto-Tune y una actitud de ostentación exagerada. Además, desde sus orígenes
+  en el rap, las «guerras» entre artistas que se responden con canciones (el
+  famoso *beef*) son parte del espectáculo. Esta canción juega justo con eso: un
+  rapero pseudocientífico contesta a otros traps terraplanistas, y la seguridad
+  con la que suelta cada disparate es precisamente el chiste.
 idioma: es
-resumen: "Un rapero pseudocientífico responde a los traps terraplanistas con una teoría aún más loca: que la Tierra es hueca. Cada verso es un bulo listo para desmontar con física y para aprender a distinguir una fuente fiable de una que no lo es."
+resumen: "Un rapero pseudocientífico responde a los traps terraplanistas con una
+  teoría aún más loca: que la Tierra es hueca. Cada verso es un bulo listo para
+  desmontar con física y para aprender a distinguir una fuente fiable de una que
+  no lo es."
 temas:
   - Pseudociencia
   - Crítica social
@@ -134,10 +143,14 @@ letra:
       - texto: Cabeza vacía, la verdad
       - texto: Pero la Tierra también lo está
 actividades:
-  - "Elige tres afirmaciones de la canción y busca qué prueba científica las desmiente."
-  - "Investiga cómo sabemos cómo es el interior de la Tierra si nadie ha llegado a él."
-  - "Busca un bulo científico que haya circulado por redes sociales y explica cómo comprobarías si es cierto."
-  - "Debatid en clase por qué hay personas que siguen creyendo que la Tierra es plana a pesar de las pruebas."
+  - Elige tres afirmaciones de la canción y busca qué prueba científica las
+    desmiente.
+  - Investiga cómo sabemos cómo es el interior de la Tierra si nadie ha llegado
+    a él.
+  - Busca un bulo científico que haya circulado por redes sociales y explica
+    cómo comprobarías si es cierto.
+  - Debatid en clase por qué hay personas que siguen creyendo que la Tierra es
+    plana a pesar de las pruebas.
 referencias:
   - titulo: Tierra hueca
     autor: Wikipedia
@@ -148,8 +161,12 @@ referencias:
   - titulo: Eratóstenes
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Erat%C3%B3stenes
+  - titulo: Trap del Terraplanismo
+    autor: Jaime Altozano
+    url: https://youtu.be/ziJuNQcJn24?si=g_5ERSu9F79tcTI-
+    nota: Canción original de los divulgadores Jaime Altozano, C de Ciencia y
+      Quantum Fracture a la cual responde este tema.
 ---
-
 Esta canción es una **parodia**. Su protagonista, el rapero «Pimpcipio Activo», responde a otros traps terraplanistas que se hicieron virales y, para no ser menos, defiende una teoría todavía más disparatada: que **la Tierra es hueca**, con un sol en su interior y agujeros en los polos que la NASA nos oculta.
 
 Precisamente por eso funciona tan bien en clase: cada verso es una afirmación sin base que se puede desmontar con física. Sabemos cómo es el interior de la Tierra sin haber llegado a él gracias a las ondas de los terremotos, y sabemos que es esférica desde hace más de dos mil años.
