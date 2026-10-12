@@ -14,6 +14,16 @@ El repositorio incluye `.pages.yml`, la configuración de [Pages CMS](https://pa
 
 Al guardar, Pages CMS hace el commit y GitHub Actions vuelve a publicar la web en un par de minutos. El resto de este documento explica cómo hacer lo mismo editando los archivos a mano.
 
+## Formulario de feedback
+
+La página `/feedback/` envía los mensajes con [Web3Forms](https://web3forms.com) (gratis hasta 250 al mes). Tu correo se guarda en Web3Forms, no en la web.
+
+1. Entra en <https://web3forms.com>, escribe tu correo en *Create your Access Key* y te llegará una clave.
+2. Pega esa clave en `CLAVE_FEEDBACK`, en `src/lib/util.ts`.
+3. En el panel de Web3Forms (<https://app.web3forms.com>), dentro del formulario, activa *hCaptcha* en los ajustes de spam.
+
+El formulario también lleva un campo trampa invisible y rechaza los envíos hechos en menos de 4 segundos.
+
 ## Añadir una canción
 
 Hay dos scripts que ayudan:

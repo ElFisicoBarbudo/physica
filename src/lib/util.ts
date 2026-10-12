@@ -20,6 +20,13 @@ export const url = (path = '') => {
 /** Nombre del proyecto. Cambiarlo aquí lo cambia en toda la web. */
 export const NOMBRE = 'Física a todo volumen';
 
+/**
+ * Clave de acceso de Web3Forms para el formulario de /feedback/.
+ * Es pública por diseño: solo sirve para enviar mensajes a tu correo, que se guarda en Web3Forms y nunca aparece en la web.
+ * Se consigue gratis en https://web3forms.com escribiendo tu correo. Mientras esté vacía, el formulario avisa de que aún no funciona.
+ */
+export const CLAVE_FEEDBACK = '';
+
 export const youtubeUrl = (id?: string | null) => (id ? `https://www.youtube.com/watch?v=${id}` : undefined);
 
 export async function cancionesOrdenadas() {
