@@ -5,6 +5,7 @@
 // Anti-bots: campo trampa (botcheck), tiempo mínimo para rellenar y hCaptcha de Web3Forms.
 import Base from '../layouts/Base.astro';
 import { CLAVE_FEEDBACK, NOMBRE, cancionesOrdenadas } from '../lib/util';
+import ajustes from '../ajustes.json';
 
 const canciones = await cancionesOrdenadas();
 ---
@@ -13,10 +14,10 @@ const canciones = await cancionesOrdenadas();
   <main id="contenido" tabindex="-1">
     <div class="banda con-brillo cabeza">
       <div class="envoltura">
-        <p class="chapa"><span>Beta</span> Web en pruebas</p>
+        {ajustes.en_pruebas && <p class="chapa"><span>Beta</span> Web en pruebas</p>}
         <h1>¿Qué mejorarías?</h1>
         <p class="lema">
-          Esta web acaba de nacer y todavía tiene costuras. Si has encontrado un error, echas algo en falta o la has usado en clase, me vendría genial que me lo
+          {ajustes.en_pruebas && 'Esta web acaba de nacer y todavía tiene costuras. '}Si has encontrado un error, echas algo en falta o la has usado en clase, me vendría genial que me lo
           contaras. Lo leo todo.
         </p>
       </div>

@@ -7,6 +7,15 @@ media:
   output: media
 
 content:
+  - name: ajustes
+    label: Ajustes de la web
+    type: file
+    path: src/ajustes.json
+    fields:
+      - name: en_pruebas
+        label: Web en pruebas
+        type: boolean
+        description: Muestra arriba de todas las páginas la franja amarilla «Beta · La web está en pruebas» con el enlace al formulario de feedback. Desmárcala cuando la web esté lista.
   - name: conoceme
     label: Conóceme
     type: file
