@@ -9,7 +9,7 @@ import { extname, join, normalize } from 'node:path';
 import { chromium } from 'playwright-core';
 
 const DIST = new URL('../dist/', import.meta.url).pathname;
-const BASE = '/physica/'; // debe coincidir con `base` en astro.config.mjs
+const BASE = '/'; // debe coincidir con `base` en astro.config.mjs
 
 const tipos = {
   '.html': 'text/html; charset=utf-8',
@@ -23,7 +23,7 @@ const tipos = {
   '.jpg': 'image/jpeg',
 };
 
-// Servidor mínimo para que las rutas con /physica/ funcionen igual que en GitHub Pages.
+// Servidor mínimo para que las rutas funcionen igual que en GitHub Pages.
 const servidor = createServer(async (req, res) => {
   try {
     let ruta = decodeURIComponent(new URL(req.url, 'http://x').pathname);
