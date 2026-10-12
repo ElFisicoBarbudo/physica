@@ -9,7 +9,7 @@ interface Props {
   descripcion?: string;
   claseBody?: string;
   /** Sección del menú que se marca como actual. */
-  actual?: 'canciones' | 'conoceme';
+  actual?: 'canciones' | 'conoceme' | 'feedback';
 }
 
 const { titulo, descripcion = 'Canciones de física con videoclip, letra explicada verso a verso y fichas para usar en clase.', claseBody, actual } = Astro.props;
@@ -48,6 +48,15 @@ const tituloCompleto = titulo ? `${titulo} | ${NOMBRE}` : `${NOMBRE}: la física
   </head>
   <body class={claseBody}>
     <a class="saltar no-print" href="#contenido">Saltar al contenido</a>
+    {
+      actual !== 'feedback' && (
+        <p class="en-pruebas no-print">
+          <span class="en-pruebas-chapa">Beta</span>
+          <span>La web está en pruebas.</span>
+          <a href={url(`feedback/?desde=${encodeURIComponent(Astro.url.pathname)}`)}>Cuéntame qué mejorarías</a>
+        </p>
+      )
+    }
     <div class="banda no-print">
       <header class="cabecera">
         <a class="marca" href={url('')}>
@@ -73,6 +82,7 @@ const tituloCompleto = titulo ? `${titulo} | ${NOMBRE}` : `${NOMBRE}: la física
           <a href={url('#canciones')}>Canciones</a>
           <a href={url('#como-usar')}>En clase</a>
           <a href={url('conoceme/')}>Conóceme</a>
+          <a href={url('feedback/')}>Enviar feedback</a>
         </nav>
       </div>
     </footer>
