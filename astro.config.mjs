@@ -1,10 +1,10 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
-// La web se publica en GitHub Pages: https://elfisicobarbudo.github.io/physica/
-// Si algún día se usa un dominio propio, cambia `site` y pon `base: '/'`.
+// La web se publica en GitHub Pages con dominio propio: https://fisicaatodovolumen.com/
+// (el dominio se configura en Settings → Pages → Custom domain).
 export default defineConfig({
-  site: 'https://elfisicobarbudo.github.io',
-  base: '/physica',
+  site: 'https://fisicaatodovolumen.com',
+  base: '/',
   trailingSlash: 'always',
 });

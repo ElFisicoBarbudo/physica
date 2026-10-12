@@ -11,7 +11,7 @@ export const mdInline = (s = '') => marked.parseInline(s) as string;
 /** Markdown de bloque, para explicaciones con varios párrafos. */
 export const md = (s = '') => marked.parse(s) as string;
 
-/** Ruta interna respetando el `base` de Astro (GitHub Pages sirve la web en /physica/). */
+/** Ruta interna respetando el `base` de Astro (hoy es la raíz del dominio). */
 export const url = (path = '') => {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   return `${base}/${path.replace(/^\//, '')}`;

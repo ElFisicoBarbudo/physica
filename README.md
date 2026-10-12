@@ -85,7 +85,7 @@ Cada verso suele ser una línea. Si quieres explicar varias líneas juntas, un v
 
 ```sh
 npm install
-npm run dev        # http://localhost:4321/physica/
+npm run dev        # http://localhost:4321/
 ```
 
 Para generar también los PDF de las fichas en local:
@@ -97,6 +97,6 @@ CHROMIUM_PATH=/ruta/a/chrome npm run build:pdf   # deja los PDF en dist/fichas/
 
 ## Publicación
 
-La web se publica sola en GitHub Pages con cada cambio en `main` (`.github/workflows/deploy.yml`), que además genera los PDF de todas las fichas. Hay que activarlo una vez en **Settings → Pages → Source: GitHub Actions**. La dirección será `https://elfisicobarbudo.github.io/physica/`.
+La web se publica sola en GitHub Pages con cada cambio en `main` (`.github/workflows/deploy.yml`), que además genera los PDF de todas las fichas. Hay que activarlo una vez en **Settings → Pages → Source: GitHub Actions**. La web está en `https://fisicaatodovolumen.com/` (dominio configurado en **Settings → Pages → Custom domain**, con los registros DNS apuntando a GitHub).
 
 Está hecha con [Astro](https://astro.build). Los textos de la portada están en `src/pages/index.astro`.
