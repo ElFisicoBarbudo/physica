@@ -96,7 +96,7 @@ referencias:
     url: https://es.wikipedia.org/wiki/Bos%C3%B3n_de_Higgs
   - titulo: CERN experiments observe particle consistent with long-sought Higgs boson
     autor: CERN (nota de prensa, 4 de julio de 2012)
-    url: https://home.cern/news/press-release/cern/cern-experiments-observe-particle-consistent-long-sought-higgs-boson
+    url: https://home.cern/cern-experiments-observe-particle-consistent-with-long-sought-higgs-boson/
   - titulo: El Bosón de Higgs (por fin) Explicado a Fondo
     autor: "QuantumFracture "
     url: https://www.youtube.com/watch?v=wZCWNLLpmZQ
