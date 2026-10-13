@@ -7,9 +7,17 @@ youtube: 0VOIH801GUs
 spotify: https://open.spotify.com/track/6HYiQuxHE9p9ss90qdqa1P
 estilo: Pop punk
 genero: >
-  El **pop punk** toma la velocidad y las guitarras del punk rock y les añade melodías y estribillos pegadizos propios del pop. Tiene precursores a finales de los 70, como Buzzcocks, pero su gran momento llegó en los 90 con Green Day, The Offspring o blink-182, y siguió en los 2000 con Sum 41 o Avril Lavigne. Sus letras suelen hablar con humor de la adolescencia: el instituto, los amores, el aburrimiento… y, por qué no, de la relación de amor y odio con la calculadora en los exámenes.
+  El **pop punk** toma la velocidad y las guitarras del punk rock y les añade
+  melodías y estribillos pegadizos propios del pop. Tiene precursores a finales
+  de los 70, como Buzzcocks, pero su gran momento llegó en los 90 con Green Day,
+  The Offspring o blink-182, y siguió en los 2000 con Sum 41 o Avril Lavigne.
+  Sus letras suelen hablar con humor de la adolescencia: el instituto, los
+  amores, el aburrimiento… y, por qué no, de la relación de amor y odio con la
+  calculadora en los exámenes.
 idioma: es
-resumen: "Una oda cómica a la calculadora científica: senos, cosenos, tangentes, la tecla Ans y el eterno drama de radianes contra grados. Te sirve para repasar trigonometría y, de paso, aprender a usar la calculadora sin sustos."
+resumen: "Una oda cómica a la calculadora científica: senos, cosenos, tangentes,
+  la tecla Ans y el eterno drama de radianes contra grados. Te sirve para
+  repasar trigonometría y, de paso, aprender a usar la calculadora sin sustos."
 temas:
   - Vida de científico
   - Matemáticas
@@ -72,10 +80,10 @@ letra:
       - texto: Su función  se me escapa
       - texto: Y aunque mi móvil también calcule
         explicacion: >
-          Los móviles incorporan calculadoras científicas, pero en muchos
-          exámenes no se permiten. Conocer una calculadora concreta, con sus
-          modos y sus teclas, sigue siendo una destreza útil.
-      - texto: Tú siempre serás mi a mor prepúber
+          Los móviles ya incorporan calculadoras científicas muy potentes, pero
+          en muchos exámenes no se permiten. Conocer una calculadora concreta,
+          con sus modos y sus teclas, sigue siendo una destreza útil.
+      - texto: Tú siempre serás mi amor prepúber
       - texto: La alegría de volver a clase
       - texto: La mañana de los lunes
   - seccion: Pre-coro
@@ -94,11 +102,11 @@ letra:
   - seccion: Puente
     versos:
       - texto: Me hace gracia calcular la raíz de tu ans
-        explicacion: >
-          **Ans** es la tecla que recupera el último resultado calculado, y la
-          raíz cuadrada $\sqrt{x}$ es la operación inversa de elevar al
-          cuadrado. Calcular $\sqrt{\text{Ans}}$ permite encadenar operaciones
-          sin reescribir números.
+        explicacion: "**Ans** es la tecla que recupera el último resultado calculado, y
+          la raíz cuadrada $\\sqrt{x}$ es la operación inversa de elevar al
+          cuadrado. Calcular $\\sqrt{\\text{Ans}}$ permite encadenar operaciones
+          sin reescribir números y se parece mucho al logo de **Vans**, una
+          marca de zapatos de skate."
       - texto: Me paso horas tecleando tu sin, cos y tan
         explicacion: >
           Son las tres **razones trigonométricas** básicas: seno, coseno y
@@ -119,10 +127,16 @@ letra:
           $0{,}894$.
       - texto: Estaremos juntos hasta que te quedes sin pila
 actividades:
-  - "Prueba sin 30 en tu calculadora en modo grados y en modo radianes. Piensa por qué salen resultados distintos y explica con tus palabras qué es un radián."
-  - "Investiga por qué en ciencia se prefieren los radianes y de dónde viene la costumbre de dividir la circunferencia en 360°."
-  - "Averigua qué hacen las teclas de segunda función de tu calculadora (por ejemplo, SHIFT y las teclas de color) y comparte con tus compañeros un truco que no conocieran."
-  - "Debatid en clase: ¿la calculadora nos hace pensar menos o nos ayuda a pensar mejor? ¿Cuándo puede engañarnos un resultado?"
+  - Prueba sin(30) en tu calculadora en modo grados y en modo radianes. Piensa
+    por qué salen resultados distintos y explica con tus palabras qué es un
+    radián.
+  - Investiga por qué en ciencia se prefieren los radianes y de dónde viene la
+    costumbre de dividir la circunferencia en 360°.
+  - Averigua qué hacen algunas de las teclas de segunda función de tu
+    calculadora (las de arriba) y comparte con tus compañeros un truco que no
+    conocieran.
+  - "Debatid en clase: ¿la calculadora nos hace pensar menos o nos ayuda a
+    pensar mejor? ¿Cuándo puede engañarnos un resultado?"
 referencias:
   - titulo: Calculadora
     autor: Wikipedia
@@ -134,7 +148,6 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Funci%C3%B3n_trigonom%C3%A9trica
 ---
-
 *Mi calculadora* es una declaración de amor, en clave de comedia, al objeto que acompaña a cualquier estudiante de ciencias: la calculadora científica. La letra recorre toda la relación, desde el alivio de dejar de hacer cuentas a mano hasta los líos con sus teclas y sus modos.
 
 Detrás de las bromas hay contenido de verdad. El **seno, el coseno y la tangente** son herramientas básicas para describir ángulos, ondas y movimientos, y el eterno drama entre **radianes y grados** es una de las causas más típicas de errores en los exámenes. También aparece la **tecla Ans**, que guarda el último resultado.
