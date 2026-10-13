@@ -7,9 +7,18 @@ youtube: l3p82dHC9IQ
 spotify: https://open.spotify.com/track/3j0JssDyNKrZcYPNZecJfX
 estilo: Lofi
 genero: >
-  El **lo-fi** (de *low fidelity*, «baja fidelidad») empezó siendo la etiqueta de las grabaciones caseras, con ruido y defectos. Hoy se usa sobre todo para el lo-fi hip hop: bases lentas y relajadas, acordes de jazz, crujidos de vinilo y un sonido algo «sucio» a propósito. Productores como J Dilla o Nujabes se consideran sus precursores, y en la década de 2010 se volvió enormemente popular gracias a las emisiones de YouTube de música «para estudiar y relajarse». Perfecto para escuchar la física de partículas sin agobios.
+  El **lo-fi** (de *low fidelity*, «baja fidelidad») empezó siendo la etiqueta
+  de las grabaciones caseras, con ruido y defectos. Hoy se usa sobre todo para
+  el lo-fi hip hop: bases lentas y relajadas, acordes de jazz, crujidos de
+  vinilo y un sonido algo «sucio» a propósito. Productores como J Dilla o
+  Nujabes se consideran sus precursores, y en la década de 2010 se volvió
+  enormemente popular gracias a las emisiones de YouTube de música «para
+  estudiar y relajarse». Perfecto para escuchar la física de partículas sin
+  agobios.
 idioma: en
-resumen: "El 4 de julio de 2012 el CERN anunció el bosón de Higgs, y esta canción lofi está hecha con las voces de aquel día. En clase te ayuda a explicar qué es el campo de Higgs y cómo las partículas adquieren su masa."
+resumen: El 4 de julio de 2012 el CERN anunció el bosón de Higgs, y esta canción
+  lofi está hecha con las voces de aquel día. En clase te ayuda a explicar qué
+  es el campo de Higgs y cómo las partículas adquieren su masa.
 temas:
   - Física de partículas
   - Historia de la ciencia
@@ -75,9 +84,12 @@ letra:
           cómo se comunica la ciencia: primero los datos y su incertidumbre,
           después la conclusión.
 actividades:
-  - "Investiga por qué en física de partículas se expresa la masa en unidades de energía y qué ecuación lo permite."
-  - "Busca qué significa que un resultado tenga una significación de \"cinco sigma\" y explícalo con tus palabras."
-  - "Busca la diferencia entre el campo de Higgs y el bosón de Higgs, e intenta explicarla con una analogía."
+  - Investiga por qué en física de partículas se expresa la masa en unidades de
+    energía y qué ecuación lo permite.
+  - Busca qué significa que un resultado tenga una significación de "cinco
+    sigma" y explícalo con tus palabras.
+  - Busca la diferencia entre el campo de Higgs y el bosón de Higgs, e intenta
+    explicarla con una analogía.
 referencias:
   - titulo: Bosón de Higgs
     autor: Wikipedia
@@ -85,8 +97,15 @@ referencias:
   - titulo: CERN experiments observe particle consistent with long-sought Higgs boson
     autor: CERN (nota de prensa, 4 de julio de 2012)
     url: https://home.cern/news/press-release/cern/cern-experiments-observe-particle-consistent-long-sought-higgs-boson
+  - titulo: El Bosón de Higgs (por fin) Explicado a Fondo
+    autor: "QuantumFracture "
+    url: https://www.youtube.com/watch?v=wZCWNLLpmZQ
+  - titulo: HOY SÍ que vas a entender EL BOSÓN DE HIGGS
+    autor: Date un Vlog
+    url: https://www.youtube.com/watch?v=m4kEFqun1Fo
+  - titulo: El bosón de Higgs no te va a hacer la cama
+    autor: Javier Santaolalla (La Esfera de los Libros, 2016)
 ---
-
 El 4 de julio de 2012, en un seminario en el CERN (Ginebra), los experimentos **ATLAS** y **CMS** del Gran Colisionador de Hadrones anunciaron una nueva partícula compatible con el **bosón de Higgs**, predicho casi cincuenta años antes. Esta canción lofi está hecha con fragmentos de voz de aquel día, incluido el del propio Peter Higgs.
 
 El título juega con *field theory* (teoría de campos). Según el modelo estándar, todo el universo está lleno de un **campo de Higgs**, y las partículas elementales adquieren su masa al interactuar con él. El bosón es una especie de «ondulación» de ese campo, y detectarlo era la prueba de que el campo existe.
