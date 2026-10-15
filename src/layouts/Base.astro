@@ -19,6 +19,14 @@ const [nombre1, ...resto] = NOMBRE.split(' ');
 const nombre2 = resto.join(' ');
 const canonica = new URL(Astro.url.pathname, Astro.site).href;
 const tituloCompleto = titulo ? `${titulo} | ${NOMBRE}` : `${NOMBRE}: la física también se canta`;
+// Estadísticas de visitas con GoatCounter (gratis y sin cookies). Acepta el código solo
+// («fisicaatodovolumen») o la dirección entera («https://fisicaatodovolumen.goatcounter.com»).
+const codigoGoat = (ajustes.goatcounter ?? '')
+  .trim()
+  .replace(/^https?:\/\//, '')
+  .replace(/\.goatcounter\.com.*$/, '')
+  .replace(/[^a-z0-9-]/gi, '')
+  .toLowerCase();
 ---
 
 <!doctype html>
@@ -47,6 +55,7 @@ const tituloCompleto = titulo ? `${titulo} | ${NOMBRE}` : `${NOMBRE}: la física
     />
     <!-- Climate Crisis solo se usa en la primera palabra del logo: se descargan únicamente esas letras. -->
     <link href={`https://fonts.googleapis.com/css2?family=Climate+Crisis&text=${encodeURIComponent(nombre1)}&display=swap`} rel="stylesheet" />
+    {codigoGoat && <script is:inline data-goatcounter={`https://${codigoGoat}.goatcounter.com/count`} async src="https://gc.zgo.at/count.js"></script>}
   </head>
   <body class={claseBody}>
     <a class="saltar no-print" href="#contenido">Saltar al contenido</a>

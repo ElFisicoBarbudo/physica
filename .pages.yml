@@ -16,6 +16,10 @@ content:
         label: Web en pruebas
         type: boolean
         description: Muestra arriba de todas las páginas la franja amarilla «Beta · La web está en pruebas» con el enlace al formulario de feedback. Desmárcala cuando la web esté lista.
+      - name: goatcounter
+        label: Código de GoatCounter (estadísticas de visitas)
+        type: string
+        description: El código que elegiste al crear tu cuenta gratis en https://www.goatcounter.com (por ejemplo fisicaatodovolumen). También vale pegar la dirección entera, como https://fisicaatodovolumen.goatcounter.com. Si lo dejas vacío, no se cuentan visitas.
   - name: faq
     label: Preguntas frecuentes
     type: file
