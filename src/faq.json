@@ -1,31 +1,39 @@
 {
   "titulo": "Preguntas frecuentes",
-  "intro": "Lo que suelen preguntarme los profes antes de llevar las canciones a clase. Si tu duda no está aquí, [escríbeme](/feedback/).",
-  "borrador": true,
+  "intro": "Este proyecto puede parecer un poco raro, así que he recogido algunas dudas que puedes tener antes de llevarlo al aula. Si tu duda no está aquí, [escríbeme](/feedback/).",
+  "borrador": false,
   "preguntas": [
     {
       "pregunta": "¿Tengo que pagar algo para usar las canciones y las fichas?",
-      "respuesta": "No. Las canciones, las explicaciones y las fichas son de uso libre en el aula. No hace falta registrarse ni pedir permiso."
+      "respuesta": "¡No! Las canciones, las explicaciones y las fichas son de uso libre en el aula. No hace falta registrarse ni pedir permiso."
     },
     {
       "pregunta": "¿Cómo puedo usar una canción en clase?",
-      "respuesta": "Elige la canción, proyecta el videoclip y activa las explicaciones para deteneros en los versos marcados. Después puedes repartir la ficha en PDF, con la letra explicada, actividades para el alumnado y un código QR que lleva al vídeo. Tienes los pasos en [Cómo usarlas en clase](/#como-usar)."
-    },
-    {
-      "pregunta": "¿Por qué no se ve la letra ni la traducción al entrar en una canción?",
-      "respuesta": "Para que la primera escucha sea limpia. Encima de la letra tienes los interruptores **Traducción** (en las canciones que no están en castellano) y **Explicaciones**: actívalos cuando quieras verlos."
+      "respuesta": "Mi recomendación es la siguiente: elige la canción y proyecta el videoclip. Luego activa las explicaciones para deteneros en los versos marcados. Después puedes repartir la ficha en PDF, con la letra explicada, actividades para el alumnado y un código QR que lleva al vídeo. Tienes los pasos recomendados en [Cómo usarlas en clase](/#como-usar). También sugiero algunos ejercicios ¡pero estaré encantado de saber qué les has propuesto tú a tus alumnos!"
     },
     {
       "pregunta": "¿Las canciones son aptas para cualquier edad?",
-      "respuesta": "Algunas usan lenguaje malsonante o ironía. Cuando es así, la página de la canción lo indica al principio con un aviso para el profesorado, para que decidas antes de ponerla."
+      "respuesta": "No. Algunas usan lenguaje malsonante o ironía. Cuando es así, la página de la canción lo indica al principio con un aviso para el profesorado, para que decidas antes de ponerla. De todos modos te recomiendo que lo revises antes de llevarlo al aula, por si hubiera algo delicado en los vídeos también."
+    },
+    {
+      "pregunta": "¿Cómo surge este proyecto?",
+      "respuesta": "Un día, en clase de inglés en el instituto, me pusieron de deberes escribir una redacción que debía recitar en clase de memoria. Me cuesta mucho memorizar cosas, así que se me ocurrió musicar esa redacción y cantarla en clase. A la profesora la encantó la idea y yo me di cuenta de que las canciones son mucho más fáciles de recordar que bloques de texto. Eso, mezclado con mi interés por la producción musical, fue la semilla primigenia de este proyecto."
     },
     {
       "pregunta": "He encontrado un error o tengo una idea. ¿Dónde lo cuento?",
-      "respuesta": "En el [formulario de feedback](/feedback/). Lo leo todo, y si dejas tu correo te contesto."
+      "respuesta": "En el [formulario de feedback](/feedback/). Lo leo todo, y si dejas tu correo te intentaré contestar lo antes posible."
     },
     {
       "pregunta": "¿Quién hace las canciones?",
-      "respuesta": "Soy Adrián García, El Físico Barbudo: físico y divulgador. Algunas canciones las he hecho con otros canales, y en esos casos lo verás en la página de la canción. Tienes más sobre mí en [Conóceme](/conoceme/)."
+      "respuesta": "¡Hola! Soy Adrián García, El Físico Barbudo: físico y divulgador. Algunas canciones las he hecho en colaboración con otros canales, y en esos casos lo verás en la página de la canción. Tienes más sobre mí en [Conóceme](/conoceme/)."
+    },
+    {
+      "pregunta": "¿Dónde tienes las maquetas secretas?",
+      "respuesta": "¡Me pillaste! Este proyecto divulgativo musical antes tenía otro nombre: **a=Gc^2**. Un nombre terrible que intentaba mezclar mis iniciales con la famosísima fórmula E=mc^2.\n\nBajo ese nombre publiqué un primer CD terrible con varias canciones que suenan como si metieras un gato en la licuadora. Si aún así tienes curiosidad, siguen disponibles en [mi Bandcamp](https://agc2.bandcamp.com/album/if-instead-of-an-apple-it-had-been-a-coconout-leibnitz-would-be-the-boss)."
+    },
+    {
+      "pregunta": "¿Cuando sacas más?",
+      "respuesta": "¡Cuando pueda! Tengo un montón de canciones inacabadas en mis discos duros que iré acabando cuando me venga la inspiración. Hay meses muy productivos y otros no tanto. Prefiero que surjan de manera natural a forzar la creatividad. De todos modos, si tienes alguna idea me la puedes contar en [el formulario de contacto](/feedback/)."
     }
   ]
 }
