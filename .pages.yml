@@ -16,6 +16,37 @@ content:
         label: Web en pruebas
         type: boolean
         description: Muestra arriba de todas las páginas la franja amarilla «Beta · La web está en pruebas» con el enlace al formulario de feedback. Desmárcala cuando la web esté lista.
+  - name: faq
+    label: Preguntas frecuentes
+    type: file
+    path: src/faq.json
+    fields:
+      - name: titulo
+        label: Título de la página
+        type: string
+        default: Preguntas frecuentes
+      - name: intro
+        label: Entradilla
+        type: text
+        description: Frase bajo el título. Admite negrita con **texto** y enlaces como [esto](/feedback/).
+      - name: borrador
+        label: Pendiente de revisión
+        type: boolean
+        description: Si está activado, la página avisa de que las respuestas están pendientes de revisión. Desmárcalo cuando las hayas repasado.
+      - name: preguntas
+        label: Preguntas
+        type: object
+        list: true
+        description: Salen en la web en este mismo orden. Arrástralas para reordenarlas.
+        fields:
+          - name: pregunta
+            label: Pregunta
+            type: string
+            required: true
+          - name: respuesta
+            label: Respuesta
+            type: text
+            description: Admite negrita con **texto** y enlaces como [Conóceme](/conoceme/). Deja una línea en blanco para separar párrafos.
   - name: conoceme
     label: Conóceme
     type: file

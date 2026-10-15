@@ -294,7 +294,7 @@ iframe {
 }
 
 @media (max-width: 520px) {
-  /* En el móvil el menú baja a una segunda fila con las tres secciones y el botón al azar. */
+  /* En el móvil el menú baja a una segunda fila con las secciones y el botón al azar. */
   .cabecera {
     flex-wrap: wrap;
     row-gap: 0.25rem;
@@ -308,6 +308,18 @@ iframe {
 
   .cabecera nav a {
     padding-inline: 0.5rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 420px) {
+  /* En los móviles más estrechos el botón al azar se queda solo con el dado para que quepan las cuatro secciones. */
+  .cabecera nav .nav-azar span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
     white-space: nowrap;
   }
 }
