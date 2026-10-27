@@ -227,6 +227,12 @@ referencias:
   - titulo: Pável Cherenkov
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/P%C3%A1vel_Cherenkov
+  - titulo: La radiación Cherenkov. La luz azul de la energía nuclear
+    autor: Women in Nuclear Spain
+    url: https://www.youtube.com/shorts/31OwH4OzWgU
+  - titulo: La partícula AZUL más RÁPIDA que la LUZ
+    autor: CdeCiencia
+    url: https://www.youtube.com/watch?v=a9fZzOAMLVI
 ---
 Nada viaja más rápido que la luz en el vacío. Pero la luz **no va igual de rápido en todos los medios**: en el agua avanza a solo unas tres cuartas partes de esa velocidad. Y una partícula con carga sí puede superar eso. Cuando lo hace, deja tras de sí un destello azulado: la **radiación de Cherenkov**, el brillo azul que se ve en las piscinas de los reactores nucleares.
 
