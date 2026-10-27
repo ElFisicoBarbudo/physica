@@ -212,7 +212,8 @@ actividades:
   - Busca información sobre por qué la luz viaja más despacio en el agua que en
     el vacío y qué es el índice de refracción.
   - Piensa y explica con tus palabras por qué la radiación de Cherenkov no
-    contradice la relatividad especial.
+    contradice la relatividad especial (concretamente, que nada puede ir más
+    rápido que la luz en el vacío).
   - Compara la radiación de Cherenkov con el estampido sónico de un avión
     supersónico. ¿En qué se parecen? ¿En qué se diferencian?
   - Busca fotos del brillo azul de la piscina de un reactor nuclear e investiga
