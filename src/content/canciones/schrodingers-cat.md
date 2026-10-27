@@ -154,6 +154,9 @@ referencias:
   - titulo: Superposición cuántica
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Superposici%C3%B3n_cu%C3%A1ntica
+  - titulo: "El Gato de Schrödinger pero DE VERDAD: El Nobel 2025 EXPLICADO"
+    autor: QuantumFracture
+    url: https://www.youtube.com/watch?v=9jE4eaP9K7Q
 ---
 En 1935, el físico austriaco **Erwin Schrödinger** propuso un experimento mental para mostrar lo rara que resulta la física cuántica cuando la aplicamos a cosas cotidianas: un gato encerrado en una caja cuya vida depende de un átomo radiactivo. Tranquilidad: nunca se ha hecho con un gato de verdad.
 
