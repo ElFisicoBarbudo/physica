@@ -136,7 +136,7 @@ actividades:
     calculadora (las de arriba) y comparte con tus compañeros un truco que no
     conocieran.
   - "Debatid en clase: ¿la calculadora nos hace pensar menos o nos ayuda a
-    pensar mejor? ¿Cuándo puede engañarnos un resultado?"
+    pensar mejor?"
 referencias:
   - titulo: Calculadora
     autor: Wikipedia
@@ -147,6 +147,9 @@ referencias:
   - titulo: Función trigonométrica
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Funci%C3%B3n_trigonom%C3%A9trica
+  - titulo: Uso correcto de la Calculadora Científica Fx 82, 95, 570 MS y similares
+    autor: Matemáticas profe Alex
+    url: https://youtu.be/Kf6nTDaIFnU?si=5POuQYQQOhPRq8o4
 ---
 *Mi calculadora* es una declaración de amor, en clave de comedia, al objeto que acompaña a cualquier estudiante de ciencias: la calculadora científica. La letra recorre toda la relación, desde el alivio de dejar de hacer cuentas a mano hasta los líos con sus teclas y sus modos.
 
