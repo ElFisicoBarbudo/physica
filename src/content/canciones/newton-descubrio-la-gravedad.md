@@ -2,7 +2,7 @@
 titulo: Newton descubrió la gravedad
 artista: El Físico Barbudo
 orden: 6
-borrador: true
+borrador: false
 youtube: jTCBr85cLeM
 spotify: https://open.spotify.com/track/06SZ4AUPq3c1rHCwTEWnlX
 estilo: Ska
