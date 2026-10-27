@@ -2,7 +2,7 @@
 titulo: Lo-Field Theory
 artista: El Físico Barbudo
 orden: 3
-borrador: true
+borrador: false
 youtube: l3p82dHC9IQ
 spotify: https://open.spotify.com/track/3j0JssDyNKrZcYPNZecJfX
 estilo: Lofi
