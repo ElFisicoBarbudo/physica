@@ -193,6 +193,9 @@ referencias:
   - titulo: Método científico
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/M%C3%A9todo_cient%C3%ADfico
+  - titulo: Qué es el método científico y cómo funciona
+    autor: Ciencias de la Ciencia
+    url: https://www.youtube.com/watch?v=4uKxILV7HOI
 ---
 *Lab Crush* es una canción de amor ambientada en un laboratorio. Una investigadora, enamorada de un compañero que está a punto de irse, decide estropear su experimento para retenerlo. Es una exageración cómica (sabotear el trabajo de otra persona es, evidentemente, nada ético), pero la letra está llena de detalles reales del trabajo científico.
 
