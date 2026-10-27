@@ -2,14 +2,23 @@
 titulo: ЧЕРЕНКОВСКАЯ СИНЬ (Blue Cherenkov)
 artista: El Físico Barbudo
 orden: 5
-borrador: true
+borrador: false
 youtube: rh3MFPgCDv4
 spotify: https://open.spotify.com/track/4SMK6g0HggVR1phiZBgzuJ
 estilo: Hardbass
 genero: >
-  El **hardbass** (o *hard bass*) es un estilo de música electrónica surgido en Rusia hacia finales de los 90 y principios de los 2000, con raíces en el hard house y el hardstyle europeos. Se reconoce por un bombo machacón y muy rápido, un bajo que rebota a contratiempo y gritos o consignas en ruso. En la década de 2010 se convirtió en un meme de internet ligado a la estética *gopnik*: chándal de tres rayas, sentadillas en cuclillas y kvas. Justo el ambiente que parodia la canción mientras explica el efecto Cherenkov.
+  El **hardbass** (o *hard bass*) es un estilo de música electrónica surgido en
+  Rusia hacia finales de los 90 y principios de los 2000, con raíces en el hard
+  house y el hardstyle europeos. Se reconoce por un bombo machacón y muy rápido,
+  un bajo que rebota a contratiempo y gritos o consignas en ruso. En la década
+  de 2010 se convirtió en un meme de internet ligado a la estética *gopnik*:
+  chándal de tres rayas, sentadillas en cuclillas y kvas. Justo el ambiente que
+  parodia la canción mientras explica el efecto Cherenkov.
 idioma: en-ru
-resumen: "Hardbass soviético sobre el brillo azul de los reactores nucleares, que aparece cuando una partícula corre más que la luz… en el agua. Ideal para explicar la radiación de Cherenkov y por qué la luz no va igual de rápido en todos los medios."
+resumen: Hardbass soviético sobre el brillo azul de los reactores nucleares, que
+  aparece cuando una partícula corre más que la luz… en el agua. Ideal para
+  explicar la radiación de Cherenkov y por qué la luz no va igual de rápido en
+  todos los medios.
 temas:
   - Física nuclear
   - Física de partículas
@@ -42,8 +51,13 @@ letra:
           energía infinita.
       - texto: But this is Russia, sending bitches to the space, да
         traduccion: Pero esto es Rusia, mandamos perras al espacio, sí
-        explicacion: |
-          La **perra Laika** fue lanzada el 3 de noviembre de 1957 en el Sputnik 2, y fue el primer animal que orbitó la Tierra. Según la versión más extendida, murió a las pocas horas por el sobrecalentamiento de la cápsula, y la misión no estaba pensada para recuperarla. Algunas fuentes rusas hablaron después de que sobrevivió cuatro días. Es la referencia del verso a los vuelos espaciales soviéticos con animales.
+        explicacion: >
+          La **perra Laika** fue lanzada el 3 de noviembre de 1957 en el Sputnik
+          2, y fue el primer animal que orbitó la Tierra. Según la versión más
+          extendida, murió a las pocas horas por el sobrecalentamiento de la
+          cápsula, y la misión no estaba pensada para recuperarla. Algunas
+          fuentes rusas hablaron después de que sobrevivió cuatro días. Es la
+          referencia del verso a los vuelos espaciales soviéticos con animales.
   - seccion: Verso 2
     versos:
       - texto: It’s not cheating if we slow down the light
@@ -111,8 +125,11 @@ letra:
           chocar con el agua.
       - texto: Russian scientists were acing the Cold War
         traduccion: Científicos rusos arrasando en la Guerra Fría
-        explicacion: |
-          La **Guerra Fría** (1947-1991) enfrentó a la URSS y a Estados Unidos en la carrera nuclear y en la carrera espacial. Los logros científicos soviéticos, como el Nobel de 1958, servían también como escaparate político de esa rivalidad.
+        explicacion: >
+          La **Guerra Fría** (1947-1991) enfrentó a la URSS y a Estados Unidos
+          en la carrera nuclear y en la carrera espacial. Los logros científicos
+          soviéticos, como el Nobel de 1958, servían también como escaparate
+          político de esa rivalidad.
       - texto: Are you disrespecting Па́вел Черенко́в my pal?
         traduccion: Amigo ¿le estás faltando al respeto a Pavel Cherenkov?
       - texto: Listen to me bitch, Я твой рот ебал
@@ -125,8 +142,12 @@ letra:
         traduccion: Fiesta espacial brindando con kvas frío
       - texto: Put a Cherenkov detector in the Sputnik три
         traduccion: Pon un detector de Cherenkov en el Sputnik III
-        explicacion: |
-          El **Sputnik 3**, lanzado el 15 de mayo de 1958, llevaba doce instrumentos científicos, entre ellos un **detector Cherenkov** que medía destellos de luz en un plástico transparente, y detectores de radiación cósmica. Es uno de los primeros usos de esta técnica en el espacio.
+        explicacion: >
+          El **Sputnik 3**, lanzado el 15 de mayo de 1958, llevaba doce
+          instrumentos científicos, entre ellos un **detector Cherenkov** que
+          medía destellos de luz en un plástico transparente, y detectores de
+          radiación cósmica. Es uno de los primeros usos de esta técnica en el
+          espacio.
       - texto: Blue photons emitted, Черенковская синь
         traduccion: Se emiten fotones azules, azul de Cherenkov
   - seccion: Pre-coro
@@ -155,8 +176,13 @@ letra:
           llevó a los astronautas del programa Apolo a la Luna.
       - texto: Your Fat Man nothing to do against a Царь
         traduccion: Tu «Fat Man» no puede hacer nada contra un «Tsár»
-        explicacion: |
-          **Fat Man** fue la bomba lanzada sobre Nagasaki en 1945, de unos 21 kilotones. La **Tsar Bomba** (царь-бомба), la bomba soviética más potente jamás detonada, se probó en 1961 con unos 50 megatones, más de dos mil veces más. Estaba diseñada para unos 100 megatones, pero se probó con la mitad de potencia. El verso compara el poder destructivo de ambas potencias.
+        explicacion: >
+          **Fat Man** fue la bomba lanzada sobre Nagasaki en 1945, de unos 21
+          kilotones. La **Tsar Bomba** (царь-бомба), la bomba soviética más
+          potente jamás detonada, se probó en 1961 con unos 50 megatones, más de
+          dos mil veces más. Estaba diseñada para unos 100 megatones, pero se
+          probó con la mitad de potencia. El verso compara el poder destructivo
+          de ambas potencias.
       - texto: Our soviet hero Валенти́на would crush Sally in the arena
         traduccion: Nuestra heroína soviética Valentina aplastaría a Sally en la arena
         explicacion: >
@@ -183,10 +209,14 @@ letra:
       - texto: Черенков Синий
         traduccion: Azul de Cherenkov
 actividades:
-  - "Busca información sobre por qué la luz viaja más despacio en el agua que en el vacío y qué es el índice de refracción."
-  - "Piensa y explica con tus palabras por qué la radiación de Cherenkov no contradice la relatividad especial."
-  - "Compara la radiación de Cherenkov con el estampido sónico de un avión supersónico. ¿En qué se parecen? ¿En qué se diferencian?"
-  - "Busca fotos del brillo azul de la piscina de un reactor nuclear e investiga para qué se usa la radiación de Cherenkov en los detectores de partículas."
+  - Busca información sobre por qué la luz viaja más despacio en el agua que en
+    el vacío y qué es el índice de refracción.
+  - Piensa y explica con tus palabras por qué la radiación de Cherenkov no
+    contradice la relatividad especial.
+  - Compara la radiación de Cherenkov con el estampido sónico de un avión
+    supersónico. ¿En qué se parecen? ¿En qué se diferencian?
+  - Busca fotos del brillo azul de la piscina de un reactor nuclear e investiga
+    para qué se usa la radiación de Cherenkov en los detectores de partículas.
 referencias:
   - titulo: Radiación de Cherenkov
     autor: Wikipedia
@@ -198,7 +228,6 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/P%C3%A1vel_Cherenkov
 ---
-
 Nada viaja más rápido que la luz en el vacío. Pero la luz **no va igual de rápido en todos los medios**: en el agua avanza a solo unas tres cuartas partes de esa velocidad. Y una partícula con carga sí puede superar eso. Cuando lo hace, deja tras de sí un destello azulado: la **radiación de Cherenkov**, el brillo azul que se ve en las piscinas de los reactores nucleares.
 
 Lo estudió a fondo el físico soviético **Pável Cherenkov** a partir de 1934, y le valió el Nobel de Física de 1958, compartido con Ilyá Frank e Ígor Tamm, que lo explicaron teóricamente. De ahí el hardbass, el vodka y toda la estética soviética de la canción.
