@@ -2,14 +2,22 @@
 titulo: Black Hole Spaghettification
 artista: El Físico Barbudo
 orden: 1
-borrador: true
+borrador: false
 youtube: wBtFe005OjQ
 spotify: https://open.spotify.com/track/2Rtvlj00gWTJgaNi4ho61W
 estilo: Deathcore
 genero: >
-  El **deathcore** nació en Estados Unidos a principios de los 2000 al juntar dos mundos: la brutalidad del death metal (guitarras muy graves, baterías a toda velocidad, voces guturales) y los *breakdowns* del metalcore y el hardcore, esos pasajes lentos y pesadísimos pensados para que el público salte. Bandas como Suicide Silence, Whitechapel o Job for a Cowboy lo hicieron popular a mediados de esa década. Afinaciones bajísimas, gritos y sensación de aplastamiento: la banda sonora ideal para un agujero negro devorándolo todo.
+  El **deathcore** nació en Estados Unidos a principios de los 2000 al juntar
+  dos mundos: la brutalidad del death metal (guitarras muy graves, baterías a
+  toda velocidad, voces guturales) y los *breakdowns* del metalcore y el
+  hardcore, esos pasajes lentos y pesadísimos pensados para que el público
+  salte. Bandas como Suicide Silence, Whitechapel o Job for a Cowboy lo hicieron
+  popular a mediados de esa década. Afinaciones bajísimas, gritos y sensación de
+  aplastamiento: la banda sonora ideal para un agujero negro devorándolo todo.
 idioma: en
-resumen: "¿Qué te pasaría si cayeras en un agujero negro? Spoiler: acabarías hecho un espagueti. Perfecta para explicar qué es un agujero negro, qué es el horizonte de sucesos y cómo los detectamos aunque no se puedan ver."
+resumen: "¿Qué te pasaría si cayeras en un agujero negro? Spoiler: acabarías
+  hecho un espagueti. Perfecta para explicar qué es un agujero negro, qué es el
+  horizonte de sucesos y cómo los detectamos aunque no se puedan ver."
 temas:
   - Agujeros negros
   - Astrofísica
@@ -149,10 +157,14 @@ letra:
       - texto: In the black hole
         traduccion: En el agujero negro
 actividades:
-  - "Piensa: si un agujero negro no emite luz, ¿cómo sabemos que existe? Busca qué métodos usan los astrónomos para detectarlos."
-  - "Explica con tus palabras qué es la espaguetificación y por qué la gravedad no tira igual de tus pies que de tu cabeza."
-  - "Busca la diferencia entre el horizonte de sucesos y la singularidad, y explícala con un dibujo o una analogía."
-  - "Investiga qué es Sagitario A\\* y cuándo se publicó la primera imagen de un agujero negro."
+  - "Piensa: si un agujero negro no emite luz, ¿cómo sabemos que existe? Busca
+    qué métodos usan los astrónomos para detectarlos."
+  - Explica con tus palabras qué es la espaguetificación y por qué la gravedad
+    no tira igual de tus pies que de tu cabeza.
+  - Busca la diferencia entre el horizonte de sucesos y la singularidad, y
+    explícala con un dibujo o una analogía.
+  - Investiga qué es Sagitario A\* y cuándo se publicó la primera imagen de un
+    agujero negro.
 referencias:
   - titulo: HOY SÍ que vas a entender los AGUJEROS NEGROS
     autor: Date un Vlog
@@ -170,7 +182,6 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Espaguetizaci%C3%B3n
 ---
-
 Imagina un sitio del espacio donde la gravedad es tan bestia que nada, ni siquiera la luz, puede escapar. Eso es un agujero negro. Los de masa estelar nacen cuando una estrella muy masiva muere y su núcleo colapsa; según la relatividad general, toda esa masa acaba en un punto diminuto y densísimo, la **singularidad** (aunque se sospecha que una teoría cuántica de la gravedad lo describiría de otra forma). Denso, como el **deathcore**.
 
 Alrededor está el **horizonte de sucesos**, la frontera de no retorno: lo que la cruza ya no sale. Aunque no podamos verlos, sabemos dónde están por lo que hacen a las estrellas cercanas.
