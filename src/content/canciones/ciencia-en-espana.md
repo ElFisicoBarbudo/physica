@@ -215,7 +215,7 @@ actividades:
   - Busca en fuentes oficiales cómo se convoca un contrato predoctoral y cuáles
     son las fases de una carrera científica.
   - "Simulad en clase la revisión por pares: en parejas, evaluad de forma
-    anónima un breve informe de laboratorio de otra pareja."
+    anónima los deberes o un breve informe de laboratorio de otra pareja."
 referencias:
   - titulo: Revisión por pares
     autor: Wikipedia
