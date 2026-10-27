@@ -2,12 +2,18 @@
 titulo: Schrödinger's Cat
 artista: El Físico Barbudo
 orden: 7
-borrador: true
+borrador: false
 youtube: wgL145YioTY
 spotify: https://open.spotify.com/track/7EIcU2mLP33X1vVj4tgEdP
 estilo: Rockabilly
 genero: >
-  El **rockabilly** es uno de los primeros estilos del rock and roll. Surgió en el sur de Estados Unidos a mediados de los años 50, y su nombre une *rock* con *hillbilly*, como se llamaba entonces a la música country. Contrabajo tocado a golpes (*slap*), guitarra eléctrica con eco y voces con «hipidos» son sus señas. El sello Sun Records de Memphis grabó a sus pioneros, como el primer Elvis Presley o Carl Perkins. En los 80, grupos como Stray Cats lo resucitaron, con tupé y chupa de cuero incluidos.
+  El **rockabilly** es uno de los primeros estilos del rock and roll. Surgió en
+  el sur de Estados Unidos a mediados de los años 50, y su nombre une *rock* con
+  *hillbilly*, como se llamaba entonces a la música country. Contrabajo tocado a
+  golpes (*slap*), guitarra eléctrica con eco y voces con «hipidos» son sus
+  señas. El sello Sun Records de Memphis grabó a sus pioneros, como el primer
+  Elvis Presley o Carl Perkins. En los 80, grupos como Stray Cats lo
+  resucitaron, con tupé y chupa de cuero incluidos.
 idioma: en
 resumen: "Rockabilly para el experimento mental más famoso de la cuántica: un
   gato encerrado en una caja, vivo y muerto a la vez hasta que alguien la abre.
@@ -149,7 +155,6 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Superposici%C3%B3n_cu%C3%A1ntica
 ---
-
 En 1935, el físico austriaco **Erwin Schrödinger** propuso un experimento mental para mostrar lo rara que resulta la física cuántica cuando la aplicamos a cosas cotidianas: un gato encerrado en una caja cuya vida depende de un átomo radiactivo. Tranquilidad: nunca se ha hecho con un gato de verdad.
 
 Según la **mecánica cuántica**, mientras nadie lo mide, el átomo está en una **superposición** de «se ha desintegrado» y «no se ha desintegrado». Si el destino del gato depende de él, ¿está vivo y muerto a la vez hasta que abrimos la caja? Schrödinger lo planteó como una crítica a esa forma de ver las cosas, y la pregunta sigue dando que hablar.
