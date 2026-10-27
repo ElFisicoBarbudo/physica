@@ -182,7 +182,7 @@ actividades:
   - Busca el nombre de tres revistas científicas y averigua en qué áreas
     publican.
   - Imagina un experimento sencillo de clase y haz una lista de las cosas que
-    podrían estropear la muestra. Después, comparad las listas en grupo.
+    podrían estropearlo y posibles maneras de evitarlo.
 referencias:
   - titulo: Revisión por pares
     autor: Wikipedia
