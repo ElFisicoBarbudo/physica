@@ -2,7 +2,7 @@
 titulo: Drude 2077
 artista: El Físico Barbudo
 orden: 15
-borrador: true
+borrador: false
 youtube: yLl6Lkdai8I
 spotify: https://open.spotify.com/track/3D2t6NUbSdgy9WvnEbMrwB
 estilo: Cyberpunk
