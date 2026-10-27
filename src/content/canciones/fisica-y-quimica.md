@@ -164,7 +164,7 @@ actividades:
   - Debatid en grupos por qué la física y la química se estudian juntas en el
     instituto y qué conceptos comparten (átomo, electrón, energía).
   - Elige alguna de las pseudociencias que se mencionan en la canción e
-    investiga en qué consisten y por qué no funciona.
+    investiga en qué consiste y por qué no funciona.
 referencias:
   - titulo: Ley de elasticidad de Hooke
     autor: Wikipedia
