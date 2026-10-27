@@ -2,18 +2,18 @@
 titulo: RAWR! (Como un dinosaurio)
 artista: El Físico Barbudo
 orden: 16
-borrador: true
+borrador: false
 youtube: FSl2FlwCT3g
 spotify: https://open.spotify.com/track/6n7xO4XjDyMkdxEfsQMi0m
 estilo: Trap
 genero: >
   El **trap** dio el salto a España en la década de 2010, con colectivos como
-  PXXR GVNG (de donde salió Yung Beef) y artistas como Bad Gyal o C. Tangana en
-  sus inicios. Casi a la vez, en Puerto Rico y el resto de Latinoamérica creció
-  el trap latino, con figuras como Bad Bunny o Anuel AA, que lo mezclaron con el
-  reguetón. En pocos años pasó de los barrios a las listas de éxitos. Su mezcla
-  de graves enormes y frases cortas y repetitivas lo hace pegadizo… incluso para
-  repasar dinosaurios.
+  PXXR GVNG (de donde salió Yung Beef) y artistas como Bad Gyal, Pimp Flaco o C.
+  Tangana en sus inicios. Casi a la vez, en Puerto Rico y el resto de
+  Latinoamérica creció el trap latino, con figuras como Bad Bunny o Anuel AA,
+  que lo mezclaron con el reguetón. En pocos años pasó de los barrios a las
+  listas de éxitos. Su mezcla de graves enormes y frases cortas y repetitivas lo
+  hace pegadizo… incluso para repasar dinosaurios.
 idioma: es
 resumen: Un trap con mucho humor que repasa los grandes grupos de dinosaurios,
   defiende que las aves son dinosaurios y cuenta la extinción del final del
