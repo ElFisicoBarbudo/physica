@@ -2,7 +2,7 @@
 titulo: "Re: Trap del Terraplanismo"
 artista: El Físico Barbudo
 orden: 4
-borrador: true
+borrador: false
 youtube: UaIj_i9aNhQ
 estilo: Trap
 genero: >
