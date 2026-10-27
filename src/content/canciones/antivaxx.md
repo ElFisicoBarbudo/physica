@@ -2,14 +2,23 @@
 titulo: AntiVaxx
 artista: El Físico Barbudo
 orden: 14
-borrador: true
+borrador: false
 youtube: wPULp0Nn5Ds
 spotify: https://open.spotify.com/track/6DPv0G6ST218PHGflWkujP
 estilo: Trap
 genero: >
-  El **trap** nació en el sur de Estados Unidos, sobre todo en Atlanta, a finales de los 90 y principios de los 2000. Su nombre viene de las *trap houses*, las casas donde se vendía droga, y sus primeras letras hablaban de esa vida sin adornos. Artistas como T.I., Gucci Mane o Young Jeezy lo pusieron en el mapa. Musicalmente es una rama del rap del sur: ritmo lento y pesado, bajos que retumban y hi-hats rapidísimos. Aquí esa actitud chulesca se la lleva un antivacunas con mucha seguridad y poca razón.
+  El **trap** nació en el sur de Estados Unidos, sobre todo en Atlanta, a
+  finales de los 90 y principios de los 2000. Su nombre viene de las *trap
+  houses*, las casas donde se vendía droga, y sus primeras letras hablaban de
+  esa vida sin adornos. Artistas como T.I., Gucci Mane o Young Jeezy lo pusieron
+  en el mapa. Musicalmente es una rama del rap del sur: ritmo lento y pesado,
+  bajos que retumban y hi-hats rapidísimos. Aquí esa actitud chulesca se la
+  lleva un antivacunas con mucha seguridad y poca razón.
 idioma: es
-resumen: "Un antivacunas muy convencido suelta, uno detrás de otro, todos los bulos de manual (y ninguno se sostiene). Viene al pelo para desmontarlos en clase con datos sobre inmunidad de grupo, ensayos clínicos y la historia de las vacunas."
+resumen: Un antivacunas muy convencido suelta, uno detrás de otro, todos los
+  bulos de manual (y ninguno se sostiene). Viene al pelo para desmontarlos en
+  clase con datos sobre inmunidad de grupo, ensayos clínicos y la historia de
+  las vacunas.
 temas:
   - Pseudociencia
 avisos:
@@ -69,7 +78,10 @@ letra:
       - texto: Yo me curo de los virus con este milenario imán
         explicacion: >
           Un imán no cura ninguna infección. No existe prueba científica de ese
-          efecto, y las redes sociales no sustituyen a la evidencia médica. Las vacunas preparan al sistema inmunitario para prevenir infecciones o reducir su gravedad. Algunas infecciones víricas cuentan con tratamientos antivirales específicos.
+          efecto, y las redes sociales no sustituyen a la evidencia médica. Las
+          vacunas preparan al sistema inmunitario para prevenir infecciones o
+          reducir su gravedad. Algunas infecciones víricas cuentan con
+          tratamientos antivirales específicos.
   - seccion: Verso 4
     versos:
       - texto: Son gordas, muy afiladas y están hechas de metal
@@ -128,9 +140,10 @@ letra:
       - texto: si lo único que hizo fue curarle el costipado a una vaca
         explicacion: >
           Falso. En 1796 **Edward Jenner** observó que quienes habían pasado la
-          viruela de las vacas parecían protegidos contra la viruela humana, e inoculó material de una lesión de viruela vacuna a un niño, James Phipps. De
-          *vacca* viene la palabra **vacuna**. Fue el comienzo de la vacunación
-          moderna.
+          viruela de las vacas parecían protegidos contra la viruela humana, e
+          inoculó material de una lesión de viruela vacuna a un niño, James
+          Phipps. De *vacca* viene la palabra **vacuna**. Fue el comienzo de la
+          vacunación moderna.
       - texto: ¿Que "ha salvado más vidas que el trabajo de cualquier otro hombre"?
         explicacion: >
           La frase no es de Jenner, sino que se dice a menudo de él. No es un
@@ -150,10 +163,15 @@ letra:
           estudios revisados por pares y en evidencia acumulada, no en la fama
           de quien opina.
 actividades:
-  - "Haz una lista de las afirmaciones del narrador y busca, para cada una, un dato de una fuente fiable (OMS, Ministerio de Sanidad, CDC) que la desmienta."
-  - "Busca información sobre cómo funciona una vacuna y qué es la memoria inmunológica, y explícaselo con tus palabras a un compañero o compañera."
-  - "Investiga cómo se erradicó la viruela y piensa por qué no se ha conseguido lo mismo con el sarampión."
-  - "Busca información sobre el origen del movimiento antivacunas. Después, debatid en clase por qué los bulos sobre salud se difunden tan rápido."
+  - Haz una lista de las afirmaciones del narrador y busca, para cada una, un
+    dato de una fuente fiable (OMS, Ministerio de Sanidad, CDC) que la
+    desmienta.
+  - Busca información sobre cómo funciona una vacuna y qué es la memoria
+    inmunológica, y explícaselo con tus palabras a un compañero o compañera.
+  - Investiga cómo se erradicó la viruela y piensa por qué no se ha conseguido
+    lo mismo con el sarampión.
+  - Busca información sobre el origen del movimiento antivacunas. Después,
+    debatid en clase por qué los bulos sobre salud se difunden tan rápido.
 referencias:
   - titulo: Vacuna
     autor: Wikipedia
@@ -172,7 +190,6 @@ referencias:
     autor: BBC
     url: https://www.bbc.com/mundo/noticias-50952151
 ---
-
 *AntiVaxx* es un trap irónico: el narrador se mete en la piel de un padre antivacunas que va soltando, uno tras otro, todos los bulos de manual. Ninguno se sostiene, y ahí está la gracia: pillar qué falla en cada frase.
 
 La realidad es justo la contraria. Las **vacunas** son una de las medidas de **salud pública** que más vidas han salvado: gracias a ellas se erradicó la viruela, y la polio, la difteria o el sarampión se han reducido muchísimo. Eso sí, cuando baja la **cobertura vacunal**, algunas de esas enfermedades vuelven.
