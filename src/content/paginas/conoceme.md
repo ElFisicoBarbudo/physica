@@ -2,7 +2,7 @@
 titulo: Sobre mí
 nombre: El Físico Barbudo
 lema: ¡Uep! Soy Adrián García, físico y divulgador. Cuento la ciencia con
-  vídeos, libros, monólogos y, sobre todo, canciones.
+  vídeos, libros, monólogos y, a veces, canciones.
 foto: https://www.elfisicobarbudo.com/wp-content/uploads/2026/06/8B50CE9D-50E0-4249-892E-41688F13214F-768x1365.jpeg
 enlaces:
   - nombre: YouTube
@@ -24,7 +24,7 @@ trayectoria:
       - Máster en física de sistemas complejos (IFISC)
   - titulo: Tele, radio y pódcast
     items:
-      - Sección de Física en *Órbita Laika* (La 2, RTVE), dos temporadas
+      - Sección de Física en *Órbita Laika* (La 2, RTVE)
       - Copresentador de *Balears Fa Ciència* en la televisión autonómica balear
       - Colaborador de *Balears Fa Ciència* en la radio autonómica
       - Presentador en *Voces CSIC Balears* y *Radio Sicómoro*
