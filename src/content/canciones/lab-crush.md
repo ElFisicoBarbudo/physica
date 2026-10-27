@@ -2,14 +2,24 @@
 titulo: Lab Crush
 artista: El Físico Barbudo
 orden: 12
-borrador: true
+borrador: false
 youtube: raK5pVifQ44
 spotify: https://open.spotify.com/track/15yQZQPzShqWKry79raNxb
 estilo: Future Bass
 genero: >
-  El **future bass** es un estilo de música electrónica que se popularizó en la primera mitad de la década de 2010, con productores como Flume o Hudson Mohawke entre sus referentes. Sus rasgos más reconocibles son los acordes de sintetizador grandes y brillantes que parecen «respirar» al ritmo del bombo (un efecto llamado *sidechain*), las voces aceleradas y troceadas y un ambiente dulce y emocional. Esa mezcla de energía y ternura lo ha convertido en uno de los sonidos favoritos para hablar de amor, también del amor de laboratorio.
+  El **future bass** es un estilo de música electrónica que se popularizó en la
+  primera mitad de la década de 2010, con productores como Flume o Hudson
+  Mohawke entre sus referentes. Sus rasgos más reconocibles son los acordes de
+  sintetizador grandes y brillantes que parecen «respirar» al ritmo del bombo
+  (un efecto llamado *sidechain*), las voces aceleradas y troceadas y un
+  ambiente dulce y emocional. Esa mezcla de energía y ternura lo ha convertido
+  en uno de los sonidos favoritos para hablar de amor, también del amor de
+  laboratorio.
 idioma: en
-resumen: "Una investigadora planea sabotear el experimento de su compañero para que no se marche y, de paso, nos enseña la rutina real del laboratorio: muestras, repeticiones, revisión por pares y publicaciones. Para contar con humor cómo se hace ciencia de verdad."
+resumen: "Una investigadora planea sabotear el experimento de su compañero para
+  que no se marche y, de paso, nos enseña la rutina real del laboratorio:
+  muestras, repeticiones, revisión por pares y publicaciones. Para contar con
+  humor cómo se hace ciencia de verdad."
 temas:
   - Vida de científico
 creditos:
@@ -165,10 +175,14 @@ letra:
       - texto: 科学って呼んでるだけだ
         traduccion: y pesado que hay detrás de todo ello
 actividades:
-  - "Busca qué fases sigue un artículo científico desde que se envía a una revista hasta que se publica, y ordénalas."
-  - "Piensa por qué un experimento científico debe poder repetirse y qué ocurre si otro laboratorio no logra obtener el mismo resultado."
-  - "Busca el nombre de tres revistas científicas y averigua en qué áreas publican."
-  - "Imagina un experimento sencillo de clase y haz una lista de las cosas que podrían estropear la muestra. Después, comparad las listas en grupo."
+  - Busca qué fases sigue un artículo científico desde que se envía a una
+    revista hasta que se publica, y ordénalas.
+  - Piensa por qué un experimento científico debe poder repetirse y qué ocurre
+    si otro laboratorio no logra obtener el mismo resultado.
+  - Busca el nombre de tres revistas científicas y averigua en qué áreas
+    publican.
+  - Imagina un experimento sencillo de clase y haz una lista de las cosas que
+    podrían estropear la muestra. Después, comparad las listas en grupo.
 referencias:
   - titulo: Revisión por pares
     autor: Wikipedia
@@ -180,7 +194,6 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/M%C3%A9todo_cient%C3%ADfico
 ---
-
 *Lab Crush* es una canción de amor ambientada en un laboratorio. Una investigadora, enamorada de un compañero que está a punto de irse, decide estropear su experimento para retenerlo. Es una exageración cómica (sabotear el trabajo de otra persona es, evidentemente, nada ético), pero la letra está llena de detalles reales del trabajo científico.
 
 Con ella puedes hablar de cosas que rara vez salen en el aula: que los experimentos se repiten, que las muestras se estropean, que los resultados se publican en artículos y que antes otros especialistas los evalúan mediante la **revisión por pares**. Hasta sale *Nature*, una de las revistas científicas más conocidas.
