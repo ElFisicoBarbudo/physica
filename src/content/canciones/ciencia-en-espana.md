@@ -2,18 +2,29 @@
 titulo: Ciencia en España
 artista: El Físico Barbudo y Bernardo García
 orden: 9
-borrador: true
+borrador: false
 youtube: HD5EbQt3BaM
 spotify: https://open.spotify.com/track/0VuRvo6bUjA7oXZyr3IQ6U
 estilo: Punk rock
 genero: >
-  El **punk rock** es la parte musical del punk, un movimiento contracultural más amplio que también tenía su estética, sus fanzines y su actitud. Como género nació a mediados de los años 70 entre Nueva York (Ramones) y Londres (Sex Pistols, The Clash): rock reducido a lo esencial, con guitarra eléctrica distorsionada, bajo y batería, canciones cortas y rápidas y pocos acordes. Frente a un rock que se había vuelto largo y técnico, bastaba con tener algo que decir. Por eso encaja tan bien para cantar las penurias de la ciencia en España.
+  El **punk rock** es la parte musical del punk, un movimiento contracultural
+  más amplio que también tenía su estética, sus fanzines y su actitud. Como
+  género nació a mediados de los años 70 entre Nueva York (Ramones) y Londres
+  (Sex Pistols, The Clash): rock reducido a lo esencial, con guitarra eléctrica
+  distorsionada, bajo y batería, canciones cortas y rápidas y pocos acordes.
+  Frente a un rock que se había vuelto largo y técnico, bastaba con tener algo
+  que decir. Por eso encaja tan bien para cantar las penurias de la ciencia en
+  España.
 idioma: es
-resumen: "Un doctorando cuenta con humor negro y mucho punk lo que es investigar en España: plazos del BOE, pagos que nunca llegan, falta de material y precariedad. Abre la puerta a un buen debate en clase sobre cómo se financia la ciencia."
+resumen: "Un doctorando cuenta con humor negro y mucho punk lo que es investigar
+  en España: plazos del BOE, pagos que nunca llegan, falta de material y
+  precariedad. Abre la puerta a un buen debate en clase sobre cómo se financia
+  la ciencia."
 temas:
   - Crítica social
   - Vida de científico
-colaboradores: src/content/colaboradores/2026-10-07-bernardo-g-pola.md
+colaboradores:
+  - src/content/colaboradores/2026-10-07-bernardo-g-pola.md
 creditos:
   - rol: Voz
     nombre: Bernardo García
@@ -28,10 +39,12 @@ letra:
     versos:
       - texto: Ha llegao la fecha, límite del BOE
         explicacion: >
-          Muchas convocatorias públicas de ayudas a la investigación (contratos predoctorales, proyectos, movilidad) se publican en el **Boletín Oficial del Estado (BOE)** o en sedes electrónicas, y tienen plazos oficiales. Cumplir
-          los plazos de solicitud es obligatorio, mientras que la resolución y
-          el pago por parte de la administración pueden retrasarse, y de ahí el
-          contraste del verso siguiente.
+          Muchas convocatorias públicas de ayudas a la investigación (contratos
+          predoctorales, proyectos, movilidad) se publican en el **Boletín
+          Oficial del Estado (BOE)** o en sedes electrónicas, y tienen plazos
+          oficiales. Cumplir los plazos de solicitud es obligatorio, mientras
+          que la resolución y el pago por parte de la administración pueden
+          retrasarse, y de ahí el contraste del verso siguiente.
       - texto: No ha llegao’ el dinero pero aquí es lo que pone
       - texto: Los alemanes tienen de PC un pepino
         explicacion: >
@@ -64,7 +77,8 @@ letra:
           que se obtiene el título de doctor. En España "leer" la tesis
           significa defenderla ante un tribunal, que puede otorgar la mención de
           **cum laude** (por unanimidad), la distinción más alta; el chiste es
-          que aquí la "lectura" ocurre en el metro. "Cum Laude de andén" juega con esa mención.
+          que aquí la "lectura" ocurre en el metro. "Cum Laude de andén" juega
+          con esa mención.
       - texto: Lugar de lectura, la línea 3
       - texto: Leerla en el metro está bien
       - texto: Cum Laude de andén
@@ -113,8 +127,10 @@ letra:
       - texto: Usando las gafas de mi abuela
         explicacion: >
           Un **microscopio óptico** combina lentes convergentes para ampliar la
-          imagen. Las gafas de cerca de una persona con presbicia (vista cansada) o hipermetropía también son lentes convergentes, pero su aumento es muy pequeño, parecido al de una lupa
-          floja, y no sirven para observar células o microorganismos.
+          imagen. Las gafas de cerca de una persona con presbicia (vista
+          cansada) o hipermetropía también son lentes convergentes, pero su
+          aumento es muy pequeño, parecido al de una lupa floja, y no sirven
+          para observar células o microorganismos.
       - texto: No tengo acceso a revistas
         explicacion: >
           El conocimiento científico se publica en **revistas** que a menudo
@@ -139,9 +155,9 @@ letra:
       - texto: Mi salud mental no está tan mal
         explicacion: >
           Varias encuestas y estudios internacionales sobre doctorandos señalan
-          niveles elevados de **ansiedad, estrés o malestar psicológico**. El humor de la
-          estrofa es amargo: el narrador minimiza un problema real que merece
-          atención y no solo bromas.
+          niveles elevados de **ansiedad, estrés o malestar psicológico**. El
+          humor de la estrofa es amargo: el narrador minimiza un problema real
+          que merece atención y no solo bromas.
       - texto: Llorar en la ducha para aguantar
       - texto: Higiene corporal y mental
       - texto: Todo en un pack
@@ -192,10 +208,14 @@ letra:
       - texto: Ya lo he aceptado y no está mal
       - texto: Ciencia en España
 actividades:
-  - "Lee la letra y distingue qué versos son exageraciones humorísticas y cuáles reflejan situaciones reales. Justifica tu elección."
-  - "Debatid en clase cómo debería financiarse la investigación pública y qué papel tienen los plazos y las convocatorias."
-  - "Busca en fuentes oficiales cómo se convoca un contrato predoctoral y cuáles son las fases de una carrera científica."
-  - "Simulad en clase la revisión por pares: en parejas, evaluad de forma anónima un breve informe de laboratorio de otra pareja."
+  - Lee la letra y distingue qué versos son exageraciones humorísticas y cuáles
+    reflejan situaciones reales. Justifica tu elección.
+  - Debatid en clase cómo debería financiarse la investigación pública y qué
+    papel tienen los plazos y las convocatorias.
+  - Busca en fuentes oficiales cómo se convoca un contrato predoctoral y cuáles
+    son las fases de una carrera científica.
+  - "Simulad en clase la revisión por pares: en parejas, evaluad de forma
+    anónima un breve informe de laboratorio de otra pareja."
 referencias:
   - titulo: Revisión por pares
     autor: Wikipedia
@@ -207,7 +227,6 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Tesis_doctoral
 ---
-
 Esta canción es la excepción del repertorio: no va de leyes físicas, sino de cómo se hace ciencia en España. A golpe de **punk rock** y mucho sarcasmo, un joven investigador repasa su día a día: convocatorias que dependen del BOE, ayudas que llegan tarde, estancias en el extranjero, tesis leídas en el metro y una estabilidad que siempre está «un poquito más allá».
 
 Ojo, es una caricatura. Muchos versos son exageraciones a propósito (ir nadando a Sídney, usar botellas de cola como probetas), y el «Ya lo he aceptado y no está mal» del estribillo es pura ironía amarga. Pero detrás hay temas reales: la **financiación de la investigación**, la **evaluación por publicaciones** y la **salud mental** de quien empieza su carrera.
