@@ -2,14 +2,23 @@
 titulo: Física y Química
 artista: El Físico Barbudo
 orden: 10
-borrador: true
+borrador: false
 youtube: JKdoCbZQ1MA
 spotify: https://open.spotify.com/track/3B0vnoYCFVIyrUA018b2eI
 estilo: Punk rock
 genero: >
-  El **punk rock** llegó a España a finales de los años 70, en plena Transición, y en los 80 dio grupos muy distintos entre sí: el humor absurdo de Siniestro Total en Galicia o el rock radical vasco de La Polla Records o Eskorbuto. Musicalmente se reconoce enseguida: formación clásica de rock (guitarra, bajo y batería), guitarras distorsionadas a base de acordes de quinta (los *power chords*), tempos rápidos y estribillos para corear a gritos. Esa sencillez directa es el formato perfecto para una oda a las ciencias que explican el mundo.
+  El **punk** y el **punk rock** explotaron en España en los 80 con grupos muy
+  distintos entre sí: el humor absurdo de Siniestro Total en Galicia o el rock
+  radical vasco de La Polla Records o Eskorbuto. Musicalmente se reconoce
+  enseguida: formación clásica de rock (guitarra, bajo y batería), guitarras
+  distorsionadas a base de acordes de quinta (los *power chords*), tempos
+  rápidos y estribillos para corear a gritos. Esa sencillez directa es el
+  formato perfecto para una oda a las ciencias que explican el mundo.
 idioma: es
-resumen: "Una oda punk a la física y la química, las ciencias que de verdad explican el mundo, con guiños a bosones, muelles, aminas y al átomo que las une. Da mucho juego para repasar vocabulario y desmontar bulos como los chemtrails o la homeopatía."
+resumen: Una oda punk a la física y la química, las ciencias que de verdad
+  explican el mundo, con guiños a bosones, muelles, aminas y al átomo que las
+  une. Da mucho juego para repasar vocabulario y desmontar bulos como los
+  chemtrails o la homeopatía.
 temas:
   - Química
   - Pseudociencia
@@ -149,10 +158,15 @@ letra:
       - texto: lo ha unido
       - texto: un electrón
 actividades:
-  - "Clasifica los términos de la canción (fermión, amina, muelle, enlace...) en física, química o ambas, y compara tu clasificación con la de un compañero o compañera."
-  - "Investiga qué son realmente las estelas de condensación de los aviones y qué factores determinan que duren más o menos."
-  - "Busca objetos cotidianos que se comporten como un muelle y piensa qué tienen en común según la ley de Hooke."
-  - "Debatid en grupos por qué la física y la química se estudian juntas y qué conceptos comparten (átomo, electrón, energía)."
+  - Clasifica los términos de la canción (fermión, amina, muelle, enlace...) en
+    física, química o ambas, y compara tu clasificación con la de un compañero o
+    compañera.
+  - Investiga qué son realmente las estelas de condensación de los aviones y qué
+    factores determinan que duren más o menos.
+  - Busca objetos cotidianos que se comporten como un muelle y piensa qué tienen
+    en común según la ley de Hooke.
+  - Debatid en grupos por qué la física y la química se estudian juntas y qué
+    conceptos comparten (átomo, electrón, energía).
 referencias:
   - titulo: Ley de elasticidad de Hooke
     autor: Wikipedia
@@ -170,7 +184,6 @@ referencias:
     autor: Wikipedia
     url: https://es.wikipedia.org/wiki/Teor%C3%ADa_del_todo
 ---
-
 Es una versión de *Física o química*, el tema de Despistaos que abría la serie del mismo nombre (Antena 3, 2008-2011). Una serie ambientada en un instituto en la que, curiosamente, nunca se vio una clase de Física ni de Química.
 
 La canción juega con la supuesta rivalidad entre las dos asignaturas y la convierte en comedia: mezcla vocabulario de ambas (**fermiones**, **bosones**, muelles, aminas, tolueno) con pullas a la **pseudociencia** (Tierra plana, chemtrails, Reiki, homeopatía), y acaba con un electrón reconciliándolas. Y es que en el fondo son lo mismo: la química explica cómo se unen los átomos, y esa explicación la da la **mecánica cuántica**, es decir, la física.
