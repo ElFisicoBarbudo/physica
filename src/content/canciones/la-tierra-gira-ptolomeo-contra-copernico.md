@@ -72,10 +72,12 @@ letra:
           *megístē*, "la más grande". La letra escribe "Amalgesto", una
           variante.
       - texto: Y como el primer móvil en la esfera exterior
-        explicacion: El **primer móvil** (*primum mobile*) es la esfera más externa, que
-          transmite el movimiento a todas las demás. Es una idea de la
-          cosmología aristotélica y medieval, no del Almagesto, de modo que
-          Ptolomeo la usa aquí en sentido figurado.
+        explicacion: >
+          El **primer móvil** (*primum mobile*) es la esfera más externa, que
+          transmite el movimiento a todas las demás. El *Almagesto* ya habla del
+          «primer movimiento», el giro diario de todo el cielo de este a oeste,
+          pero la esfera del primer móvil como pieza aparte es un desarrollo de
+          la cosmología medieval, de raíz aristotélica.
       - texto: mi flow lo engloba todo, mi inteligencia es superior
       - texto: lo grito a lo grande, no necesito dar rodeos
       - texto: "apuntalo bien baby: mi nombre es Claudio Ptolomeo"

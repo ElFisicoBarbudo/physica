@@ -62,10 +62,11 @@ letra:
         traduccion: El ciclo de Carnot vence a todos los demás
         explicacion: >
           El ciclo de Carnot se considera el **más eficiente posible** para una
-          máquina térmica. Esto significa que, para máquinas reversibles que
-          trabajan entre las mismas dos temperaturas, ningún motor real puede
-          superar su rendimiento. Su valor está en mostrar los límites teóricos
-          de eficiencia: nos dice lo máximo que podríamos lograr en condiciones
+          máquina térmica. Es lo que dice el **teorema de Carnot**: ninguna
+          máquina que trabaje entre las mismas dos temperaturas puede superar su
+          rendimiento, y todas las máquinas reversibles que trabajan entre ellas
+          lo igualan. Su valor está en mostrar los límites teóricos de
+          eficiencia: nos dice lo máximo que podríamos lograr en condiciones
           ideales, sin pérdidas ni fricciones.
       - texto: Carnot Sadi was the best
         traduccion: Carnot Sadi fue el mejor
