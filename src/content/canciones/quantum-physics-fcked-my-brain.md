@@ -138,9 +138,10 @@ letra:
         traduccion: Heisenberg
         explicacion: >
           **Werner Heisenberg** (1901-1976) formuló en 1925 la primera versión
-          de la mecánica cuántica, usando matrices, y en 1927 el principio de
-          incertidumbre. Premio Nobel de Física de 1932 (concedido en 1933), con
-          31 años.
+          de la mecánica cuántica, que Max Born y Pascual Jordan expresaron
+          enseguida con matrices (la **mecánica matricial**), y en 1927 el
+          principio de incertidumbre. Premio Nobel de Física de 1932 (concedido
+          en 1933), con 31 años.
       - texto: Schrödinger
         traduccion: Schrödinger
         explicacion: >

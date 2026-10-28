@@ -134,11 +134,11 @@ letra:
       - texto: Medicina alternativa
       - texto: Ni Reiki ni-homeopatía
         explicacion: >
-          El **Reiki** (imposición de manos para canalizar una supuesta energía)
-          y la **homeopatía** (diluciones extremas) las revisiones disponibles
-          no encuentran una eficacia específica consistente por encima del
-          efecto placebo. Por eso las autoridades sanitarias recomiendan no
-          sustituir tratamientos probados por ellos.
+          Ni el **Reiki** (imposición de manos para canalizar una supuesta
+          energía) ni la **homeopatía** (diluciones extremas) han mostrado,
+          según las revisiones disponibles, una eficacia específica consistente
+          por encima del efecto placebo. Por eso las autoridades sanitarias
+          recomiendan no sustituir tratamientos probados por ellos.
       - texto: Son física y química
   - seccion: Coro
     versos:

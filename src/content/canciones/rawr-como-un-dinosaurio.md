@@ -108,8 +108,9 @@ letra:
       - texto: 230 millones de años
         explicacion: >
           Los dinosaurios más antiguos conocidos proceden del Triásico superior
-          de Argentina, con edades de en torno a 230 millones de años, como
-          *Eoraptor* y *Herrerasaurus*. Durante el Triásico fueron un grupo
+          de Sudamérica, con edades de entre unos 233 y 230 millones de años:
+          *Eoraptor* y *Herrerasaurus* en Argentina, o *Buriolestes* y
+          *Gnathovorax* en Brasil. Durante el Triásico fueron un grupo
           minoritario y sus grandes diversificaciones llegaron después.
       - texto: Tenemos teropodos del rex al compi
       - texto: Garras y plumas, su trending topic
@@ -180,9 +181,9 @@ letra:
       - texto: Cocodrilo
         explicacion: >
           Los cocodrilos son **arcosaurios**, grupo que comparte con los
-          dinosaurios y las aves, pero no son dinosaurios. Entre los reptiles
-          actuales, los cocodrilos son los parientes más cercanos de las aves,
-          de ahí que se confundan con facilidad.
+          dinosaurios y las aves, pero no son dinosaurios. Entre los animales
+          actuales, los cocodrilos son los parientes más cercanos de las aves, y
+          por su aspecto de reptil antiguo es fácil tomarlos por dinosaurios.
       - texto: ¿En serio tío? Que no, que no es un dinosaurio
   - seccion: Coro
     versos:
