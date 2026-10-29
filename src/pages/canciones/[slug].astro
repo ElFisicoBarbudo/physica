@@ -382,10 +382,8 @@ let n = 0;
     margin-top: -5rem;
   }
 
-  /* En escritorio, «Para clase» acompaña al vídeo y a la presentación y se queda fija al bajar.
-     La .portada se «disuelve» (display: contents) para que sus dos piezas entren en la rejilla de .cancion;
-     la tarjeta ocupa las filas del vídeo y de la presentación, y como el área de rejilla es su límite,
-     deja de seguir al lector al llegar a la letra (que necesita todo el ancho para las explicaciones). */
+  /* En escritorio, «Para clase» va a la derecha del vídeo y la presentación ocupa la columna de la izquierda.
+     La .portada se «disuelve» (display: contents) para que sus dos piezas entren en la rejilla de .cancion. */
   @media (min-width: 900px) {
     .cancion {
       display: grid;
@@ -416,8 +414,6 @@ let n = 0;
       grid-column: 2;
       grid-row: 1 / span 2;
       align-self: start;
-      position: sticky;
-      top: 1.5rem;
       margin-top: 1.5rem;
     }
   }
