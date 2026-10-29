@@ -160,8 +160,13 @@ content:
               label: Inglés y ruso
       - name: nivel
         label: Nivel educativo
-        type: string
-        description: 'Opcional, por ejemplo: 4º ESO, Bachillerato.'
+        type: select
+        description: Sale en la tarjeta y sirve para filtrar el catálogo. Extra = fuera del temario de Física y Química.
+        options:
+          values:
+            - ESO
+            - Bachiller
+            - Extra
       - name: resumen
         label: Resumen
         type: text

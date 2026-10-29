@@ -1,6 +1,7 @@
 ---
 titulo: Lab Crush
 artista: El Físico Barbudo
+nivel: Extra
 orden: 12
 borrador: false
 youtube: raK5pVifQ44

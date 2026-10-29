@@ -1,6 +1,7 @@
 ---
 titulo: La Tierra gira - Ptolomeo contra Copérnico
 artista: El Físico Barbudo
+nivel: ESO
 orden: 17
 borrador: false
 youtube: FRU8XN4_dyU

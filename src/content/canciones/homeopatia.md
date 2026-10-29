@@ -1,6 +1,7 @@
 ---
 titulo: Homeopatía
 artista: El Físico Barbudo
+nivel: ESO
 orden: 11
 borrador: false
 youtube: mlvj7C9f-Ls

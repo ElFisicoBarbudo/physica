@@ -10,7 +10,7 @@ const { cancion } = Astro.props;
 const d = cancion.data;
 ---
 
-<li class="tarjeta" data-temas={d.temas.join('|')} data-busqueda={[d.titulo, d.estilo, d.resumen, ...d.temas].filter(Boolean).join(' ')}>
+<li class="tarjeta" data-temas={d.temas.join('|')} data-nivel={d.nivel ?? ''} data-busqueda={[d.titulo, d.estilo, d.resumen, ...d.temas].filter(Boolean).join(' ')}>
   <a href={url(`canciones/${cancion.id}/`)}>
     <div class="miniatura">
       {
@@ -24,6 +24,7 @@ const d = cancion.data;
           </svg>
         )
       }
+      {d.nivel && <span class="nivel">{d.nivel}</span>}
     </div>
     <div class="cuerpo">
       <p class="estilo">
@@ -93,6 +94,20 @@ const d = cancion.data;
     stroke-width: 3;
   }
 
+  .nivel {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: var(--senal);
+    color: #0d1450;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
   .tarjeta a:hover img {
     transform: scale(1.04);
   }
@@ -133,7 +148,21 @@ const d = cancion.data;
     }
 
     .tarjeta a:hover,
-    .tarjeta a:hover img {
+    .nivel {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: var(--senal);
+    color: #0d1450;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .tarjeta a:hover img {
       transform: none;
     }
   }

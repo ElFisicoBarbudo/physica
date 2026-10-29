@@ -1,6 +1,7 @@
 ---
 titulo: ЧЕРЕНКОВСКАЯ СИНЬ (Blue Cherenkov)
 artista: El Físico Barbudo
+nivel: Bachiller
 orden: 5
 borrador: false
 youtube: rh3MFPgCDv4

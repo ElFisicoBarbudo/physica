@@ -1,6 +1,7 @@
 ---
 titulo: Schrödinger's Cat
 artista: El Físico Barbudo
+nivel: Bachiller
 orden: 7
 borrador: false
 youtube: wgL145YioTY

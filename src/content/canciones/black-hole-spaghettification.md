@@ -1,6 +1,7 @@
 ---
 titulo: Black Hole Spaghettification
 artista: El Físico Barbudo
+nivel: Bachiller
 orden: 1
 borrador: false
 youtube: wBtFe005OjQ

@@ -39,7 +39,8 @@ const canciones = defineCollection({
     genero: z.string().nullish(),
     resumen: z.string(),
     temas: z.array(z.string()).default([]),
-    nivel: z.string().nullish(),
+    // Nivel educativo: ESO, Bachiller o Extra (fuera del temario de Física y Química).
+    nivel: z.enum(['ESO', 'Bachiller', 'Extra']).nullish(),
     orden: z.number().default(100),
     ejemplo: z.boolean().default(false),
     // Textos pendientes de revisión: muestra un aviso en la página.
