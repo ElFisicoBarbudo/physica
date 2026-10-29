@@ -10,14 +10,24 @@ interface Props {
   titulo?: string;
   descripcion?: string;
   claseBody?: string;
+  /** Imagen para compartir en redes (ruta dentro de la web). Por defecto, la general de la portada. */
+  imagen?: string;
   /** Sección del menú que se marca como actual. */
   actual?: 'canciones' | 'conoceme' | 'faq' | 'feedback';
 }
 
-const { titulo, descripcion = 'Canciones de física con videoclip, letra explicada verso a verso y fichas para usar en clase.', claseBody, actual } = Astro.props;
+const {
+  titulo,
+  descripcion = 'Canciones de física con videoclip, letra explicada verso a verso y fichas para usar en clase.',
+  claseBody,
+  imagen = 'og/portada.png',
+  actual,
+} = Astro.props;
 const [nombre1, ...resto] = NOMBRE.split(' ');
 const nombre2 = resto.join(' ');
 const canonica = new URL(Astro.url.pathname, Astro.site).href;
+// Las imágenes para compartir (1200×630) se generan al publicar con scripts/generar-imagenes.mjs.
+const imagenCompartir = new URL(url(imagen), Astro.site).href;
 const tituloCompleto = titulo ? `${titulo} | ${NOMBRE}` : `${NOMBRE}: la física también se canta`;
 // Estadísticas de visitas con GoatCounter (gratis y sin cookies). Acepta el código solo
 // («fisicaatodovolumen») o la dirección entera («https://fisicaatodovolumen.goatcounter.com»).
@@ -43,10 +53,15 @@ const codigoGoat = (ajustes.goatcounter ?? '')
     <meta property="og:url" content={canonica} />
     <meta property="og:title" content={tituloCompleto} />
     <meta property="og:description" content={descripcion} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={imagenCompartir} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={tituloCompleto} />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#0d1450" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#141b6e" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
+    <link rel="apple-touch-icon" href={url('apple-touch-icon.png')} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -61,11 +76,11 @@ const codigoGoat = (ajustes.goatcounter ?? '')
     <a class="saltar no-print" href="#contenido">Saltar al contenido</a>
     {
       ajustes.en_pruebas && actual !== 'feedback' && (
-        <p class="en-pruebas no-print">
+        <aside class="en-pruebas no-print" aria-label="Web en pruebas">
           <span class="en-pruebas-chapa">Beta</span>
           <span>La web está en pruebas.</span>
           <a href={url(`feedback/?desde=${encodeURIComponent(Astro.url.pathname)}`)}>Cuéntame qué mejorarías</a>
-        </p>
+        </aside>
       )
     }
     <div class="banda no-print">

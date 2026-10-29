@@ -1,0 +1,111 @@
+---
+// Página para enlaces rotos. GitHub Pages sirve dist/404.html en cualquier dirección que no exista.
+import Base from '../layouts/Base.astro';
+import BotonAzar from '../components/BotonAzar.astro';
+import { cancionesOrdenadas, url } from '../lib/util';
+
+const canciones = (await cancionesOrdenadas()).sort((a, b) => a.data.titulo.localeCompare(b.data.titulo, 'es'));
+---
+
+<Base titulo="Página no encontrada" descripcion="Esta página no existe. Aquí tienes todas las canciones.">
+  <main id="contenido" tabindex="-1">
+    <div class="banda con-brillo cabeza">
+      <div class="envoltura">
+        <p class="sobre">Error 404</p>
+        <h1>Esta cuerda no vibra</h1>
+        <p class="entradilla">La página que buscas no existe o ha cambiado de sitio. Puede que el enlace esté mal copiado. Prueba con alguna de estas canciones.</p>
+        <div class="acciones">
+          <a class="boton" href={url('#canciones')}>Ver las canciones</a>
+          <BotonAzar class="boton secundario" />
+        </div>
+      </div>
+    </div>
+
+    <section class="envoltura lista" aria-labelledby="todas">
+      <h2 id="todas">Todas las canciones</h2>
+      <ul>
+        {
+          canciones.map((c) => (
+            <li>
+              <a href={url(`canciones/${c.id}/`)}>{c.data.titulo}</a>
+              {c.data.estilo && <span>{c.data.estilo}</span>}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </main>
+</Base>
+
+<style>
+  .cabeza {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .sobre {
+    margin: 0 0 1rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--senal);
+  }
+
+  h1 {
+    font-size: clamp(2.4rem, 6vw, 4.4rem);
+    line-height: 1;
+    letter-spacing: -0.035em;
+    margin-bottom: 1.25rem;
+  }
+
+  .entradilla {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    max-width: 38rem;
+    color: var(--banda-suave);
+    margin: 0 0 2rem;
+  }
+
+  .acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .lista {
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lista h2 {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .lista ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: 0 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .lista li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 3.5rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--linea);
+  }
+
+  .lista a {
+    font-weight: 700;
+  }
+
+  .lista span {
+    font-size: 0.9rem;
+    color: var(--tinta-suave);
+  }
+</style>

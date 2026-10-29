@@ -10,7 +10,7 @@ const { cancion } = Astro.props;
 const d = cancion.data;
 ---
 
-<li class="tarjeta" data-temas={d.temas.join('|')}>
+<li class="tarjeta" data-temas={d.temas.join('|')} data-busqueda={[d.titulo, d.estilo, d.resumen, ...d.temas].filter(Boolean).join(' ')}>
   <a href={url(`canciones/${cancion.id}/`)}>
     <div class="miniatura">
       {

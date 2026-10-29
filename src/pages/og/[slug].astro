@@ -1,0 +1,101 @@
+---
+// Plantillas de 1200×630 para las imágenes que se ven al compartir un enlace (WhatsApp, redes, Classroom…).
+// No son páginas para visitar: scripts/generar-imagenes.mjs las fotografía tras compilar, guarda
+// dist/og/<slug>.png y borra estas páginas. «portada» es la imagen general de la web.
+import { NOMBRE, cancionesOrdenadas, idiomaEn } from '../../lib/util';
+
+export async function getStaticPaths() {
+  const canciones = await cancionesOrdenadas();
+  return [
+    { params: { slug: 'portada' }, props: { cancion: undefined } },
+    ...canciones.map((cancion) => ({ params: { slug: cancion.id }, props: { cancion } })),
+  ];
+}
+
+const { cancion } = Astro.props;
+const d = cancion?.data;
+const [nombre1, ...resto] = NOMBRE.split(' ');
+const nombre2 = resto.join(' ');
+const titulo = d ? d.titulo : 'La física también se canta';
+const subtitulo = d
+  ? [d.estilo, idiomaEn[d.idioma]].filter(Boolean).join(', ')
+  : 'Canciones de física con la letra explicada verso a verso y fichas para el aula.';
+const miniatura = d?.youtube ? `https://i.ytimg.com/vi/${d.youtube}/hqdefault.jpg` : undefined;
+// Títulos largos (o en cirílico) se hacen más pequeños para que quepan en tres líneas.
+const tamTitulo = titulo.length > 40 ? 64 : titulo.length > 24 ? 76 : 92;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700..800&display=block"
+      rel="stylesheet"
+    />
+    <link href={`https://fonts.googleapis.com/css2?family=Climate+Crisis&text=${encodeURIComponent(nombre1)}&display=block`} rel="stylesheet" />
+    <style is:inline>
+      * { box-sizing: border-box; margin: 0; }
+      html, body { width: 1200px; height: 630px; overflow: hidden; }
+      body {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 56px;
+        align-items: center;
+        padding: 64px 72px 96px;
+        color: #fff;
+        font-family: 'Atkinson Hyperlegible', sans-serif;
+        background:
+          radial-gradient(900px 420px at 95% 115%, rgb(47 61 244 / 0.6), transparent 65%),
+          #0d1450;
+      }
+      body.sin-imagen { grid-template-columns: 1fr; }
+      .marca { position: absolute; top: 56px; left: 72px; display: flex; align-items: center; gap: 14px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; }
+      .marca svg { width: 52px; color: #ffd43b; }
+      .marca span { display: flex; flex-direction: column; line-height: 0.95; font-size: 36px; }
+      .marca span b { font-family: 'Climate Crisis', sans-serif; font-weight: 400; }
+      .marca span i { font-style: normal; font-size: 22px; }
+      .texto { margin-top: 70px; }
+      .sub { color: #ffd43b; font-weight: 700; font-size: 30px; margin-bottom: 16px; }
+      h1 { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; letter-spacing: -0.035em; line-height: 1; max-width: 15ch; }
+      h1.grande { font-size: 100px; max-width: 14ch; margin-bottom: 24px; }
+      .lema { font-size: 28px; color: rgb(255 255 255 / 0.82); max-width: 34ch; }
+      .miniatura { width: 440px; aspect-ratio: 16 / 9; border-radius: 22px; overflow: hidden; border: 6px solid #ffd43b; box-shadow: 0 30px 60px -20px rgb(0 0 0 / 0.6); }
+      .miniatura img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .dominio { position: absolute; right: 72px; top: 66px; font-size: 24px; font-weight: 700; color: rgb(255 255 255 / 0.8); }
+      .cuerda { position: absolute; left: 0; bottom: 0; width: 100%; height: 90px; }
+    </style>
+  </head>
+  <body class:list={{ 'sin-imagen': !miniatura }}>
+    <div class="marca">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 16c3-9 6-9 9 0s6 9 9 0 6-9 10 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" /></svg>
+      <span><b>{nombre1}</b>{nombre2 && <i>{nombre2}</i>}</span>
+    </div>
+    {
+      d ? (
+        <div class="texto">
+          <p class="sub">{subtitulo}</p>
+          <h1 style={`font-size:${tamTitulo}px`}>{titulo}</h1>
+        </div>
+      ) : (
+        <div class="texto">
+          <h1 class="grande">La física también<br />se canta</h1>
+          <p class="lema">{subtitulo}</p>
+        </div>
+      )
+    }
+    {
+      miniatura && (
+        <div class="miniatura">
+          <img src={miniatura} alt="" />
+        </div>
+      )
+    }
+    <svg class="cuerda" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 C 150 20, 300 20, 450 60 S 750 100, 900 60 S 1100 30, 1200 60" fill="none" stroke="#ffd43b" stroke-width="5" stroke-linecap="round" />
+    </svg>
+    <p class="dominio">fisicaatodovolumen.com</p>
+  </body>
+</html>

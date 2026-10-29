@@ -39,6 +39,11 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
             {canciones.length} canciones.
           </p>
         </div>
+        <div class="buscador" role="search">
+          <label for="buscar" class="solo-lectores">Buscar canciones</label>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m15.5 15.5 5 5" /></svg>
+          <input id="buscar" type="search" placeholder="Busca por título, tema o estilo" autocomplete="off" />
+        </div>
         {
           temas.length > 1 && (
             <div class="filtros" role="group" aria-label="Filtrar por tema">
@@ -66,7 +71,7 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
       <ol class="pasos">
         <li>
           <h3>Elige la canción</h3>
-          <p>Filtra por tema para dar con la que encaja con lo que estáis viendo, o deja que el dado elija por ti.</p>
+          <p>Busca o filtra por tema para dar con la que encaja con lo que estáis viendo, o deja que el dado elija por ti.</p>
         </li>
         <li>
           <h3>Escuchadla juntos</h3>
@@ -128,18 +133,40 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
   const botones = document.querySelectorAll<HTMLButtonElement>('.filtro');
   const tarjetas = document.querySelectorAll<HTMLElement>('.tarjeta');
   const cuenta = document.querySelector<HTMLElement>('.cuenta');
+  const buscar = document.querySelector<HTMLInputElement>('#buscar');
+  // Sin tildes ni mayúsculas: «fisica» encuentra «Física».
+  const normaliza = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const textos = new Map([...tarjetas].map((t) => [t, normaliza(t.dataset.busqueda ?? '')]));
+  let tema = '';
+
+  function filtrar() {
+    const palabras = normaliza(buscar?.value ?? '').split(/\s+/).filter(Boolean);
+    let visibles = 0;
+    tarjetas.forEach((t) => {
+      const porTema = !tema || (t.dataset.temas ?? '').split('|').includes(tema);
+      const porTexto = palabras.every((p) => textos.get(t)!.includes(p));
+      t.hidden = !(porTema && porTexto);
+      if (!t.hidden) visibles++;
+    });
+    if (!cuenta) return;
+    if (!tema && !palabras.length) {
+      cuenta.textContent = cuenta.dataset.total ?? '';
+      return;
+    }
+    const n = `${visibles} ${visibles === 1 ? 'canción' : 'canciones'}`;
+    const deTema = tema ? ` de ${tema.toLowerCase()}` : '';
+    const conTexto = palabras.length ? ` con «${buscar!.value.trim()}»` : '';
+    cuenta.textContent = visibles ? `${n}${deTema}${conTexto}.` : `Ninguna canción${deTema}${conTexto}. Prueba con otra palabra o con «Todos los temas».`;
+  }
+
   botones.forEach((b) =>
     b.addEventListener('click', () => {
-      const tema = b.dataset.tema ?? '';
+      tema = b.dataset.tema ?? '';
       botones.forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
-      let visibles = 0;
-      tarjetas.forEach((t) => {
-        t.hidden = !!tema && !(t.dataset.temas ?? '').split('|').includes(tema);
-        if (!t.hidden) visibles++;
-      });
-      if (cuenta) cuenta.textContent = tema ? `${visibles} ${visibles === 1 ? 'canción' : 'canciones'} de ${tema.toLowerCase()}.` : (cuenta.dataset.total ?? '');
+      filtrar();
     }),
   );
+  buscar?.addEventListener('input', filtrar);
 </script>
 
 <style>
@@ -215,6 +242,45 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
   .cuenta {
     margin: 0;
     color: var(--tinta-suave);
+  }
+
+  .buscador {
+    position: relative;
+    max-width: 34rem;
+  }
+
+  .buscador svg {
+    position: absolute;
+    left: 0.9rem;
+    top: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    transform: translateY(-50%);
+    fill: none;
+    stroke: var(--tinta-suave);
+    stroke-width: 2;
+    stroke-linecap: round;
+    pointer-events: none;
+  }
+
+  .buscador input {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.6rem 1rem 0.6rem 2.75rem;
+    font: inherit;
+    color: var(--tinta);
+    background: var(--tarjeta);
+    border: 1px solid var(--borde-ui);
+    border-radius: 999px;
+  }
+
+  .buscador input::placeholder {
+    color: var(--tinta-suave);
+  }
+
+  .buscador input:focus-visible {
+    outline: 2px solid var(--azul);
+    outline-offset: 2px;
   }
 
   .filtros {

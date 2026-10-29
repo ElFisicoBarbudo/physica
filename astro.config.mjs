@@ -7,4 +7,8 @@ export default defineConfig({
   site: 'https://fisicaatodovolumen.com',
   base: '/',
   trailingSlash: 'always',
+  // Imágenes externas que se descargan al publicar y se sirven desde la web (la foto de «Conóceme»).
+  image: {
+    domains: ['www.elfisicobarbudo.com', 'elfisicobarbudo.com'],
+  },
 });

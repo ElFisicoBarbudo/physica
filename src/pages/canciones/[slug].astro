@@ -23,7 +23,7 @@ const hayPdf = import.meta.env.PUBLIC_FICHAS_PDF === 'true';
 let n = 0;
 ---
 
-<Base titulo={d.titulo} descripcion={d.resumen} actual="canciones">
+<Base titulo={d.titulo} descripcion={d.resumen} imagen={`og/${cancion.id}.png`} actual="canciones">
   <main id="contenido" tabindex="-1">
   <div class="banda con-brillo cabeza">
     <div class="envoltura">
@@ -382,15 +382,43 @@ let n = 0;
     margin-top: -5rem;
   }
 
+  /* En escritorio, «Para clase» acompaña al vídeo y a la presentación y se queda fija al bajar.
+     La .portada se «disuelve» (display: contents) para que sus dos piezas entren en la rejilla de .cancion;
+     la tarjeta ocupa las filas del vídeo y de la presentación, y como el área de rejilla es su límite,
+     deja de seguir al lector al llegar a la letra (que necesita todo el ancho para las explicaciones). */
   @media (min-width: 900px) {
+    .cancion {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 18rem;
+      column-gap: 2.5rem;
+    }
+
+    .cancion > * {
+      grid-column: 1 / -1;
+    }
+
     .portada {
+      display: contents;
+    }
+
+    .portada-video {
+      grid-column: 1;
+      grid-row: 1;
       margin-top: -7rem;
-      grid-template-columns: 1fr 18rem;
-      align-items: start;
+    }
+
+    #presentacion {
+      grid-column: 1;
+      grid-row: 2;
     }
 
     .recursos {
-      margin-top: 7rem;
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      align-self: start;
+      position: sticky;
+      top: 1.5rem;
+      margin-top: 1.5rem;
     }
   }
 
@@ -626,6 +654,42 @@ let n = 0;
   .interruptores input:focus-visible {
     outline: 2px solid var(--azul);
     outline-offset: 2px;
+  }
+
+  /* En móvil, los tres interruptores caben en una sola fila: cada uno con el texto debajo del botón.
+     Así el panel fijo ocupa la mitad de alto y deja más pantalla para la letra. */
+  @media (max-width: 899px) {
+    .interruptores {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      gap: 0.25rem;
+      width: 100%;
+      padding: 0.35rem 0.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .interruptores label {
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.2rem;
+      line-height: 1.1;
+    }
+
+    .interruptores input {
+      width: 2.5rem;
+      height: 1.4rem;
+    }
+
+    .interruptores input::before {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .interruptores input:checked::before {
+      transform: translateX(1.1rem);
+    }
   }
 
   /* Nombre de la sección (Intro, Verso, Coro...): solo se ve con el interruptor «Estructura». */
@@ -870,14 +934,6 @@ let n = 0;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin: 0;
-  }
-
-  .solo-lectores {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
   }
 
   .creditos dl {

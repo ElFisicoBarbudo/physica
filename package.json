@@ -7,6 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "build:pdf": "node scripts/generar-pdfs.mjs",
+    "build:imagenes": "node scripts/generar-imagenes.mjs",
     "preview": "astro preview",
     "nueva": "node scripts/nueva-cancion.mjs",
     "comprobar": "node scripts/comprobar-cancion.mjs"
