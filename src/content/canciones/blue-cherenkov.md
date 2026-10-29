@@ -91,9 +91,8 @@ letra:
           Nadie puede ver los rayos gamma. Pero cuando un rayo gamma muy
           energético llega del espacio y choca con la atmósfera, inicia una
           cascada de partículas cargadas secundarias, que emiten **radiación de
-          Cherenkov**; los telescopios detectan esa luz. Telescopios como los
-          MAGIC, en La Palma, detectan esos destellos para estudiar el universo
-          de altas energías.
+          Cherenkov**. Telescopios como los MAGIC, en La Palma, detectan esos
+          destellos de luz para estudiar el universo de altas energías.
       - texto: Tryin’ to steal our Nobel prize? сука
         traduccion: ¿Intentas robarnos el Premio Nobel?
         explicacion: >
@@ -143,12 +142,11 @@ letra:
       - texto: Put a Cherenkov detector in the Sputnik три
         traduccion: Pon un detector de Cherenkov en el Sputnik III
         explicacion: >
-          El **Sputnik 3**, lanzado el 15 de mayo de 1958, era un auténtico
-          laboratorio en órbita: llevaba doce instrumentos científicos, entre
-          ellos detectores de **rayos cósmicos**. Los **detectores Cherenkov**
-          llegaron muy pronto al espacio: la sonda soviética Luna 2 (1959) ya
-          llevaba contadores Cherenkov para registrar núcleos de la radiación
-          cósmica.
+          El **Sputnik 3**, lanzado el 15 de mayo de 1958, llevaba doce
+          instrumentos científicos, entre ellos un **detector Cherenkov** que
+          medía destellos de luz en un plástico transparente, y detectores de
+          radiación cósmica. Es uno de los primeros usos de esta técnica en el
+          espacio.
       - texto: Blue photons emitted, Черенковская синь
         traduccion: Se emiten fotones azules, azul de Cherenkov
   - seccion: Pre-coro
