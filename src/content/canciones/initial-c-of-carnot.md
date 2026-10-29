@@ -125,12 +125,13 @@ letra:
           el menor desperdicio posible. El ciclo de Carnot, aunque ideal,
           representa esa búsqueda de perfección. Su estructura (dos
           transformaciones isotérmicas y dos isentrópicas) es la forma más
-          eficiente de convertir calor en trabajo. Aunque en la práctica hay
-          pérdidas por fricción, fugas de calor, etc., este modelo nos da una
-          referencia clara de cómo debería ser el ciclo "perfecto". Eso sí, el
-          ciclo de Carnot maximiza el rendimiento, no la potencia: al ser
-          reversible tendría que funcionar infinitamente despacio, así que su
-          potencia sería nula.
+          eficiente de convertir calor en trabajo entre dos focos a temperaturas
+          fijas (otros ciclos reversibles ideales pueden igualarlo, pero ninguno
+          superarlo). Aunque en la práctica hay pérdidas por fricción, fugas de
+          calor, etc., este modelo nos da una referencia clara de cómo debería
+          ser el ciclo "perfecto". Eso sí, el ciclo de Carnot maximiza el
+          rendimiento, no la potencia: al ser reversible tendría que funcionar
+          infinitamente despacio, así que su potencia sería nula.
   - seccion: Puente
     versos:
       - texto: Cholera's grip, a battle he couldn't fight

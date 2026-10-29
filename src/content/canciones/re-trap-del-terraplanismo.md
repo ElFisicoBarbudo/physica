@@ -39,7 +39,8 @@ letra:
   - seccion: Intro
     versos:
       - texto: Rompiendo mi silencio para armar el beef
-        explicacion: Un beef es conflicto entre dos o más artistas. Esta canción nace
+        explicacion: >
+          Un *beef* es un conflicto entre dos o más artistas. Esta canción nace
           como una respuesta irónica al **Trap del Terraplanismo** de los
           divulgadores **Jaime Altozano**, **Quantum Fracture** y **C de
           Ciencia**.
@@ -117,8 +118,9 @@ letra:
   - versos:
       - texto: Un mundo bajo mis pies como en Stranger Things
       - texto: incomprendido como el humor de Chandler Bing
-        explicacion: Chandler Bing es un personaje de la sitcom **Friends**. Es un
-          personaje con un sentido del humor muy peculiar.
+        explicacion: >
+          Chandler Bing es un personaje de la sitcom **Friends**, conocido por
+          su sentido del humor muy peculiar.
       - texto: "Te lo vuelvo a explicar por si andas espeso:"
       - texto: la Tierra es hueca como aguacate sin el hueso
   - versos:

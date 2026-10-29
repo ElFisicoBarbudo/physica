@@ -103,15 +103,14 @@ letra:
         explicacion: >
           Según una teoría propuesta por el físico Stephen Hawking, los agujeros
           negros podrían emitir una forma especial de radiación llamada
-          **radiación de Hawking**. Surge al combinar la física cuántica con la
-          relatividad general. Se suele explicar con una imagen simplificada,
-          que el propio Hawking usaba. En el vacío aparecen y desaparecen pares
-          de partícula y antipartícula, y si se forman junto al horizonte de
-          sucesos, una puede caer en el agujero negro mientras la otra escapa.
-          Es una predicción teórica con amplio respaldo, que procede de combinar
-          la teoría cuántica de campos con la relatividad general, pero aún no
-          se ha observado: para agujeros negros de masa estelar o mayor es tan
-          débil que resulta indetectable.
+          **radiación de Hawking**. Se suele explicar con una imagen
+          simplificada, que el propio Hawking usaba. En el vacío aparecen y
+          desaparecen pares de partícula y antipartícula, y si se forman junto
+          al horizonte de sucesos, una puede caer en el agujero negro mientras
+          la otra escapa. Es una predicción teórica con amplio respaldo, que
+          procede de combinar la teoría cuántica de campos con la relatividad
+          general, pero aún no se ha observado: para agujeros negros de masa
+          estelar o mayor es tan débil que resulta indetectable.
       - texto: Try not to fall, eternal damnation
         traduccion: Intenta no caer, perdición eterna
       - texto: You're gonna die by spaghettification
