@@ -560,3 +560,13 @@ main:focus {
     radial-gradient(60rem 26rem at 92% 110%, rgb(47 61 244 / 0.55), transparent 65%),
     var(--banda);
 }
+
+/* Texto que solo leen los lectores de pantalla. */
+.solo-lectores {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

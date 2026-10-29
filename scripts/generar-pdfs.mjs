@@ -3,42 +3,12 @@
 // Deja los PDF en dist/fichas/<slug>.pdf.
 //
 // Usa el Chromium indicado en CHROMIUM_PATH, o el que tenga instalado Playwright.
-import { createServer } from 'node:http';
-import { readFile, readdir, mkdir, stat } from 'node:fs/promises';
-import { extname, join, normalize } from 'node:path';
+import { readdir, mkdir } from 'node:fs/promises';
+import { join } from 'node:path';
 import { chromium } from 'playwright-core';
+import { BASE, DIST, servirDist } from './servidor-dist.mjs';
 
-const DIST = new URL('../dist/', import.meta.url).pathname;
-const BASE = '/'; // debe coincidir con `base` en astro.config.mjs
-
-const tipos = {
-  '.html': 'text/html; charset=utf-8',
-  '.css': 'text/css',
-  '.js': 'text/javascript',
-  '.svg': 'image/svg+xml',
-  '.woff2': 'font/woff2',
-  '.woff': 'font/woff',
-  '.ttf': 'font/ttf',
-  '.png': 'image/png',
-  '.jpg': 'image/jpeg',
-};
-
-// Servidor mínimo para que las rutas funcionen igual que en GitHub Pages.
-const servidor = createServer(async (req, res) => {
-  try {
-    let ruta = decodeURIComponent(new URL(req.url, 'http://x').pathname);
-    if (!ruta.startsWith(BASE)) throw new Error('fuera de base');
-    ruta = normalize(join(DIST, ruta.slice(BASE.length)));
-    if (!ruta.startsWith(DIST)) throw new Error('ruta no válida');
-    if ((await stat(ruta)).isDirectory()) ruta = join(ruta, 'index.html');
-    res.writeHead(200, { 'content-type': tipos[extname(ruta)] ?? 'application/octet-stream' });
-    res.end(await readFile(ruta));
-  } catch {
-    res.writeHead(404).end();
-  }
-});
-await new Promise((ok) => servidor.listen(0, '127.0.0.1', ok));
-const origen = `http://127.0.0.1:${servidor.address().port}`;
+const { origen, cerrar } = await servirDist();
 
 const slugs = (await readdir(join(DIST, 'canciones'), { withFileTypes: true })).filter((e) => e.isDirectory()).map((e) => e.name);
 await mkdir(join(DIST, 'fichas'), { recursive: true });
@@ -64,4 +34,4 @@ for (const slug of slugs) {
 }
 
 await navegador.close();
-servidor.close();
+cerrar();

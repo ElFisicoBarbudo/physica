@@ -181,6 +181,11 @@ let n = 0;
     padding-bottom: 1rem;
   }
 
+  /* En móvil, un título largo («Spaghettification») no debe empujar el QR fuera de la hoja. */
+  .ficha-cabeza > div {
+    min-width: 0;
+  }
+
   .ficha-marca {
     font-size: 9pt;
     font-weight: 700;
@@ -215,6 +220,17 @@ let n = 0;
     width: 100%;
     height: auto;
     display: block;
+  }
+
+  @media (max-width: 640px) {
+    .ficha h1 {
+      font-size: 20pt;
+      overflow-wrap: anywhere;
+    }
+
+    .qr {
+      width: 4.5rem;
+    }
   }
 
   .qr figcaption {

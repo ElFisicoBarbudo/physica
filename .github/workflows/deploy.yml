@@ -33,6 +33,10 @@ jobs:
         env:
           # Chrome viene instalado en los runners de GitHub.
           CHROMIUM_PATH: /usr/bin/google-chrome
+      - name: Generar las imágenes para compartir
+        run: npm run build:imagenes
+        env:
+          CHROMIUM_PATH: /usr/bin/google-chrome
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
