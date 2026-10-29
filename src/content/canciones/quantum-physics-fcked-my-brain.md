@@ -1,6 +1,7 @@
 ---
 titulo: Quantum Physics F*cked my Brain
 artista: El Físico Barbudo
+nivel: Bachiller
 orden: 8
 borrador: false
 youtube: qp3c3zxAbNQ

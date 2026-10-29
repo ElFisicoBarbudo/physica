@@ -6,6 +6,7 @@ import TarjetaCancion from '../components/TarjetaCancion.astro';
 import { NOMBRE, cancionesOrdenadas, url } from '../lib/util';
 
 const canciones = await cancionesOrdenadas();
+const niveles = ['ESO', 'Bachiller', 'Extra'].filter((n) => canciones.some((c) => c.data.nivel === n));
 const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) => a.localeCompare(b, 'es'));
 ---
 
@@ -38,10 +39,26 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
             {canciones.length} canciones.
           </p>
         </div>
+        <div class="busqueda">
+        {
+          niveles.length > 1 && (
+            <div class="niveles" role="group" aria-label="Filtrar por nivel">
+              <button type="button" class="nivel-boton" aria-pressed="true" data-nivel="">
+                Todo
+              </button>
+              {niveles.map((n) => (
+                <button type="button" class="nivel-boton" aria-pressed="false" data-nivel={n}>
+                  {n}
+                </button>
+              ))}
+            </div>
+          )
+        }
         <div class="buscador" role="search">
           <label for="buscar" class="solo-lectores">Buscar canciones</label>
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m15.5 15.5 5 5" /></svg>
           <input id="buscar" type="search" placeholder="Busca por título, tema o estilo" autocomplete="off" />
+        </div>
         </div>
         {
           temas.length > 1 && (
@@ -137,6 +154,8 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
   const normaliza = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const textos = new Map([...tarjetas].map((t) => [t, normaliza(t.dataset.busqueda ?? '')]));
   let tema = '';
+  let nivel = '';
+  const botonesNivel = document.querySelectorAll<HTMLButtonElement>('.nivel-boton');
 
   function filtrar() {
     const palabras = normaliza(buscar?.value ?? '').split(/\s+/).filter(Boolean);
@@ -144,16 +163,17 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
     tarjetas.forEach((t) => {
       const porTema = !tema || (t.dataset.temas ?? '').split('|').includes(tema);
       const porTexto = palabras.every((p) => textos.get(t)!.includes(p));
-      t.hidden = !(porTema && porTexto);
+      const porNivel = !nivel || t.dataset.nivel === nivel;
+      t.hidden = !(porTema && porTexto && porNivel);
       if (!t.hidden) visibles++;
     });
     if (!cuenta) return;
-    if (!tema && !palabras.length) {
+    if (!tema && !nivel && !palabras.length) {
       cuenta.textContent = cuenta.dataset.total ?? '';
       return;
     }
     const n = `${visibles} ${visibles === 1 ? 'canción' : 'canciones'}`;
-    const deTema = tema ? ` de ${tema.toLowerCase()}` : '';
+    const deTema = (tema ? ` de ${tema.toLowerCase()}` : '') + (nivel ? ` (${nivel})` : '');
     const conTexto = palabras.length ? ` con «${buscar!.value.trim()}»` : '';
     cuenta.textContent = visibles ? `${n}${deTema}${conTexto}.` : `Ninguna canción${deTema}${conTexto}. Prueba con otra palabra o con «Todos los temas».`;
   }
@@ -162,6 +182,13 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
     b.addEventListener('click', () => {
       tema = b.dataset.tema ?? '';
       botones.forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
+      filtrar();
+    }),
+  );
+  botonesNivel.forEach((b) =>
+    b.addEventListener('click', () => {
+      nivel = b.dataset.nivel ?? '';
+      botonesNivel.forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
       filtrar();
     }),
   );
@@ -243,9 +270,48 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
     color: var(--tinta-suave);
   }
 
+  .busqueda {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
   .buscador {
     position: relative;
+    flex: 1 1 18rem;
     max-width: 34rem;
+  }
+
+  /* Control segmentado: una sola pieza junto al buscador, para no sumar otra fila de botones. */
+  .niveles {
+    display: inline-flex;
+    padding: 3px;
+    border: 1px solid var(--borde-ui);
+    border-radius: 999px;
+    background: var(--tarjeta);
+  }
+
+  .nivel-boton {
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    min-height: 40px;
+    padding: 0.3rem 0.95rem;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--tinta);
+    cursor: pointer;
+  }
+
+  .nivel-boton:hover {
+    background: var(--acento-suave);
+  }
+
+  .nivel-boton[aria-pressed='true'] {
+    background: var(--acento);
+    color: var(--sobre-acento);
   }
 
   .buscador svg {

@@ -1,6 +1,7 @@
 ---
 titulo: Initial C (of Carnot)
 artista: El Físico Barbudo
+nivel: Bachiller
 orden: 2
 borrador: false
 youtube: Z3zpaBX3ihQ
