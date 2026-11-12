@@ -29,6 +29,9 @@
 
   --ancho: 74rem;
   --radio: 16px;
+  /* Una sola curva para todas las transiciones de interfaz, sin rebote. */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-entrada: cubic-bezier(0.22, 1, 0.36, 1);
   color-scheme: light;
 }
 
@@ -61,13 +64,6 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
 }
 
 body {
@@ -276,9 +272,24 @@ iframe {
   border-radius: 8px;
 }
 
-.cabecera nav a:hover,
+/* Menú: subrayado que se dibuja de izquierda a derecha; la página actual lo lleva fijo. */
+.cabecera nav a:not(.nav-azar) {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0.7rem calc(100% - 0.15rem);
+  background-size: 0 2px;
+  transition: background-size 0.15s var(--ease);
+}
+
+.cabecera nav a:not(.nav-azar):hover,
 .cabecera nav a[aria-current='page'] {
-  background: rgb(255 255 255 / 0.14);
+  background-size: calc(100% - 1.4rem) 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cabecera nav a:not(.nav-azar) {
+    transition: none;
+  }
 }
 
 /* El botón de canción al azar destaca en amarillo dentro del menú. */
@@ -418,9 +429,30 @@ iframe {
   text-decoration: none;
   cursor: pointer;
   transition:
-    background 0.15s ease,
-    color 0.15s ease,
-    border-color 0.15s ease;
+    background 0.15s var(--ease),
+    color 0.15s var(--ease),
+    border-color 0.15s var(--ease),
+    transform 0.15s var(--ease);
+}
+
+/* Micro-interacción: el botón sube 1 px al pasar el ratón y se hunde al pulsarlo. */
+@media (hover: hover) and (pointer: fine) {
+  .boton:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.boton:active {
+  transform: translateY(1px) scale(0.985);
+  transition-duration: 0.09s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .boton,
+  .boton:hover,
+  .boton:active {
+    transform: none;
+  }
 }
 
 .boton:hover {

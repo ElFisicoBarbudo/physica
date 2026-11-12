@@ -14,12 +14,12 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
   <main id="contenido" tabindex="-1">
     <section class="banda con-brillo portada">
       <div class="envoltura">
-        <p class="sobre-portada">Divulgación de física para el aula</p>
-        <h1>La física también se canta</h1>
-        <p class="entradilla">
+        <p class="sobre-portada entra">Divulgación de física para el aula</p>
+        <h1><span class="h1-mascara"><span class="h1-texto">La física también se canta</span></span></h1>
+        <p class="entradilla entra" style="--retraso: 0.38s">
           Canciones de física con videoclip, la letra explicada, actividades y ficha imprimible. Todo lo que necesitas para llevarlas al aula.
         </p>
-        <div class="acciones">
+        <div class="acciones entra" style="--retraso: 0.44s">
           <a class="boton" href="#canciones">Ver las canciones</a>
           <BotonAzar class="boton secundario" />
           <a class="boton secundario" href="#como-usar">Cómo usarlas en clase</a>
@@ -218,6 +218,49 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+  }
+
+  /* Entrada de la portada, una sola vez al cargar: el titular sube desde su máscara
+     y después llegan la entradilla y los botones. Sin movimiento reducido no se anima nada. */
+  .h1-mascara {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 0.08em;
+    margin-bottom: -0.08em;
+  }
+
+  .h1-texto {
+    display: block;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .h1-texto {
+      animation: sube 0.7s var(--ease-entrada) both;
+    }
+
+    .entra {
+      animation: aparece 0.52s var(--ease-entrada) var(--retraso, 0s) both;
+    }
+  }
+
+  /* En el móvil, los botones de la portada ocupan todo el ancho y miden lo mismo. */
+  @media (max-width: 520px) {
+    .acciones :global(.boton) {
+      width: 100%;
+    }
+  }
+
+  @keyframes sube {
+    from {
+      transform: translateY(105%);
+    }
+  }
+
+  @keyframes aparece {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
   }
 
   .portada h1 {
