@@ -22,6 +22,7 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
         <div class="acciones entra" style="--retraso: 0.44s">
           <a class="boton" href="#canciones">Ver las canciones</a>
           <BotonAzar class="boton secundario" />
+          <a class="boton secundario" href="#como-usar">Cómo usarlas en clase</a>
         </div>
       </div>
       <div class="envoltura cuerda-envoltura">
@@ -206,23 +207,17 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
     }
   }
 
-  /* Línea de aviso sobre el titular: texto pequeño con la raya amarilla de las secciones, sin cápsula. */
   .sobre-portada {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
+    display: inline-block;
     margin: 0 0 1.25rem;
-    font-size: 0.95rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid rgb(255 255 255 / 0.28);
+    background: rgb(255 255 255 / 0.08);
+    font-size: 0.82rem;
     font-weight: 700;
-    color: var(--senal);
-  }
-
-  .sobre-portada::before {
-    content: '';
-    width: 1.75rem;
-    height: 3px;
-    border-radius: 2px;
-    background: var(--senal);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
   /* Entrada de la portada, una sola vez al cargar: el titular sube desde su máscara
@@ -248,7 +243,7 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
     }
   }
 
-  /* En el móvil, los dos botones de la portada ocupan todo el ancho y miden lo mismo. */
+  /* En el móvil, los botones de la portada ocupan todo el ancho y miden lo mismo. */
   @media (max-width: 520px) {
     .acciones :global(.boton) {
       width: 100%;
@@ -476,7 +471,7 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
     border-radius: 50%;
     background: var(--acento-suave);
     font-family: var(--f-titulo);
-    font-weight: 600;
+    font-weight: 800;
     font-size: 1.3rem;
     line-height: 1;
     color: var(--acento);
