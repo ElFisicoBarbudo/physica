@@ -4,9 +4,16 @@ import BotonAzar from '../components/BotonAzar.astro';
 import Cuerda from '../components/Cuerda.astro';
 import TarjetaCancion from '../components/TarjetaCancion.astro';
 import { NOMBRE, cancionesOrdenadas, url } from '../lib/util';
+import ajustes from '../ajustes.json';
 
 const canciones = await cancionesOrdenadas();
 const niveles = ['ESO', 'Bachiller', 'Extra'].filter((n) => canciones.some((c) => c.data.nivel === n));
+// Vídeo tutorial de la web: se edita en Pages CMS («Ajustes de la web»). Acepta el enlace
+// entero de YouTube o solo el código; si el campo está vacío, el bloque no se muestra.
+const enlaceTutorial = (ajustes.video_tutorial ?? '').trim();
+const idTutorial =
+  enlaceTutorial.match(/(?:v=|youtu\.be\/|embed\/|shorts\/|live\/)([\w-]{11})/)?.[1] ??
+  (/^[\w-]{11}$/.test(enlaceTutorial) ? enlaceTutorial : '');
 const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) => a.localeCompare(b, 'es'));
 ---
 
@@ -102,6 +109,25 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
           <p>Descarga la ficha en PDF, con la letra explicada, actividades para el alumnado y un código QR que lleva al vídeo.</p>
         </li>
       </ol>
+      {
+        idTutorial && (
+          <div class="tutorial">
+            <div class="tutorial-texto">
+              <h3>{ajustes.video_tutorial_titulo || 'Así funciona la web'}</h3>
+              {ajustes.video_tutorial_texto && <p>{ajustes.video_tutorial_texto}</p>}
+            </div>
+            <div class="video tutorial-video">
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${idTutorial}?rel=0`}
+                title={`Vídeo: ${ajustes.video_tutorial_titulo || 'Así funciona la web'}`}
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                allowfullscreen
+              />
+            </div>
+          </div>
+        )
+      }
     </section>
 
     <section class="proyecto envoltura">
@@ -486,6 +512,40 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
   .pasos p {
     margin: 0;
     color: var(--tinta-suave);
+  }
+
+  .tutorial {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--tarjeta);
+    border: 1px solid var(--linea);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-1);
+  }
+
+  @media (min-width: 900px) {
+    .tutorial {
+      grid-template-columns: 1fr 1.9fr;
+      gap: 2.5rem;
+      align-items: center;
+      padding: 2rem;
+    }
+  }
+
+  .tutorial h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .tutorial p {
+    margin: 0;
+    color: var(--tinta-suave);
+  }
+
+  .tutorial-video {
+    box-shadow: 0 24px 48px -24px rgb(21 26 58 / 0.55);
   }
 
   .proyecto {
