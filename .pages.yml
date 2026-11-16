@@ -20,6 +20,18 @@ content:
         label: Código de GoatCounter (estadísticas de visitas)
         type: string
         description: El código que elegiste al crear tu cuenta gratis en https://www.goatcounter.com (por ejemplo fisicaatodovolumen). También vale pegar la dirección entera, como https://fisicaatodovolumen.goatcounter.com. Si lo dejas vacío, no se cuentan visitas.
+      - name: video_tutorial
+        label: Vídeo tutorial de la web
+        type: string
+        description: Enlace de YouTube del vídeo que explica la web (por ejemplo https://www.youtube.com/watch?v=v5MMMYR81WQ; también vale solo el código v5MMMYR81WQ). Sale en la portada, en «Cómo usarlas en clase». Si lo dejas vacío, el bloque del vídeo no aparece.
+      - name: video_tutorial_titulo
+        label: Título del vídeo tutorial
+        type: string
+        description: Título corto que va junto al vídeo en la portada.
+      - name: video_tutorial_texto
+        label: Texto del vídeo tutorial
+        type: text
+        description: Una o dos frases junto al vídeo en la portada.
   - name: faq
     label: Preguntas frecuentes
     type: file
