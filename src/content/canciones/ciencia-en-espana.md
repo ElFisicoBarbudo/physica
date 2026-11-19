@@ -22,7 +22,7 @@ resumen: "Un doctorando cuenta con humor negro y mucho punk lo que es investigar
   precariedad. Abre la puerta a un buen debate en clase sobre cómo se financia
   la ciencia."
 temas:
-  - Crítica social
+  - Problemas sociocientíficos
   - Vida de científico
 colaboradores:
   - src/content/colaboradores/2026-10-07-bernardo-g-pola.md

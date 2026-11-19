@@ -21,7 +21,7 @@ resumen: "Un rapero pseudocientífico responde a los traps terraplanistas con un
   no lo es."
 temas:
   - Pseudociencia
-  - Crítica social
+  - Problemas sociocientíficos
 avisos:
   - "Canción irónica: el narrador defiende a propósito ideas falsas (que la
     Tierra es hueca) para burlarse de la pseudociencia. Nada de lo que afirma es
