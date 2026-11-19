@@ -183,11 +183,26 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
   let nivel = '';
   const botonesNivel = document.querySelectorAll<HTMLButtonElement>('.nivel-boton');
 
+  // Solo se ofrecen los temas que tienen alguna canción del nivel elegido, y los niveles
+  // que tienen alguna canción del tema elegido; así ninguna combinación da cero canciones.
+  const temasDe = (t: HTMLElement) => (t.dataset.temas ?? '').split('|');
+  function ajustarOpciones() {
+    botones.forEach((b) => {
+      const valor = b.dataset.tema ?? '';
+      b.hidden = !!valor && ![...tarjetas].some((t) => temasDe(t).includes(valor) && (!nivel || t.dataset.nivel === nivel));
+    });
+    botonesNivel.forEach((b) => {
+      const valor = b.dataset.nivel ?? '';
+      b.hidden = !!valor && ![...tarjetas].some((t) => t.dataset.nivel === valor && (!tema || temasDe(t).includes(tema)));
+    });
+  }
+
   function filtrar() {
+    ajustarOpciones();
     const palabras = normaliza(buscar?.value ?? '').split(/\s+/).filter(Boolean);
     let visibles = 0;
     tarjetas.forEach((t) => {
-      const porTema = !tema || (t.dataset.temas ?? '').split('|').includes(tema);
+      const porTema = !tema || temasDe(t).includes(tema);
       const porTexto = palabras.every((p) => textos.get(t)!.includes(p));
       const porNivel = !nivel || t.dataset.nivel === nivel;
       t.hidden = !(porTema && porTexto && porNivel);
@@ -436,6 +451,11 @@ const temas = [...new Set(canciones.flatMap((c) => c.data.temas))].sort((a, b) =
     transition:
       background 0.15s ease,
       border-color 0.15s ease;
+  }
+
+  .filtro[hidden],
+  .nivel-boton[hidden] {
+    display: none;
   }
 
   .filtro:hover {
